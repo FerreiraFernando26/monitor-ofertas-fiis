@@ -462,9 +462,23 @@ function exportCsv() {
 async function load() {
   $('#loadError').hidden = true;
   try {
-    const response = await fetch('./data/offers.json', { cache: 'no-store' });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const payload = await response.json();
+    let payload = null;
+    let lastError = null;
+    for (const delay of [0, 800, 2500]) {
+      if (delay) {
+        $('#freshnessText').textContent = 'Reconectando à base pública…';
+        await new Promise(resolve => setTimeout(resolve, delay));
+      }
+      try {
+        const dataUrl = new URL('./data/offers.json', window.location.href);
+        dataUrl.searchParams.set('v', String(Date.now()));
+        const response = await fetch(dataUrl, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        payload = await response.json();
+        break;
+      } catch (error) { lastError = error; }
+    }
+    if (!payload) throw lastError || new Error('Base pública indisponível');
     if (payload.schema_version !== 2 || !Array.isArray(payload.offers)) throw new Error('Schema público incompatível');
     state.offers = payload.offers;
     state.scheduleChanges = Array.isArray(payload.schedule_changes) ? payload.schedule_changes : [];
