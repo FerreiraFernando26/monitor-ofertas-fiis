@@ -37,8 +37,10 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 .mark { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid #2a5678; border-radius: 12px; background: linear-gradient(145deg, #153149, #0b1a27); color: var(--cyan); box-shadow: inset 0 1px rgba(255,255,255,.08); }
 .mark svg { width: 24px; }
 .nav { display: grid; gap: 7px; }
-.nav a { padding: 11px 12px; border-radius: 9px; color: var(--muted); text-decoration: none; font-size: .9rem; }
+.nav a { display: flex; align-items: center; gap: 10px; padding: 11px 12px; border-radius: 9px; color: var(--muted); text-decoration: none; font-size: .9rem; }
 .nav a:hover, .nav a.active { background: #132d40; color: var(--text); box-shadow: inset 3px 0 var(--blue); }
+.nav-icon { width: 18px; height: 18px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.nav a:first-child .nav-icon { fill: currentColor; stroke: none; }
 .sidebar-note { position: absolute; left: 22px; right: 22px; bottom: 24px; display: grid; gap: 7px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .75rem; line-height: 1.5; }
 .sidebar-note strong { color: var(--gold); letter-spacing: .05em; text-transform: uppercase; font-size: .68rem; }
 
@@ -57,7 +59,7 @@ h3 { margin-bottom: 14px; font-size: .92rem; }
 .notice span { color: var(--muted); }
 
 .card { position: relative; overflow: hidden; background: linear-gradient(150deg, rgba(16,37,52,.98), rgba(8,24,36,.98)); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); }
-.kpis { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
+.kpis { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
 .kpi { min-height: 128px; padding: 18px 18px 16px; display: flex; flex-direction: column; }
 .kpi::after { content: ""; position: absolute; right: -35px; bottom: -60px; width: 125px; height: 125px; border-radius: 50%; background: rgba(67,143,255,.07); }
 .kpi.accent { border-color: #2b5c78; background: linear-gradient(145deg, #112e42, #0a2334); }
@@ -93,6 +95,14 @@ h3 { margin-bottom: 14px; font-size: .92rem; }
 .mix div { padding: 11px; border: 1px solid var(--line-soft); border-radius: 10px; background: rgba(5,16,25,.35); }
 .mix span { display: block; min-height: 28px; color: var(--muted); font-size: .68rem; }
 .mix strong { font-size: 1.15rem; }
+
+.coordinator-panel { margin-bottom: 16px; }
+.coordinator-chart { display: grid; gap: 12px; }
+.coordinator-row { display: grid; grid-template-columns: minmax(190px, 1.15fr) minmax(180px, 2fr) auto; gap: 14px; align-items: center; }
+.coordinator-name { overflow: hidden; color: var(--muted); font-size: .74rem; text-overflow: ellipsis; white-space: nowrap; }
+.coordinator-rail { height: 10px; overflow: hidden; border-radius: 999px; background: #071620; }
+.coordinator-fill { height: 100%; min-width: 3px; border-radius: inherit; background: linear-gradient(90deg, var(--green), var(--cyan)); }
+.coordinator-value { min-width: 86px; font-size: .74rem; font-weight: 700; text-align: right; }
 
 .agenda-panel { margin-bottom: 16px; }
 .agenda-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
@@ -174,14 +184,11 @@ dialog::backdrop { background: rgba(1,8,14,.82); backdrop-filter: blur(5px); }
   .sidebar { padding: 24px 14px; }
   .brand { justify-content: center; }
   .brand > span:last-child, .nav span, .sidebar-note { display: none; }
-  .nav a { min-height: 40px; text-align: center; }
-  .nav a::before { color: var(--cyan); font-size: .68rem; font-weight: 800; letter-spacing: .04em; }
-  .nav a:nth-child(1)::before { content: "01"; }
-  .nav a:nth-child(2)::before { content: "02"; }
-  .nav a:nth-child(3)::before { content: "03"; }
-  .nav a:nth-child(4)::before { content: "04"; }
+  .nav a { min-height: 42px; justify-content: center; padding: 10px; }
+  .nav-icon { width: 20px; height: 20px; }
   .analytics { grid-template-columns: 1fr; }
   .agenda-list, .document-list { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .coordinator-row { grid-template-columns: minmax(160px, 1fr) minmax(140px, 1.6fr) auto; }
 }
 @media (max-width: 720px) {
   .shell { display: block; }
@@ -197,6 +204,8 @@ dialog::backdrop { background: rgba(1,8,14,.82); backdrop-filter: blur(5px); }
   .kpis, .filters, .timeline { grid-template-columns: 1fr; }
   .search-field { grid-column: auto; }
   .agenda-list, .document-list { grid-template-columns: 1fr; }
+  .coordinator-row { grid-template-columns: 1fr auto; gap: 7px 12px; }
+  .coordinator-rail { grid-column: 1 / -1; grid-row: 2; }
   .detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 480px) {

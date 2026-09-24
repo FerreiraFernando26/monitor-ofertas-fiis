@@ -1,12 +1,13 @@
 'use strict';
 
-const state = { offers: [], referenceDate: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced' };
+const state = { offers: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced' };
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const money = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', notation: 'compact', maximumFractionDigits: 2 });
 const moneyFull = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 2 });
 const percent = new Intl.NumberFormat('pt-BR', { style: 'percent', maximumFractionDigits: 1 });
 const dayFormat = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'America/Sao_Paulo' });
+const dateTimeFormat = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Sao_Paulo' });
 const monthFormat = new Intl.DateTimeFormat('pt-BR', { month: 'short', timeZone: 'America/Sao_Paulo' });
 const controls = ['#search', '#statusFilter', '#fundFilter', '#typeFilter', '#coordinatorFilter', '#riteFilter', '#periodFilter'].map($);
 const timelineLabels = {
@@ -109,12 +110,21 @@ function renderKpis() {
   const captured = confirmed.reduce((sum, offer) => sum + numberValue(offer.captured_volume), 0);
   const confirmedMaximum = confirmed.reduce((sum, offer) => sum + (numberValue(offer.maximum_volume) || 0), 0);
   const review = state.offers.filter(offer => offer.review_required).length;
+  const reference = parseDate(state.referenceDate);
+  const weekLimit = reference ? new Date(reference.getTime() + 7 * 86400000) : null;
+  const closingThisWeek = state.offers.filter(offer => {
+    if (offer.status === 'Oferta Encerrada') return false;
+    const closing = parseDate(offer.timeline?.closing_planned);
+    return reference && weekLimit && closing && closing >= reference && closing <= weekLimit;
+  });
   $('#kpiOffers').textContent = state.offers.length;
   $('#kpiActive').textContent = `${active} em acompanhamento`;
   $('#kpiMaximum').textContent = money.format(maximum);
   $('#kpiCaptured').textContent = confirmed.length ? money.format(captured) : 'n.a.';
   $('#kpiCaptureNote').textContent = confirmed.length ? `${confirmed.length} ofertas com confirmação` : 'Sem confirmação oficial';
   $('#kpiRate').textContent = confirmedMaximum ? percent.format(captured / confirmedMaximum) : 'n.a.';
+  $('#kpiClosingWeek').textContent = closingThisWeek.length;
+  $('#kpiClosingNote').textContent = closingThisWeek.length === 1 ? dateText(closingThisWeek[0].timeline.closing_planned) : 'Conforme cronograma previsto';
   $('#kpiReview').textContent = review;
 }
 
@@ -162,6 +172,29 @@ function renderChart() {
     return column;
   }));
   if (!entries.length) $('#volumeChart').append(element('div', 'empty', 'Nenhum valor confirmado para esta métrica.'));
+}
+
+function renderCoordinatorChart() {
+  const groups = new Map();
+  state.offers.forEach(offer => {
+    const amount = numberValue(offer.captured_volume);
+    const coordinator = offer.lead_coordinator || 'Não informado';
+    if (amount != null) groups.set(coordinator, (groups.get(coordinator) || 0) + amount);
+  });
+  const entries = [...groups.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const maximum = Math.max(...entries.map(([, value]) => value), 1);
+  $('#coordinatorCount').textContent = `${entries.length} ${entries.length === 1 ? 'coordenador' : 'coordenadores'}`;
+  $('#coordinatorChart').replaceChildren(...entries.map(([name, value]) => {
+    const row = element('div', 'coordinator-row');
+    row.title = `${name}: ${moneyFull.format(value)}`;
+    const rail = element('div', 'coordinator-rail');
+    const fill = element('div', 'coordinator-fill');
+    fill.style.width = `${Math.max(1, value / maximum * 100)}%`;
+    rail.append(fill);
+    row.append(element('span', 'coordinator-name', name), rail, element('strong', 'coordinator-value', money.format(value)));
+    return row;
+  }));
+  if (!entries.length) $('#coordinatorChart').append(element('div', 'empty', 'Nenhuma captação confirmada por coordenador.'));
 }
 
 function eventItems() {
@@ -249,8 +282,9 @@ function openDetails(offerId) {
 }
 
 function renderFreshness() {
-  $('#freshnessText').textContent = `Base atualizada em ${dateText(state.referenceDate)}`;
-  const reference = parseDate(state.referenceDate);
+  const generated = state.generatedAt ? new Date(state.generatedAt) : null;
+  $('#freshnessText').textContent = generated && !Number.isNaN(generated.getTime()) ? `Base atualizada em ${dateTimeFormat.format(generated)}` : `Base de referência: ${dateText(state.referenceDate)}`;
+  const reference = generated && !Number.isNaN(generated.getTime()) ? generated : parseDate(state.referenceDate);
   const age = reference ? (Date.now() - reference.getTime()) / 86400000 : 0;
   const stale = age > 2;
   $('#freshness').classList.toggle('stale', stale);
@@ -263,6 +297,7 @@ function renderAll() {
   renderKpis();
   renderStatus();
   renderChart();
+  renderCoordinatorChart();
   renderAgenda();
   renderDocuments();
   renderTable();
@@ -288,6 +323,7 @@ async function load() {
     if (payload.schema_version !== 2 || !Array.isArray(payload.offers)) throw new Error('Schema público incompatível');
     state.offers = payload.offers;
     state.referenceDate = payload.reference_date;
+    state.generatedAt = payload.generated_at;
     renderAll();
   } catch (error) {
     console.error(error);
