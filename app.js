@@ -225,20 +225,34 @@ function renderCoordinatorChart() {
 function renderDistributorChart() {
   const groups = new Map();
   state.offers.forEach(offer => {
-    const names = new Set((offer.distributors || []).map(item => item.name).filter(Boolean));
-    names.forEach(name => groups.set(name, (groups.get(name) || 0) + 1));
+    const distributors = new Map((offer.distributors || []).filter(item => item.name).map(item => [item.name, item]));
+    distributors.forEach((distributor, name) => {
+      const current = groups.get(name) || { offers: 0, associated: 0, captured: 0, confirmed: 0, hasConfirmed: false };
+      current.offers += 1;
+      current.associated += numberValue(offer.maximum_volume) || 0;
+      current.captured += numberValue(offer.captured_volume) || 0;
+      const allocated = numberValue(distributor.allocated_volume);
+      if (allocated != null) { current.confirmed += allocated; current.hasConfirmed = true; }
+      groups.set(name, current);
+    });
   });
-  const entries = [...groups.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'pt-BR')).slice(0, 8);
-  const maximum = Math.max(...entries.map(([, count]) => count), 1);
+  const entries = [...groups.entries()].sort((a, b) => b[1].associated - a[1].associated || a[0].localeCompare(b[0], 'pt-BR')).slice(0, 8);
+  const maximum = Math.max(...entries.map(([, metrics]) => metrics.associated), 1);
   $('#distributorCount').textContent = `${groups.size} ${groups.size === 1 ? 'instituição' : 'instituições'}`;
-  $('#distributorChart').replaceChildren(...entries.map(([name, count]) => {
+  $('#distributorChart').replaceChildren(...entries.map(([name, metrics]) => {
     const row = element('div', 'coordinator-row distributor-row');
-    row.title = `${name}: ${count} ${count === 1 ? 'oferta' : 'ofertas'}; rateio financeiro n.a.`;
+    const confirmed = metrics.hasConfirmed ? moneyFull.format(metrics.confirmed) : 'n.a.';
+    row.title = `${name}: ${metrics.offers} ${metrics.offers === 1 ? 'oferta' : 'ofertas'}; volume associado ${moneyFull.format(metrics.associated)}; captação das ofertas ${moneyFull.format(metrics.captured)}; rateio confirmado ${confirmed}`;
+    const label = element('div', 'distributor-label');
+    label.append(
+      element('span', 'coordinator-name', name),
+      element('small', '', `${metrics.offers} ${metrics.offers === 1 ? 'oferta' : 'ofertas'} · Captado nas ofertas: ${metrics.captured ? money.format(metrics.captured) : 'n.a.'} · Rateio: ${confirmed}`),
+    );
     const rail = element('div', 'coordinator-rail');
     const fill = element('div', 'coordinator-fill distributor-fill');
-    fill.style.width = `${Math.max(1, count / maximum * 100)}%`;
+    fill.style.width = `${Math.max(1, metrics.associated / maximum * 100)}%`;
     rail.append(fill);
-    row.append(element('span', 'coordinator-name', name), rail, element('strong', 'coordinator-value', `${count} ${count === 1 ? 'oferta' : 'ofertas'}`));
+    row.append(label, rail, element('strong', 'coordinator-value', metrics.associated ? money.format(metrics.associated) : 'n.a.'));
     return row;
   }));
   if (!entries.length) $('#distributorChart').append(element('div', 'empty', 'Nenhum distribuidor identificado nos documentos oficiais.'));
@@ -421,7 +435,9 @@ function openDetails(offerId) {
     const item = element('div', 'detail-distributor');
     const copy = element('div');
     copy.append(element('strong', '', distributor.name), element('span', '', distributor.role || 'Participante da distribuição'));
-    item.append(copy, element('b', '', distributor.allocated_volume == null ? 'Rateio: n.a.' : moneyFull.format(distributor.allocated_volume)));
+    const associated = offer.maximum_volume == null ? 'n.a.' : moneyFull.format(offer.maximum_volume);
+    const allocated = distributor.allocated_volume == null ? 'n.a.' : moneyFull.format(distributor.allocated_volume);
+    item.append(copy, element('b', '', `Associado: ${associated} · Rateio: ${allocated}`));
     return item;
   });
   $('#detailDistributors').replaceChildren(...distributors);

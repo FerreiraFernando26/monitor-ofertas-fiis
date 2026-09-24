@@ -6,7 +6,7 @@
   <meta name="description" content="Painel público de ofertas e emissões de fundos imobiliários acompanhadas a partir de fontes oficiais.">
   <title>Radar FII — Monitor de ofertas</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307121d'/%3E%3Cpath d='M14 44V25l18-11 18 11v19' fill='none' stroke='%233f8cff' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M22 44V31h20v13M10 49h44' fill='none' stroke='%237ee0c3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20260924-5">
+  <link rel="stylesheet" href="./styles.css?v=20260924-6">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -60,8 +60,8 @@
       </section>
 
       <section class="card panel distributor-panel" aria-labelledby="distributor-title">
-        <div class="panel-head"><div><p class="overline">Instituições participantes</p><h2 id="distributor-title">Participação por distribuidor</h2><p class="panel-description">Quantidade de ofertas vinculadas a cada instituição. O rateio financeiro individual permanece como n.a. quando não divulgado.</p></div><span id="distributorCount" class="count">—</span></div>
-        <div id="distributorChart" class="coordinator-chart distributor-chart" role="img" aria-label="Quantidade de ofertas por distribuidor"></div>
+        <div class="panel-head"><div><p class="overline">Instituições participantes</p><h2 id="distributor-title">Volume associado por distribuidor</h2><p class="panel-description">Soma do volume máximo das ofertas vinculadas à instituição. Não representa rateio e não deve ser somada entre distribuidores.</p></div><span id="distributorCount" class="count">—</span></div>
+        <div id="distributorChart" class="coordinator-chart distributor-chart" role="img" aria-label="Volume financeiro associado por distribuidor"></div>
       </section>
 
       <section id="cronograma" class="card panel schedule-panel" aria-labelledby="schedule-title">
@@ -130,6 +130,6 @@
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20260924-5" defer></script>
+  <script src="./app.js?v=20260924-6" defer></script>
 </body>
 </html>
