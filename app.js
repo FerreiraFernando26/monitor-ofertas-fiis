@@ -1,6 +1,6 @@
 'use strict';
 
-const state = { offers: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced' };
+const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all' };
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const money = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', notation: 'compact', maximumFractionDigits: 2 });
@@ -15,6 +15,13 @@ const timelineLabels = {
   closing_planned: 'Encerramento previsto', closing_actual: 'Encerramento efetivo',
   settlement_planned: 'Liquidação prevista', settlement_actual: 'Liquidação efetiva',
 };
+const scheduleMilestones = [
+  { label: 'Início', planned: 'start_planned', actual: 'start_actual' },
+  { label: 'Fim da reserva', planned: 'reservation_end_planned', actual: null },
+  { label: 'Liquidação', planned: 'settlement_planned', actual: 'settlement_actual' },
+  { label: 'Encerramento', planned: 'closing_planned', actual: 'closing_actual' },
+];
+const scheduleStatusLabels = { completed: 'Concluído', next: 'Próximo', upcoming: 'Previsto', past: 'Prazo passado', missing: 'Sem próxima data' };
 
 function parseDate(value) { return value ? new Date(`${String(value).slice(0, 10)}T12:00:00-03:00`) : null; }
 function dateText(value) { const parsed = parseDate(value); return parsed ? dayFormat.format(parsed) : 'n.a.'; }
@@ -33,6 +40,20 @@ function badge(status, review = false) {
 function relevantDate(offer) {
   return offer.timeline?.start_actual || offer.timeline?.start_planned || offer.identified_at || offer.updated_at;
 }
+function daysFromReference(value) {
+  const reference = parseDate(state.referenceDate);
+  const target = parseDate(value);
+  return reference && target ? Math.round((target.getTime() - reference.getTime()) / 86400000) : null;
+}
+function scheduleStatus(value, actual = false) {
+  if (actual) return 'completed';
+  const distance = daysFromReference(value);
+  if (distance == null) return 'missing';
+  if (distance < 0) return 'past';
+  if (distance <= 7) return 'next';
+  return 'upcoming';
+}
+function scheduleBadge(status) { return element('span', `schedule-status ${status}`, scheduleStatusLabels[status] || status); }
 
 function setOptions(selector, values) {
   const select = $(selector);
@@ -197,32 +218,139 @@ function renderCoordinatorChart() {
   if (!entries.length) $('#coordinatorChart').append(element('div', 'empty', 'Nenhuma captação confirmada por coordenador.'));
 }
 
-function eventItems() {
-  const reference = parseDate(state.referenceDate);
-  if (!reference) return [];
-  const limit = new Date(reference.getTime() + 45 * 86400000);
-  const items = [];
-  state.offers.forEach(offer => Object.entries(offer.timeline || {}).forEach(([field, value]) => {
-    const eventDate = parseDate(value);
-    if (eventDate && eventDate >= reference && eventDate <= limit) items.push({ offer, field, date: value });
+function documentScheduleEvents(offer) {
+  const events = [];
+  (offer.documents || []).forEach(document => (document.events || []).forEach(event => {
+    if (!event.date) return;
+    const actual = String(event.kind || '').toLocaleLowerCase('pt-BR').includes('efetiv');
+    events.push({
+      offer, date: event.date, name: event.name || 'Evento do cronograma', kind: event.kind || 'Prevista',
+      actual, status: scheduleStatus(event.date, actual), source: document.type, sourceUrl: document.official_url,
+    });
   }));
-  return items.sort((a, b) => a.date.localeCompare(b.date));
+  return events;
 }
 
-function renderAgenda() {
-  const items = eventItems().slice(0, 9);
-  $('#agendaCount').textContent = `${items.length} eventos`;
-  $('#agendaList').replaceChildren(...items.map(item => {
-    const wrapper = element('article', 'agenda-item');
+function canonicalScheduleEvents(offer) {
+  return scheduleMilestones.flatMap(milestone => {
+    const actualDate = milestone.actual ? offer.timeline?.[milestone.actual] : null;
+    const plannedDate = offer.timeline?.[milestone.planned];
+    const value = actualDate || plannedDate;
+    if (!value) return [];
+    const actual = Boolean(actualDate);
+    return [{ offer, date: value, name: milestone.label, kind: actual ? 'Efetiva' : 'Prevista', actual, status: scheduleStatus(value, actual), source: 'Base consolidada', sourceUrl: offer.official_url }];
+  });
+}
+
+function scheduleEventsForOffer(offer) {
+  const detailed = documentScheduleEvents(offer);
+  const events = [...detailed];
+  canonicalScheduleEvents(offer).forEach(candidate => {
+    const duplicate = detailed.some(item => item.date === candidate.date && (item.name.toLocaleLowerCase('pt-BR').includes(candidate.name.toLocaleLowerCase('pt-BR')) || candidate.name.toLocaleLowerCase('pt-BR').includes(item.name.toLocaleLowerCase('pt-BR'))));
+    if (!duplicate) events.push(candidate);
+  });
+  const unique = new Map();
+  events.forEach(item => unique.set(`${item.date}|${item.name}|${item.kind}`, item));
+  return [...unique.values()].sort((a, b) => a.date.localeCompare(b.date));
+}
+
+function allScheduleEvents() { return state.offers.flatMap(scheduleEventsForOffer).sort((a, b) => a.date.localeCompare(b.date)); }
+
+function pendingMilestones(offer) {
+  return scheduleMilestones.filter(milestone => {
+    if (milestone.actual && offer.timeline?.[milestone.actual]) return false;
+    const planned = offer.timeline?.[milestone.planned];
+    return planned && scheduleStatus(planned) === 'past';
+  });
+}
+
+function offerScheduleSummary(offer) {
+  const events = scheduleEventsForOffer(offer);
+  const closed = offer.status === 'Oferta Encerrada';
+  const next = closed ? null : events.find(item => !item.actual && daysFromReference(item.date) >= 0) || null;
+  const pending = pendingMilestones(offer);
+  let status = closed ? 'completed' : pending.length ? 'past' : next && daysFromReference(next.date) <= 7 ? 'next' : next ? 'upcoming' : 'missing';
+  return { offer, events, next, pending, status };
+}
+
+function selectedScheduleSummaries() {
+  const windowValue = $('#scheduleWindow').value;
+  const days = windowValue === 'all' ? null : Number(windowValue);
+  return state.offers.map(offerScheduleSummary).filter(summary => {
+    if (state.scheduleFilter !== 'all' && summary.status !== state.scheduleFilter) return false;
+    if (!days || !summary.next || ['past', 'missing', 'completed'].includes(summary.status)) return true;
+    return daysFromReference(summary.next.date) <= days;
+  }).sort((a, b) => {
+    if (!a.next && !b.next) return a.offer.fund.localeCompare(b.offer.fund, 'pt-BR');
+    if (!a.next) return 1;
+    if (!b.next) return -1;
+    return a.next.date.localeCompare(b.next.date);
+  });
+}
+
+function scheduleCell(value, actual = false) {
+  const wrapper = element('div', 'schedule-date-cell');
+  wrapper.append(element('strong', '', dateText(value)), value ? scheduleBadge(scheduleStatus(value, actual)) : element('span', 'schedule-na', 'Não informado'));
+  return wrapper;
+}
+
+function renderScheduleTable() {
+  const summaries = selectedScheduleSummaries();
+  $('#scheduleRows').replaceChildren(...summaries.map(summary => {
+    const offer = summary.offer;
+    const row = element('tr'); row.tabIndex = 0; row.dataset.id = offer.id; row.setAttribute('aria-label', `Abrir cronograma de ${offer.fund}`);
+    const fund = element('td', 'fund', offer.fund); fund.append(element('span', 'subcell', offer.registration || offer.cnpj));
+    const nextCell = element('td');
+    if (summary.next) nextCell.append(element('strong', 'schedule-event-name', summary.next.name), element('span', 'subcell', dateText(summary.next.date)));
+    else nextCell.append(element('span', 'schedule-na', 'n.a.'));
+    const settlement = offer.timeline?.settlement_actual || offer.timeline?.settlement_planned;
+    const closing = offer.timeline?.closing_actual || offer.timeline?.closing_planned;
+    const statusCell = element('td'); statusCell.append(scheduleBadge(summary.status));
+    row.append(fund, nextCell, (() => { const cell = element('td'); cell.append(scheduleCell(offer.timeline?.reservation_end_planned)); return cell; })(), (() => { const cell = element('td'); cell.append(scheduleCell(settlement, Boolean(offer.timeline?.settlement_actual))); return cell; })(), (() => { const cell = element('td'); cell.append(scheduleCell(closing, Boolean(offer.timeline?.closing_actual))); return cell; })(), statusCell);
+    return row;
+  }));
+  $('#scheduleCount').textContent = `${summaries.length} ${summaries.length === 1 ? 'oferta' : 'ofertas'}`;
+  $('#scheduleEmpty').hidden = summaries.length > 0;
+}
+
+function renderUpcomingEvents() {
+  const windowValue = $('#scheduleWindow').value;
+  const days = windowValue === 'all' ? Number.POSITIVE_INFINITY : Number(windowValue);
+  const items = allScheduleEvents().filter(item => item.offer.status !== 'Oferta Encerrada' && !item.actual && daysFromReference(item.date) >= 0 && daysFromReference(item.date) <= days).slice(0, 10);
+  $('#upcomingCount').textContent = `${items.length} exibidos`;
+  $('#upcomingList').replaceChildren(...items.map(item => {
+    const wrapper = element('button', 'agenda-item'); wrapper.type = 'button'; wrapper.dataset.id = item.offer.id;
     const parsed = parseDate(item.date);
-    const dateBox = element('div', 'agenda-date');
-    dateBox.append(element('strong', '', String(parsed.getDate()).padStart(2, '0')), element('span', '', monthFormat.format(parsed)));
-    const content = element('div');
-    content.append(element('h3', '', item.offer.fund), element('p', '', timelineLabels[item.field] || item.field));
+    const dateBox = element('div', 'agenda-date'); dateBox.append(element('strong', '', String(parsed.getDate()).padStart(2, '0')), element('span', '', monthFormat.format(parsed)));
+    const content = element('div'); content.append(element('h3', '', item.offer.fund), element('p', '', item.name), scheduleBadge(item.status));
     wrapper.append(dateBox, content);
     return wrapper;
   }));
-  if (!items.length) $('#agendaList').append(element('div', 'empty', 'Nenhum evento previsto para os próximos 45 dias.'));
+  if (!items.length) $('#upcomingList').append(element('div', 'empty', 'Nenhum evento previsto nesta janela.'));
+}
+
+function renderScheduleChanges() {
+  const changes = [...state.scheduleChanges].sort((a, b) => String(b.detected_at || '').localeCompare(String(a.detected_at || ''))).slice(0, 6);
+  $('#changeCount').textContent = `${changes.length} ${changes.length === 1 ? 'alteração' : 'alterações'}`;
+  $('#changeList').replaceChildren(...changes.map(change => {
+    const item = element('article', 'change-item');
+    const copy = element('div'); copy.append(element('strong', '', change.fund || change.offer_id), element('span', '', `${change.field}: ${dateText(change.previous_date)} → ${dateText(change.current_date)}`));
+    item.append(copy, element('time', '', dateText(change.detected_at)));
+    return item;
+  }));
+  if (!changes.length) $('#changeList').append(element('div', 'schedule-ok', 'Nenhuma mudança de cronograma confirmada no histórico disponível.'));
+}
+
+function renderSchedule() {
+  const events = allScheduleEvents();
+  const summaries = state.offers.map(offerScheduleSummary);
+  $('#scheduleTotal').textContent = events.length;
+  $('#scheduleNextWeek').textContent = events.filter(item => item.offer.status !== 'Oferta Encerrada' && !item.actual && daysFromReference(item.date) >= 0 && daysFromReference(item.date) <= 7).length;
+  $('#schedulePast').textContent = summaries.filter(item => item.status === 'past').length;
+  $('#scheduleMissing').textContent = summaries.filter(item => item.status === 'missing').length;
+  const labels = { all: 'Todas as ofertas', next: 'Próximos 7 dias', past: 'Prazos passados', missing: 'Sem próxima data' };
+  $('#scheduleFilterLabel').textContent = labels[state.scheduleFilter] || 'Todas as ofertas';
+  renderScheduleTable(); renderUpcomingEvents(); renderScheduleChanges();
 }
 
 function allDocuments() {
@@ -263,11 +391,23 @@ function openDetails(offerId) {
     detailStat('Última atualização', dateText(offer.updated_at)),
   );
   const timeline = Object.entries(timelineLabels).map(([field, label]) => {
-    const item = element('div', `timeline-item ${field.endsWith('actual') ? 'actual' : ''}`);
-    item.append(element('small', '', label), element('strong', '', dateText(offer.timeline?.[field])));
+    const value = offer.timeline?.[field];
+    const actual = field.endsWith('actual') && Boolean(value);
+    const status = value ? scheduleStatus(value, actual) : 'missing';
+    const item = element('div', `timeline-item ${status}`);
+    item.append(element('small', '', label), element('strong', '', dateText(value)), scheduleBadge(status));
     return item;
   });
   $('#detailTimeline').replaceChildren(...timeline);
+  const detailedEvents = scheduleEventsForOffer(offer);
+  $('#detailEvents').replaceChildren(...detailedEvents.map(event => {
+    const item = element('div', 'detail-event');
+    const date = element('time', '', dateText(event.date));
+    const copy = element('div'); copy.append(element('strong', '', event.name), element('span', '', `${event.kind} · ${event.source}`));
+    item.append(date, copy, scheduleBadge(event.status));
+    return item;
+  }));
+  if (!detailedEvents.length) $('#detailEvents').append(element('div', 'empty', 'Nenhum evento datado foi confirmado nos documentos disponíveis.'));
   const documents = (offer.documents || []).map(document => {
     const item = element('div', 'detail-document');
     const copy = element('div');
@@ -291,6 +431,11 @@ function renderFreshness() {
   $('#staleAlert').hidden = !stale;
 }
 
+function syncNavigation() {
+  const current = window.location.hash || '#visao-geral';
+  $$('.nav a').forEach(link => link.classList.toggle('active', link.getAttribute('href') === current));
+}
+
 function renderAll() {
   populateFilters();
   renderFreshness();
@@ -298,7 +443,7 @@ function renderAll() {
   renderStatus();
   renderChart();
   renderCoordinatorChart();
-  renderAgenda();
+  renderSchedule();
   renderDocuments();
   renderTable();
 }
@@ -322,6 +467,7 @@ async function load() {
     const payload = await response.json();
     if (payload.schema_version !== 2 || !Array.isArray(payload.offers)) throw new Error('Schema público incompatível');
     state.offers = payload.offers;
+    state.scheduleChanges = Array.isArray(payload.schedule_changes) ? payload.schedule_changes : [];
     state.referenceDate = payload.reference_date;
     state.generatedAt = payload.generated_at;
     renderAll();
@@ -351,9 +497,20 @@ $$('[data-chart]').forEach(button => button.addEventListener('click', () => {
 }));
 $('#offerRows').addEventListener('click', event => { const row = event.target.closest('tr'); if (row) openDetails(row.dataset.id); });
 $('#offerRows').addEventListener('keydown', event => { const row = event.target.closest('tr'); if (row && ['Enter', ' '].includes(event.key)) { event.preventDefault(); openDetails(row.dataset.id); } });
+$('#scheduleRows').addEventListener('click', event => { const row = event.target.closest('tr'); if (row) openDetails(row.dataset.id); });
+$('#scheduleRows').addEventListener('keydown', event => { const row = event.target.closest('tr'); if (row && ['Enter', ' '].includes(event.key)) { event.preventDefault(); openDetails(row.dataset.id); } });
+$('#upcomingList').addEventListener('click', event => { const item = event.target.closest('[data-id]'); if (item) openDetails(item.dataset.id); });
+$$('[data-schedule-filter]').forEach(button => button.addEventListener('click', () => {
+  state.scheduleFilter = button.dataset.scheduleFilter;
+  $$('[data-schedule-filter]').forEach(item => item.classList.toggle('active', item === button));
+  renderSchedule();
+}));
+$('#scheduleWindow').addEventListener('change', renderSchedule);
 $('.close').addEventListener('click', () => $('#details').close());
 $('#details').addEventListener('click', event => { if (event.target === $('#details')) $('#details').close(); });
 $('#export').addEventListener('click', exportCsv);
 $('#retry').addEventListener('click', load);
+window.addEventListener('hashchange', syncNavigation);
 
+syncNavigation();
 load();

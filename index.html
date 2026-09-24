@@ -19,7 +19,7 @@
       <nav class="nav">
         <a class="active" href="#visao-geral" aria-label="Visão geral" title="Visão geral"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg><span>Visão geral</span></a>
         <a href="#ofertas" aria-label="Ofertas" title="Ofertas"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h14M3 6h.01M3 12h.01M3 18h.01"/></svg><span>Ofertas</span></a>
-        <a href="#agenda" aria-label="Agenda" title="Agenda"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2ZM7 2v4M17 2v4M3 9h18M7 13h3M14 13h3M7 17h3"/></svg><span>Agenda</span></a>
+        <a href="#cronograma" aria-label="Cronograma" title="Cronograma"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2ZM7 2v4M17 2v4M3 9h18M7 13h3M14 13h3M7 17h3"/></svg><span>Cronograma</span></a>
         <a href="#documentos" aria-label="Documentos" title="Documentos"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 12h6M9 16h6"/></svg><span>Documentos</span></a>
       </nav>
       <div class="sidebar-note"><strong>Painel operacional</strong><span>Dados públicos da CVM com atualização diária.</span></div>
@@ -59,9 +59,28 @@
         <div id="coordinatorChart" class="coordinator-chart" role="img" aria-label="Captação confirmada por coordenador líder"></div>
       </section>
 
-      <section id="agenda" class="card panel agenda-panel" aria-labelledby="agenda-title">
-        <div class="panel-head"><div><p class="overline">Próximos 45 dias</p><h2 id="agenda-title">Agenda de eventos</h2></div><span id="agendaCount" class="count">—</span></div>
-        <div id="agendaList" class="agenda-list"></div>
+      <section id="cronograma" class="card panel schedule-panel" aria-labelledby="schedule-title">
+        <div class="panel-head schedule-head"><div><p class="overline">Prazos e acompanhamento</p><h2 id="schedule-title">Cronograma das ofertas</h2><p class="panel-description">Datas previstas e realizadas extraídas de documentos oficiais.</p></div><span id="scheduleCount" class="count">—</span></div>
+        <div class="schedule-kpis" aria-label="Indicadores do cronograma">
+          <button type="button" class="schedule-kpi active" data-schedule-filter="all"><span>Eventos monitorados</span><strong id="scheduleTotal">—</strong></button>
+          <button type="button" class="schedule-kpi" data-schedule-filter="next"><span>Próximos 7 dias</span><strong id="scheduleNextWeek">—</strong></button>
+          <button type="button" class="schedule-kpi" data-schedule-filter="past"><span>Prazos passados</span><strong id="schedulePast">—</strong></button>
+          <button type="button" class="schedule-kpi" data-schedule-filter="missing"><span>Sem próxima data</span><strong id="scheduleMissing">—</strong></button>
+        </div>
+        <div class="schedule-layout">
+          <div class="schedule-main">
+            <div class="schedule-toolbar"><div><h3>Visão consolidada</h3><span id="scheduleFilterLabel" class="count">Todos os eventos</span></div><label><span>Janela</span><select id="scheduleWindow" class="control"><option value="45">45 dias</option><option value="90">90 dias</option><option value="180">180 dias</option><option value="all">Todo o período</option></select></label></div>
+            <div class="schedule-table-scroll">
+              <table class="schedule-table">
+                <thead><tr><th>Oferta</th><th>Próximo evento</th><th>Fim da reserva</th><th>Liquidação</th><th>Encerramento</th><th>Situação</th></tr></thead>
+                <tbody id="scheduleRows"></tbody>
+              </table>
+            </div>
+            <div id="scheduleEmpty" class="empty" hidden><strong>Nenhum cronograma nesta seleção.</strong><span>Escolha outra janela ou situação.</span></div>
+          </div>
+          <aside class="schedule-upcoming" aria-labelledby="upcoming-title"><div class="schedule-side-head"><div><p class="overline">Linha do tempo</p><h3 id="upcoming-title">Próximos eventos</h3></div><span id="upcomingCount" class="count">—</span></div><div id="upcomingList" class="agenda-list"></div></aside>
+        </div>
+        <div class="schedule-changes"><div class="schedule-side-head"><div><p class="overline">Monitoramento</p><h3>Mudanças recentes de cronograma</h3></div><span id="changeCount" class="count">—</span></div><div id="changeList" class="change-list"></div></div>
       </section>
 
       <section id="ofertas" class="card table-card" aria-labelledby="offers-title">
@@ -100,7 +119,7 @@
     <div class="dialog-body">
       <div id="detailBadges" class="detail-badges"></div>
       <section class="detail-section"><h3>Volumes</h3><div id="detailVolumes" class="detail-grid"></div></section>
-      <section class="detail-section"><h3>Cronograma</h3><div id="detailTimeline" class="timeline"></div></section>
+      <section class="detail-section"><h3>Cronograma</h3><div id="detailTimeline" class="timeline"></div><div id="detailEvents" class="detail-events"></div></section>
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>

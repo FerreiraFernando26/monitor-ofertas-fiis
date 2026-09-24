@@ -1,8 +1,9 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-24T16:47:52-03:00",
+  "generated_at": "2026-09-24T18:10:17-03:00",
   "reference_date": "2026-09-24",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
+  "schedule_changes": [],
   "offers": [
     {
       "id": "CVM160|27998",
