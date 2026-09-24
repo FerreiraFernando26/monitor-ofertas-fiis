@@ -9,7 +9,7 @@ const percent = new Intl.NumberFormat('pt-BR', { style: 'percent', maximumFracti
 const dayFormat = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'America/Sao_Paulo' });
 const dateTimeFormat = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Sao_Paulo' });
 const monthFormat = new Intl.DateTimeFormat('pt-BR', { month: 'short', timeZone: 'America/Sao_Paulo' });
-const controls = ['#search', '#statusFilter', '#fundFilter', '#typeFilter', '#coordinatorFilter', '#riteFilter', '#periodFilter'].map($);
+const controls = ['#search', '#statusFilter', '#fundFilter', '#typeFilter', '#coordinatorFilter', '#distributorFilter', '#riteFilter', '#periodFilter'].map($);
 const timelineLabels = {
   start_planned: 'Início previsto', start_actual: 'Início efetivo', reservation_end_planned: 'Fim da reserva',
   closing_planned: 'Encerramento previsto', closing_actual: 'Encerramento efetivo',
@@ -72,6 +72,7 @@ function populateFilters() {
   setOptions('#fundFilter', state.offers.map(offer => offer.fund));
   setOptions('#typeFilter', state.offers.map(offer => offer.type));
   setOptions('#coordinatorFilter', state.offers.map(offer => offer.lead_coordinator));
+  setOptions('#distributorFilter', state.offers.flatMap(offer => (offer.distributors || []).map(item => item.name)));
   setOptions('#riteFilter', state.offers.map(offer => offer.rite));
 }
 
@@ -85,9 +86,12 @@ function filteredOffers() {
   const reference = parseDate(state.referenceDate);
   const cutoff = periodDays && reference ? new Date(reference.getTime() - periodDays * 86400000) : null;
   const rows = state.offers.filter(offer => {
-    const haystack = `${offer.fund} ${offer.cnpj} ${offer.registration} ${offer.ticker}`.toLocaleLowerCase('pt-BR');
+    const distributorNames = (offer.distributors || []).map(item => item.name).join(' ');
+    const haystack = `${offer.fund} ${offer.cnpj} ${offer.registration} ${offer.ticker} ${distributorNames}`.toLocaleLowerCase('pt-BR');
     if (query && !haystack.includes(query)) return false;
     if (Object.entries(exact).some(([field, value]) => value && offer[field] !== value)) return false;
+    const distributor = $('#distributorFilter').value;
+    if (distributor && !(offer.distributors || []).some(item => item.name === distributor)) return false;
     const offerDate = parseDate(relevantDate(offer));
     return !cutoff || (offerDate && offerDate >= cutoff);
   });
@@ -216,6 +220,28 @@ function renderCoordinatorChart() {
     return row;
   }));
   if (!entries.length) $('#coordinatorChart').append(element('div', 'empty', 'Nenhuma captação confirmada por coordenador.'));
+}
+
+function renderDistributorChart() {
+  const groups = new Map();
+  state.offers.forEach(offer => {
+    const names = new Set((offer.distributors || []).map(item => item.name).filter(Boolean));
+    names.forEach(name => groups.set(name, (groups.get(name) || 0) + 1));
+  });
+  const entries = [...groups.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'pt-BR')).slice(0, 8);
+  const maximum = Math.max(...entries.map(([, count]) => count), 1);
+  $('#distributorCount').textContent = `${groups.size} ${groups.size === 1 ? 'instituição' : 'instituições'}`;
+  $('#distributorChart').replaceChildren(...entries.map(([name, count]) => {
+    const row = element('div', 'coordinator-row distributor-row');
+    row.title = `${name}: ${count} ${count === 1 ? 'oferta' : 'ofertas'}; rateio financeiro n.a.`;
+    const rail = element('div', 'coordinator-rail');
+    const fill = element('div', 'coordinator-fill distributor-fill');
+    fill.style.width = `${Math.max(1, count / maximum * 100)}%`;
+    rail.append(fill);
+    row.append(element('span', 'coordinator-name', name), rail, element('strong', 'coordinator-value', `${count} ${count === 1 ? 'oferta' : 'ofertas'}`));
+    return row;
+  }));
+  if (!entries.length) $('#distributorChart').append(element('div', 'empty', 'Nenhum distribuidor identificado nos documentos oficiais.'));
 }
 
 function documentScheduleEvents(offer) {
@@ -388,8 +414,18 @@ function openDetails(offerId) {
     detailStat('Captação confirmada', offer.captured_volume == null ? 'n.a.' : moneyFull.format(offer.captured_volume)),
     detailStat('Taxa de colocação', offer.capture_rate == null ? 'n.a.' : percent.format(offer.capture_rate)),
     detailStat('Coordenador líder', text(offer.lead_coordinator)),
+    detailStat('Distribuidores identificados', String((offer.distributors || []).length || 'n.a.')),
     detailStat('Última atualização', dateText(offer.updated_at)),
   );
+  const distributors = (offer.distributors || []).map(distributor => {
+    const item = element('div', 'detail-distributor');
+    const copy = element('div');
+    copy.append(element('strong', '', distributor.name), element('span', '', distributor.role || 'Participante da distribuição'));
+    item.append(copy, element('b', '', distributor.allocated_volume == null ? 'Rateio: n.a.' : moneyFull.format(distributor.allocated_volume)));
+    return item;
+  });
+  $('#detailDistributors').replaceChildren(...distributors);
+  if (!distributors.length) $('#detailDistributors').append(element('div', 'empty', 'Nenhum distribuidor identificado nos documentos disponíveis.'));
   const timeline = Object.entries(timelineLabels).map(([field, label]) => {
     const value = offer.timeline?.[field];
     const actual = field.endsWith('actual') && Boolean(value);
@@ -443,14 +479,15 @@ function renderAll() {
   renderStatus();
   renderChart();
   renderCoordinatorChart();
+  renderDistributorChart();
   renderSchedule();
   renderDocuments();
   renderTable();
 }
 
 function exportCsv() {
-  const headers = ['Fundo', 'CNPJ', 'Registro', 'Tipo', 'Status', 'Volume máximo', 'Volume captado', 'Atualização'];
-  const lines = [headers, ...filteredOffers().map(offer => [offer.fund, offer.cnpj, offer.registration, offer.type, offer.status, offer.maximum_volume ?? '', offer.captured_volume ?? '', offer.updated_at])];
+  const headers = ['Fundo', 'CNPJ', 'Registro', 'Tipo', 'Status', 'Coordenador líder', 'Distribuidores', 'Volume máximo', 'Volume captado', 'Atualização'];
+  const lines = [headers, ...filteredOffers().map(offer => [offer.fund, offer.cnpj, offer.registration, offer.type, offer.status, offer.lead_coordinator, (offer.distributors || []).map(item => item.name).join(' | '), offer.maximum_volume ?? '', offer.captured_volume ?? '', offer.updated_at])];
   const csv = lines.map(line => line.map(value => `"${String(value ?? '').replaceAll('"', '""')}"`).join(';')).join('\n');
   const link = document.createElement('a');
   link.href = URL.createObjectURL(new Blob([`\ufeff${csv}`], { type: 'text/csv;charset=utf-8' }));

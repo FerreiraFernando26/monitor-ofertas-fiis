@@ -6,7 +6,7 @@
   <meta name="description" content="Painel público de ofertas e emissões de fundos imobiliários acompanhadas a partir de fontes oficiais.">
   <title>Radar FII — Monitor de ofertas</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307121d'/%3E%3Cpath d='M14 44V25l18-11 18 11v19' fill='none' stroke='%233f8cff' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M22 44V31h20v13M10 49h44' fill='none' stroke='%237ee0c3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20260924-4">
+  <link rel="stylesheet" href="./styles.css?v=20260924-5">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -59,6 +59,11 @@
         <div id="coordinatorChart" class="coordinator-chart" role="img" aria-label="Captação confirmada por coordenador líder"></div>
       </section>
 
+      <section class="card panel distributor-panel" aria-labelledby="distributor-title">
+        <div class="panel-head"><div><p class="overline">Instituições participantes</p><h2 id="distributor-title">Participação por distribuidor</h2><p class="panel-description">Quantidade de ofertas vinculadas a cada instituição. O rateio financeiro individual permanece como n.a. quando não divulgado.</p></div><span id="distributorCount" class="count">—</span></div>
+        <div id="distributorChart" class="coordinator-chart distributor-chart" role="img" aria-label="Quantidade de ofertas por distribuidor"></div>
+      </section>
+
       <section id="cronograma" class="card panel schedule-panel" aria-labelledby="schedule-title">
         <div class="panel-head schedule-head"><div><p class="overline">Prazos e acompanhamento</p><h2 id="schedule-title">Cronograma das ofertas</h2><p class="panel-description">Datas previstas e realizadas extraídas de documentos oficiais.</p></div><span id="scheduleCount" class="count">—</span></div>
         <div class="schedule-kpis" aria-label="Indicadores do cronograma">
@@ -92,6 +97,7 @@
             <label><span>Fundo</span><select id="fundFilter" class="control"><option value="">Todos</option></select></label>
             <label><span>Tipo</span><select id="typeFilter" class="control"><option value="">Todos</option></select></label>
             <label><span>Coordenador</span><select id="coordinatorFilter" class="control"><option value="">Todos</option></select></label>
+            <label><span>Distribuidor</span><select id="distributorFilter" class="control"><option value="">Todos</option></select></label>
             <label><span>Rito</span><select id="riteFilter" class="control"><option value="">Todos</option></select></label>
             <label><span>Período</span><select id="periodFilter" class="control"><option value="">Todo o período</option><option value="30">Últimos 30 dias</option><option value="90">Últimos 90 dias</option><option value="180">Últimos 180 dias</option></select></label>
           </div>
@@ -119,10 +125,11 @@
     <div class="dialog-body">
       <div id="detailBadges" class="detail-badges"></div>
       <section class="detail-section"><h3>Volumes</h3><div id="detailVolumes" class="detail-grid"></div></section>
+      <section class="detail-section"><h3>Distribuição</h3><div id="detailDistributors" class="detail-distributors"></div></section>
       <section class="detail-section"><h3>Cronograma</h3><div id="detailTimeline" class="timeline"></div><div id="detailEvents" class="detail-events"></div></section>
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20260924-3" defer></script>
+  <script src="./app.js?v=20260924-5" defer></script>
 </body>
 </html>

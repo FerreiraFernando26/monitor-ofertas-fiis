@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-24T18:10:17-03:00",
+  "generated_at": "2026-09-24T18:42:15-03:00",
   "reference_date": "2026-09-24",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -16,6 +16,13 @@
       "type": "Nova emissão",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
+      "distributors": [
+        {
+          "name": "XP INVESTIMENTOS CCTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 31000112.0,
       "maximum_volume": 31000112.0,
@@ -104,6 +111,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "HEMERA DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+      "distributors": [
+        {
+          "name": "HEMERA DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Oferta Encerrada",
       "initial_volume": 153000000.0,
       "maximum_volume": 153000000.0,
@@ -157,6 +171,13 @@
       "type": "Nova emissão",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 150547961.58,
       "maximum_volume": 150547961.58,
@@ -188,6 +209,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 160208000.0,
       "maximum_volume": 160208000.0,
@@ -241,6 +269,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "PLANNER CORRETORA DE VALORES S.A.",
+      "distributors": [
+        {
+          "name": "PLANNER CORRETORA DE VALORES S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Oferta Encerrada",
       "initial_volume": 450000000.0,
       "maximum_volume": 450000000.0,
@@ -330,6 +365,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Oferta Encerrada",
       "initial_volume": 800000000.0,
       "maximum_volume": 800000000.0,
@@ -361,6 +403,13 @@
       "type": "Nova emissão",
       "rite": "Automático",
       "lead_coordinator": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 45000000.15,
       "maximum_volume": 45000000.15,
@@ -392,6 +441,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "distributors": [
+        {
+          "name": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 165300000.0,
       "maximum_volume": 165300000.0,
@@ -450,6 +506,13 @@
       "type": "Nova emissão",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 2499983.85,
       "maximum_volume": 2499983.85,
@@ -543,6 +606,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 30000000.0,
       "maximum_volume": 30000000.0,
@@ -601,6 +671,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
+      "distributors": [
+        {
+          "name": "XP INVESTIMENTOS CCTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 196000000.0,
       "maximum_volume": 196000000.0,
@@ -632,6 +709,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "GENIAL INSTITUCIONAL CCTVM S.A.",
+      "distributors": [
+        {
+          "name": "GENIAL INSTITUCIONAL CCTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Oferta Encerrada",
       "initial_volume": 50000000.0,
       "maximum_volume": 50000000.0,
@@ -741,6 +825,13 @@
       "type": "Nova emissão",
       "rite": "Automático",
       "lead_coordinator": "BR-CAPITAL DTVM S.A.",
+      "distributors": [
+        {
+          "name": "BR-CAPITAL DTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 3756200.0,
       "maximum_volume": 3756200.0,
@@ -824,6 +915,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "distributors": [
+        {
+          "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 500000000.0,
       "maximum_volume": 500000000.0,
@@ -855,6 +953,13 @@
       "type": "Nova emissão",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Oferta Encerrada",
       "initial_volume": 1080000014.57,
       "maximum_volume": 1080000014.57,
@@ -949,6 +1054,13 @@
       "type": "Nova emissão",
       "rite": "Automático",
       "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "distributors": [
+        {
+          "name": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Oferta Encerrada",
       "initial_volume": 2919600.0,
       "maximum_volume": 2919600.0,
@@ -980,6 +1092,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 180234000.0,
       "maximum_volume": 180234000.0,
@@ -1033,6 +1152,13 @@
       "type": "IPO / 1ª emissão",
       "rite": "Automático",
       "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "distributors": [
+        {
+          "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 15000000.0,
       "maximum_volume": 15000000.0,
@@ -1064,6 +1190,13 @@
       "type": "Nova emissão",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
       "status": "Registro Concedido",
       "initial_volume": 299999960.82,
       "maximum_volume": 299999960.82,
