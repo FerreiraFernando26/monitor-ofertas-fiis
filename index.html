@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Painel local de ofertas e emissões de fundos imobiliários acompanhadas a partir de fontes oficiais.">
+  <title>Radar FII — Monitor de ofertas</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307121d'/%3E%3Cpath d='M14 44V25l18-11 18 11v19' fill='none' stroke='%233f8cff' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M22 44V31h20v13M10 49h44' fill='none' stroke='%237ee0c3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <a class="brand" href="#visao-geral" aria-label="Radar FII, início">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18V8l8-5 8 5v10M8 18v-6h8v6M2 21h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong>Radar FII</strong><small>Ofertas e emissões</small></span>
+      </a>
+      <nav class="nav">
+        <a class="active" href="#visao-geral"><span>Visão geral</span></a>
+        <a href="#ofertas"><span>Ofertas</span></a>
+        <a href="#agenda"><span>Agenda</span></a>
+        <a href="#documentos"><span>Documentos</span></a>
+      </nav>
+      <div class="sidebar-note"><strong>Painel operacional</strong><span>Dados públicos da CVM com atualização diária.</span></div>
+    </aside>
+
+    <main id="conteudo">
+      <header id="visao-geral" class="topbar">
+        <div><p class="overline">Mercado primário</p><h1>Monitor de ofertas de FIIs</h1><p class="subtitle">Acompanhamento de registros, cronogramas, captações e documentos oficiais.</p></div>
+        <div id="freshness" class="freshness" role="status"><span class="pulse" aria-hidden="true"></span><span id="freshnessText">Carregando base pública…</span></div>
+      </header>
+
+      <div id="staleAlert" class="notice" hidden><strong>Atualização atrasada.</strong><span>A última base disponível ultrapassou o intervalo diário esperado.</span></div>
+
+      <section class="kpis" aria-label="Indicadores principais">
+        <article class="card kpi"><span class="eyebrow">Ofertas monitoradas</span><strong id="kpiOffers" class="value">—</strong><span id="kpiActive" class="metric-note">Carregando</span></article>
+        <article class="card kpi"><span class="eyebrow">Volume máximo</span><strong id="kpiMaximum" class="value">—</strong><span class="metric-note">Potencial das emissões</span></article>
+        <article class="card kpi accent"><span class="eyebrow">Captação confirmada</span><strong id="kpiCaptured" class="value">—</strong><span id="kpiCaptureNote" class="metric-note">Aguardando dados</span></article>
+        <article class="card kpi"><span class="eyebrow">Taxa de colocação</span><strong id="kpiRate" class="value">—</strong><span class="metric-note">Somente ofertas confirmadas</span></article>
+        <article class="card kpi"><span class="eyebrow">Em revisão</span><strong id="kpiReview" class="value">—</strong><span class="metric-note">Validação manual necessária</span></article>
+      </section>
+
+      <section class="analytics" aria-label="Análises das ofertas">
+        <article class="card panel chart-panel">
+          <div class="panel-head"><div><p class="overline">Evolução</p><h2>Volume por mês</h2></div><div class="segmented" aria-label="Métrica do gráfico"><button type="button" data-chart="announced" aria-pressed="true">Anunciado</button><button type="button" data-chart="captured" aria-pressed="false">Captado</button></div></div>
+          <div id="volumeChart" class="volume-chart" role="img" aria-label="Volume de ofertas por mês"></div>
+        </article>
+        <article class="card panel status-panel">
+          <div class="panel-head"><div><p class="overline">Carteira</p><h2>Distribuição por status</h2></div><span id="statusTotal" class="count">—</span></div>
+          <div class="status-wrap"><div id="statusDonut" class="donut"><strong id="statusDonutTotal">—</strong><span>ofertas</span></div><div id="statusLegend" class="legend"></div></div>
+          <div class="mix"><div><span>IPO / 1ª emissão</span><strong id="mixIpo">—</strong></div><div><span>Novas emissões</span><strong id="mixFollowOn">—</strong></div></div>
+        </article>
+      </section>
+
+      <section id="agenda" class="card panel agenda-panel" aria-labelledby="agenda-title">
+        <div class="panel-head"><div><p class="overline">Próximos 45 dias</p><h2 id="agenda-title">Agenda de eventos</h2></div><span id="agendaCount" class="count">—</span></div>
+        <div id="agendaList" class="agenda-list"></div>
+      </section>
+
+      <section id="ofertas" class="card table-card" aria-labelledby="offers-title">
+        <div class="table-head">
+          <div class="table-title-row"><div><p class="overline">Base consolidada</p><h2 id="offers-title">Ofertas acompanhadas</h2><span id="resultCount" class="count">Carregando…</span></div><button id="export" class="button" type="button">Exportar CSV</button></div>
+          <div class="filters">
+            <label class="search-field"><span class="sr-only">Buscar</span><input id="search" class="control" type="search" placeholder="Buscar fundo, CNPJ, registro ou ticker"></label>
+            <label><span>Status</span><select id="statusFilter" class="control"><option value="">Todos</option></select></label>
+            <label><span>Fundo</span><select id="fundFilter" class="control"><option value="">Todos</option></select></label>
+            <label><span>Tipo</span><select id="typeFilter" class="control"><option value="">Todos</option></select></label>
+            <label><span>Coordenador</span><select id="coordinatorFilter" class="control"><option value="">Todos</option></select></label>
+            <label><span>Rito</span><select id="riteFilter" class="control"><option value="">Todos</option></select></label>
+            <label><span>Período</span><select id="periodFilter" class="control"><option value="">Todo o período</option><option value="30">Últimos 30 dias</option><option value="90">Últimos 90 dias</option><option value="180">Últimos 180 dias</option></select></label>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th><button data-sort="fund">Fundo</button></th><th><button data-sort="registration">Registro</button></th><th><button data-sort="type">Tipo</button></th><th><button data-sort="status">Status</button></th><th class="numeric"><button data-sort="maximum_volume">Volume máximo</button></th><th class="numeric"><button data-sort="captured_volume">Captado</button></th><th><button data-sort="updated_at">Atualização</button></th></tr></thead>
+            <tbody id="offerRows"></tbody>
+          </table>
+        </div>
+        <div id="empty" class="empty" hidden><strong>Nenhuma oferta encontrada.</strong><span>Altere os filtros para ampliar a busca.</span></div>
+        <div id="loadError" class="empty error" hidden><strong>Não foi possível carregar os dados.</strong><span>Verifique o arquivo público e tente novamente.</span><button id="retry" class="button" type="button">Tentar novamente</button></div>
+      </section>
+
+      <section id="documentos" class="card panel documents-panel" aria-labelledby="documents-title">
+        <div class="panel-head"><div><p class="overline">Fontes oficiais</p><h2 id="documents-title">Documentos monitorados</h2></div><span id="documentCount" class="count">—</span></div>
+        <div id="documentList" class="document-list"></div>
+      </section>
+      <footer>Fonte: Dados Abertos CVM e Portal SRE/CVM · Valores sem confirmação oficial permanecem como n.a.</footer>
+    </main>
+  </div>
+
+  <dialog id="details" aria-labelledby="detailName">
+    <div class="dialog-head"><div><p class="overline">Detalhe da oferta</p><h2 id="detailName"></h2><p id="detailMeta"></p></div><button class="icon-button close" type="button" aria-label="Fechar detalhes">×</button></div>
+    <div class="dialog-body">
+      <div id="detailBadges" class="detail-badges"></div>
+      <section class="detail-section"><h3>Volumes</h3><div id="detailVolumes" class="detail-grid"></div></section>
+      <section class="detail-section"><h3>Cronograma</h3><div id="detailTimeline" class="timeline"></div></section>
+      <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
+    </div>
+  </dialog>
+  <script src="./app.js" defer></script>
+</body>
+</html>
