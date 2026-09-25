@@ -27,6 +27,7 @@ function parseDate(value) { return value ? new Date(`${String(value).slice(0, 10
 function dateText(value) { const parsed = parseDate(value); return parsed ? dayFormat.format(parsed) : 'n.a.'; }
 function text(value) { return value || 'Não informado'; }
 function numberValue(value) { return value == null || Number.isNaN(Number(value)) ? null : Number(value); }
+function confirmedVolumeLabel(offer) { return offer.distribution_nature === 'Secundária' ? 'Volume distribuído' : 'Captação confirmada'; }
 function element(tag, className, content) {
   const node = document.createElement(tag);
   if (className) node.className = className;
@@ -246,7 +247,7 @@ function renderDistributorChart() {
     const label = element('div', 'distributor-label');
     label.append(
       element('span', 'coordinator-name', name),
-      element('small', '', `${metrics.offers} ${metrics.offers === 1 ? 'oferta' : 'ofertas'} · Captado nas ofertas: ${metrics.captured ? money.format(metrics.captured) : 'n.a.'} · Rateio: ${confirmed}`),
+      element('small', '', `${metrics.offers} ${metrics.offers === 1 ? 'oferta' : 'ofertas'} · Confirmado nas ofertas: ${metrics.captured ? money.format(metrics.captured) : 'n.a.'} · Rateio: ${confirmed}`),
     );
     const rail = element('div', 'coordinator-rail');
     const fill = element('div', 'coordinator-fill distributor-fill');
@@ -425,7 +426,7 @@ function openDetails(offerId) {
   $('#detailVolumes').replaceChildren(
     detailStat('Volume inicial', offer.initial_volume == null ? 'n.a.' : moneyFull.format(offer.initial_volume)),
     detailStat('Volume máximo', offer.maximum_volume == null ? 'n.a.' : moneyFull.format(offer.maximum_volume)),
-    detailStat('Captação confirmada', offer.captured_volume == null ? 'n.a.' : moneyFull.format(offer.captured_volume)),
+    detailStat(confirmedVolumeLabel(offer), offer.captured_volume == null ? 'n.a.' : moneyFull.format(offer.captured_volume)),
     detailStat('Taxa de colocação', offer.capture_rate == null ? 'n.a.' : percent.format(offer.capture_rate)),
     detailStat('Coordenador líder', text(offer.lead_coordinator)),
     detailStat('Distribuidores identificados', String((offer.distributors || []).length || 'n.a.')),
@@ -502,8 +503,8 @@ function renderAll() {
 }
 
 function exportCsv() {
-  const headers = ['Fundo', 'CNPJ', 'Registro', 'Tipo', 'Status', 'Coordenador líder', 'Distribuidores', 'Volume máximo', 'Volume captado', 'Atualização'];
-  const lines = [headers, ...filteredOffers().map(offer => [offer.fund, offer.cnpj, offer.registration, offer.type, offer.status, offer.lead_coordinator, (offer.distributors || []).map(item => item.name).join(' | '), offer.maximum_volume ?? '', offer.captured_volume ?? '', offer.updated_at])];
+  const headers = ['Fundo', 'CNPJ', 'Registro', 'Tipo', 'Natureza da distribuição', 'Status', 'Coordenador líder', 'Distribuidores', 'Volume máximo', 'Volume confirmado', 'Atualização'];
+  const lines = [headers, ...filteredOffers().map(offer => [offer.fund, offer.cnpj, offer.registration, offer.type, offer.distribution_nature || '', offer.status, offer.lead_coordinator, (offer.distributors || []).map(item => item.name).join(' | '), offer.maximum_volume ?? '', offer.captured_volume ?? '', offer.updated_at])];
   const csv = lines.map(line => line.map(value => `"${String(value ?? '').replaceAll('"', '""')}"`).join(';')).join('\n');
   const link = document.createElement('a');
   link.href = URL.createObjectURL(new Blob([`\ufeff${csv}`], { type: 'text/csv;charset=utf-8' }));

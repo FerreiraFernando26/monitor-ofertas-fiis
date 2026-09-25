@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-25T11:00:38-03:00",
+  "generated_at": "2026-09-25T12:05:38-03:00",
   "reference_date": "2026-09-25",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -14,6 +14,7 @@
       "issue": "2",
       "series": "",
       "type": "Nova emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
       "distributors": [
@@ -109,6 +110,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "HEMERA DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
       "distributors": [
@@ -169,6 +171,7 @@
       "issue": "13",
       "series": "",
       "type": "Nova emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
@@ -207,6 +210,7 @@
       "issue": "6",
       "series": "",
       "type": "Nova emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
@@ -245,6 +249,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
@@ -305,6 +310,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "PLANNER CORRETORA DE VALORES S.A.",
       "distributors": [
@@ -401,6 +407,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "distributors": [
@@ -439,6 +446,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "Secundária",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
@@ -451,8 +459,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 70000009.0,
       "maximum_volume": 70000009.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 56103627.5,
+      "capture_rate": 0.801480289809677,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -463,10 +471,32 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27651",
       "identified_at": "2026-09-25",
       "updated_at": "2026-09-25",
-      "documents": []
+      "documents": [
+        {
+          "id": "CVM160|27651|cbf389b5187cb4e69a8f84263c26dc8cb7007c53422575d2995dff095a535c6f",
+          "type": "Anúncio de Encerramento da Distribuição Secundária",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27651",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Volume distribuído confirmado",
+              "kind": "Efetiva",
+              "date": null
+            },
+            {
+              "name": "Encerramento efetivo",
+              "kind": "Efetiva",
+              "date": "2026-09-24"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "CVM160|28048",
@@ -477,6 +507,7 @@
       "issue": "4",
       "series": "",
       "type": "Nova emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "distributors": [
@@ -515,6 +546,7 @@
       "issue": "3",
       "series": "",
       "type": "Nova emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
       "distributors": [
@@ -553,6 +585,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "distributors": [
@@ -618,6 +651,7 @@
       "issue": "2",
       "series": "",
       "type": "Nova emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "distributors": [
@@ -718,6 +752,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "distributors": [
@@ -783,6 +818,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
       "distributors": [
@@ -821,6 +857,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "GENIAL INSTITUCIONAL CCTVM S.A.",
       "distributors": [
@@ -937,6 +974,7 @@
       "issue": "5",
       "series": "",
       "type": "Nova emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "BR-CAPITAL DTVM S.A.",
       "distributors": [
@@ -1027,6 +1065,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "distributors": [
@@ -1065,6 +1104,7 @@
       "issue": "7",
       "series": "",
       "type": "Nova emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
       "distributors": [
@@ -1166,6 +1206,7 @@
       "issue": "4",
       "series": "",
       "type": "Nova emissão",
+      "distribution_nature": "Primária",
       "rite": "Automático",
       "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "distributors": [
@@ -1176,10 +1217,10 @@
         }
       ],
       "status": "Oferta Encerrada",
-      "initial_volume": 2919600.0,
-      "maximum_volume": 2919600.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "initial_volume": 2905200.0,
+      "maximum_volume": 2905200.0,
+      "captured_volume": 2905200.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -1190,10 +1231,32 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27275",
       "identified_at": "2026-09-25",
       "updated_at": "2026-09-25",
-      "documents": []
+      "documents": [
+        {
+          "id": "CVM160|27275|9ad400a5dae11623013d7c2d72fc6f9cc10672f852b6ecbcd7bf9924b797935f",
+          "type": "Anúncio de Encerramento da Distribuição Primária",
+          "date": "2026-09-23",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27275",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Captação confirmada",
+              "kind": "Efetiva",
+              "date": null
+            },
+            {
+              "name": "Encerramento efetivo",
+              "kind": "Efetiva",
+              "date": "2026-09-23"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "CVM160|28008",
@@ -1204,6 +1267,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
@@ -1264,6 +1328,7 @@
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "distributors": [
@@ -1302,6 +1367,7 @@
       "issue": "4",
       "series": "",
       "type": "Nova emissão",
+      "distribution_nature": "",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [

@@ -36,7 +36,7 @@
       <section class="kpis" aria-label="Indicadores principais">
         <article class="card kpi"><span class="eyebrow">Ofertas monitoradas</span><strong id="kpiOffers" class="value">—</strong><span id="kpiActive" class="metric-note">Carregando</span></article>
         <article class="card kpi"><span class="eyebrow">Volume máximo</span><strong id="kpiMaximum" class="value">—</strong><span class="metric-note">Potencial das emissões</span></article>
-        <article class="card kpi accent"><span class="eyebrow">Captação confirmada</span><strong id="kpiCaptured" class="value">—</strong><span id="kpiCaptureNote" class="metric-note">Aguardando dados</span></article>
+        <article class="card kpi accent"><span class="eyebrow">Volume confirmado</span><strong id="kpiCaptured" class="value">—</strong><span id="kpiCaptureNote" class="metric-note">Aguardando dados</span></article>
         <article class="card kpi"><span class="eyebrow">Taxa de colocação</span><strong id="kpiRate" class="value">—</strong><span class="metric-note">Somente ofertas confirmadas</span></article>
         <article class="card kpi"><span class="eyebrow">Encerrando em 7 dias</span><strong id="kpiClosingWeek" class="value">—</strong><span id="kpiClosingNote" class="metric-note">Conforme cronograma previsto</span></article>
         <article class="card kpi"><span class="eyebrow">Em revisão</span><strong id="kpiReview" class="value">—</strong><span class="metric-note">Validação manual necessária</span></article>
@@ -55,8 +55,8 @@
       </section>
 
       <section class="card panel coordinator-panel" aria-labelledby="coordinator-title">
-        <div class="panel-head"><div><p class="overline">Distribuição confirmada</p><h2 id="coordinator-title">Captação por coordenador líder</h2></div><span id="coordinatorCount" class="count">—</span></div>
-        <div id="coordinatorChart" class="coordinator-chart" role="img" aria-label="Captação confirmada por coordenador líder"></div>
+          <div class="panel-head"><div><p class="overline">Distribuição confirmada</p><h2 id="coordinator-title">Volume confirmado por coordenador líder</h2></div><span id="coordinatorCount" class="count">—</span></div>
+        <div id="coordinatorChart" class="coordinator-chart" role="img" aria-label="Volume confirmado por coordenador líder"></div>
       </section>
 
       <section class="card panel distributor-panel" aria-labelledby="distributor-title">
@@ -104,7 +104,7 @@
         </div>
         <div class="table-scroll">
           <table>
-            <thead><tr><th><button data-sort="fund">Fundo</button></th><th><button data-sort="registration">Registro</button></th><th><button data-sort="type">Tipo</button></th><th><button data-sort="status">Status</button></th><th class="numeric"><button data-sort="maximum_volume">Volume máximo</button></th><th class="numeric"><button data-sort="captured_volume">Captado</button></th><th><button data-sort="updated_at">Atualização</button></th></tr></thead>
+            <thead><tr><th><button data-sort="fund">Fundo</button></th><th><button data-sort="registration">Registro</button></th><th><button data-sort="type">Tipo</button></th><th><button data-sort="status">Status</button></th><th class="numeric"><button data-sort="maximum_volume">Volume máximo</button></th><th class="numeric"><button data-sort="captured_volume">Confirmado</button></th><th><button data-sort="updated_at">Atualização</button></th></tr></thead>
             <tbody id="offerRows"></tbody>
           </table>
         </div>
