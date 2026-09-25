@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-24T18:42:15-03:00",
-  "reference_date": "2026-09-24",
+  "generated_at": "2026-09-25T11:00:38-03:00",
+  "reference_date": "2026-09-25",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
   "offers": [
@@ -161,6 +161,44 @@
       ]
     },
     {
+      "id": "CVM160|28068",
+      "fund": "CAPITÂNIA HBC RENDA URBANA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "34.691.520/0001-00",
+      "ticker": "",
+      "registration": "SRE/3110/2026",
+      "issue": "13",
+      "series": "",
+      "type": "Nova emissão",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 300604235.95,
+      "maximum_volume": 300604235.95,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-25",
+      "updated_at": "2026-09-25",
+      "documents": []
+    },
+    {
       "id": "CVM160|28055",
       "fund": "CAPITÂNIA OFFICE FII - FUNDO DE INVESTIMENTO IMOBILIÁRIO",
       "cnpj": "48.916.699/0001-60",
@@ -194,8 +232,8 @@
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-25",
+      "updated_at": "2026-09-25",
       "documents": []
     },
     {
@@ -388,8 +426,46 @@
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-25",
+      "updated_at": "2026-09-25",
+      "documents": []
+    },
+    {
+      "id": "CVM160|27651",
+      "fund": "EXES FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "41.076.851/0001-03",
+      "ticker": "",
+      "registration": "SRE/2730/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 70000009.0,
+      "maximum_volume": 70000009.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-24",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-25",
+      "updated_at": "2026-09-25",
       "documents": []
     },
     {
@@ -426,8 +502,46 @@
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-25",
+      "updated_at": "2026-09-25",
+      "documents": []
+    },
+    {
+      "id": "CVM160|28030",
+      "fund": "GUARDIAN LIQUIDEZ DI - FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "62.364.712/0001-47",
+      "ticker": "",
+      "registration": "SRE/3098/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "rite": "Automático",
+      "lead_coordinator": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
+      "distributors": [
+        {
+          "name": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 519360000.0,
+      "maximum_volume": 519360000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-25",
+      "updated_at": "2026-09-25",
       "documents": []
     },
     {
@@ -694,8 +808,8 @@
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-25",
+      "updated_at": "2026-09-25",
       "documents": []
     },
     {
@@ -938,8 +1052,8 @@
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-25",
+      "updated_at": "2026-09-25",
       "documents": []
     },
     {
@@ -1077,8 +1191,8 @@
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-25",
+      "updated_at": "2026-09-25",
       "documents": []
     },
     {
@@ -1175,8 +1289,8 @@
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-25",
+      "updated_at": "2026-09-25",
       "documents": []
     },
     {
