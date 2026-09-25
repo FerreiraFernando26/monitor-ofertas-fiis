@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-25T12:05:38-03:00",
+  "generated_at": "2026-09-25T12:23:48-03:00",
   "reference_date": "2026-09-25",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -99,7 +99,48 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": "2026-09-25",
+        "items": [
+          {
+            "id": "BGR-CJ-USUFRUTO-2",
+            "name": "2ª parcela do saldo do preço do usufruto - Edifício Cidade Jardim",
+            "type": "Aquisição imobiliária",
+            "planned_volume": 24000000.0,
+            "stage": "Comprometido",
+            "location": "São Paulo - SP",
+            "sector": "Escritórios",
+            "counterparty": "Valora Renda Imobiliária FII",
+            "financial_terms": "Encargo de 1,3% a.m. desde 08/07/2026 até o pagamento",
+            "deadline": "2026-11-30",
+            "notes": "Pagamento relacionado à aquisição da nua propriedade e do usufruto dos conjuntos 41, 42, 51, 52, 61, 62, 91, 92, 101 e 102.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27998"
+            }
+          },
+          {
+            "id": "BGR-CJ-CUSTOS",
+            "name": "Outros custos e despesas operacionais do fundo",
+            "type": "Despesas operacionais",
+            "planned_volume": null,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto prevê essa destinação para eventuais recursos remanescentes, sem discriminar o valor.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 12,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27998"
+            }
+          }
+        ]
+      }
     },
     {
       "id": "CVM160|27965",
@@ -160,7 +201,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28068",
@@ -199,7 +244,11 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-25",
       "updated_at": "2026-09-25",
-      "documents": []
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28055",
@@ -238,7 +287,11 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-25",
       "updated_at": "2026-09-25",
-      "documents": []
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28007",
@@ -299,7 +352,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|25659",
@@ -396,7 +453,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|27924",
@@ -435,7 +496,11 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-25",
       "updated_at": "2026-09-25",
-      "documents": []
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|27651",
@@ -496,7 +561,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28048",
@@ -535,7 +604,11 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-25",
       "updated_at": "2026-09-25",
-      "documents": []
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28030",
@@ -574,7 +647,11 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-25",
       "updated_at": "2026-09-25",
-      "documents": []
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28020",
@@ -640,7 +717,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28025",
@@ -741,7 +822,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28017",
@@ -807,7 +892,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28000",
@@ -846,7 +935,11 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-25",
       "updated_at": "2026-09-25",
-      "documents": []
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|27671",
@@ -963,7 +1056,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28018",
@@ -1054,7 +1151,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|27937",
@@ -1093,7 +1194,11 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-25",
       "updated_at": "2026-09-25",
-      "documents": []
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|26280",
@@ -1195,7 +1300,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|27275",
@@ -1256,7 +1365,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28008",
@@ -1317,7 +1430,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|27942",
@@ -1356,7 +1473,11 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-25",
       "updated_at": "2026-09-25",
-      "documents": []
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     },
     {
       "id": "CVM160|28003",
@@ -1442,7 +1563,11 @@
             }
           ]
         }
-      ]
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
     }
   ]
 }

@@ -6,7 +6,7 @@
   <meta name="description" content="Painel público de ofertas e emissões de fundos imobiliários acompanhadas a partir de fontes oficiais.">
   <title>Radar FII — Monitor de ofertas</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307121d'/%3E%3Cpath d='M14 44V25l18-11 18 11v19' fill='none' stroke='%233f8cff' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M22 44V31h20v13M10 49h44' fill='none' stroke='%237ee0c3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20260925-1">
+  <link rel="stylesheet" href="./styles.css?v=20260925-2">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -21,6 +21,7 @@
         <a href="#ofertas" aria-label="Ofertas" title="Ofertas"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h14M3 6h.01M3 12h.01M3 18h.01"/></svg><span>Ofertas</span></a>
         <a href="#cronograma" aria-label="Cronograma" title="Cronograma"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2ZM7 2v4M17 2v4M3 9h18M7 13h3M14 13h3M7 17h3"/></svg><span>Cronograma</span></a>
         <a href="#documentos" aria-label="Documentos" title="Documentos"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 12h6M9 16h6"/></svg><span>Documentos</span></a>
+        <a href="#pipeline-alocacao" aria-label="Pipeline de alocação" title="Pipeline de alocação"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6v5H4zM14 14h6v5h-6zM10 7.5h3a3 3 0 0 1 3 3V14M7 10v7h7"/></svg><span>Pipeline de alocação</span></a>
       </nav>
       <div class="sidebar-note"><strong>Painel operacional</strong><span>Dados públicos da CVM com atualização diária.</span></div>
     </aside>
@@ -116,6 +117,33 @@
         <div class="panel-head"><div><p class="overline">Fontes oficiais</p><h2 id="documents-title">Documentos monitorados</h2></div><span id="documentCount" class="count">—</span></div>
         <div id="documentList" class="document-list"></div>
       </section>
+
+      <section id="pipeline-alocacao" class="card panel allocation-panel" aria-labelledby="allocation-title">
+        <div class="panel-head allocation-head">
+          <div><p class="overline">Destino dos recursos</p><h2 id="allocation-title">Pipeline de alocação</h2><p class="panel-description">Projetos, ativos e obrigações identificados em documentos oficiais. Valores não divulgados permanecem como n.a.</p></div>
+          <label class="allocation-selector"><span>Oferta</span><select id="allocationOffer" class="control" aria-label="Selecionar oferta"></select></label>
+        </div>
+        <div class="allocation-kpis" aria-label="Indicadores de alocação">
+          <div><span>Volume máximo</span><strong id="allocationMaximum">—</strong></div>
+          <div><span>Volume confirmado</span><strong id="allocationCaptured">—</strong></div>
+          <div class="allocation-highlight"><span>Destino identificado</span><strong id="allocationIdentified">—</strong></div>
+          <div><span>Já alocado</span><strong id="allocationAllocated">—</strong></div>
+          <div><span>Sem detalhamento</span><strong id="allocationUnidentified">—</strong></div>
+          <div><span>Destinações</span><strong id="allocationItems">—</strong></div>
+        </div>
+        <div class="allocation-progress-wrap">
+          <div class="allocation-progress-head"><div><h3>Cobertura da destinação</h3><span id="allocationCoverageText">—</span></div><span id="allocationUpdated" class="count">—</span></div>
+          <div id="allocationProgress" class="allocation-progress" role="img" aria-label="Parcela do volume máximo com destinação financeira identificada"><span></span></div>
+          <div class="allocation-legend"><span><i class="identified"></i>Volume identificado</span><span><i class="unidentified"></i>Sem detalhamento financeiro</span></div>
+        </div>
+        <div class="allocation-table-scroll">
+          <table class="allocation-table">
+            <thead><tr><th>Destino / operação</th><th>Tipo</th><th class="numeric">Volume previsto</th><th class="numeric">% da oferta</th><th>Condições financeiras</th><th>Etapa</th><th>Prazo</th><th>Fonte</th></tr></thead>
+            <tbody id="allocationRows"></tbody>
+          </table>
+        </div>
+        <div id="allocationEmpty" class="empty" hidden><strong>Destinação ainda não detalhada.</strong><span>Não identificamos informações suficientes nos documentos oficiais disponíveis para esta oferta.</span></div>
+      </section>
       <footer>Fonte: Dados Abertos CVM e Portal SRE/CVM · Valores sem confirmação oficial permanecem como n.a.</footer>
     </main>
   </div>
@@ -130,6 +158,6 @@
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20260925-1" defer></script>
+  <script src="./app.js?v=20260925-2" defer></script>
 </body>
 </html>

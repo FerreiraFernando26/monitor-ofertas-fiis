@@ -411,6 +411,66 @@ function renderDocuments() {
   if (!documents.length) $('#documentList').append(element('div', 'empty', 'Nenhum documento oficial vinculado.'));
 }
 
+function allocationItems(offer) { return offer?.allocation_pipeline?.items || []; }
+function allocationMoney(value) { return numberValue(value) == null ? 'n.a.' : money.format(numberValue(value)); }
+function allocationText(value) { return value && value !== 'n.a.' ? value : 'n.a.'; }
+
+function populateAllocationOffers() {
+  const select = $('#allocationOffer');
+  const current = select.value;
+  const offers = [...state.offers].sort((a, b) => {
+    const dataDifference = Number(allocationItems(b).length > 0) - Number(allocationItems(a).length > 0);
+    return dataDifference || a.fund.localeCompare(b.fund, 'pt-BR');
+  });
+  select.replaceChildren(...offers.map(offer => {
+    const option = element('option', '', `${offer.fund} · ${offer.registration}`);
+    option.value = offer.id;
+    return option;
+  }));
+  if (offers.some(offer => offer.id === current)) select.value = current;
+}
+
+function renderAllocationPipeline() {
+  const offer = state.offers.find(item => item.id === $('#allocationOffer').value) || state.offers.find(item => allocationItems(item).length) || state.offers[0];
+  if (!offer) return;
+  $('#allocationOffer').value = offer.id;
+  const items = allocationItems(offer);
+  const maximum = numberValue(offer.maximum_volume);
+  const identified = items.reduce((sum, item) => sum + (numberValue(item.planned_volume) || 0), 0);
+  const allocated = items.filter(item => item.stage === 'Alocado').reduce((sum, item) => sum + (numberValue(item.planned_volume) || 0), 0);
+  const unidentified = maximum == null ? null : Math.max(0, maximum - identified);
+  const coverage = maximum ? Math.min(1, identified / maximum) : null;
+
+  $('#allocationMaximum').textContent = allocationMoney(maximum);
+  $('#allocationCaptured').textContent = allocationMoney(offer.captured_volume);
+  $('#allocationIdentified').textContent = items.length ? allocationMoney(identified) : 'n.a.';
+  $('#allocationAllocated').textContent = allocated ? allocationMoney(allocated) : 'n.a.';
+  $('#allocationUnidentified').textContent = items.length ? allocationMoney(unidentified) : 'n.a.';
+  $('#allocationItems').textContent = items.length || 'n.a.';
+  $('#allocationCoverageText').textContent = coverage == null || !items.length ? 'n.a.' : `${percent.format(coverage)} do volume máximo com valor identificado`;
+  $('#allocationUpdated').textContent = offer.allocation_pipeline?.updated_at ? `Validado em ${dateText(offer.allocation_pipeline.updated_at)}` : 'Sem validação disponível';
+  $('#allocationProgress').classList.toggle('empty-progress', !items.length || coverage == null);
+  $('#allocationProgress').firstElementChild.style.width = items.length && coverage != null ? `${coverage * 100}%` : '0%';
+
+  $('#allocationRows').replaceChildren(...items.map(item => {
+    const row = element('tr');
+    const destination = element('td', 'allocation-destination');
+    destination.append(element('strong', '', allocationText(item.name)), element('span', '', [allocationText(item.location), allocationText(item.sector)].join(' · ')));
+    const volume = numberValue(item.planned_volume);
+    const share = volume != null && maximum ? volume / maximum : null;
+    const stageCell = element('td'); stageCell.append(element('span', `allocation-stage ${String(item.stage || '').toLocaleLowerCase('pt-BR').replaceAll(' ', '-')}`, allocationText(item.stage)));
+    const sourceCell = element('td');
+    if (item.source?.official_url) {
+      const source = element('a', '', `${allocationText(item.source.document)}${item.source.page ? ` · pág. ${item.source.page}` : ''}`);
+      source.href = item.source.official_url; source.target = '_blank'; source.rel = 'noopener noreferrer'; sourceCell.append(source);
+    } else sourceCell.textContent = 'n.a.';
+    row.append(destination, element('td', '', allocationText(item.type)), element('td', 'numeric', allocationMoney(volume)), element('td', 'numeric', share == null ? 'n.a.' : percent.format(share)), element('td', 'allocation-terms', allocationText(item.financial_terms)), stageCell, element('td', '', dateText(item.deadline)), sourceCell);
+    return row;
+  }));
+  $('#allocationEmpty').hidden = items.length > 0;
+  $('.allocation-table-scroll').hidden = items.length === 0;
+}
+
 function detailStat(label, value) {
   const item = element('div', 'detail-stat');
   item.append(element('small', '', label), element('strong', '', value));
@@ -499,6 +559,8 @@ function renderAll() {
   renderDistributorChart();
   renderSchedule();
   renderDocuments();
+  populateAllocationOffers();
+  renderAllocationPipeline();
   renderTable();
 }
 
@@ -574,6 +636,7 @@ $$('[data-schedule-filter]').forEach(button => button.addEventListener('click', 
   renderSchedule();
 }));
 $('#scheduleWindow').addEventListener('change', renderSchedule);
+$('#allocationOffer').addEventListener('change', renderAllocationPipeline);
 $('.close').addEventListener('click', () => $('#details').close());
 $('#details').addEventListener('click', event => { if (event.target === $('#details')) $('#details').close(); });
 $('#export').addEventListener('click', exportCsv);
