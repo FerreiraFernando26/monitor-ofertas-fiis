@@ -36,7 +36,7 @@ function element(tag, className, content) {
   return node;
 }
 function badge(status, review = false) {
-  const node = element('span', `badge ${review ? 'badge-review' : status === 'Oferta Encerrada' ? 'badge-closed' : 'badge-active'}`, review ? 'Revisão necessária' : text(status));
+  const node = element('span', `badge ${review ? 'badge-review' : ['Oferta Encerrada', 'Oferta Revogada'].includes(status) ? 'badge-closed' : 'badge-active'}`, review ? 'Revisão necessária' : text(status));
   return node;
 }
 function relevantDate(offer) {
@@ -156,7 +156,7 @@ function renderTable() {
 }
 
 function renderKpis() {
-  const active = state.offers.filter(offer => offer.status !== 'Oferta Encerrada').length;
+  const active = state.offers.filter(offer => !isClosedOffer(offer)).length;
   const maximum = state.offers.reduce((sum, offer) => sum + (numberValue(offer.maximum_volume) || 0), 0);
   const confirmed = state.offers.filter(offer => numberValue(offer.captured_volume) != null);
   const captured = confirmed.reduce((sum, offer) => sum + numberValue(offer.captured_volume), 0);
@@ -165,7 +165,7 @@ function renderKpis() {
   const reference = parseDate(state.referenceDate);
   const weekLimit = reference ? new Date(reference.getTime() + 7 * 86400000) : null;
   const closingThisWeek = state.offers.filter(offer => {
-    if (offer.status === 'Oferta Encerrada') return false;
+    if (isClosedOffer(offer)) return false;
     const closing = parseDate(offer.timeline?.closing_planned);
     return reference && weekLimit && closing && closing >= reference && closing <= weekLimit;
   });
@@ -333,7 +333,7 @@ function pendingMilestones(offer) {
 
 function offerScheduleSummary(offer) {
   const events = scheduleEventsForOffer(offer);
-  const closed = offer.status === 'Oferta Encerrada';
+  const closed = isClosedOffer(offer);
   const next = closed ? null : events.find(item => !item.actual && daysFromReference(item.date) >= 0) || null;
   const pending = pendingMilestones(offer);
   let status = closed ? 'completed' : pending.length ? 'past' : next && daysFromReference(next.date) <= 7 ? 'next' : next ? 'upcoming' : 'missing';
@@ -383,7 +383,7 @@ function renderScheduleTable() {
 function renderUpcomingEvents() {
   const windowValue = $('#scheduleWindow').value;
   const days = windowValue === 'all' ? Number.POSITIVE_INFINITY : Number(windowValue);
-  const items = allScheduleEvents().filter(item => item.offer.status !== 'Oferta Encerrada' && !item.actual && daysFromReference(item.date) >= 0 && daysFromReference(item.date) <= days).slice(0, 10);
+  const items = allScheduleEvents().filter(item => !isClosedOffer(item.offer) && !item.actual && daysFromReference(item.date) >= 0 && daysFromReference(item.date) <= days).slice(0, 10);
   $('#upcomingCount').textContent = `${items.length} exibidos`;
   $('#upcomingList').replaceChildren(...items.map(item => {
     const wrapper = element('button', 'agenda-item'); wrapper.type = 'button'; wrapper.dataset.id = item.offer.id;
@@ -412,7 +412,7 @@ function renderSchedule() {
   const events = allScheduleEvents();
   const summaries = state.offers.map(offerScheduleSummary);
   $('#scheduleTotal').textContent = events.length;
-  $('#scheduleNextWeek').textContent = events.filter(item => item.offer.status !== 'Oferta Encerrada' && !item.actual && daysFromReference(item.date) >= 0 && daysFromReference(item.date) <= 7).length;
+  $('#scheduleNextWeek').textContent = events.filter(item => !isClosedOffer(item.offer) && !item.actual && daysFromReference(item.date) >= 0 && daysFromReference(item.date) <= 7).length;
   $('#schedulePast').textContent = summaries.filter(item => item.status === 'past').length;
   $('#scheduleMissing').textContent = summaries.filter(item => item.status === 'missing').length;
   const labels = { all: 'Todas as ofertas', next: 'Próximos 7 dias', past: 'Prazos passados', missing: 'Sem próxima data' };
