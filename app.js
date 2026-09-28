@@ -9,7 +9,7 @@ const percent = new Intl.NumberFormat('pt-BR', { style: 'percent', maximumFracti
 const dayFormat = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'America/Sao_Paulo' });
 const dateTimeFormat = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Sao_Paulo' });
 const monthFormat = new Intl.DateTimeFormat('pt-BR', { month: 'short', timeZone: 'America/Sao_Paulo' });
-const controls = ['#search', '#statusFilter', '#fundFilter', '#typeFilter', '#coordinatorFilter', '#distributorFilter', '#riteFilter', '#periodFilter'].map($);
+const controls = ['#search', '#statusFilter', '#fundFilter', '#typeFilter', '#coordinatorFilter', '#distributorFilter', '#environmentFilter', '#riteFilter', '#periodFilter'].map($);
 const timelineLabels = {
   start_planned: 'Início previsto', start_actual: 'Início efetivo', reservation_end_planned: 'Fim da reserva',
   closing_planned: 'Encerramento previsto', closing_actual: 'Encerramento efetivo',
@@ -74,6 +74,7 @@ function populateFilters() {
   setOptions('#typeFilter', state.offers.map(offer => offer.type));
   setOptions('#coordinatorFilter', state.offers.map(offer => offer.lead_coordinator));
   setOptions('#distributorFilter', state.offers.flatMap(offer => (offer.distributors || []).map(item => item.name)));
+  setOptions('#environmentFilter', state.offers.map(offer => offer.trading_environment || 'n.a.'));
   setOptions('#riteFilter', state.offers.map(offer => offer.rite));
 }
 
@@ -81,7 +82,7 @@ function filteredOffers() {
   const query = $('#search').value.trim().toLocaleLowerCase('pt-BR');
   const exact = {
     status: $('#statusFilter').value, fund: $('#fundFilter').value, type: $('#typeFilter').value,
-    lead_coordinator: $('#coordinatorFilter').value, rite: $('#riteFilter').value,
+    lead_coordinator: $('#coordinatorFilter').value, trading_environment: $('#environmentFilter').value, rite: $('#riteFilter').value,
   };
   const periodDays = Number($('#periodFilter').value || 0);
   const reference = parseDate(state.referenceDate);
@@ -115,7 +116,7 @@ function renderTable() {
     row.setAttribute('aria-label', `Abrir detalhes de ${offer.fund}`);
     const fund = element('td', 'fund', offer.fund);
     fund.append(element('span', 'subcell', offer.ticker || offer.cnpj));
-    row.append(fund, element('td', '', offer.registration), element('td', '', offer.type));
+    row.append(fund, element('td', '', offer.registration), element('td', '', offer.type), element('td', '', offer.trading_environment || 'n.a.'));
     const statusCell = element('td');
     statusCell.append(badge(offer.status, offer.review_required));
     row.append(statusCell);
@@ -565,8 +566,8 @@ function renderAll() {
 }
 
 function exportCsv() {
-  const headers = ['Fundo', 'CNPJ', 'Registro', 'Tipo', 'Natureza da distribuição', 'Status', 'Coordenador líder', 'Distribuidores', 'Volume máximo', 'Volume confirmado', 'Atualização'];
-  const lines = [headers, ...filteredOffers().map(offer => [offer.fund, offer.cnpj, offer.registration, offer.type, offer.distribution_nature || '', offer.status, offer.lead_coordinator, (offer.distributors || []).map(item => item.name).join(' | '), offer.maximum_volume ?? '', offer.captured_volume ?? '', offer.updated_at])];
+  const headers = ['Fundo', 'CNPJ', 'Registro', 'Tipo', 'Ambiente de negociação', 'Natureza da distribuição', 'Status', 'Coordenador líder', 'Distribuidores', 'Volume máximo', 'Volume confirmado', 'Atualização'];
+  const lines = [headers, ...filteredOffers().map(offer => [offer.fund, offer.cnpj, offer.registration, offer.type, offer.trading_environment || 'n.a.', offer.distribution_nature || '', offer.status, offer.lead_coordinator, (offer.distributors || []).map(item => item.name).join(' | '), offer.maximum_volume ?? '', offer.captured_volume ?? '', offer.updated_at])];
   const csv = lines.map(line => line.map(value => `"${String(value ?? '').replaceAll('"', '""')}"`).join(';')).join('\n');
   const link = document.createElement('a');
   link.href = URL.createObjectURL(new Blob([`\ufeff${csv}`], { type: 'text/csv;charset=utf-8' }));

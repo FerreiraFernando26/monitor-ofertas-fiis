@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-28T15:15:17-03:00",
+  "generated_at": "2026-09-28T15:33:21-03:00",
   "reference_date": "2026-09-28",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -15,6 +15,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
@@ -115,6 +116,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
@@ -210,6 +212,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "distributors": [
@@ -275,6 +278,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "Secundária",
+      "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
@@ -401,6 +405,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "distributors": [
@@ -471,6 +476,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
       "distributors": [
@@ -541,6 +547,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
       "distributors": [
@@ -611,6 +618,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "distributors": [
@@ -654,6 +662,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "Primária",
+      "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "distributors": [
@@ -770,6 +779,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "distributors": [
@@ -813,6 +823,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
+      "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
       "distributors": [
@@ -960,6 +971,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "HEMERA DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
       "distributors": [
@@ -1025,6 +1037,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
@@ -1090,6 +1103,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "PLANNER CORRETORA DE VALORES S.A.",
       "distributors": [
@@ -1191,6 +1205,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "distributors": [
@@ -1261,6 +1276,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "distributors": [
@@ -1371,6 +1387,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "distributors": [
@@ -1441,6 +1458,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "GENIAL INSTITUCIONAL CCTVM S.A.",
       "distributors": [
@@ -1562,6 +1580,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BR-CAPITAL DTVM S.A.",
       "distributors": [
@@ -1657,6 +1676,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
       "distributors": [
@@ -1768,6 +1788,7 @@
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
+      "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
@@ -1833,6 +1854,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [

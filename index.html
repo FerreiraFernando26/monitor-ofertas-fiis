@@ -6,7 +6,7 @@
   <meta name="description" content="Painel público de ofertas e emissões de fundos imobiliários acompanhadas a partir de fontes oficiais.">
   <title>Radar FII — Monitor de ofertas</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307121d'/%3E%3Cpath d='M14 44V25l18-11 18 11v19' fill='none' stroke='%233f8cff' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M22 44V31h20v13M10 49h44' fill='none' stroke='%237ee0c3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20260925-2">
+  <link rel="stylesheet" href="./styles.css?v=20260928-1">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -99,13 +99,14 @@
             <label><span>Tipo</span><select id="typeFilter" class="control"><option value="">Todos</option></select></label>
             <label><span>Coordenador</span><select id="coordinatorFilter" class="control"><option value="">Todos</option></select></label>
             <label><span>Distribuidor</span><select id="distributorFilter" class="control"><option value="">Todos</option></select></label>
+            <label><span>Ambiente de negociação</span><select id="environmentFilter" class="control"><option value="">Todos</option></select></label>
             <label><span>Rito</span><select id="riteFilter" class="control"><option value="">Todos</option></select></label>
             <label><span>Período</span><select id="periodFilter" class="control"><option value="">Todo o período</option><option value="30">Últimos 30 dias</option><option value="90">Últimos 90 dias</option><option value="180">Últimos 180 dias</option></select></label>
           </div>
         </div>
         <div class="table-scroll">
           <table>
-            <thead><tr><th><button data-sort="fund">Fundo</button></th><th><button data-sort="registration">Registro</button></th><th><button data-sort="type">Tipo</button></th><th><button data-sort="status">Status</button></th><th class="numeric"><button data-sort="maximum_volume">Volume máximo</button></th><th class="numeric"><button data-sort="captured_volume">Confirmado</button></th><th><button data-sort="updated_at">Atualização</button></th></tr></thead>
+            <thead><tr><th><button data-sort="fund">Fundo</button></th><th><button data-sort="registration">Registro</button></th><th><button data-sort="type">Tipo</button></th><th><button data-sort="trading_environment">Ambiente</button></th><th><button data-sort="status">Status</button></th><th class="numeric"><button data-sort="maximum_volume">Volume máximo</button></th><th class="numeric"><button data-sort="captured_volume">Confirmado</button></th><th><button data-sort="updated_at">Atualização</button></th></tr></thead>
             <tbody id="offerRows"></tbody>
           </table>
         </div>
@@ -158,6 +159,6 @@
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20260925-2" defer></script>
+  <script src="./app.js?v=20260928-1" defer></script>
 </body>
 </html>

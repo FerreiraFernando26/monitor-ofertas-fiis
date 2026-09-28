@@ -169,7 +169,7 @@ h3 { margin-bottom: 14px; font-size: .92rem; }
 .search-field { align-self: end; }
 .control { width: 100%; min-height: 41px; padding: 0 11px; border: 1px solid #294457; border-radius: 9px; background: #071620; color: var(--text); }
 .table-scroll { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; min-width: 1050px; }
+table { width: 100%; border-collapse: collapse; min-width: 1180px; }
 th, td { padding: 13px 15px; border-bottom: 1px solid var(--line-soft); text-align: left; font-size: .78rem; white-space: nowrap; }
 th { background: #081823; }
 th button { padding: 0; border: 0; background: transparent; color: #8ba5b8; font-size: .67rem; font-weight: 750; letter-spacing: .05em; text-transform: uppercase; cursor: pointer; }
