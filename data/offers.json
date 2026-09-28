@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-28T16:47:51-03:00",
+  "generated_at": "2026-09-28T17:28:20-03:00",
   "reference_date": "2026-09-28",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -332,7 +332,7 @@
         }
       ],
       "allocation_pipeline": {
-        "updated_at": "2026-09-25",
+        "updated_at": "2026-09-28",
         "items": [
           {
             "id": "BGR-CJ-USUFRUTO-2",
@@ -1006,8 +1006,27 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "CL-CB-LOGISTICO",
+            "name": "Condomínio logístico de 34 galpões",
+            "type": "Desenvolvimento logístico",
+            "planned_volume": null,
+            "stage": "Indicativo",
+            "location": "Barueri - SP",
+            "sector": "Logística",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "Recursos destinados à construção e ao desenvolvimento de condomínio logístico de alto padrão; aquisição ainda indicativa.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27723"
+            }
+          }
+        ]
       }
     },
     {
@@ -1306,8 +1325,207 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "D108-CRI-01",
+            "name": "Operação 1",
+            "type": "CRI",
+            "planned_volume": 25000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 3,30% a.a.; prazo médio 1,3 ano; razão de garantia 120%",
+            "deadline": null,
+            "notes": "Aval e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          },
+          {
+            "id": "D108-CRI-02",
+            "name": "Operação 2",
+            "type": "CRI",
+            "planned_volume": 30000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 2,30% a.a.; prazo médio 2,9 anos; razão de garantia 150%",
+            "deadline": null,
+            "notes": "Aval, alienação fiduciária de quotas e de imóvel e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          },
+          {
+            "id": "D108-CRI-03",
+            "name": "Operação 3",
+            "type": "CRI",
+            "planned_volume": 15000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,00% a.a.; prazo médio 3,6 anos; razão de garantia 200%",
+            "deadline": null,
+            "notes": "Aval, alienação fiduciária de quotas e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          },
+          {
+            "id": "D108-CRI-04",
+            "name": "Operação 4",
+            "type": "CRI",
+            "planned_volume": 25000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "IPCA + 11,30% a.a.; prazo médio 3,5 anos; razão de garantia 160%",
+            "deadline": null,
+            "notes": "Aval, alienação fiduciária de quotas e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          },
+          {
+            "id": "D108-CRI-05",
+            "name": "Operação 5",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "IPCA + 11,25% a.a.; prazo médio 4,3 anos; razão de garantia 160%",
+            "deadline": null,
+            "notes": "Aval, alienação fiduciária de quotas e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          },
+          {
+            "id": "D108-CRI-06",
+            "name": "Operação 6",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,25% a.a.; prazo médio 3,3 anos; razão de garantia 140%",
+            "deadline": null,
+            "notes": "Aval, alienação fiduciária de quotas e imóvel e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          },
+          {
+            "id": "D108-CRI-07",
+            "name": "Operação 7",
+            "type": "CRI",
+            "planned_volume": 8000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "IPCA + 12,00% a.a.; prazo médio 2,0 anos; razão de garantia 160%",
+            "deadline": null,
+            "notes": "Aval, alienação fiduciária de quotas e imóvel e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          },
+          {
+            "id": "D108-CRI-08",
+            "name": "Operação 8",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,50% a.a.; prazo médio 2,0 anos; razão de garantia 200%",
+            "deadline": null,
+            "notes": "Aval, alienação fiduciária de quotas e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          },
+          {
+            "id": "D108-CRI-09",
+            "name": "Operação 9",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,50% a.a.; prazo médio 1,8 ano; razão de garantia 140%",
+            "deadline": null,
+            "notes": "Aval, alienação fiduciária de quotas e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          },
+          {
+            "id": "D108-CRI-10",
+            "name": "Operação 10",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,75% a.a.; prazo médio 1,7 ano; razão de garantia 160%",
+            "deadline": null,
+            "notes": "Aval, alienação fiduciária de quotas e imóvel e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          },
+          {
+            "id": "D108-CRI-11",
+            "name": "Operação 11",
+            "type": "CRI",
+            "planned_volume": 30000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 3,90% a.a.; prazo médio 3,8 anos; razão de garantia 160%",
+            "deadline": null,
+            "notes": "Aval, alienação fiduciária de quotas e imóvel e cessão fiduciária de recebíveis",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+            }
+          }
+        ]
       }
     },
     {
@@ -1565,8 +1783,27 @@
         }
       ],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "EXES-SECUNDARIA",
+            "name": "Pagamento ao ofertante da distribuição secundária",
+            "type": "Oferta secundária",
+            "planned_volume": null,
+            "stage": "Concluído",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "Recursos líquidos pagos diretamente ao ofertante; sem aporte de recursos no FII",
+            "deadline": null,
+            "notes": "A oferta é secundária; os recursos não integram o patrimônio do fundo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 8,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27651"
+            }
+          }
+        ]
       }
     },
     {
@@ -1609,8 +1846,27 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "RIZA-MALLS-FEEDER",
+            "name": "Cotas do FII Riza Malls Feeder",
+            "type": "FII feeder / shopping centers",
+            "planned_volume": null,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Shopping centers",
+            "counterparty": "n.a.",
+            "financial_terms": "Mínimo de 95% do PL da classe; feeder aplica mínimo de 95% no FII Master",
+            "deadline": null,
+            "notes": "Exposição indireta a nove shoppings: Grand Plaza, Tietê Plaza, Metropolitano Barra, Ponta Negra, Partage Santana, Caxias Shopping, Downtown, Campinas Shopping e Bela Vista.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26546"
+            }
+          }
+        ]
       }
     },
     {
@@ -1998,8 +2254,207 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "HEDGE-OPERACAO-01",
+            "name": "Operação 1",
+            "type": "CRI",
+            "planned_volume": 5602412.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 3,50% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          },
+          {
+            "id": "HEDGE-OPERACAO-02",
+            "name": "Operação 2",
+            "type": "CRI",
+            "planned_volume": 5578890.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 3,40% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          },
+          {
+            "id": "HEDGE-OPERACAO-03",
+            "name": "Operação 3",
+            "type": "CRI",
+            "planned_volume": 5649300.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Corporativo",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 3,40% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          },
+          {
+            "id": "HEDGE-OPERACAO-04",
+            "name": "Operação 4",
+            "type": "CRI",
+            "planned_volume": 5610321.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Corporativo",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 3,40% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          },
+          {
+            "id": "HEDGE-OPERACAO-05",
+            "name": "Operação 5",
+            "type": "CRI",
+            "planned_volume": 5610321.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Corporativo",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 3,40% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          },
+          {
+            "id": "HEDGE-OPERACAO-06",
+            "name": "Operação 6",
+            "type": "CRI",
+            "planned_volume": 5600000.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Corporativo",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 3,00% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          },
+          {
+            "id": "HEDGE-OPERACAO-07",
+            "name": "Operação 7",
+            "type": "CRI",
+            "planned_volume": 5669570.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Corporativo",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 2,00% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          },
+          {
+            "id": "HEDGE-OPERACAO-08",
+            "name": "Operação 8",
+            "type": "CRI",
+            "planned_volume": 5315929.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Shopping",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 2,40% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          },
+          {
+            "id": "HEDGE-OPERACAO-09",
+            "name": "Operação 9",
+            "type": "CRI",
+            "planned_volume": 5315929.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Shopping",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 2,40% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          },
+          {
+            "id": "HEDGE-OPERACAO-10",
+            "name": "Operação 10",
+            "type": "CRI",
+            "planned_volume": 5454234.0,
+            "stage": "Indicativo",
+            "location": "Barueri - SP",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 3,87% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          },
+          {
+            "id": "HEDGE-OPERACAO-11",
+            "name": "Operação 11",
+            "type": "FII",
+            "planned_volume": 6281127.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,00% a.a.",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+            }
+          }
+        ]
       }
     },
     {
@@ -2086,8 +2541,279 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "HSI-CRI-01",
+            "name": "Residencial média renda",
+            "type": "CRI",
+            "planned_volume": 45000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial média renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,00% a.a.; prazo 48 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-02",
+            "name": "Residencial média renda",
+            "type": "CRI",
+            "planned_volume": 41000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial média renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,50% a.a.; prazo 48 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-03",
+            "name": "Residencial média/baixa renda",
+            "type": "CRI",
+            "planned_volume": 40000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial média/baixa renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,00% a.a.; prazo 48 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-04",
+            "name": "Residencial média renda",
+            "type": "CRI",
+            "planned_volume": 30000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial média renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,50% a.a.; prazo 60 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-05",
+            "name": "Residencial média/alta renda",
+            "type": "CRI",
+            "planned_volume": 30000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial média/alta renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,00% a.a.; prazo 48 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-06",
+            "name": "Shopping - DF",
+            "type": "CRI",
+            "planned_volume": 30000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Shopping",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,00% a.a.; prazo 120 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-07",
+            "name": "Residencial média/baixa renda",
+            "type": "CRI",
+            "planned_volume": 25000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial média/baixa renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,00% a.a.; prazo 60 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-08",
+            "name": "Residencial média/alta renda",
+            "type": "CRI",
+            "planned_volume": 25000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial média/alta renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,00% a.a.; prazo 60 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-09",
+            "name": "Loteamento pulverizado",
+            "type": "CRI",
+            "planned_volume": 24000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Loteamento pulverizado",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 96 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-10",
+            "name": "Residencial alta renda",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial alta renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,00% a.a.; prazo 48 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-11",
+            "name": "Mezanino Home Equity I",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Mezanino Home Equity I",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,00% a.a.; prazo 120 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-12",
+            "name": "Mezanino Home Equity II",
+            "type": "CRI",
+            "planned_volume": 15000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Mezanino Home Equity II",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,00% a.a.; prazo 120 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-13",
+            "name": "Shopping - SP",
+            "type": "CRI",
+            "planned_volume": 15000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Shopping",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,50% a.a.; prazo 110 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-14",
+            "name": "Residencial média/alta renda",
+            "type": "CRI",
+            "planned_volume": 10000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial média/alta renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 48 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          },
+          {
+            "id": "HSI-CRI-15",
+            "name": "Residencial alta renda",
+            "type": "CRI",
+            "planned_volume": 10000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial alta renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,00% a.a.; prazo 24 meses",
+            "deadline": null,
+            "notes": "Operação integrante do pipeline indicativo do prospecto.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+            }
+          }
+        ]
       }
     },
     {
@@ -2130,8 +2856,27 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "INVISTA-IBBP11",
+            "name": "Cotas do Invista Brazilian Business Park FII (IBBP11)",
+            "type": "Cotas de FII",
+            "planned_volume": null,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Imóveis comerciais",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "Destinação preponderante; eventual saldo pode ser aplicado em outros FIIs e ativos elegíveis da política de investimento.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 11,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27307"
+            }
+          }
+        ]
       }
     },
     {
@@ -2218,8 +2963,189 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "ITAU-CRI-01",
+            "name": "Laje Corporativa 1",
+            "type": "CRI / crédito imobiliário",
+            "planned_volume": 30000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Laje Corporativa",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto identifica o setor e o volume da oportunidade, mas não nomeia o devedor ou o ativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+            }
+          },
+          {
+            "id": "ITAU-CRI-02",
+            "name": "Laje Corporativa 2",
+            "type": "CRI / crédito imobiliário",
+            "planned_volume": 60000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Laje Corporativa",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto identifica o setor e o volume da oportunidade, mas não nomeia o devedor ou o ativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+            }
+          },
+          {
+            "id": "ITAU-CRI-03",
+            "name": "Carteira Pulverizada",
+            "type": "CRI / crédito imobiliário",
+            "planned_volume": 60000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Carteira Pulverizada",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto identifica o setor e o volume da oportunidade, mas não nomeia o devedor ou o ativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+            }
+          },
+          {
+            "id": "ITAU-CRI-04",
+            "name": "Shopping",
+            "type": "CRI / crédito imobiliário",
+            "planned_volume": 60000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Shopping",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto identifica o setor e o volume da oportunidade, mas não nomeia o devedor ou o ativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+            }
+          },
+          {
+            "id": "ITAU-CRI-05",
+            "name": "Galpões Logísticos",
+            "type": "CRI / crédito imobiliário",
+            "planned_volume": 60000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Galpões Logísticos",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto identifica o setor e o volume da oportunidade, mas não nomeia o devedor ou o ativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+            }
+          },
+          {
+            "id": "ITAU-CRI-06",
+            "name": "Residencial 1",
+            "type": "CRI / crédito imobiliário",
+            "planned_volume": 40000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto identifica o setor e o volume da oportunidade, mas não nomeia o devedor ou o ativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+            }
+          },
+          {
+            "id": "ITAU-CRI-07",
+            "name": "Residencial 2",
+            "type": "CRI / crédito imobiliário",
+            "planned_volume": 45000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto identifica o setor e o volume da oportunidade, mas não nomeia o devedor ou o ativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+            }
+          },
+          {
+            "id": "ITAU-CRI-08",
+            "name": "Residencial 3",
+            "type": "CRI / crédito imobiliário",
+            "planned_volume": 60000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto identifica o setor e o volume da oportunidade, mas não nomeia o devedor ou o ativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+            }
+          },
+          {
+            "id": "ITAU-CRI-09",
+            "name": "Residencial 4",
+            "type": "CRI / crédito imobiliário",
+            "planned_volume": 50000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto identifica o setor e o volume da oportunidade, mas não nomeia o devedor ou o ativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+            }
+          },
+          {
+            "id": "ITAU-CRI-10",
+            "name": "Varejo",
+            "type": "CRI / crédito imobiliário",
+            "planned_volume": 35000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "Varejo",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto identifica o setor e o volume da oportunidade, mas não nomeia o devedor ou o ativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+            }
+          }
+        ]
       }
     },
     {
@@ -2306,8 +3232,45 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "JSAFRA-GRU",
+            "name": "Galpão Guarulhos",
+            "type": "Condomínio logístico",
+            "planned_volume": null,
+            "stage": "Indicativo",
+            "location": "Guarulhos - SP",
+            "sector": "Logística",
+            "counterparty": "n.a.",
+            "financial_terms": "Aquisição pretendida de 100%; ABL aproximada de 58 mil m²; 15 a 20 inquilinos",
+            "deadline": null,
+            "notes": "Primeira prioridade em caso de recursos insuficientes; negociação sem compromisso vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27983"
+            }
+          },
+          {
+            "id": "JSAFRA-IMIGRANTES",
+            "name": "Galpão Imigrantes",
+            "type": "Condomínio logístico",
+            "planned_volume": null,
+            "stage": "Indicativo",
+            "location": "São Bernardo do Campo - SP",
+            "sector": "Logística",
+            "counterparty": "n.a.",
+            "financial_terms": "Aquisição pretendida de 100%; ABL aproximada de 135 mil m²; 3 a 6 inquilinos",
+            "deadline": null,
+            "notes": "Segunda prioridade em caso de recursos insuficientes; negociação sem compromisso vinculante. RMG agregada em negociação de até R$ 50 milhões para os dois ativos.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27983"
+            }
+          }
+        ]
       }
     },
     {
@@ -2549,8 +3512,27 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "KINEA-ATIVOS",
+            "name": "Ativos previstos na política de investimento",
+            "type": "Crédito imobiliário e ativos de liquidez",
+            "planned_volume": null,
+            "stage": "Política de investimento",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto destina 100% dos recursos a ativos elegíveis e encargos, sem identificar operações ou valores específicos.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27741"
+            }
+          }
+        ]
       }
     },
     {
@@ -2637,8 +3619,297 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "LCP-PROJETO-01",
+            "name": "Projeto 1",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 18800000.0,
+            "stage": "Indicativo",
+            "location": "GO",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "True Sale · IPCA + 12,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-02",
+            "name": "Projeto 2",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 19600000.0,
+            "stage": "Indicativo",
+            "location": "MT",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "True Sale · IPCA + 12,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-03",
+            "name": "Projeto 3",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 18500000.0,
+            "stage": "Indicativo",
+            "location": "GO",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "True Sale · IPCA + 12,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-04",
+            "name": "Projeto 4",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 11200000.0,
+            "stage": "Indicativo",
+            "location": "PR",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 3,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-05",
+            "name": "Projeto 5",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 11200000.0,
+            "stage": "Indicativo",
+            "location": "SP",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 3,5% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-06",
+            "name": "Projeto 6",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 11300000.0,
+            "stage": "Indicativo",
+            "location": "SC / SP / PR",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 4,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-07",
+            "name": "Projeto 7",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 11400000.0,
+            "stage": "Indicativo",
+            "location": "PR",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 3,5% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-08",
+            "name": "Projeto 8",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 11200000.0,
+            "stage": "Indicativo",
+            "location": "PR",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 3,5% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-09",
+            "name": "Projeto 9",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 11200000.0,
+            "stage": "Indicativo",
+            "location": "SC",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 5,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-10",
+            "name": "Projeto 10",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 11300000.0,
+            "stage": "Indicativo",
+            "location": "SC",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 4,5% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-11",
+            "name": "Projeto 11",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 11000000.0,
+            "stage": "Indicativo",
+            "location": "PR",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 4,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-12",
+            "name": "Projeto 12",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 10900000.0,
+            "stage": "Indicativo",
+            "location": "RS",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 4,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-13",
+            "name": "Projeto 13",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 10500000.0,
+            "stage": "Indicativo",
+            "location": "RS",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 4,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-14",
+            "name": "Projeto 14",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 11100000.0,
+            "stage": "Indicativo",
+            "location": "SC",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 4,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-PROJETO-15",
+            "name": "Projeto 15",
+            "type": "Pipeline do FII Master",
+            "planned_volume": 10800000.0,
+            "stage": "Indicativo",
+            "location": "SP",
+            "sector": "Imobiliário",
+            "counterparty": "n.a.",
+            "financial_terms": "CRI · CDI + 3,0% a.a.",
+            "deadline": null,
+            "notes": "Exposição indireta: os recursos do feeder são destinados integralmente ao FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          },
+          {
+            "id": "LCP-CAIXA",
+            "name": "Caixa do FII Master",
+            "type": "Liquidez",
+            "planned_volume": 10000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "Reserva de caixa",
+            "deadline": null,
+            "notes": "Exposição indireta por meio do FII Master.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+            }
+          }
+        ]
       }
     },
     {
@@ -2867,8 +4138,189 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "MAUA-ATIVO-01",
+            "name": "Residencial permuta",
+            "type": "Ativo de crédito",
+            "planned_volume": 30000000.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 3,3% a.a.; LTV 40%; a performar",
+            "deadline": null,
+            "notes": "Ativo integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+            }
+          },
+          {
+            "id": "MAUA-ATIVO-02",
+            "name": "Residencial pulverizado",
+            "type": "Ativo de crédito",
+            "planned_volume": 40000000.0,
+            "stage": "Indicativo",
+            "location": "Diversas",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 2,8% a.a.; LTV 70%; performado",
+            "deadline": null,
+            "notes": "Ativo integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+            }
+          },
+          {
+            "id": "MAUA-ATIVO-03",
+            "name": "Residencial venda",
+            "type": "Ativo de crédito",
+            "planned_volume": 50000000.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP (Zona Sul)",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,4% a.a.; LTV 60%; performado",
+            "deadline": null,
+            "notes": "Ativo integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+            }
+          },
+          {
+            "id": "MAUA-ATIVO-04",
+            "name": "Renda urbana",
+            "type": "Ativo de crédito",
+            "planned_volume": 70000000.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP",
+            "sector": "Renda",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,4% a.a.; LTV 30%; performado",
+            "deadline": null,
+            "notes": "Ativo integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+            }
+          },
+          {
+            "id": "MAUA-ATIVO-05",
+            "name": "Residencial renda",
+            "type": "Ativo de crédito",
+            "planned_volume": 70000000.0,
+            "stage": "Indicativo",
+            "location": "Rio Claro - SP",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 2,2% a.a.; LTV 40%; performado",
+            "deadline": null,
+            "notes": "Ativo integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+            }
+          },
+          {
+            "id": "MAUA-ATIVO-06",
+            "name": "Lajes corporativas renda",
+            "type": "Ativo de crédito",
+            "planned_volume": 30000000.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP (diversas)",
+            "sector": "Lajes",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 1,8% a.a.; LTV 50%; performado",
+            "deadline": null,
+            "notes": "Ativo integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+            }
+          },
+          {
+            "id": "MAUA-ATIVO-07",
+            "name": "Lajes corporativas renda",
+            "type": "Ativo de crédito",
+            "planned_volume": 40000000.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP (Zona Sul)",
+            "sector": "Lajes",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 2,5% a.a.; LTV 85%; performado",
+            "deadline": null,
+            "notes": "Ativo integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+            }
+          },
+          {
+            "id": "MAUA-ATIVO-08",
+            "name": "Residencial renda",
+            "type": "Ativo de crédito",
+            "planned_volume": 50000000.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP (Itaim/Jardins)",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 2,4% a.a.; LTV 65%; performado",
+            "deadline": null,
+            "notes": "Ativo integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+            }
+          },
+          {
+            "id": "MAUA-ATIVO-09",
+            "name": "Lajes corporativas renda",
+            "type": "Ativo de crédito",
+            "planned_volume": 45000000.0,
+            "stage": "Indicativo",
+            "location": "São Paulo - SP (Itaim)",
+            "sector": "Lajes",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 1,8% a.a.; LTV 60%; performado",
+            "deadline": null,
+            "notes": "Ativo integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+            }
+          },
+          {
+            "id": "MAUA-ATIVO-10",
+            "name": "Galpão logístico equity tijolo",
+            "type": "Imóvel logístico",
+            "planned_volume": 75000000.0,
+            "stage": "Indicativo",
+            "location": "Rio Grande do Sul - RS",
+            "sector": "Galpão",
+            "counterparty": "n.a.",
+            "financial_terms": "IPCA + 7,7% a.a. + prêmio inicial; equity; performado",
+            "deadline": null,
+            "notes": "Ativo integrante de pipeline meramente indicativo.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 9,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+            }
+          }
+        ]
       }
     },
     {
@@ -3908,8 +5360,27 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "RESIDENCIAL-7-ATIVOS",
+            "name": "Aquisição e desenvolvimento de 7 empreendimentos residenciais",
+            "type": "Empreendimentos residenciais",
+            "planned_volume": 125000000.0,
+            "stage": "Indicativo",
+            "location": "Interior de São Paulo",
+            "sector": "Residencial",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "Koelle Gardens, Lagune Residence, San Pietro, Boulevard de Rosé, Leven Residence, Sollare e Villa das Flores; valor agregado para o cenário de captação integral.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 8,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27858"
+            }
+          }
+        ]
       }
     },
     {
@@ -3952,8 +5423,585 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "RIOBRAVO-OPERACAO-01",
+            "name": "Operação 1",
+            "type": "CRI",
+            "planned_volume": 6000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 7,50% a.a.; prazo 2 anos; razão de garantia 200%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-02",
+            "name": "Operação 2",
+            "type": "CRI",
+            "planned_volume": 15000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 10 anos; razão de garantia 400%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-03",
+            "name": "Operação 3",
+            "type": "CRI",
+            "planned_volume": 25000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,00% a.a.; prazo 4 anos; razão de garantia 168%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-04",
+            "name": "Operação 4",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 6,00% a.a.; prazo 5 anos; razão de garantia 200%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-05",
+            "name": "Operação 5",
+            "type": "CRI",
+            "planned_volume": 10000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,00% a.a.; prazo 2,5 anos; razão de garantia 300%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-06",
+            "name": "Operação 6",
+            "type": "CRI",
+            "planned_volume": 8000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,00% a.a.; prazo 4 anos; razão de garantia 220%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-07",
+            "name": "Operação 7",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,00% a.a.; prazo 5 anos; razão de garantia 223%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-08",
+            "name": "Operação 8",
+            "type": "CRI",
+            "planned_volume": 10000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 5 anos; razão de garantia 200%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-09",
+            "name": "Operação 9",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 5 anos; razão de garantia 200%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-10",
+            "name": "Operação 10",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 6,00% a.a.; prazo 5 anos; razão de garantia 280%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-11",
+            "name": "Operação 11",
+            "type": "CRI",
+            "planned_volume": 15000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 6,00% a.a.; prazo 5 anos; razão de garantia 310%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-12",
+            "name": "Operação 12",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 4 anos; razão de garantia 200%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-13",
+            "name": "Operação 13",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,00% a.a.; prazo 3,5 anos; razão de garantia 320%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-14",
+            "name": "Operação 14",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 3,5 anos; razão de garantia 200%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-15",
+            "name": "Operação 15",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 4,50% a.a.; prazo 4 anos; razão de garantia 162%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-16",
+            "name": "Operação 16",
+            "type": "CRI",
+            "planned_volume": 15000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 4,5 anos; razão de garantia 455%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-17",
+            "name": "Operação 17",
+            "type": "CRI",
+            "planned_volume": 25000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 4 anos; razão de garantia 121%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-18",
+            "name": "Operação 18",
+            "type": "CRI",
+            "planned_volume": 25000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 5 anos; razão de garantia 329%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-19",
+            "name": "Operação 19",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 3 anos; razão de garantia 190%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-20",
+            "name": "Operação 20",
+            "type": "CRI",
+            "planned_volume": 18200000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 3 anos; razão de garantia 152%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-21",
+            "name": "Operação 21",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 4 anos; razão de garantia 230%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-22",
+            "name": "Operação 22",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 4 anos; razão de garantia 323%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-23",
+            "name": "Operação 23",
+            "type": "CRI",
+            "planned_volume": 16000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 3,5 anos; razão de garantia 173%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-24",
+            "name": "Operação 24",
+            "type": "CRI",
+            "planned_volume": 10000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 3 anos; razão de garantia 243%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-25",
+            "name": "Operação 25",
+            "type": "CRI",
+            "planned_volume": 10000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 4 anos; razão de garantia 161%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-26",
+            "name": "Operação 26",
+            "type": "CRI",
+            "planned_volume": 20000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 4 anos; razão de garantia 435%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-27",
+            "name": "Operação 27",
+            "type": "CRI",
+            "planned_volume": 10000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 3 anos; razão de garantia 207%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-28",
+            "name": "Operação 28",
+            "type": "CRI",
+            "planned_volume": 10000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 3 anos; razão de garantia 181%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-29",
+            "name": "Operação 29",
+            "type": "CRI",
+            "planned_volume": 10000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 3,5 anos; razão de garantia 128%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-30",
+            "name": "Operação 30",
+            "type": "CRI",
+            "planned_volume": 18000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 6,50% a.a.; prazo 4 anos; razão de garantia 139%",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-31",
+            "name": "Operação 31",
+            "type": "Operação mezanino",
+            "planned_volume": 15000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 5,50% a.a.; prazo 4 anos",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          },
+          {
+            "id": "RIOBRAVO-OPERACAO-32",
+            "name": "Operação 32",
+            "type": "Operação mezanino",
+            "planned_volume": 13000000.0,
+            "stage": "Indicativo",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "CDI + 6,00% a.a.; prazo 4 anos",
+            "deadline": null,
+            "notes": "Operação integrante de pipeline indicativo e não vinculante.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+            }
+          }
+        ]
       }
     },
     {
@@ -4128,8 +6176,27 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "SUNO-UFV-70",
+            "name": "Pipeline de 70 usinas fotovoltaicas",
+            "type": "Imóveis de geração de energia",
+            "planned_volume": null,
+            "stage": "Indicativo",
+            "location": "Brasil (PE, BA, PA, MA, MT, MG, CE, RJ e PI)",
+            "sector": "Energia solar",
+            "counterparty": "n.a.",
+            "financial_terms": "Capacidade agregada aproximada de 198,1 MWp",
+            "deadline": null,
+            "notes": "Portfólio indicativo com usinas em operação e projetos greenfield; o prospecto não individualiza o volume financeiro por usina.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 6,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26751"
+            }
+          }
+        ]
       }
     },
     {
@@ -4348,8 +6415,27 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "TJK-POLITICA",
+            "name": "Ativos elegíveis da política de investimento",
+            "type": "Carteira imobiliária discricionária",
+            "planned_volume": null,
+            "stage": "Política de investimento",
+            "location": "n.a.",
+            "sector": "n.a.",
+            "counterparty": "n.a.",
+            "financial_terms": "n.a.",
+            "deadline": null,
+            "notes": "O prospecto não identifica ativos ou valores específicos para destinação dos recursos.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 1,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/24700"
+            }
+          }
+        ]
       }
     },
     {
@@ -4576,8 +6662,45 @@
       "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
+        "updated_at": "2026-09-28",
+        "items": [
+          {
+            "id": "XP-JK-SQUARE",
+            "name": "JK Square",
+            "type": "Lajes corporativas e lojas",
+            "planned_volume": 759769353.0,
+            "stage": "Indicativo",
+            "location": "Itaim, São Paulo - SP",
+            "sector": "Escritórios",
+            "counterparty": "n.a.",
+            "financial_terms": "28 unidades; ABL de 21.054,31 m²; preço aproximado sujeito a atualização",
+            "deadline": null,
+            "notes": "Aquisição sujeita a condições precedentes e diligência.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27241"
+            }
+          },
+          {
+            "id": "XP-RIVER-SOUTH",
+            "name": "River South",
+            "type": "Lajes corporativas e lojas",
+            "planned_volume": 405855647.0,
+            "stage": "Indicativo",
+            "location": "Butantã, São Paulo - SP",
+            "sector": "Escritórios",
+            "counterparty": "n.a.",
+            "financial_terms": "20 unidades; ABL de 19.393,27 m²; preço aproximado sujeito a atualização",
+            "deadline": null,
+            "notes": "Aquisição sujeita a condições precedentes e diligência.",
+            "source": {
+              "document": "Prospecto Definitivo",
+              "page": 7,
+              "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27241"
+            }
+          }
+        ]
       }
     }
   ]

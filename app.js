@@ -443,45 +443,53 @@ function allocationText(value) { return value && value !== 'n.a.' ? value : 'n.a
 
 function populateAllocationOffers() {
   const select = $('#allocationOffer');
-  const current = select.value;
+  const current = select.value || '__all__';
   const offers = [...state.offers].sort((a, b) => {
     const dataDifference = Number(allocationItems(b).length > 0) - Number(allocationItems(a).length > 0);
     return dataDifference || a.fund.localeCompare(b.fund, 'pt-BR');
   });
-  select.replaceChildren(...offers.map(offer => {
+  const overview = element('option', '', 'Visão geral do pipeline');
+  overview.value = '__all__';
+  select.replaceChildren(overview, ...offers.map(offer => {
     const option = element('option', '', `${offer.fund} · ${offer.registration}`);
     option.value = offer.id;
     return option;
   }));
-  if (offers.some(offer => offer.id === current)) select.value = current;
+  select.value = offers.some(offer => offer.id === current) ? current : '__all__';
 }
 
 function renderAllocationPipeline() {
-  const offer = state.offers.find(item => item.id === $('#allocationOffer').value) || state.offers.find(item => allocationItems(item).length) || state.offers[0];
-  if (!offer) return;
-  $('#allocationOffer').value = offer.id;
-  const items = allocationItems(offer);
-  const maximum = numberValue(offer.maximum_volume);
+  const selectedId = $('#allocationOffer').value || '__all__';
+  const overview = selectedId === '__all__';
+  const selectedOffer = state.offers.find(item => item.id === selectedId);
+  const offers = overview ? state.offers.filter(item => allocationItems(item).length) : selectedOffer ? [selectedOffer] : [];
+  const items = offers.flatMap(offer => allocationItems(offer).map(item => ({ ...item, offer })));
+  const maximumValues = offers.map(offer => numberValue(offer.maximum_volume)).filter(value => value != null);
+  const capturedValues = offers.map(offer => numberValue(offer.captured_volume)).filter(value => value != null);
+  const maximum = maximumValues.length ? maximumValues.reduce((sum, value) => sum + value, 0) : null;
+  const captured = capturedValues.length ? capturedValues.reduce((sum, value) => sum + value, 0) : null;
   const identified = items.reduce((sum, item) => sum + (numberValue(item.planned_volume) || 0), 0);
   const allocated = items.filter(item => item.stage === 'Alocado').reduce((sum, item) => sum + (numberValue(item.planned_volume) || 0), 0);
   const unidentified = maximum == null ? null : Math.max(0, maximum - identified);
   const coverage = maximum ? Math.min(1, identified / maximum) : null;
+  const updatedDates = offers.map(offer => offer.allocation_pipeline?.updated_at).filter(Boolean).sort();
 
   $('#allocationMaximum').textContent = allocationMoney(maximum);
-  $('#allocationCaptured').textContent = allocationMoney(offer.captured_volume);
+  $('#allocationCaptured').textContent = allocationMoney(captured);
   $('#allocationIdentified').textContent = items.length ? allocationMoney(identified) : 'n.a.';
   $('#allocationAllocated').textContent = allocated ? allocationMoney(allocated) : 'n.a.';
   $('#allocationUnidentified').textContent = items.length ? allocationMoney(unidentified) : 'n.a.';
   $('#allocationItems').textContent = items.length || 'n.a.';
   $('#allocationCoverageText').textContent = coverage == null || !items.length ? 'n.a.' : `${percent.format(coverage)} do volume máximo com valor identificado`;
-  $('#allocationUpdated').textContent = offer.allocation_pipeline?.updated_at ? `Validado em ${dateText(offer.allocation_pipeline.updated_at)}` : 'Sem validação disponível';
+  $('#allocationUpdated').textContent = updatedDates.length ? `${overview ? `${offers.length} oferta(s) · ` : ''}Validado até ${dateText(updatedDates.at(-1))}` : 'Sem validação disponível';
   $('#allocationProgress').classList.toggle('empty-progress', !items.length || coverage == null);
   $('#allocationProgress').firstElementChild.style.width = items.length && coverage != null ? `${coverage * 100}%` : '0%';
 
   $('#allocationRows').replaceChildren(...items.map(item => {
     const row = element('tr');
     const destination = element('td', 'allocation-destination');
-    destination.append(element('strong', '', allocationText(item.name)), element('span', '', [allocationText(item.location), allocationText(item.sector)].join(' · ')));
+    const context = overview ? [item.offer.fund, allocationText(item.location), allocationText(item.sector)] : [allocationText(item.location), allocationText(item.sector)];
+    destination.append(element('strong', '', allocationText(item.name)), element('span', '', context.join(' · ')));
     const volume = numberValue(item.planned_volume);
     const share = volume != null && maximum ? volume / maximum : null;
     const stageCell = element('td'); stageCell.append(element('span', `allocation-stage ${String(item.stage || '').toLocaleLowerCase('pt-BR').replaceAll(' ', '-')}`, allocationText(item.stage)));
