@@ -1,636 +1,33 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-28T15:33:21-03:00",
+  "generated_at": "2026-09-28T16:45:58-03:00",
   "reference_date": "2026-09-28",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
   "offers": [
     {
-      "id": "CVM160|28068",
-      "fund": "CAPITÂNIA HBC RENDA URBANA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
-      "cnpj": "34.691.520/0001-00",
+      "id": "CVM160|26331",
+      "fund": "ALIANZA CRÉDITO IMOBILIÁRIO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "40.011.324/0001-40",
       "ticker": "",
-      "registration": "SRE/3110/2026",
-      "issue": "13",
-      "series": "",
-      "type": "Nova emissão",
-      "distribution_nature": "",
-      "trading_environment": "Bolsa B3",
-      "rite": "Automático",
-      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "distributors": [
-        {
-          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-          "role": "Coordenador líder",
-          "allocated_volume": null
-        }
-      ],
-      "status": "Registro Concedido",
-      "initial_volume": 300604235.95,
-      "maximum_volume": 300604235.95,
-      "captured_volume": null,
-      "capture_rate": null,
-      "timeline": {
-        "start_planned": "2026-09-25",
-        "start_actual": "2026-09-24",
-        "reservation_end_planned": "2027-03-15",
-        "closing_planned": "2027-03-23",
-        "closing_actual": null,
-        "settlement_planned": "2026-10-15",
-        "settlement_actual": null
-      },
-      "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28068",
-      "identified_at": "2026-09-25",
-      "updated_at": "2026-09-25",
-      "documents": [
-        {
-          "id": "CVM160|28068|a33dc68ab9bab4f5b59062e0248c46709bb211ef199e4ec9126a9c3d813c7331",
-          "type": "Anúncio de Início da Distribuição",
-          "date": "2026-09-24",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28068",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
-          "page": 2,
-          "events": [
-            {
-              "name": "Registro e anúncio de início",
-              "kind": "Efetiva",
-              "date": "2026-09-24"
-            },
-            {
-              "name": "Início da coleta de intenções",
-              "kind": "Prevista",
-              "date": "2026-09-25"
-            },
-            {
-              "name": "Data-base do direito de preferência",
-              "kind": "Prevista",
-              "date": "2026-09-29"
-            },
-            {
-              "name": "Início do direito de preferência e negociação",
-              "kind": "Prevista",
-              "date": "2026-10-01"
-            },
-            {
-              "name": "Fim da negociação e exercício na B3",
-              "kind": "Prevista",
-              "date": "2026-10-14"
-            },
-            {
-              "name": "Fim no escriturador e liquidação da preferência",
-              "kind": "Prevista",
-              "date": "2026-10-15"
-            },
-            {
-              "name": "Comunicado e primeira liquidação da coleta",
-              "kind": "Prevista",
-              "date": "2026-10-16"
-            },
-            {
-              "name": "Fim da coleta e última liquidação",
-              "kind": "Prazo máximo",
-              "date": "2027-03-15"
-            },
-            {
-              "name": "Anúncio de encerramento",
-              "kind": "Prazo máximo",
-              "date": "2027-03-23"
-            }
-          ]
-        }
-      ],
-      "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
-      }
-    },
-    {
-      "id": "CVM160|28055",
-      "fund": "CAPITÂNIA OFFICE FII - FUNDO DE INVESTIMENTO IMOBILIÁRIO",
-      "cnpj": "48.916.699/0001-60",
-      "ticker": "",
-      "registration": "SRE/3093/2026",
-      "issue": "6",
-      "series": "",
-      "type": "Nova emissão",
-      "distribution_nature": "",
-      "trading_environment": "Bolsa B3",
-      "rite": "Automático",
-      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "distributors": [
-        {
-          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-          "role": "Coordenador líder",
-          "allocated_volume": null
-        }
-      ],
-      "status": "Registro Concedido",
-      "initial_volume": 150547961.58,
-      "maximum_volume": 150547961.58,
-      "captured_volume": null,
-      "capture_rate": null,
-      "timeline": {
-        "start_planned": "2026-09-30",
-        "start_actual": "2026-09-23",
-        "reservation_end_planned": "2027-03-15",
-        "closing_planned": "2027-03-22",
-        "closing_actual": null,
-        "settlement_planned": "2026-10-14",
-        "settlement_actual": null
-      },
-      "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28055",
-      "identified_at": "2026-09-25",
-      "updated_at": "2026-09-25",
-      "documents": [
-        {
-          "id": "CVM160|28055|94a598634b6f55b620e4bfe2ff3dad39b14c4e41faa50acf6231da1c7f91fbe7",
-          "type": "Anúncio de Início da Distribuição",
-          "date": "2026-09-24",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28055",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
-          "page": 2,
-          "events": [
-            {
-              "name": "Registro e anúncio de início",
-              "kind": "Efetiva",
-              "date": "2026-09-23"
-            },
-            {
-              "name": "Data-base do direito de preferência",
-              "kind": "Prevista",
-              "date": "2026-09-28"
-            },
-            {
-              "name": "Início da preferência e coleta",
-              "kind": "Prevista",
-              "date": "2026-09-30"
-            },
-            {
-              "name": "Fim do direito de preferência na B3",
-              "kind": "Prevista",
-              "date": "2026-10-13"
-            },
-            {
-              "name": "Fim no escriturador e liquidação",
-              "kind": "Prevista",
-              "date": "2026-10-14"
-            },
-            {
-              "name": "Comunicado de encerramento da preferência",
-              "kind": "Prevista",
-              "date": "2026-10-15"
-            },
-            {
-              "name": "Fim da coleta e última liquidação",
-              "kind": "Prazo máximo",
-              "date": "2027-03-15"
-            },
-            {
-              "name": "Anúncio de encerramento",
-              "kind": "Prazo máximo",
-              "date": "2027-03-22"
-            }
-          ]
-        }
-      ],
-      "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
-      }
-    },
-    {
-      "id": "CVM160|27924",
-      "fund": "CTA IV FUNDO DE INVESTIMENTO IMOBILIARIO - RESPONSABILIDADE LIMITADA",
-      "cnpj": "68.969.695/0001-58",
-      "ticker": "",
-      "registration": "SRE/2977/2026",
-      "issue": "1",
-      "series": "",
-      "type": "IPO / 1ª emissão",
-      "distribution_nature": "",
-      "trading_environment": "n.a.",
-      "rite": "Automático",
-      "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
-      "distributors": [
-        {
-          "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
-          "role": "Coordenador líder",
-          "allocated_volume": null
-        }
-      ],
-      "status": "Oferta Encerrada",
-      "initial_volume": 800000000.0,
-      "maximum_volume": 800000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
-      "timeline": {
-        "start_planned": "2026-09-16",
-        "start_actual": "2026-09-16",
-        "reservation_end_planned": null,
-        "closing_planned": "2027-03-15",
-        "closing_actual": "2026-09-23",
-        "settlement_planned": null,
-        "settlement_actual": null
-      },
-      "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27924",
-      "identified_at": "2026-09-25",
-      "updated_at": "2026-09-25",
-      "documents": [
-        {
-          "id": "CVM160|27924|b14a65b9f83f77c3b06dd80018dda4de8ffa4a7c3671c985d63d37c8c78e8664",
-          "type": "Anúncio de Início da Distribuição",
-          "date": "2026-09-16",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27924",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
-          "page": 2,
-          "events": [
-            {
-              "name": "Registro e anúncio de início",
-              "kind": "Efetiva",
-              "date": "2026-09-16"
-            },
-            {
-              "name": "Prazo máximo do anúncio de encerramento",
-              "kind": "Prazo calculado (180 dias)",
-              "date": "2027-03-15"
-            }
-          ]
-        }
-      ],
-      "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
-      }
-    },
-    {
-      "id": "CVM160|27651",
-      "fund": "EXES FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
-      "cnpj": "41.076.851/0001-03",
-      "ticker": "",
-      "registration": "SRE/2730/2026",
-      "issue": "1",
-      "series": "",
-      "type": "IPO / 1ª emissão",
-      "distribution_nature": "Secundária",
-      "trading_environment": "Bolsa B3",
-      "rite": "Automático",
-      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "distributors": [
-        {
-          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-          "role": "Coordenador líder",
-          "allocated_volume": null
-        }
-      ],
-      "status": "Oferta Encerrada",
-      "initial_volume": 70000009.0,
-      "maximum_volume": 70000009.0,
-      "captured_volume": 56103627.5,
-      "capture_rate": 0.801480289809677,
-      "timeline": {
-        "start_planned": "2026-09-04",
-        "start_actual": "2026-09-02",
-        "reservation_end_planned": "2026-09-16",
-        "closing_planned": "2027-03-01",
-        "closing_actual": "2026-09-24",
-        "settlement_planned": "2026-09-23",
-        "settlement_actual": null
-      },
-      "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27651",
-      "identified_at": "2026-09-25",
-      "updated_at": "2026-09-25",
-      "documents": [
-        {
-          "id": "CVM160|27651|b208cf2d2fc8e23af3a4d8febdae5f6320f34e8c2d06d795959b289c616db501",
-          "type": "Anúncio de Início da Distribuição",
-          "date": "2026-09-02",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27651",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
-          "page": 3,
-          "events": [
-            {
-              "name": "Aviso ao mercado, prospecto preliminar e roadshow",
-              "kind": "Efetiva",
-              "date": "2026-08-27"
-            },
-            {
-              "name": "Registro, anúncio e prospecto definitivo",
-              "kind": "Efetiva",
-              "date": "2026-09-02"
-            },
-            {
-              "name": "Início do período de aquisição",
-              "kind": "Prevista",
-              "date": "2026-09-04"
-            },
-            {
-              "name": "Fim do período de aquisição",
-              "kind": "Prevista",
-              "date": "2026-09-16"
-            },
-            {
-              "name": "Procedimento de alocação",
-              "kind": "Prevista",
-              "date": "2026-09-17"
-            },
-            {
-              "name": "Data-base dos rendimentos",
-              "kind": "Prevista",
-              "date": "2026-09-18"
-            },
-            {
-              "name": "Negociação ex-rendimentos",
-              "kind": "Prevista",
-              "date": "2026-09-21"
-            },
-            {
-              "name": "Liquidação da oferta",
-              "kind": "Prevista",
-              "date": "2026-09-23"
-            },
-            {
-              "name": "Pagamento dos rendimentos",
-              "kind": "Prevista",
-              "date": "2026-09-25"
-            },
-            {
-              "name": "Anúncio de encerramento",
-              "kind": "Prazo máximo",
-              "date": "2027-03-01"
-            }
-          ]
-        },
-        {
-          "id": "CVM160|27651|cbf389b5187cb4e69a8f84263c26dc8cb7007c53422575d2995dff095a535c6f",
-          "type": "Anúncio de Encerramento da Distribuição Secundária",
-          "date": "2026-09-24",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27651",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
-          "page": 2,
-          "events": [
-            {
-              "name": "Volume distribuído confirmado",
-              "kind": "Efetiva",
-              "date": null
-            },
-            {
-              "name": "Encerramento efetivo",
-              "kind": "Efetiva",
-              "date": "2026-09-24"
-            }
-          ]
-        }
-      ],
-      "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
-      }
-    },
-    {
-      "id": "CVM160|28048",
-      "fund": "G5 ALLOCATION FUNDO DE INVESTIMENTO IMOBILIÁRIO",
-      "cnpj": "32.140.405/0001-11",
-      "ticker": "",
-      "registration": "SRE/3088/2026",
+      "registration": "SRE/1519/2026",
       "issue": "4",
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
       "trading_environment": "n.a.",
       "rite": "Automático",
-      "lead_coordinator": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
       "distributors": [
         {
-          "name": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
           "role": "Coordenador líder",
           "allocated_volume": null
         }
       ],
-      "status": "Registro Concedido",
-      "initial_volume": 45000000.15,
-      "maximum_volume": 45000000.15,
-      "captured_volume": null,
-      "capture_rate": null,
-      "timeline": {
-        "start_planned": "2026-09-24",
-        "start_actual": "2026-09-24",
-        "reservation_end_planned": "2027-03-22",
-        "closing_planned": "2027-03-22",
-        "closing_actual": null,
-        "settlement_planned": null,
-        "settlement_actual": null
-      },
-      "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28048",
-      "identified_at": "2026-09-25",
-      "updated_at": "2026-09-25",
-      "documents": [
-        {
-          "id": "CVM160|28048|bda2dd40dc5a145db2aa0d2bdfaecc0a2948e54997f09eee4748c17815a9c037",
-          "type": "Anúncio de Início da Distribuição",
-          "date": "2026-09-24",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28048",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
-          "page": 1,
-          "events": [
-            {
-              "name": "Registro da oferta",
-              "kind": "Efetiva",
-              "date": "2026-09-23"
-            },
-            {
-              "name": "Anúncio e início da subscrição",
-              "kind": "Efetiva",
-              "date": "2026-09-24"
-            },
-            {
-              "name": "Fim da subscrição e encerramento",
-              "kind": "Prazo máximo",
-              "date": "2027-03-22"
-            }
-          ]
-        }
-      ],
-      "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
-      }
-    },
-    {
-      "id": "CVM160|28030",
-      "fund": "GUARDIAN LIQUIDEZ DI - FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
-      "cnpj": "62.364.712/0001-47",
-      "ticker": "",
-      "registration": "SRE/3098/2026",
-      "issue": "3",
-      "series": "",
-      "type": "Nova emissão",
-      "distribution_nature": "",
-      "trading_environment": "n.a.",
-      "rite": "Automático",
-      "lead_coordinator": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
-      "distributors": [
-        {
-          "name": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
-          "role": "Coordenador líder",
-          "allocated_volume": null
-        }
-      ],
-      "status": "Registro Concedido",
-      "initial_volume": 519360000.0,
-      "maximum_volume": 519360000.0,
-      "captured_volume": null,
-      "capture_rate": null,
-      "timeline": {
-        "start_planned": "2026-09-24",
-        "start_actual": "2026-09-24",
-        "reservation_end_planned": null,
-        "closing_planned": "2027-03-23",
-        "closing_actual": null,
-        "settlement_planned": "2026-09-25",
-        "settlement_actual": null
-      },
-      "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28030",
-      "identified_at": "2026-09-25",
-      "updated_at": "2026-09-25",
-      "documents": [
-        {
-          "id": "CVM160|28030|8ff4f16b39c630a0e7a915a6cf0d0a9be93e6cd59361848094bc6910c4b4db19",
-          "type": "Anúncio de Início da Distribuição",
-          "date": "2026-09-24",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28030",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
-          "page": 1,
-          "events": [
-            {
-              "name": "Registro e anúncio de início",
-              "kind": "Efetiva",
-              "date": "2026-09-24"
-            },
-            {
-              "name": "Primeira liquidação da oferta",
-              "kind": "Prevista",
-              "date": "2026-09-25"
-            },
-            {
-              "name": "Anúncio de encerramento",
-              "kind": "Prazo máximo",
-              "date": "2027-03-23"
-            }
-          ]
-        }
-      ],
-      "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
-      }
-    },
-    {
-      "id": "CVM160|28000",
-      "fund": "MAUA CAPITAL LUGGO FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
-      "cnpj": "68.815.433/0001-39",
-      "ticker": "",
-      "registration": "SRE/3095/2026",
-      "issue": "1",
-      "series": "",
-      "type": "IPO / 1ª emissão",
-      "distribution_nature": "",
-      "trading_environment": "Balcão B3 / Cetip",
-      "rite": "Automático",
-      "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
-      "distributors": [
-        {
-          "name": "XP INVESTIMENTOS CCTVM S.A.",
-          "role": "Coordenador líder",
-          "allocated_volume": null
-        }
-      ],
-      "status": "Registro Concedido",
-      "initial_volume": 196000000.0,
-      "maximum_volume": 196000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
-      "timeline": {
-        "start_planned": "2026-09-23",
-        "start_actual": "2026-09-23",
-        "reservation_end_planned": null,
-        "closing_planned": "2027-03-22",
-        "closing_actual": null,
-        "settlement_planned": "2026-09-28",
-        "settlement_actual": null
-      },
-      "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28000",
-      "identified_at": "2026-09-25",
-      "updated_at": "2026-09-25",
-      "documents": [
-        {
-          "id": "CVM160|28000|0286eb87b83c4fde307169c25bbae85dd5e69c4c4ba749288223e212f3b110ac",
-          "type": "Anúncio de Início da Distribuição",
-          "date": "2026-09-23",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28000",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
-          "page": 2,
-          "events": [
-            {
-              "name": "Registro e anúncio de início",
-              "kind": "Efetiva",
-              "date": "2026-09-23"
-            },
-            {
-              "name": "Alocação e liquidação",
-              "kind": "Prazo máximo",
-              "date": "2026-09-28"
-            },
-            {
-              "name": "Prazo máximo do anúncio de encerramento",
-              "kind": "Prazo calculado (180 dias)",
-              "date": "2027-03-22"
-            }
-          ]
-        }
-      ],
-      "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
-      }
-    },
-    {
-      "id": "CVM160|27937",
-      "fund": "PAC-MAN FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
-      "cnpj": "68.948.341/0001-27",
-      "ticker": "",
-      "registration": "SRE/3076/2026",
-      "issue": "1",
-      "series": "",
-      "type": "IPO / 1ª emissão",
-      "distribution_nature": "",
-      "trading_environment": "n.a.",
-      "rite": "Automático",
-      "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
-      "distributors": [
-        {
-          "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
-          "role": "Coordenador líder",
-          "allocated_volume": null
-        }
-      ],
-      "status": "Registro Concedido",
-      "initial_volume": 500000000.0,
-      "maximum_volume": 500000000.0,
+      "status": "Oferta Encerrada",
+      "initial_volume": 100000000.0,
+      "maximum_volume": 100000000.0,
       "captured_volume": null,
       "capture_rate": null,
       "timeline": {
@@ -638,14 +35,14 @@
         "start_actual": null,
         "reservation_end_planned": null,
         "closing_planned": null,
-        "closing_actual": null,
+        "closing_actual": "2026-09-16",
         "settlement_planned": null,
         "settlement_actual": null
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-25",
-      "updated_at": "2026-09-25",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
@@ -653,145 +50,72 @@
       }
     },
     {
-      "id": "CVM160|27275",
-      "fund": "PRESIDENTE VARGAS FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA",
-      "cnpj": "11.281.322/0001-72",
+      "id": "CVM160|27393",
+      "fund": "ALPHA ALLOCATION FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.176.986/0001-99",
       "ticker": "",
-      "registration": "SRE/2379/2026",
-      "issue": "4",
-      "series": "",
-      "type": "Nova emissão",
-      "distribution_nature": "Primária",
-      "trading_environment": "Bolsa B3",
-      "rite": "Automático",
-      "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
-      "distributors": [
-        {
-          "name": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
-          "role": "Coordenador líder",
-          "allocated_volume": null
-        }
-      ],
-      "status": "Oferta Encerrada",
-      "initial_volume": 2905200.0,
-      "maximum_volume": 2905200.0,
-      "captured_volume": 2905200.0,
-      "capture_rate": 1.0,
-      "timeline": {
-        "start_planned": "2026-08-03",
-        "start_actual": "2026-07-27",
-        "reservation_end_planned": "2026-08-14",
-        "closing_planned": "2027-01-23",
-        "closing_actual": "2026-09-23",
-        "settlement_planned": "2026-08-14",
-        "settlement_actual": null
-      },
-      "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27275",
-      "identified_at": "2026-09-25",
-      "updated_at": "2026-09-25",
-      "documents": [
-        {
-          "id": "CVM160|27275|7e07945a69bf918eef2b53464d626f279d1aa6313ac575f45b1a48cc8c1e3e27",
-          "type": "Anúncio de Início da Distribuição",
-          "date": "2026-07-27",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27275",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
-          "page": 1,
-          "events": [
-            {
-              "name": "Registro e início da oferta",
-              "kind": "Efetiva",
-              "date": "2026-07-27"
-            },
-            {
-              "name": "Data-base do direito de preferência",
-              "kind": "Prevista",
-              "date": "2026-07-30"
-            },
-            {
-              "name": "Início do direito de preferência",
-              "kind": "Prevista",
-              "date": "2026-08-03"
-            },
-            {
-              "name": "Fim da preferência na B3",
-              "kind": "Prevista",
-              "date": "2026-08-13"
-            },
-            {
-              "name": "Fim no escriturador e liquidação",
-              "kind": "Prevista",
-              "date": "2026-08-14"
-            },
-            {
-              "name": "Comunicado de encerramento da preferência",
-              "kind": "Prevista",
-              "date": "2026-08-17"
-            },
-            {
-              "name": "Início do período de colocação",
-              "kind": "Prevista",
-              "date": "2026-08-18"
-            },
-            {
-              "name": "Prazo máximo do anúncio de encerramento",
-              "kind": "Prazo calculado (180 dias)",
-              "date": "2027-01-23"
-            }
-          ]
-        },
-        {
-          "id": "CVM160|27275|9ad400a5dae11623013d7c2d72fc6f9cc10672f852b6ecbcd7bf9924b797935f",
-          "type": "Anúncio de Encerramento da Distribuição Primária",
-          "date": "2026-09-23",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27275",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
-          "page": 1,
-          "events": [
-            {
-              "name": "Captação confirmada",
-              "kind": "Efetiva",
-              "date": null
-            },
-            {
-              "name": "Encerramento efetivo",
-              "kind": "Efetiva",
-              "date": "2026-09-23"
-            }
-          ]
-        }
-      ],
-      "allocation_pipeline": {
-        "updated_at": null,
-        "items": []
-      }
-    },
-    {
-      "id": "CVM160|27942",
-      "fund": "TERRA NOVA MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
-      "cnpj": "69.131.160/0001-76",
-      "ticker": "",
-      "registration": "SRE/3075/2026",
+      "registration": "SRE/2481/2026",
       "issue": "1",
       "series": "",
       "type": "IPO / 1ª emissão",
       "distribution_nature": "",
       "trading_environment": "n.a.",
       "rite": "Automático",
-      "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "lead_coordinator": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
       "distributors": [
         {
-          "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "name": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 200000000.0,
+      "maximum_volume": 200000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-17",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27919",
+      "fund": "AZ QUEST PANORAMA ILION CAIUBÍ FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.281.236/0001-87",
+      "ticker": "",
+      "registration": "SRE/2980/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO DAYCOVAL S.A.",
+      "distributors": [
+        {
+          "name": "BANCO DAYCOVAL S.A.",
           "role": "Coordenador líder",
           "allocated_volume": null
         }
       ],
       "status": "Registro Concedido",
-      "initial_volume": 15000000.0,
-      "maximum_volume": 15000000.0,
+      "initial_volume": 45000000.0,
+      "maximum_volume": 45000000.0,
       "captured_volume": null,
       "capture_rate": null,
       "timeline": {
@@ -805,8 +129,96 @@
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-25",
-      "updated_at": "2026-09-25",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27789",
+      "fund": "BBS AK ONE FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "66.844.894/0001-04",
+      "ticker": "",
+      "registration": "SRE/2847/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO BS2 S.A.",
+      "distributors": [
+        {
+          "name": "BANCO BS2 S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 40000000.0,
+      "maximum_volume": 40000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|26948",
+      "fund": "BELVEDERE FUNDO DE INVESTIMENTO IMOBILIARIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.368.445/0001-08",
+      "ticker": "",
+      "registration": "SRE/2086/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "GALAPAGOS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. - GLPG DTVM",
+      "distributors": [
+        {
+          "name": "GALAPAGOS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. - GLPG DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 340000000.0,
+      "maximum_volume": 340000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-09",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
@@ -849,8 +261,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27998",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|27998|1878b8582acc728554e4fa80eca29b52b612058fbc919c57bcd522944bf0dc4e",
@@ -962,6 +374,94 @@
       }
     },
     {
+      "id": "CVM160|27428",
+      "fund": "BOCOM BBM RESIDENCIAL - FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII - RESPONSABILIDADE LIMITADA",
+      "cnpj": "62.452.316/0001-71",
+      "ticker": "",
+      "registration": "SRE/2515/2026",
+      "issue": "2",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO BOCOM BBM S.A.",
+      "distributors": [
+        {
+          "name": "BANCO BOCOM BBM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 1500049.88,
+      "maximum_volume": 1500049.88,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-02",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27798",
+      "fund": "BRASPARK RENDA IMOBILIÁRIA FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.758.917/0001-20",
+      "ticker": "",
+      "registration": "SRE/2863/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+      "distributors": [
+        {
+          "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 195000000.0,
+      "maximum_volume": 195000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-17",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|27965",
       "fund": "BRIO RENDA IMOBILIÁRIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
       "cnpj": "67.863.429/0001-83",
@@ -997,8 +497,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27965",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|27965|170520afebd0c56c5fce6be90798eb7fb6b223411d3a8a5b37cde4e52b73727e",
@@ -1022,6 +522,335 @@
           ]
         }
       ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27732",
+      "fund": "BTS SERENA FUNDO DE INVESTIMENTO IMOBILIÁRIO FII RESPONSABILIDADE LIMITADA",
+      "cnpj": "63.105.082/0001-59",
+      "ticker": "",
+      "registration": "SRE/2805/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+      "distributors": [
+        {
+          "name": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 149205000.0,
+      "maximum_volume": 149205000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27685",
+      "fund": "BTSP III FUNDO DE INVESTIMENTO IMOBILIARIO FII RESPONSABILIDADE LIMITADA",
+      "cnpj": "66.965.056/0001-99",
+      "ticker": "",
+      "registration": "SRE/2774/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+      "distributors": [
+        {
+          "name": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 1113503162.85,
+      "maximum_volume": 1113503162.85,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28068",
+      "fund": "CAPITÂNIA HBC RENDA URBANA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "34.691.520/0001-00",
+      "ticker": "",
+      "registration": "SRE/3110/2026",
+      "issue": "13",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 300604235.95,
+      "maximum_volume": 300604235.95,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": "2026-09-25",
+        "start_actual": "2026-09-24",
+        "reservation_end_planned": "2027-03-15",
+        "closing_planned": "2027-03-23",
+        "closing_actual": null,
+        "settlement_planned": "2026-10-15",
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28068",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [
+        {
+          "id": "CVM160|28068|a33dc68ab9bab4f5b59062e0248c46709bb211ef199e4ec9126a9c3d813c7331",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28068",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Registro e anúncio de início",
+              "kind": "Efetiva",
+              "date": "2026-09-24"
+            },
+            {
+              "name": "Início da coleta de intenções",
+              "kind": "Prevista",
+              "date": "2026-09-25"
+            },
+            {
+              "name": "Data-base do direito de preferência",
+              "kind": "Prevista",
+              "date": "2026-09-29"
+            },
+            {
+              "name": "Início do direito de preferência e negociação",
+              "kind": "Prevista",
+              "date": "2026-10-01"
+            },
+            {
+              "name": "Fim da negociação e exercício na B3",
+              "kind": "Prevista",
+              "date": "2026-10-14"
+            },
+            {
+              "name": "Fim no escriturador e liquidação da preferência",
+              "kind": "Prevista",
+              "date": "2026-10-15"
+            },
+            {
+              "name": "Comunicado e primeira liquidação da coleta",
+              "kind": "Prevista",
+              "date": "2026-10-16"
+            },
+            {
+              "name": "Fim da coleta e última liquidação",
+              "kind": "Prazo máximo",
+              "date": "2027-03-15"
+            },
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Prazo máximo",
+              "date": "2027-03-23"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28055",
+      "fund": "CAPITÂNIA OFFICE FII - FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+      "cnpj": "48.916.699/0001-60",
+      "ticker": "",
+      "registration": "SRE/3093/2026",
+      "issue": "6",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 150547961.58,
+      "maximum_volume": 150547961.58,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": "2026-09-30",
+        "start_actual": "2026-09-23",
+        "reservation_end_planned": "2027-03-15",
+        "closing_planned": "2027-03-22",
+        "closing_actual": null,
+        "settlement_planned": "2026-10-14",
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28055",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [
+        {
+          "id": "CVM160|28055|94a598634b6f55b620e4bfe2ff3dad39b14c4e41faa50acf6231da1c7f91fbe7",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28055",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Registro e anúncio de início",
+              "kind": "Efetiva",
+              "date": "2026-09-23"
+            },
+            {
+              "name": "Data-base do direito de preferência",
+              "kind": "Prevista",
+              "date": "2026-09-28"
+            },
+            {
+              "name": "Início da preferência e coleta",
+              "kind": "Prevista",
+              "date": "2026-09-30"
+            },
+            {
+              "name": "Fim do direito de preferência na B3",
+              "kind": "Prevista",
+              "date": "2026-10-13"
+            },
+            {
+              "name": "Fim no escriturador e liquidação",
+              "kind": "Prevista",
+              "date": "2026-10-14"
+            },
+            {
+              "name": "Comunicado de encerramento da preferência",
+              "kind": "Prevista",
+              "date": "2026-10-15"
+            },
+            {
+              "name": "Fim da coleta e última liquidação",
+              "kind": "Prazo máximo",
+              "date": "2027-03-15"
+            },
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Prazo máximo",
+              "date": "2027-03-22"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27933",
+      "fund": "CASCAIS FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.577.138/0001-91",
+      "ticker": "",
+      "registration": "SRE/2991/2026",
+      "issue": "4",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "HEMERA DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+      "distributors": [
+        {
+          "name": "HEMERA DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 139987687.53,
+      "maximum_volume": 139987687.53,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-16",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -1063,8 +892,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28007",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|28007|f155515a3f63035ce062bb51764791937a23350b7927cf258b11000912c117f1",
@@ -1088,6 +917,94 @@
           ]
         }
       ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25459",
+      "fund": "CENTRO TÊXTIL INTERNACIONAL FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA",
+      "cnpj": "00.762.723/0001-28",
+      "ticker": "",
+      "registration": "SRE/0709/2026",
+      "issue": "6",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "RIO BRAVO INVESTIMENTOS - DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+      "distributors": [
+        {
+          "name": "RIO BRAVO INVESTIMENTOS - DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 12271528.5,
+      "maximum_volume": 12271528.5,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-01",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27723",
+      "fund": "CL CASTELO BRANCO FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+      "cnpj": "52.355.865/0001-74",
+      "ticker": "",
+      "registration": "SRE/2850/2026",
+      "issue": "6",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 230000000.0,
+      "maximum_volume": 230000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -1129,8 +1046,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/25659",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|25659|c60dbd7b039ccb98d4fe7d114e60af9d5b59000cd2bad8e9b4ba3d542f9f63d5",
@@ -1196,6 +1113,781 @@
       }
     },
     {
+      "id": "CVM160|27842",
+      "fund": "CONTE BIANCAMANO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "37.950.819/0001-20",
+      "ticker": "",
+      "registration": "SRE/2896/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 250000000.0,
+      "maximum_volume": 250000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-15",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27924",
+      "fund": "CTA IV FUNDO DE INVESTIMENTO IMOBILIARIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.969.695/0001-58",
+      "ticker": "",
+      "registration": "SRE/2977/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 800000000.0,
+      "maximum_volume": 800000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": "2026-09-16",
+        "start_actual": "2026-09-16",
+        "reservation_end_planned": null,
+        "closing_planned": "2027-03-15",
+        "closing_actual": "2026-09-23",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27924",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [
+        {
+          "id": "CVM160|27924|b14a65b9f83f77c3b06dd80018dda4de8ffa4a7c3671c985d63d37c8c78e8664",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27924",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Registro e anúncio de início",
+              "kind": "Efetiva",
+              "date": "2026-09-16"
+            },
+            {
+              "name": "Prazo máximo do anúncio de encerramento",
+              "kind": "Prazo calculado (180 dias)",
+              "date": "2027-03-15"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25652",
+      "fund": "CVPAR BC FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "65.794.271/0001-01",
+      "ticker": "",
+      "registration": "SRE/0889/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 140000000.0,
+      "maximum_volume": 140000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-18",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28085",
+      "fund": "D108 FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.281.384/0001-00",
+      "ticker": "",
+      "registration": "SRE/3123/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
+      "distributors": [
+        {
+          "name": "XP INVESTIMENTOS CCTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Aguardando Bookbuilding",
+      "initial_volume": 0.0,
+      "maximum_volume": 0.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27698",
+      "fund": "DARP JIVE FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "35.880.201/0001-05",
+      "ticker": "",
+      "registration": "SRE/2760/2026",
+      "issue": "6",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "APEX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "APEX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 4000000.0,
+      "maximum_volume": 4000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-01",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27762",
+      "fund": "DARP JIVE FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "35.880.201/0001-05",
+      "ticker": "",
+      "registration": "SRE/2825/2026",
+      "issue": "7",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "APEX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "APEX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 4000000.0,
+      "maximum_volume": 4000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27748",
+      "fund": "DC BRAZIL 1 FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "61.247.681/0001-81",
+      "ticker": "",
+      "registration": "SRE/2812/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+      "distributors": [
+        {
+          "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 34999935.12,
+      "maximum_volume": 34999935.12,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27651",
+      "fund": "EXES FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "41.076.851/0001-03",
+      "ticker": "",
+      "registration": "SRE/2730/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "Secundária",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 70000009.0,
+      "maximum_volume": 70000009.0,
+      "captured_volume": 56103627.5,
+      "capture_rate": 0.801480289809677,
+      "timeline": {
+        "start_planned": "2026-09-04",
+        "start_actual": "2026-09-02",
+        "reservation_end_planned": "2026-09-16",
+        "closing_planned": "2027-03-01",
+        "closing_actual": "2026-09-24",
+        "settlement_planned": "2026-09-23",
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27651",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [
+        {
+          "id": "CVM160|27651|b208cf2d2fc8e23af3a4d8febdae5f6320f34e8c2d06d795959b289c616db501",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27651",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 3,
+          "events": [
+            {
+              "name": "Aviso ao mercado, prospecto preliminar e roadshow",
+              "kind": "Efetiva",
+              "date": "2026-08-27"
+            },
+            {
+              "name": "Registro, anúncio e prospecto definitivo",
+              "kind": "Efetiva",
+              "date": "2026-09-02"
+            },
+            {
+              "name": "Início do período de aquisição",
+              "kind": "Prevista",
+              "date": "2026-09-04"
+            },
+            {
+              "name": "Fim do período de aquisição",
+              "kind": "Prevista",
+              "date": "2026-09-16"
+            },
+            {
+              "name": "Procedimento de alocação",
+              "kind": "Prevista",
+              "date": "2026-09-17"
+            },
+            {
+              "name": "Data-base dos rendimentos",
+              "kind": "Prevista",
+              "date": "2026-09-18"
+            },
+            {
+              "name": "Negociação ex-rendimentos",
+              "kind": "Prevista",
+              "date": "2026-09-21"
+            },
+            {
+              "name": "Liquidação da oferta",
+              "kind": "Prevista",
+              "date": "2026-09-23"
+            },
+            {
+              "name": "Pagamento dos rendimentos",
+              "kind": "Prevista",
+              "date": "2026-09-25"
+            },
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Prazo máximo",
+              "date": "2027-03-01"
+            }
+          ]
+        },
+        {
+          "id": "CVM160|27651|cbf389b5187cb4e69a8f84263c26dc8cb7007c53422575d2995dff095a535c6f",
+          "type": "Anúncio de Encerramento da Distribuição Secundária",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27651",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Volume distribuído confirmado",
+              "kind": "Efetiva",
+              "date": null
+            },
+            {
+              "name": "Encerramento efetivo",
+              "kind": "Efetiva",
+              "date": "2026-09-24"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|26546",
+      "fund": "FUNDO DE INVESTIMENTO IMOBILIARIO RIZA MALLS RPPS - RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.046.949/0001-01",
+      "ticker": "",
+      "registration": "SRE/1761/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
+      "distributors": [
+        {
+          "name": "XP INVESTIMENTOS CCTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 100000000.0,
+      "maximum_volume": 100000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-08",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27907",
+      "fund": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII EDIFÍCIO ALMIRANTE BARROSO RESPONSABILIDADE LIMITADA",
+      "cnpj": "05.562.312/0001-02",
+      "ticker": "",
+      "registration": "SRE/2955/2026",
+      "issue": "5",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ACTUAL DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+      "distributors": [
+        {
+          "name": "ACTUAL DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 8500493.61,
+      "maximum_volume": 8500493.61,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27898",
+      "fund": "FUNDO DE INVESTIMENTO IMOBILIÁRIO TERRENO QUINTAS GLOBAIS - RESPONSABILIDADE LIMITADA",
+      "cnpj": "50.041.467/0001-58",
+      "ticker": "",
+      "registration": "SRE/2986/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO DAYCOVAL S.A.",
+      "distributors": [
+        {
+          "name": "BANCO DAYCOVAL S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 1268426.57,
+      "maximum_volume": 1268426.57,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28048",
+      "fund": "G5 ALLOCATION FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+      "cnpj": "32.140.405/0001-11",
+      "ticker": "",
+      "registration": "SRE/3088/2026",
+      "issue": "4",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 45000000.15,
+      "maximum_volume": 45000000.15,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": "2026-09-24",
+        "start_actual": "2026-09-24",
+        "reservation_end_planned": "2027-03-22",
+        "closing_planned": "2027-03-22",
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28048",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [
+        {
+          "id": "CVM160|28048|bda2dd40dc5a145db2aa0d2bdfaecc0a2948e54997f09eee4748c17815a9c037",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28048",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Registro da oferta",
+              "kind": "Efetiva",
+              "date": "2026-09-23"
+            },
+            {
+              "name": "Anúncio e início da subscrição",
+              "kind": "Efetiva",
+              "date": "2026-09-24"
+            },
+            {
+              "name": "Fim da subscrição e encerramento",
+              "kind": "Prazo máximo",
+              "date": "2027-03-22"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25385",
+      "fund": "GENESIS MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII - RESPONSABILIDADE LIMITADA",
+      "cnpj": "30.982.974/0001-89",
+      "ticker": "",
+      "registration": "SRE/0650/2026",
+      "issue": "7",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+      "distributors": [
+        {
+          "name": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 49940800.0,
+      "maximum_volume": 49940800.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-01",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28030",
+      "fund": "GUARDIAN LIQUIDEZ DI - FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "62.364.712/0001-47",
+      "ticker": "",
+      "registration": "SRE/3098/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
+      "distributors": [
+        {
+          "name": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 519360000.0,
+      "maximum_volume": 519360000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": "2026-09-24",
+        "start_actual": "2026-09-24",
+        "reservation_end_planned": null,
+        "closing_planned": "2027-03-23",
+        "closing_actual": null,
+        "settlement_planned": "2026-09-25",
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28030",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [
+        {
+          "id": "CVM160|28030|8ff4f16b39c630a0e7a915a6cf0d0a9be93e6cd59361848094bc6910c4b4db19",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28030",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Registro e anúncio de início",
+              "kind": "Efetiva",
+              "date": "2026-09-24"
+            },
+            {
+              "name": "Primeira liquidação da oferta",
+              "kind": "Prevista",
+              "date": "2026-09-25"
+            },
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Prazo máximo",
+              "date": "2027-03-23"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|28020",
       "fund": "Hedge Renda Corporativa Fundo de Investimento Imobiliário de Responsabilidade Limitada",
       "cnpj": "69.169.489/0001-26",
@@ -1231,8 +1923,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28020",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|28020|c4c1298635f140412f02ff692bee698057aae491836177df586755c413abc488",
@@ -1261,6 +1953,358 @@
           ]
         }
       ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|26842",
+      "fund": "HEDGE VGR CREDITO FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.624.043/0001-19",
+      "ticker": "",
+      "registration": "SRE/2013/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "distributors": [
+        {
+          "name": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 60000000.0,
+      "maximum_volume": 60000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-03",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27950",
+      "fund": "HIRE FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "63.806.554/0001-09",
+      "ticker": "",
+      "registration": "SRE/2996/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+      "distributors": [
+        {
+          "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 301872949.67,
+      "maximum_volume": 301872949.67,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|26925",
+      "fund": "HSI RENDA CDI CREDITO ESTRUTURADO FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.704.827/0001-57",
+      "ticker": "",
+      "registration": "SRE/2074/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
+      "distributors": [
+        {
+          "name": "XP INVESTIMENTOS CCTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 437500000.0,
+      "maximum_volume": 437500000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-01",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27307",
+      "fund": "INVISTA BUSINESS PARK FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "66.974.704/0001-73",
+      "ticker": "",
+      "registration": "SRE/2410/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL INVESTMENT BANKING LTDA.",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL INVESTMENT BANKING LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 949999991.52,
+      "maximum_volume": 949999991.52,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-15",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27115",
+      "fund": "ITAÚ CRÉDITO IMOBILIÁRIO CDI FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "64.542.109/0001-33",
+      "ticker": "",
+      "registration": "SRE/2227/2026",
+      "issue": "2",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 193098395.19,
+      "maximum_volume": 193098395.19,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-02",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27774",
+      "fund": "ITAÚ CRÉDITO IMOBILIÁRIO CDI FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "64.542.109/0001-33",
+      "ticker": "",
+      "registration": "SRE/2838/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 500000019.96,
+      "maximum_volume": 500000019.96,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27278",
+      "fund": "Itaú Log CP Fundo de Investimento Imobiliário Responsabilidade Limitada",
+      "cnpj": "66.362.379/0001-98",
+      "ticker": "",
+      "registration": "SRE/2380/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Revogada",
+      "initial_volume": 515237862.1,
+      "maximum_volume": 515237862.1,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27983",
+      "fund": "J SAFRA RENDA LOGÍSTICA - FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.800.386/0001-50",
+      "ticker": "",
+      "registration": "SRE/3020/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO SAFRA S/A",
+      "distributors": [
+        {
+          "name": "BANCO SAFRA S/A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 1200000000.0,
+      "maximum_volume": 1200000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -1302,8 +2346,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28025",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|28025|e027635c7ab34783edcbb703abf108647fa629c078a1f5aef51753ea87908dc4",
@@ -1378,6 +2422,226 @@
       }
     },
     {
+      "id": "CVM160|26807",
+      "fund": "JS CRÉDITO ESTRUTURADO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "60.176.399/0001-98",
+      "ticker": "",
+      "registration": "SRE/1972/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO SAFRA S/A",
+      "distributors": [
+        {
+          "name": "BANCO SAFRA S/A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 750000445.48,
+      "maximum_volume": 750000445.48,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-02",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27530",
+      "fund": "JS MASTER IMOBILIÁRIO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.500.379/0001-32",
+      "ticker": "",
+      "registration": "SRE/2662/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO SAFRA S/A",
+      "distributors": [
+        {
+          "name": "BANCO SAFRA S/A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 10000000.0,
+      "maximum_volume": 10000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-17",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27741",
+      "fund": "KINEA UNIQUE HY CDI FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "42.754.362/0001-18",
+      "ticker": "",
+      "registration": "SRE/2808/2026",
+      "issue": "5",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 448700000.0,
+      "maximum_volume": 448700000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27312",
+      "fund": "LCP ITAU RENDA CDI MASTER FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.951.546/0001-07",
+      "ticker": "",
+      "registration": "SRE/2415/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 155876300.0,
+      "maximum_volume": 155876300.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-01",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27116",
+      "fund": "LCP ITAÚ RENDA CDI FEEDER FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.689.649/0001-32",
+      "ticker": "",
+      "registration": "SRE/2230/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 119876300.0,
+      "maximum_volume": 119876300.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-01",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|28017",
       "fund": "LONIGO FUNDO DE INVESTIMENTO IMOBILIARIO - RESPONSABILIDADE LIMITADA",
       "cnpj": "68.277.745/0001-36",
@@ -1413,8 +2677,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28017",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|28017|b3aa7ed84c423cb9d3742c1e508e1e23803e176f82e0fa75e0f847ad2809762d",
@@ -1443,6 +2707,165 @@
           ]
         }
       ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27749",
+      "fund": "MATRIZ FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.132.550/0001-06",
+      "ticker": "",
+      "registration": "SRE/2817/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 180000000.0,
+      "maximum_volume": 180000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28000",
+      "fund": "MAUA CAPITAL LUGGO FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.815.433/0001-39",
+      "ticker": "",
+      "registration": "SRE/3095/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "Balcão B3 / Cetip",
+      "rite": "Automático",
+      "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
+      "distributors": [
+        {
+          "name": "XP INVESTIMENTOS CCTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 196000000.0,
+      "maximum_volume": 196000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": "2026-09-23",
+        "start_actual": "2026-09-23",
+        "reservation_end_planned": null,
+        "closing_planned": "2027-03-22",
+        "closing_actual": null,
+        "settlement_planned": "2026-09-28",
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28000",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [
+        {
+          "id": "CVM160|28000|0286eb87b83c4fde307169c25bbae85dd5e69c4c4ba749288223e212f3b110ac",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-23",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28000",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Registro e anúncio de início",
+              "kind": "Efetiva",
+              "date": "2026-09-23"
+            },
+            {
+              "name": "Alocação e liquidação",
+              "kind": "Prazo máximo",
+              "date": "2026-09-28"
+            },
+            {
+              "name": "Prazo máximo do anúncio de encerramento",
+              "kind": "Prazo calculado (180 dias)",
+              "date": "2027-03-22"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27737",
+      "fund": "MAUÁ CAPITAL MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.729.014/0001-84",
+      "ticker": "",
+      "registration": "SRE/2802/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 625000000.0,
+      "maximum_volume": 625000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -1484,8 +2907,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27671",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|27671|d8f6798871681089e8802283213d11ddbc668e7c5e9ef19ce3209f2a94538900",
@@ -1571,6 +2994,94 @@
       }
     },
     {
+      "id": "CVM160|25619",
+      "fund": "MIRANTE REALTY RECEBÍVEIS IMOBILIÁRIOS FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+      "cnpj": "41.251.371/0001-23",
+      "ticker": "",
+      "registration": "SRE/0863/2026",
+      "issue": "5",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 10000000.1,
+      "maximum_volume": 10000000.1,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-19",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27222",
+      "fund": "ORIZ RE PERMUTA I FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA",
+      "cnpj": "64.889.548/0001-17",
+      "ticker": "",
+      "registration": "SRE/2419/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO DAYCOVAL S.A.",
+      "distributors": [
+        {
+          "name": "BANCO DAYCOVAL S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 171530100.0,
+      "maximum_volume": 171530100.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-16",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|28018",
       "fund": "OXIGÊNIO 2 FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
       "cnpj": "58.561.237/0001-21",
@@ -1606,8 +3117,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28018",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|28018|7a902c5f20f434ebaf1f4897e4146024d5d851e39b4e31f25e71f4435f4540bc",
@@ -1667,6 +3178,94 @@
       }
     },
     {
+      "id": "CVM160|27937",
+      "fund": "PAC-MAN FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.948.341/0001-27",
+      "ticker": "",
+      "registration": "SRE/3076/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "distributors": [
+        {
+          "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 500000000.0,
+      "maximum_volume": 500000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27890",
+      "fund": "PATRIA DESENVOLVIMENTO FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.618.790/0001-07",
+      "ticker": "",
+      "registration": "SRE/2966/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 400000000.0,
+      "maximum_volume": 400000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|26280",
       "fund": "Patria Malls Fundo de Investimento Imobiliário - Responsabilidade Limitada",
       "cnpj": "26.499.833/0001-32",
@@ -1702,8 +3301,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26280",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|26280|cab6873e17770bf80b101692bf9d2737e03ecf1961778e5f54d74f9b3d769194",
@@ -1779,6 +3378,343 @@
       }
     },
     {
+      "id": "CVM160|27763",
+      "fund": "PERMUTA LOTE 5 CAMPINAS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "60.750.887/0001-67",
+      "ticker": "",
+      "registration": "SRE/2826/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ID CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+      "distributors": [
+        {
+          "name": "ID CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 1000001.08,
+      "maximum_volume": 1000001.08,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-11",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27764",
+      "fund": "PERMUTA LOTE 5 CAMPINAS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "60.750.887/0001-67",
+      "ticker": "",
+      "registration": "SRE/2827/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ID CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+      "distributors": [
+        {
+          "name": "ID CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 1000000.34,
+      "maximum_volume": 1000000.34,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-11",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25543",
+      "fund": "PLT II FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "64.790.666/0001-73",
+      "ticker": "",
+      "registration": "SRE/0789/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO GENIAL S.A.",
+      "distributors": [
+        {
+          "name": "BANCO GENIAL S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 60000000.0,
+      "maximum_volume": 60000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-11",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27321",
+      "fund": "POXIM FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "45.254.732/0001-46",
+      "ticker": "",
+      "registration": "SRE/2437/2026",
+      "issue": "7",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "HEMERA DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+      "distributors": [
+        {
+          "name": "HEMERA DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 18000000.0,
+      "maximum_volume": 18000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-03",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27275",
+      "fund": "PRESIDENTE VARGAS FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA",
+      "cnpj": "11.281.322/0001-72",
+      "ticker": "",
+      "registration": "SRE/2379/2026",
+      "issue": "4",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "Primária",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "distributors": [
+        {
+          "name": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 2905200.0,
+      "maximum_volume": 2905200.0,
+      "captured_volume": 2905200.0,
+      "capture_rate": 1.0,
+      "timeline": {
+        "start_planned": "2026-08-03",
+        "start_actual": "2026-07-27",
+        "reservation_end_planned": "2026-08-14",
+        "closing_planned": "2027-01-23",
+        "closing_actual": "2026-09-23",
+        "settlement_planned": "2026-08-14",
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27275",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [
+        {
+          "id": "CVM160|27275|7e07945a69bf918eef2b53464d626f279d1aa6313ac575f45b1a48cc8c1e3e27",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-07-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27275",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Registro e início da oferta",
+              "kind": "Efetiva",
+              "date": "2026-07-27"
+            },
+            {
+              "name": "Data-base do direito de preferência",
+              "kind": "Prevista",
+              "date": "2026-07-30"
+            },
+            {
+              "name": "Início do direito de preferência",
+              "kind": "Prevista",
+              "date": "2026-08-03"
+            },
+            {
+              "name": "Fim da preferência na B3",
+              "kind": "Prevista",
+              "date": "2026-08-13"
+            },
+            {
+              "name": "Fim no escriturador e liquidação",
+              "kind": "Prevista",
+              "date": "2026-08-14"
+            },
+            {
+              "name": "Comunicado de encerramento da preferência",
+              "kind": "Prevista",
+              "date": "2026-08-17"
+            },
+            {
+              "name": "Início do período de colocação",
+              "kind": "Prevista",
+              "date": "2026-08-18"
+            },
+            {
+              "name": "Prazo máximo do anúncio de encerramento",
+              "kind": "Prazo calculado (180 dias)",
+              "date": "2027-01-23"
+            }
+          ]
+        },
+        {
+          "id": "CVM160|27275|9ad400a5dae11623013d7c2d72fc6f9cc10672f852b6ecbcd7bf9924b797935f",
+          "type": "Anúncio de Encerramento da Distribuição Primária",
+          "date": "2026-09-23",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27275",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Captação confirmada",
+              "kind": "Efetiva",
+              "date": null
+            },
+            {
+              "name": "Encerramento efetivo",
+              "kind": "Efetiva",
+              "date": "2026-09-23"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25573",
+      "fund": "PRIME OFFICES FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "34.847.042/0001-84",
+      "ticker": "",
+      "registration": "SRE/0823/2026",
+      "issue": "5",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+      "distributors": [
+        {
+          "name": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 120037925.16,
+      "maximum_volume": 120037925.16,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-15",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|28008",
       "fund": "PRIME REAL ESTATE FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
       "cnpj": "69.229.578/0001-10",
@@ -1814,8 +3750,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28008",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|28008|df5396c633145e44474e2e105a1fdc9c92f24e014cb426c006f5e37868d80a94",
@@ -1839,6 +3775,622 @@
           ]
         }
       ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|26477",
+      "fund": "RBR FLAGSHIP II FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "66.768.655/0001-12",
+      "ticker": "",
+      "registration": "SRE/1654/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 375000000.0,
+      "maximum_volume": 375000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-01",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27765",
+      "fund": "RBR FLAGSHIP II FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "66.768.655/0001-12",
+      "ticker": "",
+      "registration": "SRE/2828/2026",
+      "issue": "2",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 617520000.0,
+      "maximum_volume": 617520000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27858",
+      "fund": "RESIDENCIAL INTERIOR DE SÃO PAULO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.551.703/0001-41",
+      "ticker": "",
+      "registration": "SRE/2911/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 125000000.0,
+      "maximum_volume": 125000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|26425",
+      "fund": "RIO BRAVO RENDA IMOBILÁRIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "66.868.478/0001-46",
+      "ticker": "",
+      "registration": "SRE/1609/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 375000000.0,
+      "maximum_volume": 375000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-18",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27817",
+      "fund": "SC DRE FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.950.709/0001-91",
+      "ticker": "",
+      "registration": "SRE/2960/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "distributors": [
+        {
+          "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 150000000.0,
+      "maximum_volume": 150000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25628",
+      "fund": "SFI SLB FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA",
+      "cnpj": "65.131.846/0001-06",
+      "ticker": "",
+      "registration": "SRE/0873/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "MAX CAPITAL MARKETS LTDA.",
+      "distributors": [
+        {
+          "name": "MAX CAPITAL MARKETS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 26500000.0,
+      "maximum_volume": 26500000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-14",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25480",
+      "fund": "SOROCABA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "65.456.922/0001-53",
+      "ticker": "",
+      "registration": "SRE/0732/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 20020000.0,
+      "maximum_volume": 20020000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-03",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|26751",
+      "fund": "SUNO ENERGIAS LIMPAS FUNDO DE INVESTIMENTO IMOBILIÁRIO IS RESPONSABILIDADE LIMITADA",
+      "cnpj": "43.741.171/0001-84",
+      "ticker": "",
+      "registration": "SRE/1900/2026",
+      "issue": "5",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "distributors": [
+        {
+          "name": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 1841383564.8,
+      "maximum_volume": 1841383564.8,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-04",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25377",
+      "fund": "TELLUS PINHEIROS - FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA",
+      "cnpj": "51.906.563/0001-84",
+      "ticker": "",
+      "registration": "SRE/0643/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+      "distributors": [
+        {
+          "name": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 180000000.0,
+      "maximum_volume": 180000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-01",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27942",
+      "fund": "TERRA NOVA MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "69.131.160/0001-76",
+      "ticker": "",
+      "registration": "SRE/3075/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "distributors": [
+        {
+          "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 15000000.0,
+      "maximum_volume": 15000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27736",
+      "fund": "TIJOLO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.246.163/0001-92",
+      "ticker": "",
+      "registration": "SRE/2801/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 250000000.0,
+      "maximum_volume": 250000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27747",
+      "fund": "TIVIO RENDA IMOBILIÁRIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "14.410.722/0001-29",
+      "ticker": "",
+      "registration": "SRE/2816/2026",
+      "issue": "2",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO BRADESCO BBI S.A.",
+      "distributors": [
+        {
+          "name": "BANCO BRADESCO BBI S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 1005467009.4,
+      "maximum_volume": 1005467009.4,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|24700",
+      "fund": "TJK RENDA IMOBILIÁRIA FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "39.714.024/0001-48",
+      "ticker": "",
+      "registration": "SRE/0444/2026",
+      "issue": "4",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BR-CAPITAL DTVM S.A.",
+      "distributors": [
+        {
+          "name": "BR-CAPITAL DTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 380800000.0,
+      "maximum_volume": 380800000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-09",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27843",
+      "fund": "TRX LOGISTICO FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.988.297/0001-16",
+      "ticker": "",
+      "registration": "SRE/2914/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
+      "distributors": [
+        {
+          "name": "XP INVESTIMENTOS CCTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 1460000000.0,
+      "maximum_volume": 1460000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -1880,8 +4432,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28003",
-      "identified_at": "2026-09-24",
-      "updated_at": "2026-09-24",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
       "documents": [
         {
           "id": "CVM160|28003|114921c17df38dc74539b5f0cfc3ad5216100cd1df4ecb00b732da8230605375",
@@ -1935,6 +4487,94 @@
           ]
         }
       ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27901",
+      "fund": "XP MALLS FUNDO DE INVESTIMENTO IMOBILIÁRIO FII",
+      "cnpj": "28.757.546/0001-00",
+      "ticker": "",
+      "registration": "SRE/2947/2026",
+      "issue": "15",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
+      "distributors": [
+        {
+          "name": "XP INVESTIMENTOS CCTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 805957699.66,
+      "maximum_volume": 805957699.66,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27241",
+      "fund": "XP OFFICE PRIME FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+      "cnpj": "68.147.762/0001-59",
+      "ticker": "",
+      "registration": "SRE/2347/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
+      "distributors": [
+        {
+          "name": "XP INVESTIMENTOS CCTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 1100000000.0,
+      "maximum_volume": 1100000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-03",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []

@@ -1,6 +1,6 @@
 'use strict';
 
-const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all' };
+const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 25 };
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const money = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', notation: 'compact', maximumFractionDigits: 2 });
@@ -9,7 +9,8 @@ const percent = new Intl.NumberFormat('pt-BR', { style: 'percent', maximumFracti
 const dayFormat = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'America/Sao_Paulo' });
 const dateTimeFormat = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Sao_Paulo' });
 const monthFormat = new Intl.DateTimeFormat('pt-BR', { month: 'short', timeZone: 'America/Sao_Paulo' });
-const controls = ['#search', '#statusFilter', '#fundFilter', '#typeFilter', '#coordinatorFilter', '#distributorFilter', '#environmentFilter', '#riteFilter', '#periodFilter'].map($);
+const monthYearFormat = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'numeric', timeZone: 'America/Sao_Paulo' });
+const controls = ['#search', '#statusFilter', '#fundFilter', '#typeFilter', '#coordinatorFilter', '#distributorFilter', '#environmentFilter', '#riteFilter', '#monthFilter', '#activityFilter', '#periodFilter'].map($);
 const timelineLabels = {
   start_planned: 'Início previsto', start_actual: 'Início efetivo', reservation_end_planned: 'Fim da reserva',
   closing_planned: 'Encerramento previsto', closing_actual: 'Encerramento efetivo',
@@ -41,6 +42,7 @@ function badge(status, review = false) {
 function relevantDate(offer) {
   return offer.timeline?.start_actual || offer.timeline?.start_planned || offer.identified_at || offer.updated_at;
 }
+function isClosedOffer(offer) { return ['Oferta Encerrada', 'Oferta Revogada'].includes(offer.status); }
 function daysFromReference(value) {
   const reference = parseDate(state.referenceDate);
   const target = parseDate(value);
@@ -76,6 +78,15 @@ function populateFilters() {
   setOptions('#distributorFilter', state.offers.flatMap(offer => (offer.distributors || []).map(item => item.name)));
   setOptions('#environmentFilter', state.offers.map(offer => offer.trading_environment || 'n.a.'));
   setOptions('#riteFilter', state.offers.map(offer => offer.rite));
+  const monthSelect = $('#monthFilter');
+  const currentMonth = monthSelect.value;
+  [...monthSelect.options].slice(1).forEach(option => option.remove());
+  [...new Set(state.offers.map(offer => monthKey(relevantDate(offer))).filter(Boolean))].sort().reverse().forEach(value => {
+    const option = element('option', '', monthYearFormat.format(parseDate(`${value}-01`)));
+    option.value = value;
+    monthSelect.append(option);
+  });
+  if ([...monthSelect.options].some(option => option.value === currentMonth)) monthSelect.value = currentMonth;
 }
 
 function filteredOffers() {
@@ -85,6 +96,8 @@ function filteredOffers() {
     lead_coordinator: $('#coordinatorFilter').value, trading_environment: $('#environmentFilter').value, rite: $('#riteFilter').value,
   };
   const periodDays = Number($('#periodFilter').value || 0);
+  const selectedMonth = $('#monthFilter').value;
+  const activity = $('#activityFilter').value;
   const reference = parseDate(state.referenceDate);
   const cutoff = periodDays && reference ? new Date(reference.getTime() - periodDays * 86400000) : null;
   const rows = state.offers.filter(offer => {
@@ -94,6 +107,9 @@ function filteredOffers() {
     if (Object.entries(exact).some(([field, value]) => value && offer[field] !== value)) return false;
     const distributor = $('#distributorFilter').value;
     if (distributor && !(offer.distributors || []).some(item => item.name === distributor)) return false;
+    if (activity === 'active' && isClosedOffer(offer)) return false;
+    if (activity === 'closed' && !isClosedOffer(offer)) return false;
+    if (selectedMonth && monthKey(relevantDate(offer)) !== selectedMonth) return false;
     const offerDate = parseDate(relevantDate(offer));
     return !cutoff || (offerDate && offerDate >= cutoff);
   });
@@ -108,8 +124,12 @@ function filteredOffers() {
 
 function renderTable() {
   const rows = filteredOffers();
+  const totalPages = Math.max(1, Math.ceil(rows.length / state.pageSize));
+  state.page = Math.min(state.page, totalPages);
+  const firstIndex = (state.page - 1) * state.pageSize;
+  const visibleRows = rows.slice(firstIndex, firstIndex + state.pageSize);
   const tbody = $('#offerRows');
-  tbody.replaceChildren(...rows.map(offer => {
+  tbody.replaceChildren(...visibleRows.map(offer => {
     const row = element('tr');
     row.tabIndex = 0;
     row.dataset.id = offer.id;
@@ -125,7 +145,12 @@ function renderTable() {
     row.append(element('td', '', dateText(offer.updated_at)));
     return row;
   }));
-  $('#resultCount').textContent = `${rows.length} ${rows.length === 1 ? 'oferta exibida' : 'ofertas exibidas'}`;
+  const interval = rows.length ? `${firstIndex + 1}–${firstIndex + visibleRows.length} exibidas` : 'nenhuma exibida';
+  $('#resultCount').textContent = `${rows.length} ${rows.length === 1 ? 'oferta encontrada' : 'ofertas encontradas'} · ${interval}`;
+  $('#pageInfo').textContent = `Página ${state.page} de ${totalPages}`;
+  $('#previousPage').disabled = state.page <= 1;
+  $('#nextPage').disabled = state.page >= totalPages;
+  $('#pagination').hidden = rows.length === 0;
   $('#empty').hidden = rows.length > 0;
   $('#loadError').hidden = true;
 }
@@ -613,7 +638,10 @@ async function load() {
   }
 }
 
-controls.forEach(control => control.addEventListener('input', renderTable));
+controls.forEach(control => control.addEventListener('input', () => { state.page = 1; renderTable(); }));
+$('#pageSize').addEventListener('change', () => { state.pageSize = Number($('#pageSize').value); state.page = 1; renderTable(); });
+$('#previousPage').addEventListener('click', () => { if (state.page > 1) { state.page -= 1; renderTable(); } });
+$('#nextPage').addEventListener('click', () => { if (state.page * state.pageSize < filteredOffers().length) { state.page += 1; renderTable(); } });
 $$('[data-sort]').forEach(button => button.addEventListener('click', () => {
   const field = button.dataset.sort;
   state.sort.direction = state.sort.field === field ? state.sort.direction * -1 : 1;

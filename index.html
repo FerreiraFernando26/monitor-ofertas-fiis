@@ -101,6 +101,8 @@
             <label><span>Distribuidor</span><select id="distributorFilter" class="control"><option value="">Todos</option></select></label>
             <label><span>Ambiente de negociação</span><select id="environmentFilter" class="control"><option value="">Todos</option></select></label>
             <label><span>Rito</span><select id="riteFilter" class="control"><option value="">Todos</option></select></label>
+            <label><span>Mês/Ano</span><select id="monthFilter" class="control"><option value="">Todos os meses</option></select></label>
+            <label><span>Situação</span><select id="activityFilter" class="control"><option value="">Todas</option><option value="active">Em acompanhamento</option><option value="closed">Encerradas</option></select></label>
             <label><span>Período</span><select id="periodFilter" class="control"><option value="">Todo o período</option><option value="30">Últimos 30 dias</option><option value="90">Últimos 90 dias</option><option value="180">Últimos 180 dias</option></select></label>
           </div>
         </div>
@@ -109,6 +111,10 @@
             <thead><tr><th><button data-sort="fund">Fundo</button></th><th><button data-sort="registration">Registro</button></th><th><button data-sort="type">Tipo</button></th><th><button data-sort="trading_environment">Ambiente</button></th><th><button data-sort="status">Status</button></th><th class="numeric"><button data-sort="maximum_volume">Volume máximo</button></th><th class="numeric"><button data-sort="captured_volume">Confirmado</button></th><th><button data-sort="updated_at">Atualização</button></th></tr></thead>
             <tbody id="offerRows"></tbody>
           </table>
+        </div>
+        <div id="pagination" class="pagination" aria-label="Paginação das ofertas">
+          <label><span>Linhas por página</span><select id="pageSize" class="control"><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label>
+          <div class="pagination-actions"><button id="previousPage" class="button" type="button">Anterior</button><span id="pageInfo" class="count">Página 1 de 1</span><button id="nextPage" class="button" type="button">Próxima</button></div>
         </div>
         <div id="empty" class="empty" hidden><strong>Nenhuma oferta encontrada.</strong><span>Altere os filtros para ampliar a busca.</span></div>
         <div id="loadError" class="empty error" hidden><strong>Não foi possível carregar os dados.</strong><span>Verifique o arquivo público e tente novamente.</span><button id="retry" class="button" type="button">Tentar novamente</button></div>
@@ -159,6 +165,6 @@
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20260928-1" defer></script>
+  <script src="./app.js?v=20260928-2" defer></script>
 </body>
 </html>

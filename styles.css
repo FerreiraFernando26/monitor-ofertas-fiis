@@ -164,11 +164,17 @@ h3 { margin-bottom: 14px; font-size: .92rem; }
 .table-title-row { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 18px; }
 .button { min-height: 40px; padding: 0 14px; border: 1px solid #32658d; border-radius: 9px; background: #112d43; color: var(--text); font-weight: 680; cursor: pointer; }
 .button:hover { background: #173c58; }
+.button:disabled { cursor: not-allowed; opacity: .45; }
 .filters { display: grid; grid-template-columns: minmax(240px, 1.4fr) repeat(3, minmax(140px, .55fr)); gap: 10px; }
 .filters label { display: grid; gap: 6px; color: var(--muted); font-size: .68rem; }
 .search-field { align-self: end; }
 .control { width: 100%; min-height: 41px; padding: 0 11px; border: 1px solid #294457; border-radius: 9px; background: #071620; color: var(--text); }
 .table-scroll { overflow-x: auto; }
+.pagination { display: flex; align-items: end; justify-content: space-between; gap: 14px; padding: 14px 20px 18px; border-top: 1px solid var(--line-soft); }
+.pagination label { display: grid; gap: 6px; color: var(--muted); font-size: .68rem; }
+.pagination label .control { min-width: 96px; }
+.pagination-actions { display: flex; align-items: center; gap: 12px; }
+.pagination-actions .button { min-width: 92px; }
 table { width: 100%; border-collapse: collapse; min-width: 1180px; }
 th, td { padding: 13px 15px; border-bottom: 1px solid var(--line-soft); text-align: left; font-size: .78rem; white-space: nowrap; }
 th { background: #081823; }
@@ -294,6 +300,8 @@ dialog::backdrop { background: rgba(1,8,14,.82); backdrop-filter: blur(5px); }
   .topbar { display: block; }
   .freshness { justify-content: flex-start; margin-top: 13px; text-align: left; }
   .kpis, .filters, .timeline { grid-template-columns: 1fr; }
+  .pagination { align-items: stretch; flex-direction: column; }
+  .pagination-actions { justify-content: space-between; }
   .schedule-kpis, .change-list { grid-template-columns: 1fr 1fr; }
   .schedule-toolbar { align-items: flex-end; }
   .search-field { grid-column: auto; }
