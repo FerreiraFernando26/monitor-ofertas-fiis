@@ -6,7 +6,7 @@
   <meta name="description" content="Painel público de ofertas e emissões de fundos imobiliários acompanhadas a partir de fontes oficiais.">
   <title>Radar FII — Monitor de ofertas</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307121d'/%3E%3Cpath d='M14 44V25l18-11 18 11v19' fill='none' stroke='%233f8cff' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M22 44V31h20v13M10 49h44' fill='none' stroke='%237ee0c3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20260928-2">
+  <link rel="stylesheet" href="./styles.css?v=20260929-1">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -128,28 +128,29 @@
 
       <section id="pipeline-alocacao" class="card panel allocation-panel" aria-labelledby="allocation-title">
         <div class="panel-head allocation-head">
-          <div><p class="overline">Destino dos recursos</p><h2 id="allocation-title">Pipeline de alocação</h2><p class="panel-description">Projetos, ativos e obrigações identificados em documentos oficiais. Valores não divulgados permanecem como n.a.</p></div>
+          <div><p class="overline">Destino dos recursos</p><h2 id="allocation-title">Pipeline de alocação</h2><p class="panel-description">Visão consolidada por fundo. Expanda somente a oferta que deseja analisar.</p></div>
           <label class="allocation-selector"><span>Oferta / visão</span><select id="allocationOffer" class="control" aria-label="Selecionar oferta ou visão geral"></select></label>
         </div>
         <div class="allocation-kpis" aria-label="Indicadores de alocação">
-          <div><span>Volume máximo</span><strong id="allocationMaximum">—</strong></div>
-          <div><span>Volume confirmado</span><strong id="allocationCaptured">—</strong></div>
-          <div class="allocation-highlight"><span>Destino identificado</span><strong id="allocationIdentified">—</strong></div>
-          <div><span>Já alocado</span><strong id="allocationAllocated">—</strong></div>
-          <div><span>Sem detalhamento</span><strong id="allocationUnidentified">—</strong></div>
-          <div><span>Destinações</span><strong id="allocationItems">—</strong></div>
+          <div><span>Fundos analisados</span><strong id="allocationFunds">—</strong></div>
+          <div><span>Volume total das ofertas</span><strong id="allocationMaximum">—</strong></div>
+          <div class="allocation-highlight"><span>Pipeline com valor</span><strong id="allocationIdentified">—</strong></div>
+          <div><span>Pipeline / volume da oferta</span><strong id="allocationCoverage">—</strong></div>
+          <div><span>Spread médio ponderado CDI</span><strong id="allocationCdiRate">—</strong></div>
+          <div><span>Spread médio ponderado IPCA</span><strong id="allocationIpcaRate">—</strong></div>
         </div>
-        <div class="allocation-progress-wrap">
-          <div class="allocation-progress-head"><div><h3>Cobertura da destinação</h3><span id="allocationCoverageText">—</span></div><span id="allocationUpdated" class="count">—</span></div>
-          <div id="allocationProgress" class="allocation-progress" role="img" aria-label="Parcela do volume máximo com destinação financeira identificada"><span></span></div>
-          <div class="allocation-legend"><span><i class="identified"></i>Volume identificado</span><span><i class="unidentified"></i>Sem detalhamento financeiro</span></div>
+        <div class="allocation-analytics">
+          <article><div class="allocation-analysis-head"><h3>Volume por etapa</h3><span id="allocationStageCount" class="count">—</span></div><div id="allocationStageBreakdown" class="allocation-breakdown"></div></article>
+          <article><div class="allocation-analysis-head"><h3>Principais setores</h3><span id="allocationSectorCount" class="count">—</span></div><div id="allocationSectorBreakdown" class="allocation-breakdown"></div></article>
         </div>
+        <div class="allocation-table-head"><div><h3 id="allocationTableTitle">Fundos com destinação identificada</h3><span id="allocationUpdated" class="count">—</span></div><label class="allocation-search"><span>Buscar fundo</span><input id="allocationSearch" class="control" type="search" placeholder="Fundo ou registro"></label></div>
         <div class="allocation-table-scroll">
           <table class="allocation-table">
-            <thead><tr><th>Destino / operação</th><th>Tipo</th><th class="numeric">Volume previsto</th><th class="numeric">% da oferta</th><th>Condições financeiras</th><th>Etapa</th><th>Prazo</th><th>Fonte</th></tr></thead>
+            <thead id="allocationHead"></thead>
             <tbody id="allocationRows"></tbody>
           </table>
         </div>
+        <button id="allocationShowMore" class="button allocation-show-more" type="button" hidden>Mostrar todas as operações</button>
         <div id="allocationEmpty" class="empty" hidden><strong>Destinação ainda não detalhada.</strong><span>Não identificamos informações suficientes nos documentos oficiais disponíveis para esta oferta.</span></div>
       </section>
       <footer>Fonte: Dados Abertos CVM e Portal SRE/CVM · Valores sem confirmação oficial permanecem como n.a.</footer>
@@ -166,6 +167,6 @@
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20260929-1" defer></script>
+  <script src="./app.js?v=20260929-2" defer></script>
 </body>
 </html>

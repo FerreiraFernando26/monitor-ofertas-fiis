@@ -1,6 +1,6 @@
 'use strict';
 
-const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 25 };
+const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 25, allocationExpanded: false };
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const money = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', notation: 'compact', maximumFractionDigits: 2 });
@@ -447,6 +447,71 @@ function allocationItems(offer) { return offer?.allocation_pipeline?.items || []
 function allocationMoney(value) { return numberValue(value) == null ? 'n.a.' : money.format(numberValue(value)); }
 function allocationText(value) { return value && value !== 'n.a.' ? value : 'n.a.'; }
 
+function allocationRates(items) {
+  const result = { CDI: { weighted: 0, volume: 0, count: 0 }, IPCA: { weighted: 0, volume: 0, count: 0 } };
+  items.forEach(item => {
+    const volume = numberValue(item.planned_volume);
+    if (volume == null || volume <= 0) return;
+    const expression = /\b(CDI|IPCA)\s*\+\s*(\d+(?:[.,]\d+)?)\s*%/gi;
+    for (const match of String(item.financial_terms || '').matchAll(expression)) {
+      const index = match[1].toUpperCase();
+      const rate = Number(match[2].replace(',', '.'));
+      if (!Number.isFinite(rate)) continue;
+      result[index].weighted += rate * volume;
+      result[index].volume += volume;
+      result[index].count += 1;
+    }
+  });
+  Object.values(result).forEach(summary => { summary.rate = summary.volume ? summary.weighted / summary.volume : null; });
+  return result;
+}
+
+function allocationRateText(rates, includeIndex = false) {
+  const formatter = new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const values = ['CDI', 'IPCA'].filter(index => rates[index].rate != null).map(index => `${includeIndex ? `${index} + ` : ''}${formatter.format(rates[index].rate)}% a.a.`);
+  return values.length ? values.join(' · ') : 'n.a.';
+}
+
+function allocationSummary(offer) {
+  const items = allocationItems(offer);
+  const maximum = numberValue(offer.maximum_volume);
+  const identifiedValues = items.map(item => numberValue(item.planned_volume)).filter(value => value != null);
+  const identified = identifiedValues.length ? identifiedValues.reduce((sum, value) => sum + value, 0) : null;
+  return { offer, items, maximum, identified, coverage: maximum && identified != null ? identified / maximum : null, rates: allocationRates(items) };
+}
+
+function allocationBreakdown(items, field) {
+  const groups = new Map();
+  items.forEach(item => {
+    const volume = numberValue(item.planned_volume);
+    if (volume == null || volume <= 0) return;
+    const rawLabel = allocationText(item[field]);
+    const label = rawLabel === 'n.a.' ? (field === 'sector' ? 'Setor não informado' : 'Etapa não informada') : rawLabel;
+    groups.set(label, (groups.get(label) || 0) + volume);
+  });
+  return [...groups.entries()].sort((a, b) => b[1] - a[1]);
+}
+
+function renderAllocationBreakdown(selector, entries) {
+  const container = $(selector);
+  const total = entries.reduce((sum, [, value]) => sum + value, 0);
+  container.replaceChildren(...entries.slice(0, 5).map(([label, value]) => {
+    const row = element('div', 'allocation-breakdown-row');
+    const copy = element('div'); copy.append(element('span', '', label), element('strong', '', allocationMoney(value)));
+    const rail = element('div', 'allocation-breakdown-rail');
+    const fill = element('span'); fill.style.width = `${total ? value / total * 100 : 0}%`; rail.append(fill);
+    row.append(copy, rail);
+    return row;
+  }));
+  if (!entries.length) container.append(element('div', 'allocation-breakdown-empty', 'Sem volumes divulgados para esta visão.'));
+}
+
+function renderAllocationHead(columns) {
+  const row = element('tr');
+  columns.forEach(column => row.append(element('th', column.numeric ? 'numeric' : '', column.label)));
+  $('#allocationHead').replaceChildren(row);
+}
+
 function populateAllocationOffers() {
   const select = $('#allocationOffer');
   const current = select.value || '__all__';
@@ -470,45 +535,88 @@ function renderAllocationPipeline() {
   const selectedOffer = state.offers.find(item => item.id === selectedId);
   const offers = overview ? state.offers.filter(item => allocationItems(item).length) : selectedOffer ? [selectedOffer] : [];
   const items = offers.flatMap(offer => allocationItems(offer).map(item => ({ ...item, offer })));
-  const maximumValues = offers.map(offer => numberValue(offer.maximum_volume)).filter(value => value != null);
-  const capturedValues = offers.map(offer => numberValue(offer.captured_volume)).filter(value => value != null);
+  const summaries = offers.map(allocationSummary);
+  const maximumValues = summaries.map(summary => summary.maximum).filter(value => value != null);
   const maximum = maximumValues.length ? maximumValues.reduce((sum, value) => sum + value, 0) : null;
-  const captured = capturedValues.length ? capturedValues.reduce((sum, value) => sum + value, 0) : null;
-  const identified = items.reduce((sum, item) => sum + (numberValue(item.planned_volume) || 0), 0);
-  const allocated = items.filter(item => item.stage === 'Alocado').reduce((sum, item) => sum + (numberValue(item.planned_volume) || 0), 0);
-  const unidentified = maximum == null ? null : Math.max(0, maximum - identified);
-  const coverage = maximum ? Math.min(1, identified / maximum) : null;
+  const identifiedValues = items.map(item => numberValue(item.planned_volume)).filter(value => value != null);
+  const identified = identifiedValues.length ? identifiedValues.reduce((sum, value) => sum + value, 0) : null;
+  const coverage = maximum && identified != null ? identified / maximum : null;
+  const rates = allocationRates(items);
   const updatedDates = offers.map(offer => offer.allocation_pipeline?.updated_at).filter(Boolean).sort();
 
+  $('#allocationFunds').textContent = offers.length || 'n.a.';
   $('#allocationMaximum').textContent = allocationMoney(maximum);
-  $('#allocationCaptured').textContent = allocationMoney(captured);
-  $('#allocationIdentified').textContent = items.length ? allocationMoney(identified) : 'n.a.';
-  $('#allocationAllocated').textContent = allocated ? allocationMoney(allocated) : 'n.a.';
-  $('#allocationUnidentified').textContent = items.length ? allocationMoney(unidentified) : 'n.a.';
-  $('#allocationItems').textContent = items.length || 'n.a.';
-  $('#allocationCoverageText').textContent = coverage == null || !items.length ? 'n.a.' : `${percent.format(coverage)} do volume máximo com valor identificado`;
+  $('#allocationIdentified').textContent = allocationMoney(identified);
+  $('#allocationCoverage').textContent = coverage == null || !items.length ? 'n.a.' : percent.format(coverage);
+  $('#allocationCdiRate').textContent = allocationRateText({ CDI: rates.CDI, IPCA: { rate: null } });
+  $('#allocationIpcaRate').textContent = allocationRateText({ CDI: { rate: null }, IPCA: rates.IPCA });
   $('#allocationUpdated').textContent = updatedDates.length ? `${overview ? `${offers.length} oferta(s) · ` : ''}Validado até ${dateText(updatedDates.at(-1))}` : 'Sem validação disponível';
-  $('#allocationProgress').classList.toggle('empty-progress', !items.length || coverage == null);
-  $('#allocationProgress').firstElementChild.style.width = items.length && coverage != null ? `${coverage * 100}%` : '0%';
+  const stageBreakdown = allocationBreakdown(items, 'stage');
+  const sectorBreakdown = allocationBreakdown(items, 'sector');
+  renderAllocationBreakdown('#allocationStageBreakdown', stageBreakdown);
+  renderAllocationBreakdown('#allocationSectorBreakdown', sectorBreakdown);
+  $('#allocationStageCount').textContent = `${stageBreakdown.length} etapa(s)`;
+  $('#allocationSectorCount').textContent = `${sectorBreakdown.length} setor(es)`;
 
-  $('#allocationRows').replaceChildren(...items.map(item => {
-    const row = element('tr');
-    const destination = element('td', 'allocation-destination');
-    const context = overview ? [item.offer.fund, allocationText(item.location), allocationText(item.sector)] : [allocationText(item.location), allocationText(item.sector)];
-    destination.append(element('strong', '', allocationText(item.name)), element('span', '', context.join(' · ')));
-    const volume = numberValue(item.planned_volume);
-    const share = volume != null && maximum ? volume / maximum : null;
-    const stageCell = element('td'); stageCell.append(element('span', `allocation-stage ${String(item.stage || '').toLocaleLowerCase('pt-BR').replaceAll(' ', '-')}`, allocationText(item.stage)));
-    const sourceCell = element('td');
-    if (item.source?.official_url) {
-      const source = element('a', '', `${allocationText(item.source.document)}${item.source.page ? ` · pág. ${item.source.page}` : ''}`);
-      source.href = item.source.official_url; source.target = '_blank'; source.rel = 'noopener noreferrer'; sourceCell.append(source);
-    } else sourceCell.textContent = 'n.a.';
-    row.append(destination, element('td', '', allocationText(item.type)), element('td', 'numeric', allocationMoney(volume)), element('td', 'numeric', share == null ? 'n.a.' : percent.format(share)), element('td', 'allocation-terms', allocationText(item.financial_terms)), stageCell, element('td', '', dateText(item.deadline)), sourceCell);
-    return row;
-  }));
-  $('#allocationEmpty').hidden = items.length > 0;
-  $('.allocation-table-scroll').hidden = items.length === 0;
+  const query = $('#allocationSearch').value.trim().toLocaleLowerCase('pt-BR');
+  $('#allocationSearch').previousElementSibling.textContent = overview ? 'Buscar fundo' : 'Buscar operação';
+  $('#allocationSearch').placeholder = overview ? 'Fundo ou registro' : 'Destino, tipo ou setor';
+  $('#allocationTableTitle').textContent = overview ? 'Fundos com destinação identificada' : selectedOffer?.fund || 'Detalhamento da oferta';
+  let displayedRows = [];
+
+  if (overview) {
+    renderAllocationHead([
+      { label: 'Fundo' }, { label: 'Volume da oferta', numeric: true }, { label: 'Pipeline com valor', numeric: true },
+      { label: 'Pipeline / oferta', numeric: true }, { label: 'Taxa média ponderada' }, { label: 'Etapas' }, { label: 'Operações', numeric: true }, { label: '' },
+    ]);
+    const filtered = summaries.filter(summary => !query || `${summary.offer.fund} ${summary.offer.registration}`.toLocaleLowerCase('pt-BR').includes(query));
+    const visible = state.allocationExpanded ? filtered : filtered.slice(0, 10);
+    displayedRows = visible.map(summary => {
+      const row = element('tr', 'allocation-fund-row');
+      const fund = element('td', 'allocation-fund');
+      fund.append(element('strong', '', summary.offer.fund), element('span', '', summary.offer.registration));
+      const stages = [...new Set(summary.items.map(item => allocationText(item.stage)))].join(' · ');
+      const actionCell = element('td');
+      const action = element('button', 'button allocation-open', 'Analisar'); action.type = 'button'; action.dataset.allocationOffer = summary.offer.id; actionCell.append(action);
+      const coverageCell = element('td', `numeric${summary.coverage > 1 ? ' allocation-over' : ''}`, summary.coverage == null ? 'n.a.' : percent.format(summary.coverage));
+      if (summary.coverage > 1) coverageCell.title = 'O pipeline indicativo supera o volume máximo informado para a oferta.';
+      row.append(fund, element('td', 'numeric', allocationMoney(summary.maximum)), element('td', 'numeric', allocationMoney(summary.identified)), coverageCell, element('td', 'allocation-rate', allocationRateText(summary.rates, true)), element('td', 'allocation-stages', stages), element('td', 'numeric', String(summary.items.length)), actionCell);
+      return row;
+    });
+    const showMore = $('#allocationShowMore');
+    showMore.hidden = state.allocationExpanded || filtered.length <= 10;
+    showMore.textContent = `Mostrar todos os ${filtered.length} fundos`;
+  } else {
+    renderAllocationHead([
+      { label: 'Destino / operação' }, { label: 'Tipo' }, { label: 'Volume previsto', numeric: true }, { label: '% da oferta', numeric: true },
+      { label: 'Condições financeiras' }, { label: 'Etapa' }, { label: 'Prazo' }, { label: 'Fonte' },
+    ]);
+    const filtered = items.filter(item => !query || `${item.name} ${item.type} ${item.location} ${item.sector}`.toLocaleLowerCase('pt-BR').includes(query));
+    const visible = state.allocationExpanded ? filtered : filtered.slice(0, 12);
+    displayedRows = visible.map(item => {
+      const row = element('tr');
+      const destination = element('td', 'allocation-destination');
+      destination.append(element('strong', '', allocationText(item.name)), element('span', '', [allocationText(item.location), allocationText(item.sector)].join(' · ')));
+      const volume = numberValue(item.planned_volume);
+      const offerMaximum = numberValue(item.offer.maximum_volume);
+      const share = volume != null && offerMaximum ? volume / offerMaximum : null;
+      const stageCell = element('td'); stageCell.append(element('span', `allocation-stage ${String(item.stage || '').toLocaleLowerCase('pt-BR').replaceAll(' ', '-')}`, allocationText(item.stage)));
+      const sourceCell = element('td');
+      if (item.source?.official_url) {
+        const source = element('a', '', `${allocationText(item.source.document)}${item.source.page ? ` · pág. ${item.source.page}` : ''}`);
+        source.href = item.source.official_url; source.target = '_blank'; source.rel = 'noopener noreferrer'; sourceCell.append(source);
+      } else sourceCell.textContent = 'n.a.';
+      row.append(destination, element('td', '', allocationText(item.type)), element('td', 'numeric', allocationMoney(volume)), element('td', 'numeric', share == null ? 'n.a.' : percent.format(share)), element('td', 'allocation-terms', allocationText(item.financial_terms)), stageCell, element('td', '', dateText(item.deadline)), sourceCell);
+      return row;
+    });
+    const showMore = $('#allocationShowMore');
+    showMore.hidden = state.allocationExpanded || filtered.length <= 12;
+    showMore.textContent = `Mostrar todas as ${filtered.length} operações`;
+  }
+
+  $('#allocationRows').replaceChildren(...displayedRows);
+  $('#allocationEmpty').hidden = displayedRows.length > 0;
+  $('.allocation-table-scroll').hidden = displayedRows.length === 0;
 }
 
 function detailStat(label, value) {
@@ -681,7 +789,21 @@ $$('[data-schedule-filter]').forEach(button => button.addEventListener('click', 
 }));
 $('#scheduleWindow').addEventListener('change', renderSchedule);
 $('#scheduleSearch').addEventListener('input', renderScheduleTable);
-$('#allocationOffer').addEventListener('change', renderAllocationPipeline);
+$('#allocationOffer').addEventListener('change', () => {
+  state.allocationExpanded = false;
+  $('#allocationSearch').value = '';
+  renderAllocationPipeline();
+});
+$('#allocationSearch').addEventListener('input', () => { state.allocationExpanded = false; renderAllocationPipeline(); });
+$('#allocationShowMore').addEventListener('click', () => { state.allocationExpanded = true; renderAllocationPipeline(); });
+$('#allocationRows').addEventListener('click', event => {
+  const action = event.target.closest('[data-allocation-offer]');
+  if (!action) return;
+  $('#allocationOffer').value = action.dataset.allocationOffer;
+  $('#allocationSearch').value = '';
+  state.allocationExpanded = false;
+  renderAllocationPipeline();
+});
 $('.close').addEventListener('click', () => $('#details').close());
 $('#details').addEventListener('click', event => { if (event.target === $('#details')) $('#details').close(); });
 $('#export').addEventListener('click', exportCsv);

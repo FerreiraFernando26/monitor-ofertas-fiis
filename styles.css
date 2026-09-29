@@ -222,6 +222,20 @@ td.fund { max-width: 300px; overflow: hidden; text-overflow: ellipsis; font-weig
 .allocation-kpis span { color: var(--muted); font-size: .66rem; letter-spacing: .035em; text-transform: uppercase; }
 .allocation-kpis strong { font-size: 1.08rem; }
 .allocation-highlight strong { color: var(--green); }
+.allocation-analytics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: 14px; }
+.allocation-analytics article { padding: 14px; border: 1px solid var(--line-soft); border-radius: 12px; background: rgba(5,16,25,.28); }
+.allocation-analysis-head, .allocation-table-head { display: flex; justify-content: space-between; gap: 18px; align-items: center; }
+.allocation-analysis-head h3, .allocation-table-head h3 { margin: 0; font-size: .82rem; }
+.allocation-breakdown { display: grid; gap: 10px; margin-top: 13px; }
+.allocation-breakdown-row { display: grid; gap: 6px; }
+.allocation-breakdown-row > div:first-child { display: flex; justify-content: space-between; gap: 14px; color: var(--muted); font-size: .67rem; }
+.allocation-breakdown-row strong { color: var(--text); font-size: .69rem; }
+.allocation-breakdown-rail { height: 6px; overflow: hidden; border-radius: 999px; background: #172b39; }
+.allocation-breakdown-rail span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), var(--cyan)); }
+.allocation-breakdown-empty { color: var(--muted); font-size: .69rem; }
+.allocation-table-head { margin-top: 4px; padding: 12px 2px 0; align-items: flex-end; }
+.allocation-table-head > div { display: grid; gap: 5px; }
+.allocation-search { width: min(330px, 42%); display: grid; gap: 6px; color: var(--muted); font-size: .68rem; }
 .allocation-progress-wrap { padding: 15px; border: 1px solid var(--line-soft); border-radius: 12px; background: rgba(5,16,25,.28); }
 .allocation-progress-head { display: flex; justify-content: space-between; gap: 16px; align-items: start; }
 .allocation-progress-head h3 { margin: 0 0 5px; font-size: .82rem; }
@@ -234,9 +248,18 @@ td.fund { max-width: 300px; overflow: hidden; text-overflow: ellipsis; font-weig
 .allocation-legend i { width: 8px; height: 8px; border-radius: 2px; }
 .allocation-legend .identified { background: var(--green); }
 .allocation-legend .unidentified { background: #2a4354; }
-.allocation-table-scroll { margin-top: 14px; overflow-x: auto; border: 1px solid var(--line-soft); border-radius: 12px; }
-.allocation-table { min-width: 1180px; }
-.allocation-table th, .allocation-table td { padding: 12px; font-size: .71rem; }
+.allocation-table-scroll { margin-top: 10px; overflow-x: auto; border: 1px solid var(--line-soft); border-radius: 12px; }
+.allocation-table { min-width: 1080px; }
+.allocation-table th, .allocation-table td { padding: 10px 11px; font-size: .7rem; }
+.allocation-fund { max-width: 280px; white-space: normal; }
+.allocation-fund strong, .allocation-fund span { display: block; }
+.allocation-fund strong { line-height: 1.35; }
+.allocation-fund span { margin-top: 4px; color: var(--muted); font-size: .64rem; }
+.allocation-rate, .allocation-stages { max-width: 190px; white-space: normal; line-height: 1.4; }
+.allocation-over { color: var(--gold); font-weight: 700; }
+.allocation-open { padding: 7px 10px; }
+.allocation-show-more { display: block; margin: 12px auto 0; }
+.allocation-show-more[hidden] { display: none; }
 .allocation-destination { max-width: 300px; white-space: normal; }
 .allocation-destination strong, .allocation-destination span { display: block; }
 .allocation-destination strong { line-height: 1.4; }
@@ -322,6 +345,9 @@ dialog::backdrop { background: rgba(1,8,14,.82); backdrop-filter: blur(5px); }
   .agenda-list, .document-list { grid-template-columns: 1fr; }
   .allocation-head { display: grid; }
   .allocation-selector { width: 100%; }
+  .allocation-analytics { grid-template-columns: 1fr; }
+  .allocation-table-head { align-items: stretch; display: grid; }
+  .allocation-search { width: 100%; }
   .allocation-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .coordinator-row { grid-template-columns: 1fr auto; gap: 7px 12px; }
   .coordinator-rail { grid-column: 1 / -1; grid-row: 2; }
