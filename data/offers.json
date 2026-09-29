@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-29T11:00:35-03:00",
+  "generated_at": "2026-09-29T15:54:12-03:00",
   "reference_date": "2026-09-29",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -28,8 +28,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 100000000.0,
       "maximum_volume": 100000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 82931833.98,
+      "capture_rate": 0.8293183398,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -40,10 +40,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/49137c3e-5608-4181-adb7-ee1b0ddc8ac2",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|158008",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/49137c3e-5608-4181-adb7-ee1b0ddc8ac2",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-16"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -72,8 +89,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 200000000.0,
       "maximum_volume": 200000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 147731445.4,
+      "capture_rate": 0.738657227,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -84,10 +101,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0b6fda36-f9a8-4330-b81b-781019bceebb",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|158103",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-17",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0b6fda36-f9a8-4330-b81b-781019bceebb",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-17"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -116,8 +150,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 120000000.0,
       "maximum_volume": 120000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 103597326.35,
+      "capture_rate": 0.8633110529166667,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -128,10 +162,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a515192f-5b48-4151-80de-d72b24dc5350",
       "identified_at": "2026-09-29",
       "updated_at": "2026-09-29",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|163167",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a515192f-5b48-4151-80de-d72b24dc5350",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-28"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -292,8 +343,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 340000000.0,
       "maximum_volume": 340000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 340000000.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -304,10 +355,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/02c16b17-6f0d-463b-9714-952efb55b7fc",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|157070",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/02c16b17-6f0d-463b-9714-952efb55b7fc",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-09"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -484,8 +552,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 1500049.88,
       "maximum_volume": 1500049.88,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 1499915.64,
+      "capture_rate": 0.9999105096425194,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -496,10 +564,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9c8122de-87c6-4940-80a5-98e4e466b342",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156497",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9c8122de-87c6-4940-80a5-98e4e466b342",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-02"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -528,8 +613,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 195000000.0,
       "maximum_volume": 195000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 52288890.9,
+      "capture_rate": 0.26814815846153844,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -540,10 +625,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c7a00c8f-fbba-4e3f-9885-fb68bc24667b",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|158092",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-17",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c7a00c8f-fbba-4e3f-9885-fb68bc24667b",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-17"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -572,19 +674,19 @@
       "status": "Oferta Encerrada",
       "initial_volume": 153000000.0,
       "maximum_volume": 153000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 153000000.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": "2026-09-18",
         "start_actual": "2026-09-18",
         "reservation_end_planned": null,
         "closing_planned": null,
-        "closing_actual": "2026-09-21",
+        "closing_actual": "2026-09-22",
         "settlement_planned": null,
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27965",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b9bda344-9ed3-4437-8a62-0c9596a43de0",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
       "documents": [
@@ -606,6 +708,22 @@
               "name": "Anúncio de encerramento",
               "kind": "Prazo textual",
               "date": null
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|158602",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b9bda344-9ed3-4437-8a62-0c9596a43de0",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-22"
             }
           ]
         }
@@ -1033,22 +1151,39 @@
       "status": "Oferta Encerrada",
       "initial_volume": 12271528.5,
       "maximum_volume": 12271528.5,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 6255001.62,
+      "capture_rate": 0.5097165866501472,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
         "reservation_end_planned": null,
         "closing_planned": null,
-        "closing_actual": "2026-09-01",
+        "closing_actual": "2026-09-04",
         "settlement_planned": null,
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/492f9bb7-3320-4afd-b6f0-e83c8c91ad75",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156754",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-04",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/492f9bb7-3320-4afd-b6f0-e83c8c91ad75",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-04"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -1242,8 +1377,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 250000000.0,
       "maximum_volume": 250000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 250000000.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -1254,10 +1389,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c0ddd75d-b38a-433d-9d5b-e44987e75e73",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|157889",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-15",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c0ddd75d-b38a-433d-9d5b-e44987e75e73",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-15"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -1352,8 +1504,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 140000000.0,
       "maximum_volume": 140000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 126887500.0,
+      "capture_rate": 0.9063392857142857,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -1364,10 +1516,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7b4073a5-528b-4541-b5df-dd9e8942d247",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|158275",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7b4073a5-528b-4541-b5df-dd9e8942d247",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-18"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -1639,8 +1808,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 4000000.0,
       "maximum_volume": 4000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 4000000.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -1651,10 +1820,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3e719fed-ea06-4e37-b5e2-96b997d680a4",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156343",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3e719fed-ea06-4e37-b5e2-96b997d680a4",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-01"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -1917,8 +2103,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 100000000.0,
       "maximum_volume": 100000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 77000000.0,
+      "capture_rate": 0.77,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -1929,10 +2115,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6102f83c-7eb2-4c98-bff8-872bf31e25b2",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156938",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-08",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6102f83c-7eb2-4c98-bff8-872bf31e25b2",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-08"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "items": [
@@ -2139,22 +2342,39 @@
       "status": "Oferta Encerrada",
       "initial_volume": 49940800.0,
       "maximum_volume": 49940800.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 26222560.0,
+      "capture_rate": 0.5250728862973761,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
         "reservation_end_planned": null,
         "closing_planned": null,
-        "closing_actual": "2026-09-01",
+        "closing_actual": "2026-09-29",
         "settlement_planned": null,
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/533f6f21-94fb-4a95-8695-35bb18003c14",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|163294",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/533f6f21-94fb-4a95-8695-35bb18003c14",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-29"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -2325,8 +2545,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 60000000.0,
       "maximum_volume": 60000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 55507600.0,
+      "capture_rate": 0.9251266666666667,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -2337,10 +2557,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b2d90150-4332-446f-92ae-604045822234",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156648",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b2d90150-4332-446f-92ae-604045822234",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": null,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-03"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "items": [
@@ -2612,8 +2849,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 437500000.0,
       "maximum_volume": 437500000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 437500000.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -2624,10 +2861,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4080ae55-1cbe-4675-9bde-78f0743ae40e",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156447",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4080ae55-1cbe-4675-9bde-78f0743ae40e",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-01"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "items": [
@@ -2927,8 +3181,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 949999991.52,
       "maximum_volume": 949999991.52,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 864721730.04,
+      "capture_rate": 0.910233408167136,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -2939,10 +3193,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b67428ec-c5f2-42fa-bc72-64a1c16d0939",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|157921",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-15",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b67428ec-c5f2-42fa-bc72-64a1c16d0939",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-15"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "items": [
@@ -2990,8 +3261,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 193098395.19,
       "maximum_volume": 193098395.19,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 190679188.7,
+      "capture_rate": 0.9874716385518397,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -3002,10 +3273,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/002eca90-afb3-4eda-800f-fe82965fd187",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156566",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/002eca90-afb3-4eda-800f-fe82965fd187",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-02"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -3495,8 +3783,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 750000445.48,
       "maximum_volume": 750000445.48,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 615308750.68,
+      "capture_rate": 0.8204111802709698,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -3507,10 +3795,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6d09f698-c452-4af9-8e9d-dc49cbad6132",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156570",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6d09f698-c452-4af9-8e9d-dc49cbad6132",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-02"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -3539,22 +3844,39 @@
       "status": "Oferta Encerrada",
       "initial_volume": 10000000.0,
       "maximum_volume": 10000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 10000000.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
         "reservation_end_planned": null,
         "closing_planned": null,
-        "closing_actual": "2026-09-17",
+        "closing_actual": "2026-09-18",
         "settlement_planned": null,
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fedcc3a2-1b50-4b34-940e-7cc11683d45b",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|158144",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fedcc3a2-1b50-4b34-940e-7cc11683d45b",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-18"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -3690,8 +4012,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 155876300.0,
       "maximum_volume": 155876300.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 155876300.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -3702,10 +4024,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/81e2e9cc-32b4-4e86-bc34-81a8f839fd44",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156441",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/81e2e9cc-32b4-4e86-bc34-81a8f839fd44",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-01"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -3734,8 +4073,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 119876300.0,
       "maximum_volume": 119876300.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 119876300.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -3746,10 +4085,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/55ad854f-5218-457d-b4be-0c1317284e7d",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156443",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/55ad854f-5218-457d-b4be-0c1317284e7d",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-01"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "items": [
@@ -4644,8 +5000,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 171530100.0,
       "maximum_volume": 171530100.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 165825000.0,
+      "capture_rate": 0.9667399482656397,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -4656,10 +5012,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c0d2946a-835f-4a69-92a9-8de91a4189c0",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|158047",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c0d2946a-835f-4a69-92a9-8de91a4189c0",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-16"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -4984,8 +5357,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 1000001.08,
       "maximum_volume": 1000001.08,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 1000000.0,
+      "capture_rate": 0.9999989200011664,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -4996,10 +5369,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/253ecbb8-80cb-4fd3-aa0c-1e647cd8823d",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|157429",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-11",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/253ecbb8-80cb-4fd3-aa0c-1e647cd8823d",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-11"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -5028,8 +5418,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 1000000.34,
       "maximum_volume": 1000000.34,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 1000000.0,
+      "capture_rate": 0.9999996600001156,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -5040,10 +5430,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5a2ecdf4-c947-4732-9ee3-714f8a7e75e3",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|157423",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-11",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5a2ecdf4-c947-4732-9ee3-714f8a7e75e3",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-11"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -5072,22 +5479,39 @@
       "status": "Oferta Encerrada",
       "initial_volume": 60000000.0,
       "maximum_volume": 60000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 60000000.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
         "reservation_end_planned": null,
         "closing_planned": null,
-        "closing_actual": "2026-09-11",
+        "closing_actual": "2026-09-14",
         "settlement_planned": null,
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/62a929aa-a296-4e49-8224-40dd8ebdb74a",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|157397",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-14",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/62a929aa-a296-4e49-8224-40dd8ebdb74a",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-14"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -5116,8 +5540,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 18000000.0,
       "maximum_volume": 18000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 18000000.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -5128,10 +5552,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ac45a6d7-1d3a-4970-9574-48ce74e1f614",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156618",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ac45a6d7-1d3a-4970-9574-48ce74e1f614",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-03"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -5277,8 +5718,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 120037925.16,
       "maximum_volume": 120037925.16,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 111000041.64,
+      "capture_rate": 0.9247080994781167,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -5289,10 +5730,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9ce2d7e6-a5db-49c4-9cb0-5fc56e5e3f57",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|157641",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-15",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9ce2d7e6-a5db-49c4-9cb0-5fc56e5e3f57",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-15"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -5387,8 +5845,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 375000000.0,
       "maximum_volume": 375000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 149220000.0,
+      "capture_rate": 0.39792,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -5399,10 +5857,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9a190319-2072-48ae-947a-df7c48a55353",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156396",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9a190319-2072-48ae-947a-df7c48a55353",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-01"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -5538,8 +6013,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 375000000.0,
       "maximum_volume": 375000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 303941800.0,
+      "capture_rate": 0.8105114666666666,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -5550,10 +6025,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/dc7d64d0-537e-484b-8166-701570efe3de",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|158294",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/dc7d64d0-537e-484b-8166-701570efe3de",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-18"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "items": [
@@ -6203,8 +6695,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 26500000.0,
       "maximum_volume": 26500000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 1800000.0,
+      "capture_rate": 0.06792452830188679,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -6215,10 +6707,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d1e64080-b799-4c66-b9fe-db209c80f492",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|157572",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-14",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d1e64080-b799-4c66-b9fe-db209c80f492",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-14"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -6247,8 +6756,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 20020000.0,
       "maximum_volume": 20020000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 20002000.0,
+      "capture_rate": 0.999100899100899,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -6259,10 +6768,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b0d9d24c-81a7-484d-bd02-6ebb5d25947f",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156674",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b0d9d24c-81a7-484d-bd02-6ebb5d25947f",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-03"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -6291,8 +6817,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 1841383564.8,
       "maximum_volume": 1841383564.8,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 1006640523.55,
+      "capture_rate": 0.546676174803013,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -6303,10 +6829,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/81ed376e-a5d3-4f7c-a4db-ff0c6d024d70",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156742",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-04",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/81ed376e-a5d3-4f7c-a4db-ff0c6d024d70",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-04"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "items": [
@@ -6530,8 +7073,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 380800000.0,
       "maximum_volume": 380800000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 279369160.0,
+      "capture_rate": 0.7336375,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -6542,10 +7085,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/38b3445f-9ba6-42f2-a6aa-1a1284587464",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|157000",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/38b3445f-9ba6-42f2-a6aa-1a1284587464",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-09"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "items": [
@@ -6777,8 +7337,8 @@
       "status": "Oferta Encerrada",
       "initial_volume": 1100000000.0,
       "maximum_volume": 1100000000.0,
-      "captured_volume": null,
-      "capture_rate": null,
+      "captured_volume": 1100000000.0,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": null,
@@ -6789,10 +7349,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/16f31dcc-27de-40dd-a28e-e2c3198ac043",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156667",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/16f31dcc-27de-40dd-a28e-e2c3198ac043",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-03"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "items": [
