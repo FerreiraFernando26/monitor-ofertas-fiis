@@ -1,6 +1,6 @@
 'use strict';
 
-const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 10, documentsExpanded: false, allocationExpanded: false };
+const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, selectedMonths: new Set(), monthSelectionInitialized: false, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 10, documentsExpanded: false, allocationExpanded: false };
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const money = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', notation: 'compact', maximumFractionDigits: 2 });
@@ -10,7 +10,7 @@ const dayFormat = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'sho
 const dateTimeFormat = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Sao_Paulo' });
 const monthFormat = new Intl.DateTimeFormat('pt-BR', { month: 'short', timeZone: 'America/Sao_Paulo' });
 const monthYearFormat = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'numeric', timeZone: 'America/Sao_Paulo' });
-const controls = ['#search', '#statusFilter', '#fundFilter', '#typeFilter', '#coordinatorFilter', '#distributorFilter', '#environmentFilter', '#riteFilter', '#monthFilter', '#activityFilter', '#periodFilter'].map($);
+const controls = ['#search', '#statusFilter', '#fundFilter', '#typeFilter', '#coordinatorFilter', '#distributorFilter', '#environmentFilter', '#riteFilter', '#activityFilter', '#periodFilter'].map($);
 const timelineLabels = {
   start_planned: 'Início previsto', start_actual: 'Início efetivo', reservation_end_planned: 'Fim da reserva',
   closing_planned: 'Encerramento previsto', closing_actual: 'Encerramento efetivo',
@@ -43,6 +43,7 @@ function relevantDate(offer) {
   return offer.timeline?.start_actual || offer.timeline?.start_planned || offer.identified_at || offer.updated_at;
 }
 function isClosedOffer(offer) { return ['Oferta Encerrada', 'Oferta Revogada'].includes(offer.status); }
+function reportingDate(offer) { return isClosedOffer(offer) && offer.timeline?.closing_actual ? offer.timeline.closing_actual : relevantDate(offer); }
 function daysFromReference(value) {
   const reference = parseDate(state.referenceDate);
   const target = parseDate(value);
@@ -78,15 +79,40 @@ function populateFilters() {
   setOptions('#distributorFilter', state.offers.flatMap(offer => (offer.distributors || []).map(item => item.name)));
   setOptions('#environmentFilter', state.offers.map(offer => offer.trading_environment || 'n.a.'));
   setOptions('#riteFilter', state.offers.map(offer => offer.rite));
-  const monthSelect = $('#monthFilter');
-  const currentMonth = monthSelect.value;
-  [...monthSelect.options].slice(1).forEach(option => option.remove());
-  [...new Set(state.offers.map(offer => monthKey(relevantDate(offer))).filter(Boolean))].sort().reverse().forEach(value => {
-    const option = element('option', '', monthYearFormat.format(parseDate(`${value}-01`)));
-    option.value = value;
-    monthSelect.append(option);
+  const months = [...new Set(state.offers.map(offer => monthKey(reportingDate(offer))).filter(Boolean))].sort().reverse();
+  if (!state.monthSelectionInitialized) {
+    const currentMonth = monthKey(state.referenceDate);
+    if (currentMonth && months.includes(currentMonth)) state.selectedMonths.add(currentMonth);
+    state.monthSelectionInitialized = true;
+  }
+  state.selectedMonths = new Set([...state.selectedMonths].filter(value => months.includes(value)));
+  const options = months.map(value => {
+    const label = element('label', 'month-option');
+    const checkbox = element('input');
+    checkbox.type = 'checkbox';
+    checkbox.value = value;
+    checkbox.checked = state.selectedMonths.has(value);
+    label.append(checkbox, element('span', '', monthYearFormat.format(parseDate(`${value}-01`))));
+    return label;
   });
-  if ([...monthSelect.options].some(option => option.value === currentMonth)) monthSelect.value = currentMonth;
+  $('#monthFilterOptions').replaceChildren(...options);
+  syncMonthFilter();
+}
+
+function syncMonthFilter() {
+  const selected = [...state.selectedMonths].sort().reverse();
+  $('#monthFilterAll').checked = selected.length === 0;
+  $$('#monthFilterOptions input').forEach(input => { input.checked = state.selectedMonths.has(input.value); });
+  $('#monthFilterSummary').textContent = selected.length === 0
+    ? 'Todos os meses'
+    : selected.length === 1
+      ? monthYearFormat.format(parseDate(`${selected[0]}-01`))
+      : `${selected.length} meses selecionados`;
+}
+
+function offersForSelectedMonths() {
+  if (!state.selectedMonths.size) return [...state.offers];
+  return state.offers.filter(offer => state.selectedMonths.has(monthKey(reportingDate(offer))));
 }
 
 function filteredOffers() {
@@ -96,7 +122,6 @@ function filteredOffers() {
     lead_coordinator: $('#coordinatorFilter').value, trading_environment: $('#environmentFilter').value, rite: $('#riteFilter').value,
   };
   const periodDays = Number($('#periodFilter').value || 0);
-  const selectedMonth = $('#monthFilter').value;
   const activity = $('#activityFilter').value;
   const reference = parseDate(state.referenceDate);
   const cutoff = periodDays && reference ? new Date(reference.getTime() - periodDays * 86400000) : null;
@@ -109,8 +134,8 @@ function filteredOffers() {
     if (distributor && !(offer.distributors || []).some(item => item.name === distributor)) return false;
     if (activity === 'active' && isClosedOffer(offer)) return false;
     if (activity === 'closed' && !isClosedOffer(offer)) return false;
-    if (selectedMonth && monthKey(relevantDate(offer)) !== selectedMonth) return false;
-    const offerDate = parseDate(relevantDate(offer));
+    if (state.selectedMonths.size && !state.selectedMonths.has(monthKey(reportingDate(offer)))) return false;
+    const offerDate = parseDate(reportingDate(offer));
     return !cutoff || (offerDate && offerDate >= cutoff);
   });
   const { field, direction } = state.sort;
@@ -156,20 +181,21 @@ function renderTable() {
 }
 
 function renderKpis() {
-  const active = state.offers.filter(offer => !isClosedOffer(offer)).length;
-  const maximum = state.offers.reduce((sum, offer) => sum + (numberValue(offer.maximum_volume) || 0), 0);
-  const confirmed = state.offers.filter(offer => numberValue(offer.captured_volume) != null);
+  const scopedOffers = offersForSelectedMonths();
+  const active = scopedOffers.filter(offer => !isClosedOffer(offer)).length;
+  const maximum = scopedOffers.reduce((sum, offer) => sum + (numberValue(offer.maximum_volume) || 0), 0);
+  const confirmed = scopedOffers.filter(offer => numberValue(offer.captured_volume) != null);
   const captured = confirmed.reduce((sum, offer) => sum + numberValue(offer.captured_volume), 0);
   const confirmedMaximum = confirmed.reduce((sum, offer) => sum + (numberValue(offer.maximum_volume) || 0), 0);
-  const review = state.offers.filter(offer => offer.review_required).length;
+  const review = scopedOffers.filter(offer => offer.review_required).length;
   const reference = parseDate(state.referenceDate);
   const weekLimit = reference ? new Date(reference.getTime() + 7 * 86400000) : null;
-  const closingThisWeek = state.offers.filter(offer => {
+  const closingThisWeek = scopedOffers.filter(offer => {
     if (isClosedOffer(offer)) return false;
     const closing = parseDate(offer.timeline?.closing_planned);
     return reference && weekLimit && closing && closing >= reference && closing <= weekLimit;
   });
-  $('#kpiOffers').textContent = state.offers.length;
+  $('#kpiOffers').textContent = scopedOffers.length;
   $('#kpiActive').textContent = `${active} em acompanhamento`;
   $('#kpiMaximum').textContent = money.format(maximum);
   $('#kpiCaptured').textContent = confirmed.length ? money.format(captured) : 'n.a.';
@@ -780,6 +806,28 @@ async function load() {
 }
 
 controls.forEach(control => control.addEventListener('input', () => { state.page = 1; renderTable(); }));
+$('#monthFilterAll').addEventListener('change', event => {
+  if (event.target.checked) state.selectedMonths.clear();
+  else if (!state.selectedMonths.size) event.target.checked = true;
+  syncMonthFilter();
+  state.page = 1;
+  renderKpis();
+  renderTable();
+});
+$('#monthFilterOptions').addEventListener('change', event => {
+  const input = event.target.closest('input[type="checkbox"]');
+  if (!input) return;
+  if (input.checked) state.selectedMonths.add(input.value);
+  else state.selectedMonths.delete(input.value);
+  syncMonthFilter();
+  state.page = 1;
+  renderKpis();
+  renderTable();
+});
+document.addEventListener('click', event => {
+  const filter = $('#monthFilter');
+  if (filter.open && !filter.contains(event.target)) filter.open = false;
+});
 $('#pageSize').addEventListener('change', () => { state.pageSize = Number($('#pageSize').value); state.page = 1; renderTable(); });
 $('#previousPage').addEventListener('click', () => { if (state.page > 1) { state.page -= 1; renderTable(); } });
 $('#nextPage').addEventListener('click', () => { if (state.page * state.pageSize < filteredOffers().length) { state.page += 1; renderTable(); } });

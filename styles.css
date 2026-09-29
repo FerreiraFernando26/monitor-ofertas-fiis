@@ -21,9 +21,9 @@
 [hidden] { display: none !important; }
 html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; background: radial-gradient(circle at 86% -12%, rgba(67,143,255,.15), transparent 30%), var(--bg); color: var(--text); }
-button, input, select { font: inherit; }
-button, input, select, a { color: inherit; }
-button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible, tr:focus-visible { outline: 3px solid rgba(116,204,255,.58); outline-offset: 2px; }
+button, input, select, summary { font: inherit; }
+button, input, select, summary, a { color: inherit; }
+button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible, a:focus-visible, tr:focus-visible { outline: 3px solid rgba(116,204,255,.58); outline-offset: 2px; }
 .skip-link { position: fixed; left: 16px; top: -80px; z-index: 20; padding: 10px 14px; border-radius: 8px; background: var(--blue); text-decoration: none; }
 .skip-link:focus { top: 16px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
@@ -179,9 +179,19 @@ h3 { margin-bottom: 14px; font-size: .92rem; }
 .button:hover { background: #173c58; }
 .button:disabled { cursor: not-allowed; opacity: .45; }
 .filters { display: grid; grid-template-columns: minmax(240px, 1.4fr) repeat(3, minmax(140px, .55fr)); gap: 10px; }
-.filters label { display: grid; gap: 6px; color: var(--muted); font-size: .68rem; }
+.filters > label, .filter-field { display: grid; gap: 6px; color: var(--muted); font-size: .68rem; }
 .search-field { align-self: end; }
 .control { width: 100%; min-height: 41px; padding: 0 11px; border: 1px solid #294457; border-radius: 9px; background: #071620; color: var(--text); }
+.month-filter { position: relative; }
+.month-filter > summary { display: flex; align-items: center; justify-content: space-between; overflow: hidden; list-style: none; cursor: pointer; text-overflow: ellipsis; white-space: nowrap; }
+.month-filter > summary::-webkit-details-marker { display: none; }
+.month-filter > summary::after { content: "⌄"; margin-left: 8px; color: var(--muted); }
+.month-filter[open] > summary { border-color: #3f8cff; }
+.month-menu { position: absolute; z-index: 30; top: calc(100% + 6px); right: 0; width: max(100%, 230px); max-height: 260px; overflow-y: auto; padding: 7px; border: 1px solid #294457; border-radius: 10px; background: #071620; box-shadow: 0 16px 34px rgba(0,0,0,.38); }
+.month-option { display: flex; grid-template-columns: none; align-items: center; gap: 9px; padding: 8px 9px; border-radius: 7px; color: var(--text); cursor: pointer; font-size: .72rem; }
+.month-option:hover { background: #112d43; }
+.month-option input { width: 15px; height: 15px; accent-color: var(--blue); }
+.month-all { margin-bottom: 4px; border-bottom: 1px solid var(--line-soft); border-radius: 7px 7px 0 0; font-weight: 700; }
 .table-scroll { overflow-x: auto; }
 .pagination { display: flex; align-items: end; justify-content: space-between; gap: 14px; padding: 14px 20px 18px; border-top: 1px solid var(--line-soft); }
 .pagination label { display: grid; gap: 6px; color: var(--muted); font-size: .68rem; }
