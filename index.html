@@ -65,31 +65,6 @@
         <div id="distributorChart" class="coordinator-chart distributor-chart" role="img" aria-label="Volume financeiro associado por distribuidor"></div>
       </section>
 
-      <section id="cronograma" class="card panel schedule-panel" aria-labelledby="schedule-title">
-        <div class="panel-head schedule-head"><div><p class="overline">Prazos e acompanhamento</p><h2 id="schedule-title">Cronograma das ofertas</h2><p class="panel-description">Datas previstas e realizadas extraídas de documentos oficiais.</p></div><span id="scheduleCount" class="count">—</span></div>
-        <div class="schedule-kpis" aria-label="Indicadores do cronograma">
-          <button type="button" class="schedule-kpi active" data-schedule-filter="all"><span>Eventos monitorados</span><strong id="scheduleTotal">—</strong></button>
-          <button type="button" class="schedule-kpi" data-schedule-filter="next"><span>Próximos 7 dias</span><strong id="scheduleNextWeek">—</strong></button>
-          <button type="button" class="schedule-kpi" data-schedule-filter="past"><span>Prazos passados</span><strong id="schedulePast">—</strong></button>
-          <button type="button" class="schedule-kpi" data-schedule-filter="missing"><span>Sem próxima data</span><strong id="scheduleMissing">—</strong></button>
-        </div>
-        <div class="schedule-layout">
-          <aside class="schedule-upcoming" aria-labelledby="upcoming-title"><div class="schedule-side-head"><div><p class="overline">Linha do tempo</p><h3 id="upcoming-title">Próximos eventos</h3></div><span id="upcomingCount" class="count">—</span></div><div id="upcomingList" class="agenda-list"></div></aside>
-          <details id="scheduleExplorer" class="schedule-main schedule-explorer">
-            <summary><span><strong>Consultar cronograma completo</strong><small>Expanda para buscar uma oferta e comparar todas as datas.</small></span><span id="scheduleExplorerCount" class="count">—</span></summary>
-            <div class="schedule-toolbar"><div><h3>Visão consolidada</h3><span id="scheduleFilterLabel" class="count">Todos os eventos</span></div><div class="schedule-controls"><label class="schedule-search"><span>Buscar oferta</span><input id="scheduleSearch" class="control" type="search" placeholder="Fundo, registro ou CNPJ"></label><label><span>Janela</span><select id="scheduleWindow" class="control"><option value="45">45 dias</option><option value="90">90 dias</option><option value="180">180 dias</option><option value="all">Todo o período</option></select></label></div></div>
-            <div class="schedule-table-scroll">
-              <table class="schedule-table">
-                <thead><tr><th>Oferta</th><th>Próximo evento</th><th>Fim da reserva</th><th>Liquidação</th><th>Encerramento</th><th>Situação</th></tr></thead>
-                <tbody id="scheduleRows"></tbody>
-              </table>
-            </div>
-            <div id="scheduleEmpty" class="empty" hidden><strong>Nenhum cronograma nesta seleção.</strong><span>Escolha outra janela ou situação.</span></div>
-          </details>
-        </div>
-        <div class="schedule-changes"><div class="schedule-side-head"><div><p class="overline">Monitoramento</p><h3>Mudanças recentes de cronograma</h3></div><span id="changeCount" class="count">—</span></div><div id="changeList" class="change-list"></div></div>
-      </section>
-
       <section id="ofertas" class="card table-card" aria-labelledby="offers-title">
         <div class="table-head">
           <div class="table-title-row"><div><p class="overline">Base consolidada</p><h2 id="offers-title">Ofertas acompanhadas</h2><span id="resultCount" class="count">Carregando…</span></div><button id="export" class="button" type="button">Exportar CSV</button></div>
@@ -119,6 +94,31 @@
         </div>
         <div id="empty" class="empty" hidden><strong>Nenhuma oferta encontrada.</strong><span>Altere os filtros para ampliar a busca.</span></div>
         <div id="loadError" class="empty error" hidden><strong>Não foi possível carregar os dados.</strong><span>Verifique o arquivo público e tente novamente.</span><button id="retry" class="button" type="button">Tentar novamente</button></div>
+      </section>
+
+      <section id="cronograma" class="card panel schedule-panel" aria-labelledby="schedule-title">
+        <div class="panel-head schedule-head"><div><p class="overline">Prazos e acompanhamento</p><h2 id="schedule-title">Cronograma das ofertas</h2><p class="panel-description">Datas previstas e realizadas extraídas de documentos oficiais.</p></div><span id="scheduleCount" class="count">—</span></div>
+        <div class="schedule-kpis" aria-label="Indicadores do cronograma">
+          <button type="button" class="schedule-kpi active" data-schedule-filter="all"><span>Eventos monitorados</span><strong id="scheduleTotal">—</strong></button>
+          <button type="button" class="schedule-kpi" data-schedule-filter="next"><span>Próximos 7 dias</span><strong id="scheduleNextWeek">—</strong></button>
+          <button type="button" class="schedule-kpi" data-schedule-filter="past"><span>Prazos passados</span><strong id="schedulePast">—</strong></button>
+          <button type="button" class="schedule-kpi" data-schedule-filter="missing"><span>Sem próxima data</span><strong id="scheduleMissing">—</strong></button>
+        </div>
+        <div class="schedule-layout">
+          <aside class="schedule-upcoming" aria-labelledby="upcoming-title"><div class="schedule-side-head"><div><p class="overline">Linha do tempo</p><h3 id="upcoming-title">Próximos eventos</h3></div><span id="upcomingCount" class="count">—</span></div><div id="upcomingList" class="agenda-list"></div></aside>
+          <details id="scheduleExplorer" class="schedule-main schedule-explorer">
+            <summary><span><strong>Consultar cronograma completo</strong><small>Expanda para buscar uma oferta e comparar todas as datas.</small></span><span id="scheduleExplorerCount" class="count">—</span></summary>
+            <div class="schedule-toolbar"><div><h3>Visão consolidada</h3><span id="scheduleFilterLabel" class="count">Todos os eventos</span></div><div class="schedule-controls"><label class="schedule-search"><span>Buscar oferta</span><input id="scheduleSearch" class="control" type="search" placeholder="Fundo, registro ou CNPJ"></label><label><span>Janela</span><select id="scheduleWindow" class="control"><option value="45">45 dias</option><option value="90">90 dias</option><option value="180">180 dias</option><option value="all">Todo o período</option></select></label></div></div>
+            <div class="schedule-table-scroll">
+              <table class="schedule-table">
+                <thead><tr><th>Oferta</th><th>Próximo evento</th><th>Fim da reserva</th><th>Liquidação</th><th>Encerramento</th><th>Situação</th></tr></thead>
+                <tbody id="scheduleRows"></tbody>
+              </table>
+            </div>
+            <div id="scheduleEmpty" class="empty" hidden><strong>Nenhum cronograma nesta seleção.</strong><span>Escolha outra janela ou situação.</span></div>
+          </details>
+        </div>
+        <div class="schedule-changes"><div class="schedule-side-head"><div><p class="overline">Monitoramento</p><h3>Mudanças recentes de cronograma</h3></div><span id="changeCount" class="count">—</span></div><div id="changeList" class="change-list"></div></div>
       </section>
 
       <section id="documentos" class="card panel documents-panel" aria-labelledby="documents-title">
@@ -166,6 +166,6 @@
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20260928-5" defer></script>
+  <script src="./app.js?v=20260929-1" defer></script>
 </body>
 </html>

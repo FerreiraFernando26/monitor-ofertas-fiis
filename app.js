@@ -387,7 +387,9 @@ function renderScheduleTable() {
 function renderUpcomingEvents() {
   const windowValue = $('#scheduleWindow').value;
   const days = windowValue === 'all' ? Number.POSITIVE_INFINITY : Number(windowValue);
-  const items = allScheduleEvents().filter(item => !isClosedOffer(item.offer) && !item.actual && daysFromReference(item.date) >= 0 && daysFromReference(item.date) <= days).slice(0, 6);
+  const upcoming = allScheduleEvents().filter(item => !isClosedOffer(item.offer) && !item.actual && daysFromReference(item.date) >= 0 && daysFromReference(item.date) <= days);
+  const cutoffDate = upcoming[5]?.date;
+  const items = cutoffDate ? upcoming.filter((item, index) => index < 6 || item.date === cutoffDate) : upcoming;
   $('#upcomingCount').textContent = `${items.length} exibidos`;
   $('#upcomingList').replaceChildren(...items.map(item => {
     const wrapper = element('button', 'agenda-item'); wrapper.type = 'button'; wrapper.dataset.id = item.offer.id;
