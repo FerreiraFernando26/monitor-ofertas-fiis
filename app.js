@@ -649,13 +649,9 @@ function openDetails(offerId) {
     detailStat('Volume inicial', offer.initial_volume == null ? 'n.a.' : moneyFull.format(offer.initial_volume)),
     detailStat('Volume máximo', offer.maximum_volume == null ? 'n.a.' : moneyFull.format(offer.maximum_volume)),
   ];
-  if (offer.captured_base_volume != null || offer.additional_lot_volume != null) {
-    volumeDetails.push(
-      detailStat('Captação-base', offer.captured_base_volume == null ? 'n.a.' : moneyFull.format(offer.captured_base_volume)),
-      detailStat('Lote adicional', offer.additional_lot_volume == null ? 'n.a.' : moneyFull.format(offer.additional_lot_volume)),
-    );
-  }
   volumeDetails.push(
+    detailStat('Captação-base', offer.captured_base_volume == null ? 'n.a.' : moneyFull.format(offer.captured_base_volume)),
+    detailStat('Lote adicional', offer.additional_lot_volume == null ? 'n.a.' : moneyFull.format(offer.additional_lot_volume)),
     detailStat('Captação total', offer.captured_volume == null ? 'n.a.' : moneyFull.format(offer.captured_volume)),
     detailStat('Taxa de colocação', offer.capture_rate == null ? 'n.a.' : percent.format(offer.capture_rate)),
     detailStat('Coordenador líder', text(offer.lead_coordinator)),
