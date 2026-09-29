@@ -208,6 +208,10 @@ td.fund { max-width: 300px; overflow: hidden; text-overflow: ellipsis; font-weig
 .error strong { color: var(--danger); }
 
 .documents-panel { margin-bottom: 16px; }
+.documents-head { align-items: flex-end; }
+.document-filters { display: flex; align-items: flex-end; justify-content: flex-end; gap: 9px; }
+.document-filters label { min-width: 170px; display: grid; gap: 6px; color: var(--muted); font-size: .68rem; }
+.document-filters .count { align-self: center; min-width: 112px; text-align: right; }
 .document-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .document-card { padding: 14px; border: 1px solid var(--line-soft); border-radius: 11px; background: rgba(5,16,25,.32); }
 .document-card a { display: block; color: var(--text); font-size: .78rem; font-weight: 650; line-height: 1.35; text-decoration: none; }
@@ -343,6 +347,10 @@ dialog::backdrop { background: rgba(1,8,14,.82); backdrop-filter: blur(5px); }
   .schedule-controls { flex-wrap: wrap; justify-content: flex-end; }
   .search-field { grid-column: auto; }
   .agenda-list, .document-list { grid-template-columns: 1fr; }
+  .documents-head { display: grid; align-items: stretch; }
+  .document-filters { justify-content: stretch; }
+  .document-filters label { flex: 1; min-width: 0; }
+  .document-filters .count { align-self: center; }
   .allocation-head { display: grid; }
   .allocation-selector { width: 100%; }
   .allocation-analytics { grid-template-columns: 1fr; }
@@ -362,6 +370,8 @@ dialog::backdrop { background: rgba(1,8,14,.82); backdrop-filter: blur(5px); }
   .detail-grid { grid-template-columns: 1fr; }
   .schedule-kpis, .change-list { grid-template-columns: 1fr; }
   .schedule-toolbar, .schedule-controls { display: grid; }
+  .document-filters { display: grid; }
+  .document-filters .count { min-width: 0; text-align: left; }
   .schedule-toolbar label:not(.schedule-search), .schedule-search { width: 100%; }
   .allocation-kpis { grid-template-columns: 1fr; }
   .allocation-progress-head, .allocation-legend { display: grid; }

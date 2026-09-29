@@ -1,6 +1,6 @@
 'use strict';
 
-const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 10, allocationExpanded: false };
+const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 10, documentsExpanded: false, allocationExpanded: false };
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const money = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', notation: 'compact', maximumFractionDigits: 2 });
@@ -431,8 +431,19 @@ function allDocuments() {
 }
 function renderDocuments() {
   const documents = allDocuments().sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
-  $('#documentCount').textContent = `${documents.length} documentos`;
-  $('#documentList').replaceChildren(...documents.slice(0, 9).map(document => {
+  setOptions('#documentFundFilter', documents.map(document => document.fund));
+  setOptions('#documentTypeFilter', documents.map(document => document.type || 'Documento oficial'));
+  const selectedFund = $('#documentFundFilter').value;
+  const selectedType = $('#documentTypeFilter').value;
+  const filtered = documents.filter(document => {
+    if (selectedFund && document.fund !== selectedFund) return false;
+    return !selectedType || (document.type || 'Documento oficial') === selectedType;
+  });
+  const visible = state.documentsExpanded ? filtered : filtered.slice(0, 9);
+  $('#documentCount').textContent = filtered.length === documents.length
+    ? `${documents.length} documentos`
+    : `${filtered.length} de ${documents.length} documentos`;
+  $('#documentList').replaceChildren(...visible.map(document => {
     const card = element('article', 'document-card');
     const link = element('a', '', document.type || 'Documento oficial');
     link.href = document.official_url;
@@ -440,7 +451,10 @@ function renderDocuments() {
     card.append(link, element('p', '', `${document.fund} · ${dateText(document.date)} · ${document.availability}`));
     return card;
   }));
-  if (!documents.length) $('#documentList').append(element('div', 'empty', 'Nenhum documento oficial vinculado.'));
+  if (!filtered.length) $('#documentList').append(element('div', 'empty', documents.length ? 'Nenhum documento corresponde aos filtros selecionados.' : 'Nenhum documento oficial vinculado.'));
+  const showMore = $('#documentShowMore');
+  showMore.hidden = filtered.length <= 9;
+  showMore.textContent = state.documentsExpanded ? 'Mostrar somente os 9 mais recentes' : `Mostrar todos os ${filtered.length} documentos`;
 }
 
 function allocationItems(offer) { return offer?.allocation_pipeline?.items || []; }
@@ -789,6 +803,14 @@ $$('[data-schedule-filter]').forEach(button => button.addEventListener('click', 
 }));
 $('#scheduleWindow').addEventListener('change', renderSchedule);
 $('#scheduleSearch').addEventListener('input', renderScheduleTable);
+['#documentFundFilter', '#documentTypeFilter'].forEach(selector => $(selector).addEventListener('change', () => {
+  state.documentsExpanded = false;
+  renderDocuments();
+}));
+$('#documentShowMore').addEventListener('click', () => {
+  state.documentsExpanded = !state.documentsExpanded;
+  renderDocuments();
+});
 $('#allocationOffer').addEventListener('change', () => {
   state.allocationExpanded = false;
   $('#allocationSearch').value = '';
