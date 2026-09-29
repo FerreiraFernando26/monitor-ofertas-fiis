@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-29T15:58:31-03:00",
+  "generated_at": "2026-09-29T16:27:59-03:00",
   "reference_date": "2026-09-29",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -29,6 +29,8 @@
       "initial_volume": 100000000.0,
       "maximum_volume": 100000000.0,
       "captured_volume": 82931833.98,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.8293183398,
       "timeline": {
         "start_planned": null,
@@ -90,6 +92,8 @@
       "initial_volume": 200000000.0,
       "maximum_volume": 200000000.0,
       "captured_volume": 147731445.4,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.738657227,
       "timeline": {
         "start_planned": null,
@@ -151,6 +155,8 @@
       "initial_volume": 120000000.0,
       "maximum_volume": 120000000.0,
       "captured_volume": 103597326.35,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.8633110529166667,
       "timeline": {
         "start_planned": null,
@@ -212,6 +218,8 @@
       "initial_volume": 45000000.0,
       "maximum_volume": 45000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -256,6 +264,8 @@
       "initial_volume": 156250000.0,
       "maximum_volume": 156250000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -300,6 +310,8 @@
       "initial_volume": 40000000.0,
       "maximum_volume": 40000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -344,6 +356,8 @@
       "initial_volume": 340000000.0,
       "maximum_volume": 340000000.0,
       "captured_volume": 340000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
@@ -405,6 +419,8 @@
       "initial_volume": 31000112.0,
       "maximum_volume": 31000112.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-30",
@@ -553,6 +569,8 @@
       "initial_volume": 1500049.88,
       "maximum_volume": 1500049.88,
       "captured_volume": 1499915.64,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.9999105096425194,
       "timeline": {
         "start_planned": null,
@@ -614,6 +632,8 @@
       "initial_volume": 195000000.0,
       "maximum_volume": 195000000.0,
       "captured_volume": 52288890.9,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.26814815846153844,
       "timeline": {
         "start_planned": null,
@@ -675,6 +695,8 @@
       "initial_volume": 153000000.0,
       "maximum_volume": 153000000.0,
       "captured_volume": 153000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": "2026-09-18",
@@ -757,6 +779,8 @@
       "initial_volume": 149205000.0,
       "maximum_volume": 149205000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -801,6 +825,8 @@
       "initial_volume": 1113503162.85,
       "maximum_volume": 1113503162.85,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -845,6 +871,8 @@
       "initial_volume": 300604235.95,
       "maximum_volume": 300604235.95,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-25",
@@ -946,6 +974,8 @@
       "initial_volume": 150547961.58,
       "maximum_volume": 150547961.58,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-30",
@@ -1042,6 +1072,8 @@
       "initial_volume": 139987687.53,
       "maximum_volume": 139987687.53,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -1086,6 +1118,8 @@
       "initial_volume": 160208000.0,
       "maximum_volume": 160208000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-21",
@@ -1152,6 +1186,8 @@
       "initial_volume": 12271528.5,
       "maximum_volume": 12271528.5,
       "captured_volume": 6255001.62,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.5097165866501472,
       "timeline": {
         "start_planned": null,
@@ -1213,6 +1249,8 @@
       "initial_volume": 230000000.0,
       "maximum_volume": 230000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -1276,6 +1314,8 @@
       "initial_volume": 450000000.0,
       "maximum_volume": 450000000.0,
       "captured_volume": 431567100.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.959038,
       "timeline": {
         "start_planned": "2026-03-24",
@@ -1378,6 +1418,8 @@
       "initial_volume": 250000000.0,
       "maximum_volume": 250000000.0,
       "captured_volume": 250000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
@@ -1439,6 +1481,8 @@
       "initial_volume": 800000000.0,
       "maximum_volume": 800000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-16",
@@ -1505,6 +1549,8 @@
       "initial_volume": 140000000.0,
       "maximum_volume": 140000000.0,
       "captured_volume": 126887500.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.9063392857142857,
       "timeline": {
         "start_planned": null,
@@ -1566,6 +1612,8 @@
       "initial_volume": 0.0,
       "maximum_volume": 0.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -1809,6 +1857,8 @@
       "initial_volume": 4000000.0,
       "maximum_volume": 4000000.0,
       "captured_volume": 4000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
@@ -1870,6 +1920,8 @@
       "initial_volume": 4000000.0,
       "maximum_volume": 4000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -1914,6 +1966,8 @@
       "initial_volume": 34999935.12,
       "maximum_volume": 34999935.12,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -1958,6 +2012,8 @@
       "initial_volume": 70000009.0,
       "maximum_volume": 70000009.0,
       "captured_volume": 56103627.5,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.801480289809677,
       "timeline": {
         "start_planned": "2026-09-04",
@@ -1969,7 +2025,7 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27651",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/43e01a3c-7585-4099-8287-1ea9dd1ff471",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
       "documents": [
@@ -2031,6 +2087,22 @@
               "name": "Anúncio de encerramento",
               "kind": "Prazo máximo",
               "date": "2027-03-01"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|162256",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/43e01a3c-7585-4099-8287-1ea9dd1ff471",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-24"
             }
           ]
         },
@@ -2104,6 +2176,8 @@
       "initial_volume": 100000000.0,
       "maximum_volume": 100000000.0,
       "captured_volume": 77000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.77,
       "timeline": {
         "start_planned": null,
@@ -2184,6 +2258,8 @@
       "initial_volume": 8500493.61,
       "maximum_volume": 8500493.61,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -2228,6 +2304,8 @@
       "initial_volume": 1268426.57,
       "maximum_volume": 1268426.57,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -2272,6 +2350,8 @@
       "initial_volume": 45000000.15,
       "maximum_volume": 45000000.15,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-24",
@@ -2343,6 +2423,8 @@
       "initial_volume": 49940800.0,
       "maximum_volume": 49940800.0,
       "captured_volume": 26222560.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.5250728862973761,
       "timeline": {
         "start_planned": null,
@@ -2404,6 +2486,8 @@
       "initial_volume": 519360000.0,
       "maximum_volume": 519360000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-24",
@@ -2475,6 +2559,8 @@
       "initial_volume": 165300000.0,
       "maximum_volume": 165300000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-22",
@@ -2546,6 +2632,8 @@
       "initial_volume": 60000000.0,
       "maximum_volume": 60000000.0,
       "captured_volume": 55507600.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.9251266666666667,
       "timeline": {
         "start_planned": null,
@@ -2806,6 +2894,8 @@
       "initial_volume": 301872949.67,
       "maximum_volume": 301872949.67,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -2850,6 +2940,8 @@
       "initial_volume": 437500000.0,
       "maximum_volume": 437500000.0,
       "captured_volume": 437500000.0,
+      "captured_base_volume": 350000000.0,
+      "additional_lot_volume": 87500000.0,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
@@ -3182,6 +3274,8 @@
       "initial_volume": 949999991.52,
       "maximum_volume": 949999991.52,
       "captured_volume": 864721730.04,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.910233408167136,
       "timeline": {
         "start_planned": null,
@@ -3262,6 +3356,8 @@
       "initial_volume": 193098395.19,
       "maximum_volume": 193098395.19,
       "captured_volume": 190679188.7,
+      "captured_base_volume": 190679188.7,
+      "additional_lot_volume": 0.0,
       "capture_rate": 0.9874716385518397,
       "timeline": {
         "start_planned": null,
@@ -3323,6 +3419,8 @@
       "initial_volume": 500000019.96,
       "maximum_volume": 500000019.96,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -3548,6 +3646,8 @@
       "initial_volume": 515237862.1,
       "maximum_volume": 515237862.1,
       "captured_volume": 0.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.0,
       "timeline": {
         "start_planned": null,
@@ -3609,6 +3709,8 @@
       "initial_volume": 1200000000.0,
       "maximum_volume": 1200000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -3690,6 +3792,8 @@
       "initial_volume": 2499983.85,
       "maximum_volume": 2499983.85,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-29",
@@ -3801,6 +3905,8 @@
       "initial_volume": 750000445.48,
       "maximum_volume": 750000445.48,
       "captured_volume": 615308750.68,
+      "captured_base_volume": 599121105.28,
+      "additional_lot_volume": 16187645.4,
       "capture_rate": 0.8204111802709698,
       "timeline": {
         "start_planned": null,
@@ -3862,6 +3968,8 @@
       "initial_volume": 10000000.0,
       "maximum_volume": 10000000.0,
       "captured_volume": 10000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
@@ -3923,6 +4031,8 @@
       "initial_volume": 3191152109.08,
       "maximum_volume": 3191152109.08,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -3967,6 +4077,8 @@
       "initial_volume": 448700000.0,
       "maximum_volume": 448700000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -4030,6 +4142,8 @@
       "initial_volume": 155876300.0,
       "maximum_volume": 155876300.0,
       "captured_volume": 155876300.0,
+      "captured_base_volume": 151876300.0,
+      "additional_lot_volume": 4000000.0,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
@@ -4091,6 +4205,8 @@
       "initial_volume": 119876300.0,
       "maximum_volume": 119876300.0,
       "captured_volume": 119876300.0,
+      "captured_base_volume": 119876300.0,
+      "additional_lot_volume": 0.0,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
@@ -4441,6 +4557,8 @@
       "initial_volume": 30000000.0,
       "maximum_volume": 30000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-22",
@@ -4512,6 +4630,8 @@
       "initial_volume": 180000000.0,
       "maximum_volume": 180000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -4556,6 +4676,8 @@
       "initial_volume": 196000000.0,
       "maximum_volume": 196000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-23",
@@ -4627,6 +4749,8 @@
       "initial_volume": 625000000.0,
       "maximum_volume": 625000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -4852,6 +4976,8 @@
       "initial_volume": 50000000.0,
       "maximum_volume": 50000000.0,
       "captured_volume": 25000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.5,
       "timeline": {
         "start_planned": "2026-09-02",
@@ -4974,6 +5100,8 @@
       "initial_volume": 10000000.1,
       "maximum_volume": 10000000.1,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -5018,6 +5146,8 @@
       "initial_volume": 171530100.0,
       "maximum_volume": 171530100.0,
       "captured_volume": 165825000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.9667399482656397,
       "timeline": {
         "start_planned": null,
@@ -5079,6 +5209,8 @@
       "initial_volume": 3756200.0,
       "maximum_volume": 3756200.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-10-30",
@@ -5175,6 +5307,8 @@
       "initial_volume": 500000000.0,
       "maximum_volume": 500000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -5219,6 +5353,8 @@
       "initial_volume": 400000000.0,
       "maximum_volume": 400000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -5263,6 +5399,8 @@
       "initial_volume": 1080000014.57,
       "maximum_volume": 1080000014.57,
       "captured_volume": 718190603.74,
+      "captured_base_volume": 718190603.74,
+      "additional_lot_volume": 0.0,
       "capture_rate": 0.6649912907880342,
       "timeline": {
         "start_planned": "2026-05-19",
@@ -5274,7 +5412,7 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26280",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/f361e0c3-104c-476b-a811-48d5598fcf8c",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
       "documents": [
@@ -5321,6 +5459,22 @@
               "name": "Anúncio de encerramento",
               "kind": "Prazo máximo",
               "date": "2026-11-03"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|158594",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/f361e0c3-104c-476b-a811-48d5598fcf8c",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-21"
             }
           ]
         },
@@ -5375,6 +5529,8 @@
       "initial_volume": 1000001.08,
       "maximum_volume": 1000001.08,
       "captured_volume": 1000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.9999989200011664,
       "timeline": {
         "start_planned": null,
@@ -5436,6 +5592,8 @@
       "initial_volume": 1000000.34,
       "maximum_volume": 1000000.34,
       "captured_volume": 1000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.9999996600001156,
       "timeline": {
         "start_planned": null,
@@ -5497,6 +5655,8 @@
       "initial_volume": 60000000.0,
       "maximum_volume": 60000000.0,
       "captured_volume": 60000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
@@ -5558,6 +5718,8 @@
       "initial_volume": 18000000.0,
       "maximum_volume": 18000000.0,
       "captured_volume": 18000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
@@ -5619,6 +5781,8 @@
       "initial_volume": 2905200.0,
       "maximum_volume": 2905200.0,
       "captured_volume": 2905200.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": "2026-08-03",
@@ -5630,7 +5794,7 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27275",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fc205ce9-cb00-4923-9648-9591a5a9c854",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
       "documents": [
@@ -5686,6 +5850,22 @@
           ]
         },
         {
+          "id": "CVM-SRE|159133",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-09-23",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fc205ce9-cb00-4923-9648-9591a5a9c854",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-09-23"
+            }
+          ]
+        },
+        {
           "id": "CVM160|27275|9ad400a5dae11623013d7c2d72fc6f9cc10672f852b6ecbcd7bf9924b797935f",
           "type": "Anúncio de Encerramento da Distribuição Primária",
           "date": "2026-09-23",
@@ -5736,6 +5916,8 @@
       "initial_volume": 120037925.16,
       "maximum_volume": 120037925.16,
       "captured_volume": 111000041.64,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.9247080994781167,
       "timeline": {
         "start_planned": null,
@@ -5797,6 +5979,8 @@
       "initial_volume": 180234000.0,
       "maximum_volume": 180234000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-21",
@@ -5863,6 +6047,8 @@
       "initial_volume": 375000000.0,
       "maximum_volume": 375000000.0,
       "captured_volume": 149220000.0,
+      "captured_base_volume": 149220000.0,
+      "additional_lot_volume": 0.0,
       "capture_rate": 0.39792,
       "timeline": {
         "start_planned": null,
@@ -5924,6 +6110,8 @@
       "initial_volume": 617520000.0,
       "maximum_volume": 617520000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -5968,6 +6156,8 @@
       "initial_volume": 125000000.0,
       "maximum_volume": 125000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -6031,6 +6221,8 @@
       "initial_volume": 375000000.0,
       "maximum_volume": 375000000.0,
       "captured_volume": 303941800.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.8105114666666666,
       "timeline": {
         "start_planned": null,
@@ -6669,6 +6861,8 @@
       "initial_volume": 150000000.0,
       "maximum_volume": 150000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -6713,6 +6907,8 @@
       "initial_volume": 26500000.0,
       "maximum_volume": 26500000.0,
       "captured_volume": 1800000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.06792452830188679,
       "timeline": {
         "start_planned": null,
@@ -6774,6 +6970,8 @@
       "initial_volume": 20020000.0,
       "maximum_volume": 20020000.0,
       "captured_volume": 20002000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.999100899100899,
       "timeline": {
         "start_planned": null,
@@ -6835,6 +7033,8 @@
       "initial_volume": 1841383564.8,
       "maximum_volume": 1841383564.8,
       "captured_volume": 1006640523.55,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.546676174803013,
       "timeline": {
         "start_planned": null,
@@ -6915,6 +7115,8 @@
       "initial_volume": 180000000.0,
       "maximum_volume": 180000000.0,
       "captured_volume": 0.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.0,
       "timeline": {
         "start_planned": null,
@@ -6976,6 +7178,8 @@
       "initial_volume": 15000000.0,
       "maximum_volume": 15000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -7020,6 +7224,8 @@
       "initial_volume": 250000000.0,
       "maximum_volume": 250000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -7064,6 +7270,8 @@
       "initial_volume": 1005467009.4,
       "maximum_volume": 1005467009.4,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -7108,6 +7316,8 @@
       "initial_volume": 380800000.0,
       "maximum_volume": 380800000.0,
       "captured_volume": 279369160.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 0.7336375,
       "timeline": {
         "start_planned": null,
@@ -7188,6 +7398,8 @@
       "initial_volume": 1460000000.0,
       "maximum_volume": 1460000000.0,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -7232,6 +7444,8 @@
       "initial_volume": 299999960.82,
       "maximum_volume": 299999960.82,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-28",
@@ -7328,6 +7542,8 @@
       "initial_volume": 805957699.66,
       "maximum_volume": 805957699.66,
       "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
@@ -7372,6 +7588,8 @@
       "initial_volume": 1100000000.0,
       "maximum_volume": 1100000000.0,
       "captured_volume": 1100000000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
