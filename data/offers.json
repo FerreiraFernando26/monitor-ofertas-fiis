@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-28T17:28:20-03:00",
-  "reference_date": "2026-09-28",
+  "generated_at": "2026-09-29T11:00:35-03:00",
+  "reference_date": "2026-09-29",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
   "offers": [
@@ -94,6 +94,50 @@
       }
     },
     {
+      "id": "CVM160|26876",
+      "fund": "ARKAN ALPHA MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "63.034.061/0001-90",
+      "ticker": "",
+      "registration": "SRE/2017/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+      "distributors": [
+        {
+          "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 120000000.0,
+      "maximum_volume": 120000000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-28",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-29",
+      "updated_at": "2026-09-29",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|27919",
       "fund": "AZ QUEST PANORAMA ILION CAIUBÍ FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
       "cnpj": "68.281.236/0001-87",
@@ -131,6 +175,50 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28089",
+      "fund": "AZ QUEST PANORAMA INVESTIMENTOS IMOBILIARIOS FII DE RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.281.311/0001-00",
+      "ticker": "",
+      "registration": "SRE/3129/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO DAYCOVAL S.A.",
+      "distributors": [
+        {
+          "name": "BANCO DAYCOVAL S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 156250000.0,
+      "maximum_volume": 156250000.0,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-29",
+      "updated_at": "2026-09-29",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
@@ -3466,6 +3554,50 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28105",
+      "fund": "KINEA RENDIMENTOS IMOBILIÁRIOS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "16.706.958/0001-32",
+      "ticker": "",
+      "registration": "SRE/3139/2026",
+      "issue": "13",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 3191152109.08,
+      "maximum_volume": 3191152109.08,
+      "captured_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-29",
+      "updated_at": "2026-09-29",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,

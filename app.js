@@ -1,6 +1,6 @@
 'use strict';
 
-const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 25, allocationExpanded: false };
+const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 10, allocationExpanded: false };
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const money = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', notation: 'compact', maximumFractionDigits: 2 });
