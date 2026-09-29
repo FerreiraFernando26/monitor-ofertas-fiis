@@ -343,7 +343,10 @@ function offerScheduleSummary(offer) {
 function selectedScheduleSummaries() {
   const windowValue = $('#scheduleWindow').value;
   const days = windowValue === 'all' ? null : Number(windowValue);
+  const query = $('#scheduleSearch').value.trim().toLocaleLowerCase('pt-BR');
   return state.offers.map(offerScheduleSummary).filter(summary => {
+    const haystack = [summary.offer.fund, summary.offer.registration, summary.offer.cnpj].filter(Boolean).join(' ').toLocaleLowerCase('pt-BR');
+    if (query && !haystack.includes(query)) return false;
     if (state.scheduleFilter !== 'all' && summary.status !== state.scheduleFilter) return false;
     if (!days || !summary.next || ['past', 'missing', 'completed'].includes(summary.status)) return true;
     return daysFromReference(summary.next.date) <= days;
@@ -377,13 +380,14 @@ function renderScheduleTable() {
     return row;
   }));
   $('#scheduleCount').textContent = `${summaries.length} ${summaries.length === 1 ? 'oferta' : 'ofertas'}`;
+  $('#scheduleExplorerCount').textContent = `${summaries.length} ${summaries.length === 1 ? 'oferta' : 'ofertas'}`;
   $('#scheduleEmpty').hidden = summaries.length > 0;
 }
 
 function renderUpcomingEvents() {
   const windowValue = $('#scheduleWindow').value;
   const days = windowValue === 'all' ? Number.POSITIVE_INFINITY : Number(windowValue);
-  const items = allScheduleEvents().filter(item => !isClosedOffer(item.offer) && !item.actual && daysFromReference(item.date) >= 0 && daysFromReference(item.date) <= days).slice(0, 10);
+  const items = allScheduleEvents().filter(item => !isClosedOffer(item.offer) && !item.actual && daysFromReference(item.date) >= 0 && daysFromReference(item.date) <= days).slice(0, 6);
   $('#upcomingCount').textContent = `${items.length} exibidos`;
   $('#upcomingList').replaceChildren(...items.map(item => {
     const wrapper = element('button', 'agenda-item'); wrapper.type = 'button'; wrapper.dataset.id = item.offer.id;
@@ -670,9 +674,11 @@ $('#upcomingList').addEventListener('click', event => { const item = event.targe
 $$('[data-schedule-filter]').forEach(button => button.addEventListener('click', () => {
   state.scheduleFilter = button.dataset.scheduleFilter;
   $$('[data-schedule-filter]').forEach(item => item.classList.toggle('active', item === button));
+  $('#scheduleExplorer').open = true;
   renderSchedule();
 }));
 $('#scheduleWindow').addEventListener('change', renderSchedule);
+$('#scheduleSearch').addEventListener('input', renderScheduleTable);
 $('#allocationOffer').addEventListener('change', renderAllocationPipeline);
 $('.close').addEventListener('click', () => $('#details').close());
 $('#details').addEventListener('click', event => { if (event.target === $('#details')) $('#details').close(); });

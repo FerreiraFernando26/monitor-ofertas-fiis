@@ -125,9 +125,22 @@ h3 { margin-bottom: 14px; font-size: .92rem; }
 .schedule-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; align-items: start; }
 .schedule-main, .schedule-upcoming, .schedule-changes { border: 1px solid var(--line-soft); border-radius: 12px; background: rgba(5,16,25,.28); }
 .schedule-main { min-width: 0; overflow: hidden; }
+.schedule-explorer > summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 15px 16px; list-style: none; cursor: pointer; }
+.schedule-explorer > summary::-webkit-details-marker { display: none; }
+.schedule-explorer > summary::after { content: "+"; display: grid; width: 28px; height: 28px; flex: 0 0 28px; place-items: center; border: 1px solid #32658d; border-radius: 8px; color: var(--cyan); font-size: 1.1rem; line-height: 1; }
+.schedule-explorer[open] > summary::after { content: "−"; }
+.schedule-explorer > summary:hover { background: rgba(17,45,67,.48); }
+.schedule-explorer > summary > span:first-child { display: grid; gap: 4px; }
+.schedule-explorer > summary strong { font-size: .8rem; }
+.schedule-explorer > summary small { color: var(--muted); font-size: .67rem; font-weight: 400; }
+.schedule-explorer > summary .count { margin-left: auto; }
+.schedule-explorer[open] > summary { border-bottom: 1px solid var(--line-soft); }
 .schedule-toolbar, .schedule-side-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px; border-bottom: 1px solid var(--line-soft); }
 .schedule-toolbar h3, .schedule-side-head h3 { margin: 0; }
-.schedule-toolbar label { display: grid; grid-template-columns: auto 130px; gap: 8px; align-items: center; color: var(--muted); font-size: .68rem; }
+.schedule-controls { display: flex; align-items: end; gap: 10px; }
+.schedule-toolbar label { display: grid; grid-template-columns: 1fr; gap: 6px; color: var(--muted); font-size: .68rem; }
+.schedule-toolbar label:not(.schedule-search) { width: 140px; }
+.schedule-search { width: min(300px, 36vw); }
 .schedule-toolbar .control { min-height: 35px; }
 .schedule-table-scroll { overflow-x: auto; }
 .schedule-table { min-width: 930px; }
@@ -304,6 +317,7 @@ dialog::backdrop { background: rgba(1,8,14,.82); backdrop-filter: blur(5px); }
   .pagination-actions { justify-content: space-between; }
   .schedule-kpis, .change-list { grid-template-columns: 1fr 1fr; }
   .schedule-toolbar { align-items: flex-end; }
+  .schedule-controls { flex-wrap: wrap; justify-content: flex-end; }
   .search-field { grid-column: auto; }
   .agenda-list, .document-list { grid-template-columns: 1fr; }
   .allocation-head { display: grid; }
@@ -321,8 +335,8 @@ dialog::backdrop { background: rgba(1,8,14,.82); backdrop-filter: blur(5px); }
   .donut { width: 116px; }
   .detail-grid { grid-template-columns: 1fr; }
   .schedule-kpis, .change-list { grid-template-columns: 1fr; }
-  .schedule-toolbar { display: grid; }
-  .schedule-toolbar label { grid-template-columns: 1fr; }
+  .schedule-toolbar, .schedule-controls { display: grid; }
+  .schedule-toolbar label:not(.schedule-search), .schedule-search { width: 100%; }
   .allocation-kpis { grid-template-columns: 1fr; }
   .allocation-progress-head, .allocation-legend { display: grid; }
   .dialog-head, .dialog-body { padding-left: 18px; padding-right: 18px; }
