@@ -193,6 +193,7 @@ th, td { padding: 13px 15px; border-bottom: 1px solid var(--line-soft); text-ali
 th { background: #081823; }
 th button { padding: 0; border: 0; background: transparent; color: #8ba5b8; font-size: .67rem; font-weight: 750; letter-spacing: .05em; text-transform: uppercase; cursor: pointer; }
 th.numeric, td.numeric { text-align: right; }
+.offers-table th:not(:first-child), .offers-table td:not(:first-child) { text-align: center; }
 tbody tr { cursor: pointer; transition: background .15s ease; }
 tbody tr:hover, tbody tr:focus { background: rgba(67,143,255,.065); }
 td.fund { max-width: 300px; overflow: hidden; text-overflow: ellipsis; font-weight: 650; }
@@ -255,6 +256,7 @@ td.fund { max-width: 300px; overflow: hidden; text-overflow: ellipsis; font-weig
 .allocation-table-scroll { margin-top: 10px; overflow-x: auto; border: 1px solid var(--line-soft); border-radius: 12px; }
 .allocation-table { min-width: 1080px; }
 .allocation-table th, .allocation-table td { padding: 10px 11px; font-size: .7rem; }
+.allocation-table th:not(:first-child), .allocation-table td:not(:first-child) { text-align: center; }
 .allocation-fund { max-width: 280px; white-space: normal; }
 .allocation-fund strong, .allocation-fund span { display: block; }
 .allocation-fund strong { line-height: 1.35; }
