@@ -1,6 +1,6 @@
 'use strict';
 
-const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, selectedMonths: new Set(), monthSelectionInitialized: false, sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 10, documentsExpanded: false, allocationExpanded: false };
+const state = { offers: [], scheduleChanges: [], referenceDate: null, generatedAt: null, selectedMonths: new Set(), sort: { field: 'updated_at', direction: -1 }, chart: 'announced', scheduleFilter: 'all', page: 1, pageSize: 10, documentsExpanded: false, allocationExpanded: false };
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const money = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', notation: 'compact', maximumFractionDigits: 2 });
@@ -79,11 +79,6 @@ function populateFilters() {
   setOptions('#environmentFilter', state.offers.map(offer => offer.trading_environment || 'n.a.'));
   setOptions('#riteFilter', state.offers.map(offer => offer.rite));
   const months = [...new Set(state.offers.map(offer => monthKey(relevantDate(offer))).filter(Boolean))].sort().reverse();
-  if (!state.monthSelectionInitialized) {
-    const currentMonth = monthKey(state.referenceDate);
-    if (currentMonth && months.includes(currentMonth)) state.selectedMonths.add(currentMonth);
-    state.monthSelectionInitialized = true;
-  }
   state.selectedMonths = new Set([...state.selectedMonths].filter(value => months.includes(value)));
   ['#monthFilterOptions', '#overviewMonthFilterOptions'].forEach(selector => {
     const options = months.map(value => {
