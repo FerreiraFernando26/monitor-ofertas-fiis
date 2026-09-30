@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-29T16:27:59-03:00",
-  "reference_date": "2026-09-29",
+  "generated_at": "2026-09-30T11:00:25-03:00",
+  "reference_date": "2026-09-30",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
   "offers": [
@@ -169,8 +169,8 @@
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a515192f-5b48-4151-80de-d72b24dc5350",
-      "identified_at": "2026-09-29",
-      "updated_at": "2026-09-29",
+      "identified_at": "2026-09-30",
+      "updated_at": "2026-09-30",
       "documents": [
         {
           "id": "CVM-SRE|163167",
@@ -189,6 +189,52 @@
           ]
         }
       ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28129",
+      "fund": "ARKAN ALPHA MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "63.034.061/0001-90",
+      "ticker": "",
+      "registration": "SRE/3160/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+      "distributors": [
+        {
+          "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 209999947.53,
+      "maximum_volume": 209999947.53,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-30",
+      "updated_at": "2026-09-30",
+      "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
         "items": []
@@ -278,8 +324,8 @@
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-29",
-      "updated_at": "2026-09-29",
+      "identified_at": "2026-09-30",
+      "updated_at": "2026-09-30",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
@@ -609,6 +655,52 @@
       }
     },
     {
+      "id": "CVM160|27632",
+      "fund": "BRADESCO BTS LOGÍSTICA GRAVATAÍ FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.448.198/0001-04",
+      "ticker": "",
+      "registration": "SRE/2705/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO BRADESCO S.A.",
+      "distributors": [
+        {
+          "name": "BANCO BRADESCO S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 40648000.0,
+      "maximum_volume": 40648000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-29",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-30",
+      "updated_at": "2026-09-30",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|27798",
       "fund": "BRASPARK RENDA IMOBILIÁRIA FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA",
       "cnpj": "67.758.917/0001-20",
@@ -775,7 +867,7 @@
           "allocated_volume": null
         }
       ],
-      "status": "Registro Concedido",
+      "status": "Oferta Encerrada",
       "initial_volume": 149205000.0,
       "maximum_volume": 149205000.0,
       "captured_volume": null,
@@ -787,14 +879,14 @@
         "start_actual": null,
         "reservation_end_planned": null,
         "closing_planned": null,
-        "closing_actual": null,
+        "closing_actual": "2026-09-29",
         "settlement_planned": null,
         "settlement_actual": null
       },
-      "review_required": false,
+      "review_required": true,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-28",
-      "updated_at": "2026-09-28",
+      "identified_at": "2026-09-30",
+      "updated_at": "2026-09-30",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
@@ -1608,9 +1700,9 @@
           "allocated_volume": null
         }
       ],
-      "status": "Aguardando Bookbuilding",
-      "initial_volume": 0.0,
-      "maximum_volume": 0.0,
+      "status": "Registro Concedido",
+      "initial_volume": 375000000.0,
+      "maximum_volume": 375000000.0,
       "captured_volume": null,
       "captured_base_volume": null,
       "additional_lot_volume": null,
@@ -1624,10 +1716,10 @@
         "settlement_planned": null,
         "settlement_actual": null
       },
-      "review_required": false,
+      "review_required": true,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-28",
-      "updated_at": "2026-09-28",
+      "identified_at": "2026-09-30",
+      "updated_at": "2026-09-30",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
@@ -3333,6 +3425,52 @@
       }
     },
     {
+      "id": "CVM160|27571",
+      "fund": "INVITATO DIRETTO REAL ESTATE CRÉDITO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "61.793.651/0001-70",
+      "ticker": "",
+      "registration": "SRE/2652/2026",
+      "issue": "2",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 200154598.68,
+      "maximum_volume": 200154598.68,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-09-29",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-09-30",
+      "updated_at": "2026-09-30",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|27115",
       "fund": "ITAÚ CRÉDITO IMOBILIÁRIO CDI FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
       "cnpj": "64.542.109/0001-33",
@@ -4045,8 +4183,8 @@
       },
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
-      "identified_at": "2026-09-29",
-      "updated_at": "2026-09-29",
+      "identified_at": "2026-09-30",
+      "updated_at": "2026-09-30",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
