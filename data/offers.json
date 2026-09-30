@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-30T12:01:16-03:00",
+  "generated_at": "2026-09-30T17:14:44-03:00",
   "reference_date": "2026-09-30",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -65,6 +65,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -128,6 +134,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -191,6 +203,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -237,6 +255,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -283,6 +307,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -329,6 +359,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -375,6 +411,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -438,6 +480,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -551,6 +599,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Lajes corporativas",
+          "basis": "Propriedade e usufruto de cinco andares do Edifício Cidade Jardim, com contratos de locação.",
+          "page": 9,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27998"
+        },
         "items": [
           {
             "id": "BGR-CJ-USUFRUTO-2",
@@ -651,6 +705,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -697,6 +757,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -760,6 +826,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -844,6 +916,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -890,6 +968,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -936,6 +1020,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -1039,6 +1129,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -1137,6 +1233,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -1183,6 +1285,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -1251,6 +1359,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -1314,6 +1428,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -1360,6 +1480,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Desenvolvimento",
+          "basis": "Construção e desenvolvimento de condomínio com 34 galpões logísticos para locação.",
+          "page": 9,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27723"
+        },
         "items": [
           {
             "id": "CL-CB-LOGISTICO",
@@ -1483,6 +1609,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -1546,6 +1678,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -1614,6 +1752,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -1677,6 +1821,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -1723,6 +1873,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Crédito imobiliário",
+          "basis": "Política em CRI, cotas de FII, LH, LCI e LIG; pipeline indicativo de CRI.",
+          "page": 9,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
+        },
         "items": [
           {
             "id": "D108-CRI-01",
@@ -1985,6 +2141,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -2031,6 +2193,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -2077,6 +2245,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -2222,6 +2396,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": [
           {
             "id": "EXES-SECUNDARIA",
@@ -2304,6 +2484,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Fundos de fundos / Feeder",
+          "basis": "No mínimo 95% do patrimônio em cotas do Riza Malls Feeder, que investe no Master.",
+          "page": 9,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26546"
+        },
         "items": [
           {
             "id": "RIZA-MALLS-FEEDER",
@@ -2369,6 +2555,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -2415,6 +2607,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -2488,6 +2686,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -2551,6 +2755,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -2624,6 +2834,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -2697,6 +2913,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -2760,6 +2982,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Crédito imobiliário",
+          "basis": "Política exige no mínimo 67% do patrimônio líquido em CRI.",
+          "page": 9,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
+        },
         "items": [
           {
             "id": "HEDGE-OPERACAO-01",
@@ -3005,6 +3233,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -3068,6 +3302,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Crédito imobiliário",
+          "basis": "Destinação dos recursos apresenta 15 operações de CRI em diferentes segmentos.",
+          "page": 9,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
+        },
         "items": [
           {
             "id": "HSI-CRI-01",
@@ -3402,6 +3642,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Fundos de fundos / Feeder",
+          "basis": "Aquisição preponderante de cotas do Invista Brazilian Business Park e cotas de outros FII.",
+          "page": 11,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27307"
+        },
         "items": [
           {
             "id": "INVISTA-IBBP11",
@@ -3467,6 +3713,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -3530,6 +3782,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -3576,6 +3834,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Crédito imobiliário",
+          "basis": "Política exige mais de dois terços do patrimônio líquido em CRI.",
+          "page": 9,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
+        },
         "items": [
           {
             "id": "ITAU-CRI-01",
@@ -3820,6 +4084,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -3866,6 +4136,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Logística",
+          "basis": "Política contempla dois terços do patrimônio em empreendimentos logísticos; pipeline de galpões.",
+          "page": 9,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27983"
+        },
         "items": [
           {
             "id": "JSAFRA-GRU",
@@ -4016,6 +4292,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -4079,6 +4361,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -4142,6 +4430,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -4188,6 +4482,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -4234,6 +4534,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Crédito imobiliário",
+          "basis": "Ativos da política: CRI, debêntures, FIDC, FII e letras imobiliárias, além de liquidez.",
+          "page": 7,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27741"
+        },
         "items": [
           {
             "id": "KINEA-ATIVOS",
@@ -4316,6 +4622,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -4379,6 +4691,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Fundos de fundos / Feeder",
+          "basis": "Recursos integralmente destinados à subclasse A do LCP Itaú Renda CDI Master.",
+          "page": 9,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
+        },
         "items": [
           {
             "id": "LCP-PROJETO-01",
@@ -4741,6 +5059,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -4787,6 +5111,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -4860,6 +5190,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -4906,6 +5242,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Multiestratégia",
+          "basis": "Política combina crédito, FII e participações; pipeline combina crédito e imóvel logístico.",
+          "page": 9,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
+        },
         "items": [
           {
             "id": "MAUA-ATIVO-01",
@@ -5211,6 +5553,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -5257,6 +5605,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -5320,6 +5674,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -5418,6 +5778,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -5464,6 +5830,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -5510,6 +5882,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -5640,6 +6018,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -5703,6 +6087,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -5766,6 +6156,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -5829,6 +6225,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -5892,6 +6294,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -6027,6 +6435,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -6090,6 +6504,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -6158,6 +6578,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -6221,6 +6647,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -6267,6 +6699,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -6313,6 +6751,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Residencial",
+          "basis": "Aquisição e alienação de unidades de sete empreendimentos residenciais; possibilidade de reformas.",
+          "page": 8,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27858"
+        },
         "items": [
           {
             "id": "RESIDENCIAL-7-ATIVOS",
@@ -6395,6 +6839,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Crédito imobiliário",
+          "basis": "Política de ativos financeiros imobiliários e pipeline de CRI e operação mezanino.",
+          "page": 6,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
+        },
         "items": [
           {
             "id": "RIOBRAVO-OPERACAO-01",
@@ -7018,6 +7468,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -7081,6 +7537,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -7144,6 +7606,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -7207,6 +7675,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Energia",
+          "basis": "Imóveis e direitos reais destinados ao segmento de geração de energia elétrica.",
+          "page": 6,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26751"
+        },
         "items": [
           {
             "id": "SUNO-UFV-70",
@@ -7289,6 +7763,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -7335,6 +7815,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -7381,6 +7867,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -7427,6 +7919,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -7490,6 +7988,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": [
           {
             "id": "TJK-POLITICA",
@@ -7555,6 +8059,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -7653,6 +8163,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -7699,6 +8215,12 @@
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
         "items": []
       }
     },
@@ -7762,6 +8284,12 @@
       ],
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
+        "classification": {
+          "category": "Lajes corporativas",
+          "basis": "Aquisição de ativos de escritórios e lojas associados, detalhados como ativos iniciais.",
+          "page": 7,
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27241"
+        },
         "items": [
           {
             "id": "XP-JK-SQUARE",

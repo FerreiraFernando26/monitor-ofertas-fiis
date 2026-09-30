@@ -485,6 +485,7 @@ function renderDocuments() {
 }
 
 function allocationItems(offer) { return offer?.allocation_pipeline?.items || []; }
+function allocationCategory(offer) { return offer?.allocation_pipeline?.classification?.category || 'n.a.'; }
 function allocationMoney(value) { return numberValue(value) == null ? 'n.a.' : money.format(numberValue(value)); }
 function allocationText(value) { return value && value !== 'n.a.' ? value : 'n.a.'; }
 
@@ -554,9 +555,11 @@ function renderAllocationHead(columns) {
 }
 
 function populateAllocationOffers() {
+  setOptions('#allocationCategory', state.offers.map(allocationCategory));
   const select = $('#allocationOffer');
   const current = select.value || '__all__';
-  const offers = [...state.offers].sort((a, b) => {
+  const category = $('#allocationCategory').value;
+  const offers = state.offers.filter(offer => !category || allocationCategory(offer) === category).sort((a, b) => {
     const dataDifference = Number(allocationItems(b).length > 0) - Number(allocationItems(a).length > 0);
     return dataDifference || a.fund.localeCompare(b.fund, 'pt-BR');
   });
@@ -574,7 +577,8 @@ function renderAllocationPipeline() {
   const selectedId = $('#allocationOffer').value || '__all__';
   const overview = selectedId === '__all__';
   const selectedOffer = state.offers.find(item => item.id === selectedId);
-  const offers = overview ? state.offers.filter(item => allocationItems(item).length) : selectedOffer ? [selectedOffer] : [];
+  const category = $('#allocationCategory').value;
+  const offers = (overview ? state.offers.filter(item => allocationItems(item).length) : selectedOffer ? [selectedOffer] : []).filter(offer => !category || allocationCategory(offer) === category);
   const items = offers.flatMap(offer => allocationItems(offer).map(item => ({ ...item, offer })));
   const summaries = offers.map(allocationSummary);
   const maximumValues = summaries.map(summary => summary.maximum).filter(value => value != null);
@@ -585,7 +589,7 @@ function renderAllocationPipeline() {
   const rates = allocationRates(items);
   const updatedDates = offers.map(offer => offer.allocation_pipeline?.updated_at).filter(Boolean).sort();
 
-  $('#allocationFunds').textContent = offers.length || 'n.a.';
+  $('#allocationFunds').textContent = offers.length;
   $('#allocationMaximum').textContent = allocationMoney(maximum);
   $('#allocationIdentified').textContent = allocationMoney(identified);
   $('#allocationCoverage').textContent = coverage == null || !items.length ? 'n.a.' : percent.format(coverage);
@@ -616,6 +620,11 @@ function renderAllocationPipeline() {
       const row = element('tr', 'allocation-fund-row');
       const fund = element('td', 'allocation-fund');
       fund.append(element('strong', '', summary.offer.fund), element('span', '', summary.offer.registration));
+      const classification = summary.offer.allocation_pipeline?.classification;
+      const label = element(classification?.official_url ? 'a' : 'span', 'allocation-classification', allocationCategory(summary.offer));
+      label.title = classification?.basis ? `Classificação analítica: ${classification.basis} Documento, pág. ${classification.page}.` : 'Classificação ainda não confirmada';
+      if (classification?.official_url) { label.href = classification.official_url; label.target = '_blank'; label.rel = 'noopener noreferrer'; }
+      fund.append(label);
       const stages = [...new Set(summary.items.map(item => allocationText(item.stage)))].join(' · ');
       const actionCell = element('td');
       const action = element('button', 'button allocation-open', 'Analisar'); action.type = 'button'; action.dataset.allocationOffer = summary.offer.id; actionCell.append(action);
@@ -875,6 +884,21 @@ $('#documentShowMore').addEventListener('click', () => {
 $('#allocationOffer').addEventListener('change', () => {
   state.allocationExpanded = false;
   $('#allocationSearch').value = '';
+  renderAllocationPipeline();
+});
+$('#allocationCategory').addEventListener('change', () => {
+  $('#allocationOffer').value = '__all__';
+  $('#allocationSearch').value = '';
+  state.allocationExpanded = false;
+  populateAllocationOffers();
+  renderAllocationPipeline();
+});
+$('#allocationReset').addEventListener('click', () => {
+  $('#allocationCategory').value = '';
+  $('#allocationOffer').value = '__all__';
+  $('#allocationSearch').value = '';
+  state.allocationExpanded = false;
+  populateAllocationOffers();
   renderAllocationPipeline();
 });
 $('#allocationSearch').addEventListener('input', () => { state.allocationExpanded = false; renderAllocationPipeline(); });
