@@ -205,6 +205,7 @@ function renderKpis() {
   $('#kpiCaptured').textContent = confirmed.length ? money.format(captured) : 'n.a.';
   $('#kpiCaptureNote').textContent = confirmed.length ? `${confirmed.length} ofertas com confirmação` : 'Sem confirmação oficial';
   $('#kpiRate').textContent = confirmedMaximum ? percent.format(captured / confirmedMaximum) : 'n.a.';
+  $('#kpiRateNote').textContent = confirmedMaximum ? `Base confirmada: ${money.format(confirmedMaximum)}` : 'Aguardando confirmação';
   $('#kpiClosingWeek').textContent = closingThisWeek.length;
   $('#kpiClosingNote').textContent = closingThisWeek.length === 1 ? dateText(closingThisWeek[0].timeline.closing_planned) : 'Conforme cronograma previsto';
   $('#kpiReview').textContent = review;
