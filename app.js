@@ -43,7 +43,6 @@ function relevantDate(offer) {
   return offer.timeline?.start_actual || offer.timeline?.start_planned || offer.identified_at || offer.updated_at;
 }
 function isClosedOffer(offer) { return ['Oferta Encerrada', 'Oferta Revogada'].includes(offer.status); }
-function reportingDate(offer) { return isClosedOffer(offer) && offer.timeline?.closing_actual ? offer.timeline.closing_actual : relevantDate(offer); }
 function daysFromReference(value) {
   const reference = parseDate(state.referenceDate);
   const target = parseDate(value);
@@ -79,7 +78,7 @@ function populateFilters() {
   setOptions('#distributorFilter', state.offers.flatMap(offer => (offer.distributors || []).map(item => item.name)));
   setOptions('#environmentFilter', state.offers.map(offer => offer.trading_environment || 'n.a.'));
   setOptions('#riteFilter', state.offers.map(offer => offer.rite));
-  const months = [...new Set(state.offers.map(offer => monthKey(reportingDate(offer))).filter(Boolean))].sort().reverse();
+  const months = [...new Set(state.offers.map(offer => monthKey(relevantDate(offer))).filter(Boolean))].sort().reverse();
   if (!state.monthSelectionInitialized) {
     const currentMonth = monthKey(state.referenceDate);
     if (currentMonth && months.includes(currentMonth)) state.selectedMonths.add(currentMonth);
@@ -117,7 +116,7 @@ function syncMonthFilter() {
 
 function offersForSelectedMonths() {
   if (!state.selectedMonths.size) return [...state.offers];
-  return state.offers.filter(offer => state.selectedMonths.has(monthKey(reportingDate(offer))));
+  return state.offers.filter(offer => state.selectedMonths.has(monthKey(relevantDate(offer))));
 }
 
 function filteredOffers() {
@@ -139,8 +138,8 @@ function filteredOffers() {
     if (distributor && !(offer.distributors || []).some(item => item.name === distributor)) return false;
     if (activity === 'active' && isClosedOffer(offer)) return false;
     if (activity === 'closed' && !isClosedOffer(offer)) return false;
-    if (state.selectedMonths.size && !state.selectedMonths.has(monthKey(reportingDate(offer)))) return false;
-    const offerDate = parseDate(reportingDate(offer));
+    if (state.selectedMonths.size && !state.selectedMonths.has(monthKey(relevantDate(offer)))) return false;
+    const offerDate = parseDate(relevantDate(offer));
     return !cutoff || (offerDate && offerDate >= cutoff);
   });
   const { field, direction } = state.sort;
@@ -239,7 +238,7 @@ function monthKey(value) { return value ? String(value).slice(0, 7) : null; }
 function renderChart() {
   const groups = new Map();
   offersForSelectedMonths().forEach(offer => {
-    const dateValue = reportingDate(offer);
+    const dateValue = relevantDate(offer);
     const key = monthKey(dateValue);
     const amount = state.chart === 'captured' ? numberValue(offer.captured_volume) : numberValue(offer.maximum_volume);
     if (key && amount != null) groups.set(key, (groups.get(key) || 0) + amount);
