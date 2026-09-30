@@ -86,28 +86,33 @@ function populateFilters() {
     state.monthSelectionInitialized = true;
   }
   state.selectedMonths = new Set([...state.selectedMonths].filter(value => months.includes(value)));
-  const options = months.map(value => {
-    const label = element('label', 'month-option');
-    const checkbox = element('input');
-    checkbox.type = 'checkbox';
-    checkbox.value = value;
-    checkbox.checked = state.selectedMonths.has(value);
-    label.append(checkbox, element('span', '', monthYearFormat.format(parseDate(`${value}-01`))));
-    return label;
+  ['#monthFilterOptions', '#overviewMonthFilterOptions'].forEach(selector => {
+    const options = months.map(value => {
+      const label = element('label', 'month-option');
+      const checkbox = element('input');
+      checkbox.type = 'checkbox';
+      checkbox.value = value;
+      checkbox.checked = state.selectedMonths.has(value);
+      label.append(checkbox, element('span', '', monthYearFormat.format(parseDate(`${value}-01`))));
+      return label;
+    });
+    $(selector).replaceChildren(...options);
   });
-  $('#monthFilterOptions').replaceChildren(...options);
   syncMonthFilter();
 }
 
 function syncMonthFilter() {
   const selected = [...state.selectedMonths].sort().reverse();
-  $('#monthFilterAll').checked = selected.length === 0;
-  $$('#monthFilterOptions input').forEach(input => { input.checked = state.selectedMonths.has(input.value); });
-  $('#monthFilterSummary').textContent = selected.length === 0
+  const summary = selected.length === 0
     ? 'Todos os meses'
     : selected.length === 1
       ? monthYearFormat.format(parseDate(`${selected[0]}-01`))
       : `${selected.length} meses selecionados`;
+  ['month', 'overviewMonth'].forEach(prefix => {
+    $(`#${prefix}FilterAll`).checked = selected.length === 0;
+    $$(`#${prefix}FilterOptions input`).forEach(input => { input.checked = state.selectedMonths.has(input.value); });
+    $(`#${prefix}FilterSummary`).textContent = summary;
+  });
 }
 
 function offersForSelectedMonths() {
@@ -207,33 +212,34 @@ function renderKpis() {
 }
 
 function renderStatus() {
+  const scopedOffers = offersForSelectedMonths();
   const counts = new Map();
-  state.offers.forEach(offer => counts.set(offer.review_required ? 'Revisão necessária' : offer.status, (counts.get(offer.review_required ? 'Revisão necessária' : offer.status) || 0) + 1));
+  scopedOffers.forEach(offer => counts.set(offer.review_required ? 'Revisão necessária' : offer.status, (counts.get(offer.review_required ? 'Revisão necessária' : offer.status) || 0) + 1));
   const colors = ['var(--blue)', 'var(--green)', 'var(--gold)', '#7892a6'];
   let offset = 0;
   const segments = [...counts.entries()].map(([label, count], index) => {
     const start = offset;
-    offset += state.offers.length ? count / state.offers.length * 100 : 0;
+    offset += scopedOffers.length ? count / scopedOffers.length * 100 : 0;
     return { label, count, color: colors[index % colors.length], start, end: offset };
   });
   $('#statusDonut').style.background = `conic-gradient(${segments.map(item => `${item.color} ${item.start}% ${item.end}%`).join(',') || 'var(--line) 0 100%'})`;
-  $('#statusDonutTotal').textContent = state.offers.length;
-  $('#statusTotal').textContent = `${state.offers.length} ofertas`;
+  $('#statusDonutTotal').textContent = scopedOffers.length;
+  $('#statusTotal').textContent = `${scopedOffers.length} ofertas`;
   $('#statusLegend').replaceChildren(...segments.map(item => {
     const row = element('div', 'legend-row');
     const marker = element('i'); marker.style.background = item.color;
     row.append(marker, element('span', '', item.label), element('b', '', item.count));
     return row;
   }));
-  $('#mixIpo').textContent = state.offers.filter(offer => offer.type === 'IPO / 1ª emissão').length;
-  $('#mixFollowOn').textContent = state.offers.filter(offer => offer.type !== 'IPO / 1ª emissão').length;
+  $('#mixIpo').textContent = scopedOffers.filter(offer => offer.type === 'IPO / 1ª emissão').length;
+  $('#mixFollowOn').textContent = scopedOffers.filter(offer => offer.type !== 'IPO / 1ª emissão').length;
 }
 
 function monthKey(value) { return value ? String(value).slice(0, 7) : null; }
 function renderChart() {
   const groups = new Map();
-  state.offers.forEach(offer => {
-    const dateValue = state.chart === 'captured' ? offer.timeline?.closing_actual : relevantDate(offer);
+  offersForSelectedMonths().forEach(offer => {
+    const dateValue = reportingDate(offer);
     const key = monthKey(dateValue);
     const amount = state.chart === 'captured' ? numberValue(offer.captured_volume) : numberValue(offer.maximum_volume);
     if (key && amount != null) groups.set(key, (groups.get(key) || 0) + amount);
@@ -254,7 +260,7 @@ function renderChart() {
 
 function renderCoordinatorChart() {
   const groups = new Map();
-  state.offers.forEach(offer => {
+  offersForSelectedMonths().forEach(offer => {
     const amount = numberValue(offer.captured_volume);
     const coordinator = offer.lead_coordinator || 'Não informado';
     if (amount != null) groups.set(coordinator, (groups.get(coordinator) || 0) + amount);
@@ -277,7 +283,7 @@ function renderCoordinatorChart() {
 
 function renderDistributorChart() {
   const groups = new Map();
-  state.offers.forEach(offer => {
+  offersForSelectedMonths().forEach(offer => {
     const distributors = new Map((offer.distributors || []).filter(item => item.name).map(item => [item.name, item]));
     distributors.forEach((distributor, name) => {
       const current = groups.get(name) || { offers: 0, associated: 0, captured: 0, confirmed: 0, hasConfirmed: false };
@@ -806,27 +812,34 @@ async function load() {
 }
 
 controls.forEach(control => control.addEventListener('input', () => { state.page = 1; renderTable(); }));
-$('#monthFilterAll').addEventListener('change', event => {
-  if (event.target.checked) state.selectedMonths.clear();
-  else if (!state.selectedMonths.size) event.target.checked = true;
+function renderMonthScope() {
   syncMonthFilter();
   state.page = 1;
   renderKpis();
+  renderStatus();
+  renderChart();
+  renderCoordinatorChart();
+  renderDistributorChart();
   renderTable();
-});
-$('#monthFilterOptions').addEventListener('change', event => {
-  const input = event.target.closest('input[type="checkbox"]');
-  if (!input) return;
-  if (input.checked) state.selectedMonths.add(input.value);
-  else state.selectedMonths.delete(input.value);
-  syncMonthFilter();
-  state.page = 1;
-  renderKpis();
-  renderTable();
+}
+['month', 'overviewMonth'].forEach(prefix => {
+  $(`#${prefix}FilterAll`).addEventListener('change', event => {
+    if (event.target.checked) state.selectedMonths.clear();
+    else if (!state.selectedMonths.size) event.target.checked = true;
+    renderMonthScope();
+  });
+  $(`#${prefix}FilterOptions`).addEventListener('change', event => {
+    const input = event.target.closest('input[type="checkbox"]');
+    if (!input) return;
+    if (input.checked) state.selectedMonths.add(input.value);
+    else state.selectedMonths.delete(input.value);
+    renderMonthScope();
+  });
 });
 document.addEventListener('click', event => {
-  const filter = $('#monthFilter');
-  if (filter.open && !filter.contains(event.target)) filter.open = false;
+  $$('.month-filter').forEach(filter => {
+    if (filter.open && !filter.contains(event.target)) filter.open = false;
+  });
 });
 $('#pageSize').addEventListener('change', () => { state.pageSize = Number($('#pageSize').value); state.page = 1; renderTable(); });
 $('#previousPage').addEventListener('click', () => { if (state.page > 1) { state.page -= 1; renderTable(); } });
