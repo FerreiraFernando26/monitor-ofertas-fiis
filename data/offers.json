@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-30T11:00:25-03:00",
+  "generated_at": "2026-09-30T12:01:16-03:00",
   "reference_date": "2026-09-30",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -883,7 +883,7 @@
         "settlement_planned": null,
         "settlement_actual": null
       },
-      "review_required": true,
+      "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-30",
       "updated_at": "2026-09-30",
@@ -1716,7 +1716,7 @@
         "settlement_planned": null,
         "settlement_actual": null
       },
-      "review_required": true,
+      "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-30",
       "updated_at": "2026-09-30",
