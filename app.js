@@ -486,6 +486,17 @@ function renderDocuments() {
 
 function allocationItems(offer) { return offer?.allocation_pipeline?.items || []; }
 function allocationCategory(offer) { return offer?.allocation_pipeline?.classification?.category || 'n.a.'; }
+
+function allocationClassificationLabel(offer) {
+  const classification = offer?.allocation_pipeline?.classification;
+  const container = element('div');
+  const label = element(classification?.official_url ? 'a' : 'span', 'allocation-classification', allocationCategory(offer));
+  label.title = classification?.basis ? `Estratégia / exposição analítica: ${classification.basis} Prospecto, pág. ${classification.page}.` : 'Estratégia ainda não confirmada';
+  if (classification?.official_url) { label.href = classification.official_url; label.target = '_blank'; label.rel = 'noopener noreferrer'; }
+  container.append(label);
+  if (classification?.structure) container.append(element('span', 'allocation-structure', `Estrutura: ${classification.structure}`));
+  return container;
+}
 function allocationMoney(value) { return numberValue(value) == null ? 'n.a.' : money.format(numberValue(value)); }
 function allocationText(value) { return value && value !== 'n.a.' ? value : 'n.a.'; }
 
@@ -607,6 +618,10 @@ function renderAllocationPipeline() {
   $('#allocationSearch').previousElementSibling.textContent = overview ? 'Buscar fundo' : 'Buscar operação';
   $('#allocationSearch').placeholder = overview ? 'Fundo ou registro' : 'Destino, tipo ou setor';
   $('#allocationTableTitle').textContent = overview ? 'Fundos com destinação identificada' : selectedOffer?.fund || 'Detalhamento da oferta';
+  const classificationDetail = $('#allocationClassificationDetail');
+  classificationDetail.replaceChildren();
+  classificationDetail.hidden = overview || !selectedOffer;
+  if (!overview && selectedOffer) classificationDetail.append(allocationClassificationLabel(selectedOffer));
   let displayedRows = [];
 
   if (overview) {
@@ -620,11 +635,7 @@ function renderAllocationPipeline() {
       const row = element('tr', 'allocation-fund-row');
       const fund = element('td', 'allocation-fund');
       fund.append(element('strong', '', summary.offer.fund), element('span', '', summary.offer.registration));
-      const classification = summary.offer.allocation_pipeline?.classification;
-      const label = element(classification?.official_url ? 'a' : 'span', 'allocation-classification', allocationCategory(summary.offer));
-      label.title = classification?.basis ? `Classificação analítica: ${classification.basis} Documento, pág. ${classification.page}.` : 'Classificação ainda não confirmada';
-      if (classification?.official_url) { label.href = classification.official_url; label.target = '_blank'; label.rel = 'noopener noreferrer'; }
-      fund.append(label);
+      fund.append(allocationClassificationLabel(summary.offer));
       const stages = [...new Set(summary.items.map(item => allocationText(item.stage)))].join(' · ');
       const actionCell = element('td');
       const action = element('button', 'button allocation-open', 'Analisar'); action.type = 'button'; action.dataset.allocationOffer = summary.offer.id; actionCell.append(action);

@@ -6,7 +6,7 @@
   <meta name="description" content="Painel público de ofertas e emissões de fundos imobiliários acompanhadas a partir de fontes oficiais.">
   <title>Radar FII — Monitor de ofertas</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307121d'/%3E%3Cpath d='M14 44V25l18-11 18 11v19' fill='none' stroke='%233f8cff' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M22 44V31h20v13M10 49h44' fill='none' stroke='%237ee0c3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20260930-1">
+  <link rel="stylesheet" href="./styles.css?v=20261001-1">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -131,7 +131,7 @@
         <div class="panel-head allocation-head">
           <div><p class="overline">Destino dos recursos</p><h2 id="allocation-title">Pipeline de alocação</h2><p class="panel-description">Visão consolidada por fundo. Expanda somente a oferta que deseja analisar.</p></div>
           <div class="allocation-filters">
-            <label><span>Classificação</span><select id="allocationCategory" class="control" title="Classificação analítica baseada nos documentos das ofertas"><option value="">Todas</option></select></label>
+            <label><span>Estratégia / exposição</span><select id="allocationCategory" class="control" title="Estratégia e exposição econômica, inclusive via fundos investidos. Feeder é exibido separadamente como estrutura."><option value="">Todas</option></select></label>
             <label class="allocation-selector"><span>Oferta / visão</span><select id="allocationOffer" class="control" aria-label="Selecionar oferta ou visão geral"></select></label>
             <button id="allocationReset" class="button" type="button">Limpar filtros</button>
           </div>
@@ -148,7 +148,7 @@
           <article><div class="allocation-analysis-head"><h3>Volume por etapa</h3><span id="allocationStageCount" class="count">—</span></div><div id="allocationStageBreakdown" class="allocation-breakdown"></div></article>
           <article><div class="allocation-analysis-head"><h3>Principais setores</h3><span id="allocationSectorCount" class="count">—</span></div><div id="allocationSectorBreakdown" class="allocation-breakdown"></div></article>
         </div>
-        <div class="allocation-table-head"><div><h3 id="allocationTableTitle">Fundos com destinação identificada</h3><span id="allocationUpdated" class="count">—</span></div><label class="allocation-search"><span>Buscar fundo</span><input id="allocationSearch" class="control" type="search" placeholder="Fundo ou registro"></label></div>
+        <div class="allocation-table-head"><div><h3 id="allocationTableTitle">Fundos com destinação identificada</h3><div id="allocationClassificationDetail" hidden></div><span id="allocationUpdated" class="count">—</span></div><label class="allocation-search"><span>Buscar fundo</span><input id="allocationSearch" class="control" type="search" placeholder="Fundo ou registro"></label></div>
         <div class="allocation-table-scroll">
           <table class="allocation-table">
             <thead id="allocationHead"></thead>
@@ -172,6 +172,6 @@
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20260930-4" defer></script>
+  <script src="./app.js?v=20261001-1" defer></script>
 </body>
 </html>

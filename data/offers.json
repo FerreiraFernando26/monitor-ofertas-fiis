@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-30T17:14:44-03:00",
+  "generated_at": "2026-10-01T10:12:55-03:00",
   "reference_date": "2026-09-30",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -67,6 +67,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -136,6 +137,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -205,6 +207,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -257,6 +260,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -309,6 +313,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -361,6 +366,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -413,6 +419,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -482,6 +489,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -601,6 +609,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Lajes corporativas",
+          "structure": "",
           "basis": "Propriedade e usufruto de cinco andares do Edifício Cidade Jardim, com contratos de locação.",
           "page": 9,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27998"
@@ -707,6 +716,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -759,6 +769,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -828,6 +839,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -918,6 +930,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -970,6 +983,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1022,6 +1036,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1131,6 +1146,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1235,6 +1251,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1287,6 +1304,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1361,6 +1379,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1430,6 +1449,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1482,6 +1502,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Desenvolvimento",
+          "structure": "",
           "basis": "Construção e desenvolvimento de condomínio com 34 galpões logísticos para locação.",
           "page": 9,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27723"
@@ -1611,6 +1632,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1680,6 +1702,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1754,6 +1777,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1823,6 +1847,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -1875,6 +1900,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Crédito imobiliário",
+          "structure": "",
           "basis": "Política em CRI, cotas de FII, LH, LCI e LIG; pipeline indicativo de CRI.",
           "page": 9,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28085"
@@ -2143,6 +2169,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -2195,6 +2222,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -2247,6 +2275,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -2398,6 +2427,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -2485,9 +2515,10 @@
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "classification": {
-          "category": "Fundos de fundos / Feeder",
-          "basis": "No mínimo 95% do patrimônio em cotas do Riza Malls Feeder, que investe no Master.",
-          "page": 9,
+          "category": "Shopping centers",
+          "structure": "Feeder",
+          "basis": "Exposição indireta aos nove shopping centers listados na carteira da classe investida. A estrutura passa pelo Riza Malls Feeder, Master e Atria; limites de investimento descritos na página 9.",
+          "page": 10,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26546"
         },
         "items": [
@@ -2557,6 +2588,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -2609,6 +2641,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -2688,6 +2721,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -2757,6 +2791,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -2836,6 +2871,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -2915,6 +2951,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -2984,6 +3021,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Crédito imobiliário",
+          "structure": "",
           "basis": "Política exige no mínimo 67% do patrimônio líquido em CRI.",
           "page": 9,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26842"
@@ -3235,6 +3273,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -3304,6 +3343,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Crédito imobiliário",
+          "structure": "",
           "basis": "Destinação dos recursos apresenta 15 operações de CRI em diferentes segmentos.",
           "page": 9,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26925"
@@ -3643,8 +3683,9 @@
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "classification": {
-          "category": "Fundos de fundos / Feeder",
-          "basis": "Aquisição preponderante de cotas do Invista Brazilian Business Park e cotas de outros FII.",
+          "category": "Desenvolvimento",
+          "structure": "Via cotas de FII",
+          "basis": "O prospecto destina recursos preponderantemente ao IBBP11. Informe trimestral do fundo investido, encerrado em 30/06/2026: subclassificação Desenvolvimento e segmento Logística. Exposição indireta a galpões industriais e logísticos.",
           "page": 11,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27307"
         },
@@ -3715,6 +3756,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -3784,6 +3826,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -3836,6 +3879,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Crédito imobiliário",
+          "structure": "",
           "basis": "Política exige mais de dois terços do patrimônio líquido em CRI.",
           "page": 9,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27774"
@@ -4086,6 +4130,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -4138,6 +4183,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Logística",
+          "structure": "",
           "basis": "Política contempla dois terços do patrimônio em empreendimentos logísticos; pipeline de galpões.",
           "page": 9,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27983"
@@ -4294,6 +4340,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -4363,6 +4410,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -4432,6 +4480,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -4484,6 +4533,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -4536,6 +4586,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Crédito imobiliário",
+          "structure": "",
           "basis": "Ativos da política: CRI, debêntures, FIDC, FII e letras imobiliárias, além de liquidez.",
           "page": 7,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27741"
@@ -4624,6 +4675,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -4692,8 +4744,9 @@
       "allocation_pipeline": {
         "updated_at": "2026-09-28",
         "classification": {
-          "category": "Fundos de fundos / Feeder",
-          "basis": "Recursos integralmente destinados à subclasse A do LCP Itaú Renda CDI Master.",
+          "category": "Crédito imobiliário",
+          "structure": "Feeder",
+          "basis": "Exposição econômica indireta de crédito: pipeline indicativo do Master com CRI e operações True Sale remuneradas por CDI/IPCA, além de caixa. Recursos destinados integralmente à subclasse A do LCP Itaú Renda CDI Master. Não implica alocação efetiva nem exclusividade da política.",
           "page": 9,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27116"
         },
@@ -5061,6 +5114,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -5113,6 +5167,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -5192,6 +5247,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -5244,6 +5300,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Multiestratégia",
+          "structure": "",
           "basis": "Política combina crédito, FII e participações; pipeline combina crédito e imóvel logístico.",
           "page": 9,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27737"
@@ -5555,6 +5612,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -5607,6 +5665,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -5676,6 +5735,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -5780,6 +5840,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -5832,6 +5893,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -5884,6 +5946,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6020,6 +6083,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6089,6 +6153,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6158,6 +6223,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6227,6 +6293,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6296,6 +6363,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6437,6 +6505,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6506,6 +6575,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6580,6 +6650,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6649,6 +6720,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6701,6 +6773,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -6753,6 +6826,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Residencial",
+          "structure": "",
           "basis": "Aquisição e alienação de unidades de sete empreendimentos residenciais; possibilidade de reformas.",
           "page": 8,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27858"
@@ -6841,6 +6915,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Crédito imobiliário",
+          "structure": "",
           "basis": "Política de ativos financeiros imobiliários e pipeline de CRI e operação mezanino.",
           "page": 6,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26425"
@@ -7470,6 +7545,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -7539,6 +7615,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -7608,6 +7685,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -7677,6 +7755,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Energia",
+          "structure": "",
           "basis": "Imóveis e direitos reais destinados ao segmento de geração de energia elétrica.",
           "page": 6,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/26751"
@@ -7765,6 +7844,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -7817,6 +7897,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -7869,6 +7950,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -7921,6 +8003,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -7990,6 +8073,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -8061,6 +8145,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -8165,6 +8250,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -8217,6 +8303,7 @@
         "updated_at": null,
         "classification": {
           "category": "n.a.",
+          "structure": "",
           "basis": "",
           "page": null,
           "official_url": ""
@@ -8286,6 +8373,7 @@
         "updated_at": "2026-09-28",
         "classification": {
           "category": "Lajes corporativas",
+          "structure": "",
           "basis": "Aquisição de ativos de escritórios e lojas associados, detalhados como ativos iniciais.",
           "page": 7,
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27241"
