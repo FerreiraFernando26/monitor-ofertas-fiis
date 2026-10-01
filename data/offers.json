@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-01T16:03:13-03:00",
+  "generated_at": "2026-10-01T16:05:12-03:00",
   "reference_date": "2026-10-01",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -9229,7 +9229,7 @@
       "timeline": {
         "start_planned": "2026-09-10",
         "start_actual": null,
-        "reservation_end_planned": "2026-09-23",
+        "reservation_end_planned": "2026-09-24",
         "closing_planned": "2027-01-27",
         "closing_actual": "2026-09-30",
         "settlement_planned": null,
@@ -9257,7 +9257,7 @@
             {
               "name": "Fim da reserva / subscrição",
               "kind": "Previsto",
-              "date": "2026-09-23"
+              "date": "2026-09-24"
             },
             {
               "name": "Prazo máximo de encerramento",
