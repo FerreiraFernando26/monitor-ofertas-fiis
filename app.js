@@ -333,37 +333,59 @@ function renderManagerChart() {
   $('#managerShowMore').setAttribute('aria-expanded', String(managersExpanded));
 }
 
-function renderDistributorChart() {
+function distributorRanking(offers, metric = 'associated') {
   const groups = new Map();
-  offersForSelectedMonths().forEach(offer => {
+  const seen = new Set();
+  offers.forEach(offer => {
+    if (seen.has(offer.id)) return;
+    seen.add(offer.id);
     const distributors = new Map((offer.distributors || []).filter(item => item.name).map(item => [item.name, item]));
     distributors.forEach((distributor, name) => {
-      const current = groups.get(name) || { offers: 0, associated: 0, captured: 0, confirmed: 0, hasConfirmed: false };
+      const current = groups.get(name) || { offers: 0, associated: 0, captured: 0, capturedOffers: 0, associatedOffers: 0, confirmed: 0, hasConfirmed: false };
       current.offers += 1;
-      current.associated += numberValue(offer.maximum_volume) || 0;
-      current.captured += numberValue(offer.captured_volume) || 0;
+      const associated = numberValue(offer.maximum_volume);
+      const captured = numberValue(offer.captured_volume);
+      if (associated != null) { current.associated += associated; current.associatedOffers += 1; }
+      if (captured != null) { current.captured += captured; current.capturedOffers += 1; }
       const allocated = numberValue(distributor.allocated_volume);
       if (allocated != null) { current.confirmed += allocated; current.hasConfirmed = true; }
       groups.set(name, current);
     });
   });
-  const entries = [...groups.entries()].sort((a, b) => b[1].associated - a[1].associated || a[0].localeCompare(b[0], 'pt-BR')).slice(0, 8);
-  const maximum = Math.max(...entries.map(([, metrics]) => metrics.associated), 1);
-  $('#distributorCount').textContent = `${groups.size} ${groups.size === 1 ? 'instituição' : 'instituições'}`;
-  $('#distributorChart').replaceChildren(...entries.map(([name, metrics]) => {
+  return [...groups.entries()].map(([name, metrics]) => ({ name, ...metrics, value: metrics[`${metric}Offers`] ? metrics[metric] : null }))
+    .sort((a, b) => (b.value ?? -Infinity) - (a.value ?? -Infinity) || a.name.localeCompare(b.name, 'pt-BR'));
+}
+
+let distributorMetric = 'associated';
+function renderDistributorChart() {
+  const ranking = distributorRanking(offersForSelectedMonths(), distributorMetric);
+  const entries = ranking.slice(0, 8);
+  const maximum = Math.max(...entries.map(item => item.value || 0), 1);
+  const capturedView = distributorMetric === 'captured';
+  const title = capturedView ? 'Captação das ofertas por distribuidor' : 'Volume associado por distribuidor';
+  $('#distributor-title').textContent = title;
+  $('#distributorChart').setAttribute('aria-label', title);
+  $('#distributorDescription').textContent = capturedView
+    ? 'Captado confirmado nas ofertas vinculadas, incluindo lote adicional. Não é a venda individual do distribuidor; não some entre instituições.'
+    : 'Soma do volume máximo das ofertas vinculadas à instituição. Não representa rateio e não deve ser somada entre distribuidores.';
+  $('#distributorCount').textContent = `${entries.length} de ${ranking.length} instituições`;
+  $('#distributorChart').replaceChildren(...entries.map(metrics => {
+    const name = metrics.name;
     const row = element('div', 'coordinator-row distributor-row');
     const confirmed = metrics.hasConfirmed ? moneyFull.format(metrics.confirmed) : 'n.a.';
-    row.title = `${name}: ${metrics.offers} ${metrics.offers === 1 ? 'oferta' : 'ofertas'}; volume associado ${moneyFull.format(metrics.associated)}; captação das ofertas ${moneyFull.format(metrics.captured)}; rateio confirmado ${confirmed}`;
+    row.title = `${name}: ${metrics.offers} ofertas vinculadas; volume associado ${metrics.associatedOffers ? moneyFull.format(metrics.associated) : 'n.a.'}; captação das ofertas ${metrics.capturedOffers ? moneyFull.format(metrics.captured) : 'n.a.'}; rateio confirmado ${confirmed}`;
     const label = element('div', 'distributor-label');
     label.append(
       element('span', 'coordinator-name', name),
-      element('small', '', `${metrics.offers} ${metrics.offers === 1 ? 'oferta' : 'ofertas'} · Confirmado nas ofertas: ${metrics.captured ? money.format(metrics.captured) : 'n.a.'} · Rateio: ${confirmed}`),
+      element('small', '', capturedView
+        ? `${metrics.capturedOffers} de ${metrics.offers} ${metrics.offers === 1 ? 'oferta' : 'ofertas'} com captação confirmada · Rateio: ${confirmed}`
+        : `${metrics.offers} ${metrics.offers === 1 ? 'oferta' : 'ofertas'} · Confirmado nas ofertas: ${metrics.capturedOffers ? money.format(metrics.captured) : 'n.a.'} · Rateio: ${confirmed}`),
     );
     const rail = element('div', 'coordinator-rail');
     const fill = element('div', 'coordinator-fill distributor-fill');
-    fill.style.width = `${Math.max(1, metrics.associated / maximum * 100)}%`;
+    fill.style.width = `${(metrics.value || 0) / maximum * 100}%`;
     rail.append(fill);
-    row.append(label, rail, element('strong', 'coordinator-value', metrics.associated ? money.format(metrics.associated) : 'n.a.'));
+    row.append(label, rail, element('strong', 'coordinator-value', metrics.value == null ? 'n.a.' : money.format(metrics.value)));
     return row;
   }));
   if (!entries.length) $('#distributorChart').append(element('div', 'empty', 'Nenhum distribuidor identificado nos documentos oficiais.'));
@@ -993,6 +1015,11 @@ $('.close').addEventListener('click', () => $('#details').close());
 $('#details').addEventListener('click', event => { if (event.target === $('#details')) $('#details').close(); });
 $('#export').addEventListener('click', exportCsv);
 $('#managerShowMore').addEventListener('click', () => { managersExpanded = !managersExpanded; renderManagerChart(); });
+$$('[data-distributor-metric]').forEach(button => button.addEventListener('click', () => {
+  distributorMetric = button.dataset.distributorMetric;
+  $$('[data-distributor-metric]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+  renderDistributorChart();
+}));
 $('#retry').addEventListener('click', load);
 window.addEventListener('hashchange', syncNavigation);
 
