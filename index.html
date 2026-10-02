@@ -6,7 +6,7 @@
   <meta name="description" content="Painel público de ofertas e emissões de fundos imobiliários acompanhadas a partir de fontes oficiais.">
   <title>Radar FII — Monitor de ofertas</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307121d'/%3E%3Cpath d='M14 44V25l18-11 18 11v19' fill='none' stroke='%233f8cff' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M22 44V31h20v13M10 49h44' fill='none' stroke='%237ee0c3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20261001-1">
+  <link rel="stylesheet" href="./styles.css?v=20261002-gestoras">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -58,6 +58,13 @@
       <section class="card panel coordinator-panel" aria-labelledby="coordinator-title">
           <div class="panel-head"><div><p class="overline">Distribuição confirmada</p><h2 id="coordinator-title">Volume confirmado por coordenador líder</h2></div><span id="coordinatorCount" class="count">—</span></div>
         <div id="coordinatorChart" class="coordinator-chart" role="img" aria-label="Volume confirmado por coordenador líder"></div>
+      </section>
+
+      <section class="card panel manager-panel" aria-labelledby="manager-title">
+        <div class="panel-head"><div><p class="overline">Ranking de gestoras</p><h2 id="manager-title">Captação confirmada por gestora</h2><p class="panel-description">Captação das ofertas no período selecionado, incluindo lote adicional confirmado. Cogestões aparecem em conjunto, sem rateio.</p></div><span id="managerCount" class="count">—</span></div>
+        <div id="managerChart" class="coordinator-chart distributor-chart" role="list" aria-label="Ranking de captação confirmada por gestora"></div>
+        <div class="manager-footer"><p id="managerCoverage" class="panel-description" aria-live="polite">—</p><button id="managerShowMore" class="button" type="button" aria-expanded="false" aria-controls="managerChart" hidden>Ver ranking completo</button></div>
+        <details class="manager-method"><summary>Critério do ranking</summary><p class="panel-description">Gestora identificada nos documentos oficiais de cada oferta; entidades consolidadas pelo CNPJ, não pela marca. Cada emissão entra uma única vez. Percentuais usam toda a captação confirmada do período, inclusive valores sem gestora identificada. O período segue o mês de referência das ofertas da Visão geral, não o mês de liquidação. Não representa patrimônio sob gestão nem captação líquida de aplicações entre fundos.</p></details>
       </section>
 
       <section class="card panel distributor-panel" aria-labelledby="distributor-title">
@@ -172,6 +179,6 @@
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20261001-1" defer></script>
+  <script src="./app.js?v=20261002-gestoras" defer></script>
 </body>
 </html>

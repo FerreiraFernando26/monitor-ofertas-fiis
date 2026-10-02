@@ -276,6 +276,63 @@ function renderCoordinatorChart() {
   if (!entries.length) $('#coordinatorChart').append(element('div', 'empty', 'Nenhuma captação confirmada por coordenador.'));
 }
 
+// Pure aggregation: once per offer, explicit identities only, unknowns reconciled.
+function managerRanking(offers) {
+  const groups = new Map();
+  const seen = new Set();
+  let total = 0, unknown = 0, unknownOffers = 0;
+  offers.forEach(offer => {
+    if (seen.has(offer.id)) return;
+    seen.add(offer.id);
+    const amount = numberValue(offer.captured_volume);
+    if (amount == null || amount < 0) return;
+    total += amount;
+    const manager = offer.manager;
+    if (!manager?.name || !manager.official_url) {
+      unknown += amount;
+      unknownOffers += 1;
+      return;
+    }
+    const key = manager.cnpj?.replace(/\D/g, '') || manager.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
+    const group = groups.get(key) || { name: manager.name, amount: 0, offers: 0, funds: new Set() };
+    group.amount += amount;
+    group.offers += 1;
+    group.funds.add(offer.cnpj || offer.fund);
+    groups.set(key, group);
+  });
+  const entries = [...groups.values()].sort((a, b) => b.amount - a.amount || a.name.localeCompare(b.name, 'pt-BR'));
+  return { entries, total, unknown, unknownOffers };
+}
+
+let managersExpanded = false;
+function renderManagerChart() {
+  const ranking = managerRanking(offersForSelectedMonths());
+  const visible = managersExpanded ? ranking.entries : ranking.entries.slice(0, 8);
+  const maximum = Math.max(...ranking.entries.map(item => item.amount), 1);
+  $('#managerCount').textContent = `${visible.length} de ${ranking.entries.length} gestoras / grupos`;
+  $('#managerChart').replaceChildren(...visible.map((item, index) => {
+    const row = element('div', 'coordinator-row manager-row');
+    row.setAttribute('role', 'listitem');
+    row.title = `${item.name}: ${moneyFull.format(item.amount)}`;
+    const label = element('div', 'distributor-label');
+    const share = ranking.total > 0 ? percent.format(item.amount / ranking.total) : 'n.a.';
+    label.append(element('span', 'coordinator-name', `${index + 1}. ${item.name}`),
+      element('small', '', `${item.offers} ${item.offers === 1 ? 'oferta' : 'ofertas'} · ${item.funds.size} ${item.funds.size === 1 ? 'fundo' : 'fundos'} · ${share} da captação`));
+    const rail = element('div', 'coordinator-rail');
+    const fill = element('div', 'coordinator-fill manager-fill');
+    fill.style.width = `${item.amount / maximum * 100}%`;
+    rail.append(fill);
+    row.append(label, rail, element('strong', 'coordinator-value', money.format(item.amount)));
+    return row;
+  }));
+  if (!visible.length) $('#managerChart').append(element('div', 'empty', 'Nenhuma captação com gestora confirmada neste período.'));
+  const covered = ranking.total - ranking.unknown;
+  $('#managerCoverage').textContent = `Identificado: ${money.format(covered)}${ranking.total > 0 ? ` (${percent.format(covered / ranking.total)})` : ''}${ranking.unknownOffers ? ` · Gestora n.a.: ${money.format(ranking.unknown)} em ${ranking.unknownOffers} oferta(s)` : ''}`;
+  $('#managerShowMore').hidden = ranking.entries.length <= 8;
+  $('#managerShowMore').textContent = managersExpanded ? 'Recolher ranking' : `Ver ranking completo (${ranking.entries.length})`;
+  $('#managerShowMore').setAttribute('aria-expanded', String(managersExpanded));
+}
+
 function renderDistributorChart() {
   const groups = new Map();
   offersForSelectedMonths().forEach(offer => {
@@ -702,10 +759,18 @@ function openDetails(offerId) {
     detailStat('Captação total', offer.captured_volume == null ? 'n.a.' : moneyFull.format(offer.captured_volume)),
     detailStat('Taxa de colocação', offer.capture_rate == null ? 'n.a.' : percent.format(offer.capture_rate)),
     detailStat('Coordenador líder', text(offer.lead_coordinator)),
+    detailStat('Gestora', text(offer.manager?.name)),
     detailStat('Distribuidores identificados', String((offer.distributors || []).length || 'n.a.')),
     detailStat('Última atualização', dateText(offer.updated_at)),
   );
   $('#detailVolumes').replaceChildren(...volumeDetails);
+  if (offer.manager?.official_url) {
+    const source = element('a', 'manager-source', 'Fonte oficial da gestora ↗');
+    source.href = offer.manager.official_url;
+    source.target = '_blank';
+    source.rel = 'noopener noreferrer';
+    $('#detailVolumes').append(source);
+  }
   const distributors = (offer.distributors || []).map(distributor => {
     const item = element('div', 'detail-distributor');
     const copy = element('div');
@@ -770,6 +835,7 @@ function renderAll() {
   renderStatus();
   renderChart();
   renderCoordinatorChart();
+  renderManagerChart();
   renderDistributorChart();
   renderSchedule();
   renderDocuments();
@@ -834,6 +900,7 @@ function renderMonthScope() {
   renderStatus();
   renderChart();
   renderCoordinatorChart();
+  renderManagerChart();
   renderDistributorChart();
   renderTable();
 }
@@ -925,6 +992,7 @@ $('#allocationRows').addEventListener('click', event => {
 $('.close').addEventListener('click', () => $('#details').close());
 $('#details').addEventListener('click', event => { if (event.target === $('#details')) $('#details').close(); });
 $('#export').addEventListener('click', exportCsv);
+$('#managerShowMore').addEventListener('click', () => { managersExpanded = !managersExpanded; renderManagerChart(); });
 $('#retry').addEventListener('click', load);
 window.addEventListener('hashchange', syncNavigation);
 
