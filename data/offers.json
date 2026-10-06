@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-05T12:48:00-03:00",
-  "reference_date": "2026-10-05",
+  "generated_at": "2026-10-06T11:01:15-03:00",
+  "reference_date": "2026-10-06",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
   "offers": [
@@ -1109,6 +1109,93 @@
               "name": "Anúncio de encerramento",
               "kind": "Efetivo",
               "date": "2026-09-17"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27628",
+      "fund": "BRESCO BTS FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.831.674/0001-09",
+      "ticker": "",
+      "registration": "SRE/2700/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "Balcão B3 / Cetip",
+      "rite": "Automático",
+      "lead_coordinator": "OLIVEIRA TRUST DTVM S.A.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "OLIVEIRA TRUST DTVM S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 212500000.0,
+      "maximum_volume": 212500000.0,
+      "captured_volume": 212500000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": 1.0,
+      "timeline": {
+        "start_planned": "2026-08-31",
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-10-05",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/eff75b10-0462-4b46-85c3-a7a3dd81a6f8",
+      "identified_at": "2026-10-06",
+      "updated_at": "2026-10-06",
+      "documents": [
+        {
+          "id": "CVM-SRE|155719",
+          "type": "Anúncio de Início",
+          "date": "2026-08-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/eff75b10-0462-4b46-85c3-a7a3dd81a6f8",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Início da subscrição / distribuição",
+              "kind": "Previsto",
+              "date": "2026-08-31"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|163966",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-05",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a81536e6-2ad5-4447-839a-d1b900724f55",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-05"
             }
           ]
         }
@@ -5479,6 +5566,82 @@
               "name": "Anúncio de encerramento",
               "kind": "Efetivo",
               "date": "2026-09-18"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|26351",
+      "fund": "KINEA CREDITO RESIDENCIAL PULVERIZADO FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "66.038.922/0001-04",
+      "ticker": "",
+      "registration": "SRE/1541/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "Balcão B3 / Cetip",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 500000000.0,
+      "maximum_volume": 500000000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": "2026-06-23",
+        "closing_planned": "2026-11-20",
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/492f424d-6d92-4f96-8a82-3f291c1d5266",
+      "identified_at": "2026-10-06",
+      "updated_at": "2026-10-06",
+      "documents": [
+        {
+          "id": "CVM-SRE|149266",
+          "type": "Anúncio de Início",
+          "date": "2026-06-19",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/492f424d-6d92-4f96-8a82-3f291c1d5266",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 3,
+          "events": [
+            {
+              "name": "Fim da reserva / subscrição",
+              "kind": "Previsto",
+              "date": "2026-06-23"
+            },
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2026-11-20"
             }
           ]
         }
