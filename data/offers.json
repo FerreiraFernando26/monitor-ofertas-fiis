@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-06T11:01:15-03:00",
+  "generated_at": "2026-10-06T11:43:27-03:00",
   "reference_date": "2026-10-06",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -3644,6 +3644,93 @@
       }
     },
     {
+      "id": "CVM160|27201",
+      "fund": "HEDGE BRASIL SHOPPING FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA",
+      "cnpj": "08.431.747/0001-06",
+      "ticker": "",
+      "registration": "SRE/2315/2026",
+      "issue": "12",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 295200000.0,
+      "maximum_volume": 295200000.0,
+      "captured_volume": 214578795.2,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": 0.7268929376693767,
+      "timeline": {
+        "start_planned": "2026-07-20",
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-10-02",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/21f681bf-ad19-42f2-b382-258f613786df",
+      "identified_at": "2026-10-06",
+      "updated_at": "2026-10-06",
+      "documents": [
+        {
+          "id": "CVM-SRE|152401",
+          "type": "Anúncio de Início",
+          "date": "2026-07-20",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/21f681bf-ad19-42f2-b382-258f613786df",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Início da subscrição / distribuição",
+              "kind": "Previsto",
+              "date": "2026-07-20"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|163887",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/423a61f2-e921-437f-9d97-234e108c5433",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|28020",
       "fund": "Hedge Renda Corporativa Fundo de Investimento Imobiliário de Responsabilidade Limitada",
       "cnpj": "69.169.489/0001-26",
@@ -4084,6 +4171,87 @@
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
               "date": "2027-03-20"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28168",
+      "fund": "HLOG GALEAO II FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "68.634.365/0001-01",
+      "ticker": "",
+      "registration": "SRE/3201/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 1500000.0,
+      "maximum_volume": 1500000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": "2026-10-01",
+        "start_actual": null,
+        "reservation_end_planned": "2027-03-29",
+        "closing_planned": "2027-03-30",
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bf938c4b-e6c0-41ec-9b91-12df50abaf75",
+      "identified_at": "2026-10-06",
+      "updated_at": "2026-10-06",
+      "documents": [
+        {
+          "id": "CVM-SRE|163661",
+          "type": "Anúncio de Início",
+          "date": "2026-10-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bf938c4b-e6c0-41ec-9b91-12df50abaf75",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Início da subscrição / distribuição",
+              "kind": "Previsto",
+              "date": "2026-10-01"
+            },
+            {
+              "name": "Fim da reserva / subscrição",
+              "kind": "Previsto",
+              "date": "2027-03-29"
+            },
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2027-03-30"
             }
           ]
         }
@@ -5396,6 +5564,60 @@
       }
     },
     {
+      "id": "CVM160|28167",
+      "fund": "JIVEMAUÁ RECUPERAÇÃO DE CRÉDITO IMOBILIÁRIO FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESP LIMITADA",
+      "cnpj": "68.949.992/0001-31",
+      "ticker": "",
+      "registration": "SRE/3214/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 89378000.0,
+      "maximum_volume": 89378000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-10-06",
+      "updated_at": "2026-10-06",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|26807",
       "fund": "JS CRÉDITO ESTRUTURADO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
       "cnpj": "60.176.399/0001-98",
@@ -6434,26 +6656,26 @@
           "allocated_volume": null
         }
       ],
-      "status": "Registro Concedido",
+      "status": "Oferta Encerrada",
       "initial_volume": 196000000.0,
       "maximum_volume": 196000000.0,
-      "captured_volume": null,
+      "captured_volume": 195562800.0,
       "captured_base_volume": null,
       "additional_lot_volume": null,
-      "capture_rate": null,
+      "capture_rate": 0.997769387755102,
       "timeline": {
         "start_planned": "2026-09-23",
         "start_actual": "2026-09-23",
         "reservation_end_planned": null,
         "closing_planned": "2027-03-22",
-        "closing_actual": null,
+        "closing_actual": "2026-10-02",
         "settlement_planned": "2026-09-28",
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28000",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/987c0932-1591-4fbc-9627-f212af883ca3",
       "identified_at": "2026-09-28",
-      "updated_at": "2026-09-28",
+      "updated_at": "2026-10-06",
       "documents": [
         {
           "id": "CVM160|28000|0286eb87b83c4fde307169c25bbae85dd5e69c4c4ba749288223e212f3b110ac",
@@ -6478,6 +6700,22 @@
               "name": "Prazo máximo do anúncio de encerramento",
               "kind": "Prazo calculado (180 dias)",
               "date": "2027-03-22"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|163918",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/987c0932-1591-4fbc-9627-f212af883ca3",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-02"
             }
           ]
         }
@@ -6943,6 +7181,77 @@
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
               "date": "2026-09-19"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28199",
+      "fund": "ONDA INVEST RETORNO TOTAL FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "69.445.142/0001-69",
+      "ticker": "",
+      "registration": "SRE/3230/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 71000000.0,
+      "maximum_volume": 71000000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": "2027-03-31",
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/05cb59bc-42b8-4e26-a497-a8e7c5d45aba",
+      "identified_at": "2026-10-06",
+      "updated_at": "2026-10-06",
+      "documents": [
+        {
+          "id": "CVM-SRE|163865",
+          "type": "Anúncio de Início",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/05cb59bc-42b8-4e26-a497-a8e7c5d45aba",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2027-03-31"
             }
           ]
         }
@@ -9953,6 +10262,77 @@
       }
     },
     {
+      "id": "CVM160|27605",
+      "fund": "TRX REAL ESTATE II FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "36.368.925/0001-37",
+      "ticker": "",
+      "registration": "SRE/2685/2026",
+      "issue": "8",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 100400000.0,
+      "maximum_volume": 100400000.0,
+      "captured_volume": 100000000.0,
+      "captured_base_volume": 50000000.0,
+      "additional_lot_volume": 50000000.0,
+      "capture_rate": 0.9960159362549801,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-10-01",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c0606e9a-7efa-440a-94f2-2771b926a86e",
+      "identified_at": "2026-10-06",
+      "updated_at": "2026-10-06",
+      "documents": [
+        {
+          "id": "CVM-SRE|163745",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c0606e9a-7efa-440a-94f2-2771b926a86e",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-01"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|28003",
       "fund": "V2 RENDA IMOBILIÁRIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
       "cnpj": "49.184.940/0001-77",
@@ -10196,6 +10576,103 @@
       "identified_at": "2026-10-01",
       "updated_at": "2026-10-01",
       "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25836",
+      "fund": "VINLAND I FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "65.842.323/0001-78",
+      "ticker": "",
+      "registration": "SRE/1062/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 50000000.0,
+      "maximum_volume": 50000000.0,
+      "captured_volume": 39730000.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": 0.7946,
+      "timeline": {
+        "start_planned": "2026-04-07",
+        "start_actual": null,
+        "reservation_end_planned": "2026-10-02",
+        "closing_planned": "2026-10-04",
+        "closing_actual": "2026-10-02",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4a3379d0-488f-4df8-bc6f-2711b6eb916c",
+      "identified_at": "2026-10-06",
+      "updated_at": "2026-10-06",
+      "documents": [
+        {
+          "id": "CVM-SRE|141004",
+          "type": "Anúncio de Início",
+          "date": "2026-04-07",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4a3379d0-488f-4df8-bc6f-2711b6eb916c",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Início da subscrição / distribuição",
+              "kind": "Previsto",
+              "date": "2026-04-07"
+            },
+            {
+              "name": "Fim da reserva / subscrição",
+              "kind": "Previsto",
+              "date": "2026-10-02"
+            },
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|163916",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9522a690-5ab6-486c-b0c8-83678472cb5f",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": null,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-02"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "classification": {
