@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-07T11:01:04-03:00",
+  "generated_at": "2026-10-07T11:35:21-03:00",
   "reference_date": "2026-10-07",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
@@ -7281,7 +7281,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
-      "manager": null,
+      "manager": {
+        "name": "BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+        "cnpj": "13.486.793/0001-42",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cfb8e6ca-f416-4e72-a1ed-8ed01325a7eb"
+      },
       "distributors": [
         {
           "name": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
@@ -10342,7 +10346,7 @@
       "series": "",
       "type": "Nova emissão",
       "distribution_nature": "",
-      "trading_environment": "n.a.",
+      "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "manager": null,
@@ -10672,7 +10676,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
-      "manager": null,
+      "manager": {
+        "name": "VINLAND CAPITAL MANAGEMENT CRÉDITO PRIVADO GESTORA DE RECURSOS LTDA.",
+        "cnpj": "31.846.872/0001-07",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9522a690-5ab6-486c-b0c8-83678472cb5f"
+      },
       "distributors": [
         {
           "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
