@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-06T11:43:27-03:00",
-  "reference_date": "2026-10-06",
+  "generated_at": "2026-10-07T11:01:04-03:00",
+  "reference_date": "2026-10-07",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [],
   "offers": [
@@ -1165,7 +1165,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/eff75b10-0462-4b46-85c3-a7a3dd81a6f8",
       "identified_at": "2026-10-06",
-      "updated_at": "2026-10-06",
+      "updated_at": "2026-10-07",
       "documents": [
         {
           "id": "CVM-SRE|155719",
@@ -5844,7 +5844,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/492f424d-6d92-4f96-8a82-3f291c1d5266",
       "identified_at": "2026-10-06",
-      "updated_at": "2026-10-06",
+      "updated_at": "2026-10-07",
       "documents": [
         {
           "id": "CVM-SRE|149266",
@@ -7252,6 +7252,77 @@
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
               "date": "2027-03-31"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25879",
+      "fund": "OPPORTUNITY FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "01.235.622/0001-61",
+      "ticker": "",
+      "registration": "SRE/1113/2026",
+      "issue": "20",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 290001071.79,
+      "maximum_volume": 290001071.79,
+      "captured_volume": 45063703.65,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": 0.15539150725150497,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": "2026-10-06",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cfb8e6ca-f416-4e72-a1ed-8ed01325a7eb",
+      "identified_at": "2026-10-07",
+      "updated_at": "2026-10-07",
+      "documents": [
+        {
+          "id": "CVM-SRE|164093",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-06",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cfb8e6ca-f416-4e72-a1ed-8ed01325a7eb",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-06"
             }
           ]
         }
