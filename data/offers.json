@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-09T11:44:28-03:00",
-  "reference_date": "2026-10-09",
+  "generated_at": "2026-10-10T19:44:37-03:00",
+  "reference_date": "2026-10-10",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
     {
@@ -3645,7 +3645,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e7608a26-52c7-4853-8c42-506853c9eb8e",
       "identified_at": "2026-10-09",
-      "updated_at": "2026-10-09",
+      "updated_at": "2026-10-10",
       "documents": [
         {
           "id": "CVM-SRE|164289",
@@ -3873,7 +3873,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0318f3e4-a9e2-4c88-828c-2a1168130410",
       "identified_at": "2026-10-09",
-      "updated_at": "2026-10-09",
+      "updated_at": "2026-10-10",
       "documents": [
         {
           "id": "CVM-SRE|142357",
@@ -5150,7 +5150,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/75bbaa65-ac67-49bb-ba07-acfcd8b6223d",
       "identified_at": "2026-10-09",
-      "updated_at": "2026-10-09",
+      "updated_at": "2026-10-10",
       "documents": [
         {
           "id": "CVM-SRE|163734",
@@ -6527,7 +6527,7 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8442b138-3d28-491c-9854-1fd3f1aadbb4",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/492f424d-6d92-4f96-8a82-3f291c1d5266",
       "identified_at": "2026-10-06",
       "updated_at": "2026-10-08",
       "documents": [
@@ -6702,7 +6702,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b41278f5-2f16-4ded-a1a1-9b1c5be91dc4",
       "identified_at": "2026-10-09",
-      "updated_at": "2026-10-09",
+      "updated_at": "2026-10-10",
       "documents": [
         {
           "id": "CVM-SRE|152733",
@@ -8024,7 +8024,7 @@
       "review_required": false,
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-10-09",
-      "updated_at": "2026-10-09",
+      "updated_at": "2026-10-10",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
@@ -10767,22 +10767,22 @@
       "timeline": {
         "start_planned": "2026-10-07",
         "start_actual": null,
-        "reservation_end_planned": "2026-10-28",
+        "reservation_end_planned": "2026-10-20",
         "closing_planned": null,
         "closing_actual": null,
         "settlement_planned": "2026-11-03",
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4e2f0c9c-b2a8-440a-b5c6-7fa4508c70a5",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c281017a-1b44-40f4-918d-a4b2927871d9",
       "identified_at": "2026-10-01",
       "updated_at": "2026-10-01",
       "documents": [
         {
-          "id": "CVM-SRE|163617",
-          "type": "Anúncio de Início da Distribuição",
-          "date": "2026-09-30",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4e2f0c9c-b2a8-440a-b5c6-7fa4508c70a5",
+          "id": "CVM-SRE|164532",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c281017a-1b44-40f4-918d-a4b2927871d9",
           "availability": "Baixado e validado",
           "confidence": "Alta",
           "page": 2,
@@ -10795,7 +10795,7 @@
             {
               "name": "Fim da reserva / subscrição",
               "kind": "Previsto",
-              "date": "2026-10-28"
+              "date": "2026-10-20"
             }
           ]
         }
