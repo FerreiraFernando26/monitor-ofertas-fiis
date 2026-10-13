@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-13T02:21:49-03:00",
+  "generated_at": "2026-10-13T10:25:32-03:00",
   "reference_date": "2026-10-13",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -3407,6 +3407,60 @@
             }
           }
         ]
+      }
+    },
+    {
+      "id": "CVM160|28287",
+      "fund": "EXES FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "41.076.851/0001-03",
+      "ticker": "",
+      "registration": "SRE/3312/2026",
+      "issue": "6",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "EXES SERVICOS FINANCEIROS LTDA",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "EXES SERVICOS FINANCEIROS LTDA",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 312500007.55,
+      "maximum_volume": 312500007.55,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-10-13",
+      "updated_at": "2026-10-13",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
       }
     },
     {
@@ -7346,26 +7400,26 @@
           "allocated_volume": null
         }
       ],
-      "status": "Registro Concedido",
+      "status": "Oferta Encerrada",
       "initial_volume": 30000000.0,
       "maximum_volume": 30000000.0,
-      "captured_volume": null,
+      "captured_volume": 30000000.0,
       "captured_base_volume": null,
       "additional_lot_volume": null,
-      "capture_rate": null,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": "2026-09-22",
         "start_actual": "2026-09-22",
         "reservation_end_planned": null,
         "closing_planned": null,
-        "closing_actual": null,
+        "closing_actual": "2026-10-09",
         "settlement_planned": null,
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/28017",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d1d0d341-7ecb-4986-99e4-1db7cc6a786d",
       "identified_at": "2026-09-28",
-      "updated_at": "2026-09-28",
+      "updated_at": "2026-10-13",
       "documents": [
         {
           "id": "CVM160|28017|b3aa7ed84c423cb9d3742c1e508e1e23803e176f82e0fa75e0f847ad2809762d",
@@ -7390,6 +7444,22 @@
               "name": "Anúncio de encerramento",
               "kind": "Prazo textual",
               "date": null
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|164420",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d1d0d341-7ecb-4986-99e4-1db7cc6a786d",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-09"
             }
           ]
         }
