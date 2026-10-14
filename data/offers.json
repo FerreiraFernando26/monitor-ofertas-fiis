@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-13T11:01:11-03:00",
-  "reference_date": "2026-10-13",
+  "generated_at": "2026-10-14T11:54:32-03:00",
+  "reference_date": "2026-10-14",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
     {
@@ -398,6 +398,60 @@
           ]
         }
       ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28239",
+      "fund": "ATLAS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "69.386.592/0001-28",
+      "ticker": "",
+      "registration": "SRE/3330/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 69096000.0,
+      "maximum_volume": 69096000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": true,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3506bf03-1f93-4ce0-9dc7-3ab7c6076f2d",
+      "identified_at": "2026-10-14",
+      "updated_at": "2026-10-14",
+      "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
         "classification": {
