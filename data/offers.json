@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-15T11:45:28-03:00",
+  "generated_at": "2026-10-15T11:51:35-03:00",
   "reference_date": "2026-10-15",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -11385,10 +11385,10 @@
       "status": "Oferta Encerrada",
       "initial_volume": 1841383564.8,
       "maximum_volume": 1841383564.8,
-      "captured_volume": 1006640523.55,
+      "captured_volume": 968236896.64,
       "captured_base_volume": null,
       "additional_lot_volume": null,
-      "capture_rate": 0.546676174803013,
+      "capture_rate": 0.5258203207353837,
       "timeline": {
         "start_planned": null,
         "start_actual": "2026-06-23",
