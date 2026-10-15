@@ -1,9 +1,27 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-14T11:54:32-03:00",
-  "reference_date": "2026-10-14",
+  "generated_at": "2026-10-15T11:45:28-03:00",
+  "reference_date": "2026-10-15",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
+    {
+      "id": "e7c732b97657d542acb616a4",
+      "offer_id": "CVM160|25876",
+      "fund": "RBR TESOURARIA FII IPCA+ FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "field": "Início efetivo",
+      "previous_date": null,
+      "current_date": "2026-04-17",
+      "detected_at": "2026-10-15"
+    },
+    {
+      "id": "b3cd94d9bccf6a844f1b02e3",
+      "offer_id": "CVM160|25874",
+      "fund": "RBR TESOURARIA FII CDI+ FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "field": "Início efetivo",
+      "previous_date": null,
+      "current_date": "2026-04-17",
+      "detected_at": "2026-10-15"
+    },
     {
       "id": "e94b8e4715f2d5f757ce777d",
       "offer_id": "CVM160|28253",
@@ -187,7 +205,7 @@
       "capture_rate": 0.738657227,
       "timeline": {
         "start_planned": null,
-        "start_actual": null,
+        "start_actual": "2026-08-03",
         "reservation_end_planned": null,
         "closing_planned": null,
         "closing_actual": "2026-09-17",
@@ -195,10 +213,26 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0b6fda36-f9a8-4330-b81b-781019bceebb",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fc126c60-ba20-453c-b38e-884cb76224fc",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
       "documents": [
+        {
+          "id": "CVM-SRE|153505",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-08-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fc126c60-ba20-453c-b38e-884cb76224fc",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 3,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-08-03"
+            }
+          ]
+        },
         {
           "id": "CVM-SRE|158103",
           "type": "Anúncio de Encerramento",
@@ -450,7 +484,7 @@
       "review_required": true,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3506bf03-1f93-4ce0-9dc7-3ab7c6076f2d",
       "identified_at": "2026-10-14",
-      "updated_at": "2026-10-14",
+      "updated_at": "2026-10-15",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
@@ -494,7 +528,7 @@
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
-        "start_actual": null,
+        "start_actual": "2026-09-16",
         "reservation_end_planned": null,
         "closing_planned": null,
         "closing_actual": null,
@@ -502,10 +536,27 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/28b03079-eaab-491d-a951-a38f64f3fbdf",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|158024",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/28b03079-eaab-491d-a951-a38f64f3fbdf",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 3,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-09-16"
+            }
+          ]
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "classification": {
@@ -1449,6 +1500,108 @@
               "name": "Anúncio de encerramento",
               "kind": "Efetivo",
               "date": "2026-09-22"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27626",
+      "fund": "BTG PACTUAL CRÉDITO IMOBILIÁRIO CDI - FII FI IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "60.027.987/0001-60",
+      "ticker": "",
+      "registration": "SRE/2697/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "Balcão B3 / Cetip",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 500000000.0,
+      "maximum_volume": 500000000.0,
+      "captured_volume": 423626820.12,
+      "captured_base_volume": 385200000.0,
+      "additional_lot_volume": 38426820.12,
+      "capture_rate": 0.84725364024,
+      "timeline": {
+        "start_planned": "2026-08-31",
+        "start_actual": "2026-08-24",
+        "reservation_end_planned": "2026-09-29",
+        "closing_planned": "2027-02-20",
+        "closing_actual": "2026-10-14",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cbebf454-71f7-440c-8aca-b1e8d828de17",
+      "identified_at": "2026-10-15",
+      "updated_at": "2026-10-15",
+      "documents": [
+        {
+          "id": "CVM-SRE|155709",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-08-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cbebf454-71f7-440c-8aca-b1e8d828de17",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Início da subscrição / distribuição",
+              "kind": "Previsto",
+              "date": "2026-08-31"
+            },
+            {
+              "name": "Fim da reserva / subscrição",
+              "kind": "Previsto",
+              "date": "2026-09-29"
+            },
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2027-02-20"
+            },
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-08-24"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|164926",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-14",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/274713de-9159-48fd-a050-914321946069",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-14"
             }
           ]
         }
@@ -2797,7 +2950,7 @@
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-10-02",
-        "start_actual": null,
+        "start_actual": "2026-09-29",
         "reservation_end_planned": "2026-10-30",
         "closing_planned": "2027-03-26",
         "closing_actual": null,
@@ -2832,6 +2985,11 @@
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
               "date": "2027-03-26"
+            },
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-09-29"
             }
           ]
         }
@@ -4407,7 +4565,7 @@
       "capture_rate": 0.9251266666666667,
       "timeline": {
         "start_planned": "2026-07-01",
-        "start_actual": null,
+        "start_actual": "2026-06-24",
         "reservation_end_planned": "2026-08-26",
         "closing_planned": "2026-11-14",
         "closing_actual": "2026-09-03",
@@ -4447,6 +4605,11 @@
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
               "date": "2026-11-14"
+            },
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-06-24"
             }
           ]
         },
@@ -4869,7 +5032,7 @@
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": "2026-07-03",
-        "start_actual": null,
+        "start_actual": "2026-07-03",
         "reservation_end_planned": "2026-07-31",
         "closing_planned": "2026-09-03",
         "closing_actual": "2026-09-01",
@@ -4899,6 +5062,11 @@
               "name": "Fim da reserva / subscrição",
               "kind": "Previsto",
               "date": "2026-07-31"
+            },
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-07-03"
             }
           ]
         },
@@ -5248,7 +5416,7 @@
       "capture_rate": 0.5560000213624002,
       "timeline": {
         "start_planned": "2026-07-16",
-        "start_actual": null,
+        "start_actual": "2026-07-15",
         "reservation_end_planned": "2026-10-02",
         "closing_planned": "2027-01-10",
         "closing_actual": "2026-10-08",
@@ -5256,10 +5424,26 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/75bbaa65-ac67-49bb-ba07-acfcd8b6223d",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a9a916e6-a7ef-4cb2-ad28-d0befec46ce4",
       "identified_at": "2026-10-09",
       "updated_at": "2026-10-10",
       "documents": [
+        {
+          "id": "CVM-SRE|151976",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-07-15",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a9a916e6-a7ef-4cb2-ad28-d0befec46ce4",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-07-15"
+            }
+          ]
+        },
         {
           "id": "CVM-SRE|163734",
           "type": "Comunicado ao Mercado",
@@ -6800,7 +6984,7 @@
       "capture_rate": 0.6977745331714075,
       "timeline": {
         "start_planned": null,
-        "start_actual": null,
+        "start_actual": "2026-07-24",
         "reservation_end_planned": null,
         "closing_planned": "2026-12-24",
         "closing_actual": "2026-10-08",
@@ -6825,6 +7009,11 @@
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
               "date": "2026-12-24"
+            },
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-07-24"
             }
           ]
         },
@@ -7077,7 +7266,7 @@
       "capture_rate": 1.0,
       "timeline": {
         "start_planned": "2026-07-17",
-        "start_actual": null,
+        "start_actual": "2026-07-10",
         "reservation_end_planned": "2026-08-14",
         "closing_planned": "2027-01-06",
         "closing_actual": "2026-09-01",
@@ -7085,10 +7274,26 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1e547ad2-e5c4-4b8d-ab90-4815904b76c9",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/f4a4c4c3-4d47-4497-bb35-cb3ecd71a4df",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
       "documents": [
+        {
+          "id": "CVM-SRE|151357",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-07-13",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/f4a4c4c3-4d47-4497-bb35-cb3ecd71a4df",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-07-10"
+            }
+          ]
+        },
         {
           "id": "CVM-SRE|152790",
           "type": "Comunicado ao Mercado",
@@ -9620,7 +9825,7 @@
       "capture_rate": 0.39792,
       "timeline": {
         "start_planned": "2026-05-27",
-        "start_actual": null,
+        "start_actual": "2026-05-26",
         "reservation_end_planned": "2026-07-14",
         "closing_planned": "2026-11-19",
         "closing_actual": "2026-09-01",
@@ -9650,6 +9855,11 @@
               "name": "Fim da reserva / subscrição",
               "kind": "Previsto",
               "date": "2026-07-14"
+            },
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-05-26"
             },
             {
               "name": "Prazo máximo de encerramento",
@@ -9717,7 +9927,7 @@
       "capture_rate": null,
       "timeline": {
         "start_planned": "2026-09-04",
-        "start_actual": null,
+        "start_actual": "2026-09-03",
         "reservation_end_planned": "2026-12-04",
         "closing_planned": "2027-03-01",
         "closing_actual": null,
@@ -9725,10 +9935,26 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0c80c878-ef84-4f2e-b4fc-26521d2aefd2",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0b2c73e3-487e-4336-895b-afcc3e83c114",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
       "documents": [
+        {
+          "id": "CVM-SRE|156606",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0b2c73e3-487e-4336-895b-afcc3e83c114",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-09-03"
+            }
+          ]
+        },
         {
           "id": "CVM-SRE|164331",
           "type": "Comunicado ao Mercado",
@@ -9752,6 +9978,201 @@
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
               "date": "2027-03-01"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25874",
+      "fund": "RBR TESOURARIA FII CDI+ FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "66.173.986/0001-00",
+      "ticker": "",
+      "registration": "SRE/1107/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 375000000.0,
+      "maximum_volume": 375000000.0,
+      "captured_volume": 268883300.0,
+      "captured_base_volume": 268883300.0,
+      "additional_lot_volume": 0.0,
+      "capture_rate": 0.7170221333333333,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": "2026-04-17",
+        "reservation_end_planned": null,
+        "closing_planned": "2026-10-14",
+        "closing_actual": "2026-10-14",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/80a833dd-bc66-4699-85ec-00f11a4c7e6f",
+      "identified_at": "2026-10-15",
+      "updated_at": "2026-10-15",
+      "documents": [
+        {
+          "id": "CVM-SRE|142677",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-04-17",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/80a833dd-bc66-4699-85ec-00f11a4c7e6f",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-04-17"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|152535",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c8f87306-da38-445e-bca1-eda72b51192b",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2026-10-14"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|164880",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-14",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0e702fbc-4eef-41c3-a5ea-d70c9a36870e",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-14"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|25876",
+      "fund": "RBR TESOURARIA FII IPCA+ FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "66.174.532/0001-53",
+      "ticker": "",
+      "registration": "SRE/1106/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 300000000.0,
+      "maximum_volume": 300000000.0,
+      "captured_volume": 146446795.0,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": 0.4881559833333333,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": "2026-04-17",
+        "reservation_end_planned": null,
+        "closing_planned": "2026-10-14",
+        "closing_actual": "2026-10-14",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/02cfe158-6534-4e61-84ff-371f34c1f9c5",
+      "identified_at": "2026-10-15",
+      "updated_at": "2026-10-15",
+      "documents": [
+        {
+          "id": "CVM-SRE|142676",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-04-17",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/02cfe158-6534-4e61-84ff-371f34c1f9c5",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2026-10-14"
+            },
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-04-17"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|164887",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-14",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/629dc208-6c7c-48c2-bbf0-d3c6d9075332",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-14"
             }
           ]
         }
@@ -11296,7 +11717,7 @@
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
-        "start_actual": null,
+        "start_actual": "2026-09-02",
         "reservation_end_planned": null,
         "closing_planned": "2027-03-01",
         "closing_actual": null,
@@ -11317,6 +11738,11 @@
           "confidence": "Alta",
           "page": 2,
           "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-09-02"
+            },
             {
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
@@ -11950,6 +12376,119 @@
               "name": "Início efetivo da oferta",
               "kind": "Efetivo",
               "date": "2026-09-30"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27010",
+      "fund": "VINCI OPORTUNIDADES LOGÍSTICAS FII RESPONSABILIDADE LIMITADA",
+      "cnpj": "57.909.000/0001-26",
+      "ticker": "",
+      "registration": "SRE/2140/2026",
+      "issue": "2",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3 (A) / Balcão B3 (B)",
+      "rite": "Automático",
+      "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 250000000.0,
+      "maximum_volume": 250000000.0,
+      "captured_volume": 201591000.0,
+      "captured_base_volume": 200000000.0,
+      "additional_lot_volume": 1591000.0,
+      "capture_rate": 0.806364,
+      "timeline": {
+        "start_planned": "2026-07-23",
+        "start_actual": "2026-07-16",
+        "reservation_end_planned": "2026-10-09",
+        "closing_planned": "2026-10-14",
+        "closing_actual": "2026-10-14",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a74c333d-84ec-4c74-a130-4c1200371b4f",
+      "identified_at": "2026-10-15",
+      "updated_at": "2026-10-15",
+      "documents": [
+        {
+          "id": "CVM-SRE|152202",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-07-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a74c333d-84ec-4c74-a130-4c1200371b4f",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 3,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-07-16"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|163904",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2980b51e-44fb-4ec4-81cf-b4fc2c465f15",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Fim da reserva / subscrição",
+              "kind": "Previsto",
+              "date": "2026-10-09"
+            },
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2026-10-14"
+            },
+            {
+              "name": "Início da subscrição / distribuição",
+              "kind": "Previsto",
+              "date": "2026-07-23"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|164933",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-14",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0570103d-3cec-4f63-aa03-291176538be9",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-14"
             }
           ]
         }
