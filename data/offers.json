@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-15T11:51:35-03:00",
-  "reference_date": "2026-10-15",
+  "generated_at": "2026-10-16T11:00:40-03:00",
+  "reference_date": "2026-10-16",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
     {
@@ -1556,7 +1556,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cbebf454-71f7-440c-8aca-b1e8d828de17",
       "identified_at": "2026-10-15",
-      "updated_at": "2026-10-15",
+      "updated_at": "2026-10-16",
       "documents": [
         {
           "id": "CVM-SRE|155709",
@@ -10034,7 +10034,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/80a833dd-bc66-4699-85ec-00f11a4c7e6f",
       "identified_at": "2026-10-15",
-      "updated_at": "2026-10-15",
+      "updated_at": "2026-10-16",
       "documents": [
         {
           "id": "CVM-SRE|142677",
@@ -10137,7 +10137,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/02cfe158-6534-4e61-84ff-371f34c1f9c5",
       "identified_at": "2026-10-15",
-      "updated_at": "2026-10-15",
+      "updated_at": "2026-10-16",
       "documents": [
         {
           "id": "CVM-SRE|142676",
@@ -12432,7 +12432,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a74c333d-84ec-4c74-a130-4c1200371b4f",
       "identified_at": "2026-10-15",
-      "updated_at": "2026-10-15",
+      "updated_at": "2026-10-16",
       "documents": [
         {
           "id": "CVM-SRE|152202",
