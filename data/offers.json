@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20T11:53:53-03:00",
+  "generated_at": "2026-10-20T15:10:44-03:00",
   "reference_date": "2026-10-20",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -127,7 +127,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "ALIANZA GESTÃO DE RECURSOS LTDA.",
+        "cnpj": "21.950.366/0001-00",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/37bad4ff-672d-4b08-8455-057337d4b2a1"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -421,7 +425,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
-      "manager": null,
+      "manager": {
+        "name": "VÓRTX CAPITAL GESTÃO DE RECURSOS LTDA",
+        "cnpj": "09.645.906/0001-38",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2ac04f8a-51a3-4a43-baaf-7d0d96c91050"
+      },
       "distributors": [
         {
           "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
@@ -502,7 +510,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
-      "manager": null,
+      "manager": {
+        "name": "INTER ASSET GESTÃO DE RECURSOS LTDA",
+        "cnpj": "05.585.083/0001-41",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3506bf03-1f93-4ce0-9dc7-3ab7c6076f2d"
+      },
       "distributors": [
         {
           "name": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
@@ -556,7 +568,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "BANCO DAYCOVAL S.A.",
-      "manager": null,
+      "manager": {
+        "name": "AZ QUEST PANORAMA LTDA",
+        "cnpj": "37.783.771/0001-02",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/28b03079-eaab-491d-a951-a38f64f3fbdf"
+      },
       "distributors": [
         {
           "name": "BANCO DAYCOVAL S.A.",
@@ -914,7 +930,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
-      "manager": null,
+      "manager": {
+        "name": "BGR ASSET MANAGEMENT LTDA",
+        "cnpj": "48.730.767/0001-00",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6ea030e8-a485-4fca-8873-455b5f4e8330"
+      },
       "distributors": [
         {
           "name": "XP INVESTIMENTOS CCTVM S.A.",
@@ -1386,7 +1406,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "OLIVEIRA TRUST DTVM S.A.",
-      "manager": null,
+      "manager": {
+        "name": "BRESCO INVESTIMENTOS E GESTÃO LTDA.",
+        "cnpj": "17.415.310/0001-70",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a81536e6-2ad5-4447-839a-d1b900724f55"
+      },
       "distributors": [
         {
           "name": "OLIVEIRA TRUST DTVM S.A.",
@@ -1574,7 +1598,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "BTG PACTUAL GESTORA DE RECURSOS LTDA.",
+        "cnpj": "09.631.542/0001-37",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/274713de-9159-48fd-a050-914321946069"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -1676,7 +1704,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "BTG PACTUAL GESTORA DE RECURSOS LTDA",
+        "cnpj": "09.631.542/0001-37",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/08a22c4b-2870-45e5-938d-2e3ad8036398"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -1925,7 +1957,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "CAPITÂNIA ALTERNATIVES S.A",
+        "cnpj": "41.475.648/0001-00",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ed3da387-ce75-4669-9296-325052b08ed2"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -2006,7 +2042,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "CAPITÂNIA HBC CONSULTORIA E GESTÃO S.A",
+        "cnpj": "30.949.716/0001-09",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/dd33beb2-46fc-4e15-94e7-17460a65414c"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -2117,7 +2157,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "CAPITÂNIA ALTERNATIVES S.A",
+        "cnpj": "41.475.648/0001-00",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a3a538ac-c541-409c-87fe-761ce91006ff"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -2223,7 +2267,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "HEMERA DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
-      "manager": null,
+      "manager": {
+        "name": "ANTHARUS GESTORA DE RECURSOS LTDA",
+        "cnpj": "55.080.408/0001-02",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cc767586-1f08-42c8-8950-c2ff6ebe32aa"
+      },
       "distributors": [
         {
           "name": "HEMERA DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
@@ -2457,7 +2505,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
-      "manager": null,
+      "manager": {
+        "name": "GV ATACAMA CAPITAL LTDA",
+        "cnpj": "40.888.143/0001-04",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/35306a82-56f4-402d-a566-6a267c3f34c8"
+      },
       "distributors": [
         {
           "name": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
@@ -2978,7 +3030,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
-      "manager": null,
+      "manager": {
+        "name": "MANATÍ CAPITAL MANAGEMENT LTDA",
+        "cnpj": "43.960.839/0001-84",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/41490392-ae0b-4189-8446-ccd5071eb439"
+      },
       "distributors": [
         {
           "name": "XP INVESTIMENTOS CCTVM S.A.",
@@ -3421,7 +3477,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
-      "manager": null,
+      "manager": {
+        "name": "ALIANZA GESTÂO DE RECURSOS LTDA",
+        "cnpj": "21.950.366/0001-00",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c68a521d-05ae-4212-9f6b-a88b5cd9edb9"
+      },
       "distributors": [
         {
           "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
@@ -3507,7 +3567,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "ÉXES GESTORA DE RECURSOS LTDA.",
+        "cnpj": "31.960.567/0001-33",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3c5a9e1a-166a-44e4-948b-054b58c345e0"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -3679,7 +3743,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "EXES SERVICOS FINANCEIROS LTDA",
-      "manager": null,
+      "manager": {
+        "name": "ÉXES GESTORA DE RECURSOS LTDA",
+        "cnpj": "31.960.567/0001-33",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1c702860-df0b-422e-a358-390fc02ffda5"
+      },
       "distributors": [
         {
           "name": "EXES SERVICOS FINANCEIROS LTDA",
@@ -3853,7 +3921,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "ACTUAL DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
-      "manager": null,
+      "manager": {
+        "name": "ÁFIRA GESTÃO DE RECURSOS LTDA",
+        "cnpj": "21.431.855/0001-47",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0a55e16b-1f85-4d20-899b-6dc92fb8013b"
+      },
       "distributors": [
         {
           "name": "ACTUAL DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
@@ -4000,7 +4072,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BANCO DAYCOVAL S.A.",
-      "manager": null,
+      "manager": {
+        "name": "JIVE INVESTMENTS GESTÃO DE RECURSOS E CONSULTORIA S.A",
+        "cnpj": "12.600.032/0001-07",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7f5ca52d-73bc-4229-9dfd-7d78e8d04f99"
+      },
       "distributors": [
         {
           "name": "BANCO DAYCOVAL S.A.",
@@ -4157,7 +4233,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "PLANNER CORRETORA DE VALORES S.A.",
-      "manager": null,
+      "manager": {
+        "name": "CAPITÂNIA CAPITAL S.A.",
+        "cnpj": "41.793.345/0001-27",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/51129007-377b-4b52-a628-1aaaefb2b017"
+      },
       "distributors": [
         {
           "name": "PLANNER CORRETORA DE VALORES S.A.",
@@ -4340,7 +4420,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
-      "manager": null,
+      "manager": {
+        "name": "GUARDIAN GESTORA LTDA",
+        "cnpj": "37.414.193/0001-37",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/25be9ad5-6673-49a6-8f29-2ba5e0940928"
+      },
       "distributors": [
         {
           "name": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
@@ -4899,7 +4983,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
-      "manager": null,
+      "manager": {
+        "name": "HIRE GESTÃO DE RECURSOS LTDA",
+        "cnpj": "53.942.885/0001-04",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c5294f98-64e8-41fc-b554-119d90331731"
+      },
       "distributors": [
         {
           "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
@@ -4975,7 +5063,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
-      "manager": null,
+      "manager": {
+        "name": "HIRE GESTÃO DE RECURSOS LTDA",
+        "cnpj": "53.942.885/0001-04",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bf938c4b-e6c0-41ec-9b91-12df50abaf75"
+      },
       "distributors": [
         {
           "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
@@ -5444,7 +5536,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
-      "manager": null,
+      "manager": {
+        "name": "INTER ASSET GESTÃO DE RECURSOS LTDA.",
+        "cnpj": "05.585.083/0001-41",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7a210e3c-c377-4923-a090-00a8c2c44ed8"
+      },
       "distributors": [
         {
           "name": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
@@ -5982,7 +6078,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
-      "manager": null,
+      "manager": {
+        "name": "ITAÚ UNIBANCO ASSET MANAGEMENT LTDA",
+        "cnpj": "40.430.971/0001-96",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fabf4db9-7c81-4b79-bdb4-9b09da457aa4"
+      },
       "distributors": [
         {
           "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
@@ -6234,7 +6334,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
-      "manager": null,
+      "manager": {
+        "name": "ITAÚ UNIBANCO S.A.",
+        "cnpj": "60.701.190/0001-04",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4ecc9b92-2549-4f88-91aa-262d08d5c7f6"
+      },
       "distributors": [
         {
           "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
@@ -6326,7 +6430,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "BANCO SAFRA S/A",
-      "manager": null,
+      "manager": {
+        "name": "SAFRA ASSET CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A",
+        "cnpj": "65.913.436/0001-17",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/88daba32-5c0e-449f-a946-0806551de0e7"
+      },
       "distributors": [
         {
           "name": "BANCO SAFRA S/A",
@@ -6576,7 +6684,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
-      "manager": null,
+      "manager": {
+        "name": "JIVE INVESTMENTS GESTÃO DE RECURSOS E CONSULTORIA S.A",
+        "cnpj": "12.600.032/0001-07",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a1b0de13-cd0d-4c9f-b42f-59f286a0a0c7"
+      },
       "distributors": [
         {
           "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
@@ -7012,7 +7124,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
-      "manager": null,
+      "manager": {
+        "name": "KINEA INVESTIMENTOS LTDA.",
+        "cnpj": "08.604.187/0001-44",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/10aaf04d-3b5d-4b4b-ae36-8f83ded53324"
+      },
       "distributors": [
         {
           "name": "XP INVESTIMENTOS CCTVM S.A.",
@@ -7104,7 +7220,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
-      "manager": null,
+      "manager": {
+        "name": "KINEA INVESTIMENTOS LTDA",
+        "cnpj": "08.604.187/0001-44",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ba3a2f76-dce5-401c-8c29-5f64afce0b0d"
+      },
       "distributors": [
         {
           "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
@@ -7696,7 +7816,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
-      "manager": null,
+      "manager": {
+        "name": "PHRONESIS INVESTIMENTOS LTDA.",
+        "cnpj": "10.479.557/0001-00",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d1d0d341-7ecb-4986-99e4-1db7cc6a786d"
+      },
       "distributors": [
         {
           "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
@@ -7793,7 +7917,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
-      "manager": null,
+      "manager": {
+        "name": "MORE INVEST GESTORA DE RECURSOS LTDA.",
+        "cnpj": "10.556.398/0001-09",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6c199362-a9ca-4865-a91e-17eb285478c4"
+      },
       "distributors": [
         {
           "name": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
@@ -7914,7 +8042,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A.",
-      "manager": null,
+      "manager": {
+        "name": "GENIAL GESTÃO LTDA",
+        "cnpj": "22.119.959/0001-83",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/64e00548-438f-4c79-ba51-a854438a073e"
+      },
       "distributors": [
         {
           "name": "GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A.",
@@ -7985,7 +8117,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
-      "manager": null,
+      "manager": {
+        "name": "MAUÁ CAPITAL REAL ESTATE LTDA.",
+        "cnpj": "04.608.171/0001-59",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/987c0932-1591-4fbc-9627-f212af883ca3"
+      },
       "distributors": [
         {
           "name": "XP INVESTIMENTOS CCTVM S.A.",
@@ -8082,7 +8218,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "MAUÁ CAPITAL REAL ESTATE LTDA.",
+        "cnpj": "04.608.171/0001-59",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/95f1c682-bf0e-48cc-817f-97e549b09dea"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -8153,7 +8293,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "MAUÁ CAPITAL REAL ESTATE LTDA",
+        "cnpj": "04.608.171/0001-59",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/884dad0d-f558-493b-bb7f-6305c878d254"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -8431,7 +8575,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "GENIAL INSTITUCIONAL CCTVM S.A.",
-      "manager": null,
+      "manager": {
+        "name": "GENIAL GESTÃO LTDA.",
+        "cnpj": "22.119.959/0001-83",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/854ed3b1-2252-46e1-b8c4-9f3ec472a035"
+      },
       "distributors": [
         {
           "name": "GENIAL INSTITUCIONAL CCTVM S.A.",
@@ -8779,7 +8927,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
-      "manager": null,
+      "manager": {
+        "name": "BANUX INVESTIMENTOS LTDA",
+        "cnpj": "48.880.654/0001-83",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/05cb59bc-42b8-4e26-a497-a8e7c5d45aba"
+      },
       "distributors": [
         {
           "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
@@ -9032,7 +9184,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BR-CAPITAL DTVM S.A.",
-      "manager": null,
+      "manager": {
+        "name": "STRATA CAPITAL GESTÃO DE RECURSOS LTDA",
+        "cnpj": "43.179.785/0001-14",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/12e60dff-713b-4425-bbbc-16533ebc5dcb"
+      },
       "distributors": [
         {
           "name": "BR-CAPITAL DTVM S.A.",
@@ -9580,7 +9736,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "GALAPAGOS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. - GLPG DTVM",
-      "manager": null,
+      "manager": {
+        "name": "GALAPAGOS CAPITAL INVESTIMENTOS E PARTICIPAÇÕES LTDA.",
+        "cnpj": "32.706.879/0001-88",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8d4e59f9-d76e-42b2-b25a-e0ec0e9b1191"
+      },
       "distributors": [
         {
           "name": "GALAPAGOS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. - GLPG DTVM",
@@ -9656,7 +9816,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "GALAPAGOS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. - GLPG DTVM",
-      "manager": null,
+      "manager": {
+        "name": "GALAPAGOS CAPITAL INVESTIMENTOS E PARTICIPAÇÕES LTDA.",
+        "cnpj": "32.706.879/0001-88",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/26ecb492-ec0d-4d92-8150-98d57219be1f"
+      },
       "distributors": [
         {
           "name": "GALAPAGOS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. - GLPG DTVM",
@@ -10299,7 +10463,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
-      "manager": null,
+      "manager": {
+        "name": "RBR PRIVATE EQUITY GESTÃO DE RECURSOS LTDA",
+        "cnpj": "40.147.051/0001-65",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0c80c878-ef84-4f2e-b4fc-26521d2aefd2"
+      },
       "distributors": [
         {
           "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
@@ -10396,7 +10564,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
-      "manager": null,
+      "manager": {
+        "name": "RBR PRIVATE EQUITY GESTÃO DE RECURSOS LTDA.",
+        "cnpj": "40.147.051/0001-65",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0e702fbc-4eef-41c3-a5ea-d70c9a36870e"
+      },
       "distributors": [
         {
           "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
@@ -10499,7 +10671,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
-      "manager": null,
+      "manager": {
+        "name": "RBR PRIVATE EQUITY GESTÃO DE RECURSOS LTDA.",
+        "cnpj": "40.147.051/0001-65",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/629dc208-6c7c-48c2-bbf0-d3c6d9075332"
+      },
       "distributors": [
         {
           "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
@@ -10591,7 +10767,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "EUQUEROINVESTIR GESTÃO DE RECURSOS LTDA",
+        "cnpj": "32.288.914/0001-96",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c6023007-25c5-45ca-8773-e0adf14f531b"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -11374,7 +11554,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "ID CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
-      "manager": null,
+      "manager": {
+        "name": "FACT INVESTMENTS GESTÃO DE RECURSOS LTDA.",
+        "cnpj": "17.480.662/0001-09",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2a3c8b04-37ba-462a-94d5-4d2084e25278"
+      },
       "distributors": [
         {
           "name": "ID CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
@@ -11461,7 +11645,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
-      "manager": null,
+      "manager": {
+        "name": "SH ASSET CAPITAL GESTÃO DE RECURSOS LTDA",
+        "cnpj": "37.123.902/0001-25",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4710833a-6800-40cb-b40c-3d13e746a951"
+      },
       "distributors": [
         {
           "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
@@ -11612,7 +11800,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "BTG PACTUAL GESTORA DE RECURSOS LTDA.",
+        "cnpj": "09.631.542/0001-37",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2c62494e-c042-4b51-8139-27e32612cc7d"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -11683,7 +11875,11 @@
       "trading_environment": "Balcão B3 / Cetip",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
-      "manager": null,
+      "manager": {
+        "name": "SPX REAL ESTATE GESTÃO DE RECURSOS LTDA",
+        "cnpj": "42.617.367/0001-07",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4f16918e-5b24-407e-9826-3594b69efa54"
+      },
       "distributors": [
         {
           "name": "XP INVESTIMENTOS CCTVM S.A.",
@@ -11890,7 +12086,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A.",
-      "manager": null,
+      "manager": {
+        "name": "SUNO GESTORA DE RECURSOS LTDA.",
+        "cnpj": "11.304.223/0001-69",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d800fe07-ff83-46a9-a444-949e80dde340"
+      },
       "distributors": [
         {
           "name": "GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A.",
@@ -12160,7 +12360,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "BANCO BRADESCO BBI S.A.",
-      "manager": null,
+      "manager": {
+        "name": "TIVIO CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A",
+        "cnpj": "03.384.738/0001-98",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/78596606-6b70-43f6-8308-46624b53ae50"
+      },
       "distributors": [
         {
           "name": "BANCO BRADESCO BBI S.A.",
@@ -12511,7 +12715,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
-      "manager": null,
+      "manager": {
+        "name": "TRX GESTORA DE RECURSOS LTDA.",
+        "cnpj": "13.362.610/0001-87",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/af18d7ee-0262-4c2a-bbbe-a916dd3576a4"
+      },
       "distributors": [
         {
           "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
@@ -12582,7 +12790,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "V2 INVESTIMENTOS LTDA",
+        "cnpj": "13.601.663/0001-03",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/468ec9e8-81d1-4930-9257-d15a04a16512"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -12784,7 +12996,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "VALORA IMOBILIÁRIO E INFRAESTRUTURA LTDA",
+        "cnpj": "07.559.989/0001-17",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e3f45c56-d39e-48f9-b6c8-f51c08d8d686"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -12865,7 +13081,11 @@
       "trading_environment": "Bolsa B3 (A) / Balcão B3 (B)",
       "rite": "Automático",
       "lead_coordinator": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
-      "manager": null,
+      "manager": {
+        "name": "VINCI REAL ESTATE GESTORA DE RECURSOS LTDA.",
+        "cnpj": "13.838.015/0001-75",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0570103d-3cec-4f63-aa03-291176538be9"
+      },
       "distributors": [
         {
           "name": "BTG PACTUAL SERVIÇOS FINANCEIROS S/A DTVM",
@@ -13084,7 +13304,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
-      "manager": null,
+      "manager": {
+        "name": "XP VISTA ASSET MANAGEMENT LTDA",
+        "cnpj": "16.789.525/0001-98",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/44287d81-d37b-4f29-93d4-eb71e620ad66"
+      },
       "distributors": [
         {
           "name": "XP INVESTIMENTOS CCTVM S.A.",
