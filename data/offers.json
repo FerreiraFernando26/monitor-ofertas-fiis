@@ -1,9 +1,54 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20T11:02:50-03:00",
+  "generated_at": "2026-10-20T11:53:53-03:00",
   "reference_date": "2026-10-20",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
+    {
+      "id": "fc161e664402bf7988fab9fd",
+      "offer_id": "CVM160|26029",
+      "fund": "PERMUTA RESIDENCIAL II FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "field": "Encerramento previsto",
+      "previous_date": null,
+      "current_date": "2026-10-19",
+      "detected_at": "2026-10-20"
+    },
+    {
+      "id": "ba0566e9b3c91b3dd7afe2c6",
+      "offer_id": "CVM160|26009",
+      "fund": "MARESIAS FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+      "field": "Início previsto",
+      "previous_date": null,
+      "current_date": "2026-04-28",
+      "detected_at": "2026-10-20"
+    },
+    {
+      "id": "701e5a79cd9d1772ccb95761",
+      "offer_id": "CVM160|26009",
+      "fund": "MARESIAS FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+      "field": "Fim da reserva previsto",
+      "previous_date": null,
+      "current_date": "2026-07-15",
+      "detected_at": "2026-10-20"
+    },
+    {
+      "id": "35ed2b9456edc9cc3f399dff",
+      "offer_id": "CVM160|26027",
+      "fund": "PERMUTA RESIDENCIAL II FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+      "field": "Encerramento previsto",
+      "previous_date": null,
+      "current_date": "2026-10-19",
+      "detected_at": "2026-10-20"
+    },
+    {
+      "id": "1b59e7d27702592c72039cf3",
+      "offer_id": "CVM160|28093",
+      "fund": "SPX PORTFÓLIO ALFA FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+      "field": "Fim da reserva previsto",
+      "previous_date": "2026-10-20",
+      "current_date": "2026-10-28",
+      "detected_at": "2026-10-20"
+    },
     {
       "id": "e7c732b97657d542acb616a4",
       "offer_id": "CVM160|25876",
@@ -7764,32 +7809,82 @@
       "additional_lot_volume": null,
       "capture_rate": 0.19385319385319386,
       "timeline": {
-        "start_planned": null,
+        "start_planned": "2026-04-28",
         "start_actual": null,
-        "reservation_end_planned": null,
+        "reservation_end_planned": "2026-07-15",
         "closing_planned": null,
         "closing_actual": "2026-10-19",
         "settlement_planned": null,
         "settlement_actual": null
       },
-      "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/49acf74d-b29e-471f-9e3f-816dcb851e8c",
+      "review_required": true,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6c199362-a9ca-4865-a91e-17eb285478c4",
       "identified_at": "2026-10-20",
       "updated_at": "2026-10-20",
       "documents": [
         {
-          "id": "CVM-SRE|165550",
-          "type": "Anúncio de Encerramento",
-          "date": "2026-10-19",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/49acf74d-b29e-471f-9e3f-816dcb851e8c",
+          "id": "CVM160|26009|4d265d4c0b1f33e83a50dc9ddd7c89beba021c110922afd5480f54492ed33b7b",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-04-20",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6c199362-a9ca-4865-a91e-17eb285478c4",
           "availability": "Baixado e validado",
           "confidence": "Alta",
-          "page": 1,
+          "page": 2,
           "events": [
             {
-              "name": "Anúncio de encerramento",
-              "kind": "Efetivo",
-              "date": "2026-10-19"
+              "name": "Início do direito de preferência",
+              "kind": "Prevista",
+              "date": "2026-04-28"
+            },
+            {
+              "name": "Fim do direito de preferência e liquidação",
+              "kind": "Prevista",
+              "date": "2026-05-12"
+            },
+            {
+              "name": "Início do 1º período de subscrição",
+              "kind": "Prevista",
+              "date": "2026-05-27"
+            },
+            {
+              "name": "Fim do 1º período de subscrição",
+              "kind": "Prevista",
+              "date": "2026-06-01"
+            },
+            {
+              "name": "1ª liquidação da oferta",
+              "kind": "Prevista",
+              "date": "2026-06-03"
+            },
+            {
+              "name": "Início do 2º período de subscrição",
+              "kind": "Prevista",
+              "date": "2026-06-05"
+            },
+            {
+              "name": "Fim do 2º período de subscrição",
+              "kind": "Prevista",
+              "date": "2026-06-26"
+            },
+            {
+              "name": "2ª liquidação da oferta",
+              "kind": "Prevista",
+              "date": "2026-06-30"
+            },
+            {
+              "name": "Início do 3º período de subscrição",
+              "kind": "Prevista",
+              "date": "2026-07-01"
+            },
+            {
+              "name": "Fim do último período de subscrição anunciado (sujeito a novos períodos)",
+              "kind": "Prevista",
+              "date": "2026-07-15"
+            },
+            {
+              "name": "3ª liquidação da oferta (não é liquidação final confirmada)",
+              "kind": "Prevista",
+              "date": "2026-07-17"
             }
           ]
         }
@@ -9504,7 +9599,7 @@
         "start_planned": "2026-04-22",
         "start_actual": null,
         "reservation_end_planned": null,
-        "closing_planned": null,
+        "closing_planned": "2026-10-19",
         "closing_actual": "2026-10-19",
         "settlement_planned": null,
         "settlement_actual": null
@@ -9515,14 +9610,19 @@
       "updated_at": "2026-10-20",
       "documents": [
         {
-          "id": "CVM-SRE|142848",
+          "id": "CVM160|26027|740f0d43d15d638a777fecb4a2823e552c099f0f9f7efac89dbd92b92dbda540",
           "type": "Anúncio de Início da Distribuição",
           "date": "2026-04-22",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8d4e59f9-d76e-42b2-b25a-e0ec0e9b1191",
           "availability": "Baixado e validado",
           "confidence": "Alta",
-          "page": 2,
+          "page": 3,
           "events": [
+            {
+              "name": "Prazo máximo do anúncio de encerramento",
+              "kind": "Prevista",
+              "date": "2026-10-19"
+            },
             {
               "name": "Início da subscrição / distribuição",
               "kind": "Previsto",
@@ -9575,7 +9675,7 @@
         "start_planned": "2026-04-22",
         "start_actual": null,
         "reservation_end_planned": null,
-        "closing_planned": null,
+        "closing_planned": "2026-10-19",
         "closing_actual": "2026-10-19",
         "settlement_planned": null,
         "settlement_actual": null
@@ -9586,7 +9686,7 @@
       "updated_at": "2026-10-20",
       "documents": [
         {
-          "id": "CVM-SRE|142858",
+          "id": "CVM160|26029|b712ae8d59eb39dd349eb5ad10ae983e0a3d5e8a28e66d92823c0a532aa789e5",
           "type": "Anúncio de Início da Distribuição",
           "date": "2026-04-22",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/26ecb492-ec0d-4d92-8150-98d57219be1f",
@@ -9594,6 +9694,11 @@
           "confidence": "Alta",
           "page": 2,
           "events": [
+            {
+              "name": "Prazo máximo do anúncio de encerramento",
+              "kind": "Prevista",
+              "date": "2026-10-19"
+            },
             {
               "name": "Início da subscrição / distribuição",
               "kind": "Previsto",
