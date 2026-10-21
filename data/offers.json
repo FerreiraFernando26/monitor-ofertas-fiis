@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-21T12:00:50-03:00",
+  "generated_at": "2026-10-21T15:01:39-03:00",
   "reference_date": "2026-10-21",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -4904,6 +4904,101 @@
           "type": "Anúncio de Início da Distribuição",
           "date": "2026-09-24",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c60ddc09-216e-429a-ab23-95b144661ba3",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28356",
+      "fund": "GATTI LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "69.011.838/0001-87",
+      "ticker": "",
+      "registration": "SRE/3380/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+      "manager": {
+        "name": "AF INVEST REAL ESTATE ADMINISTRAÇÃO DE RECURSOS LTDA",
+        "cnpj": "43.946.902/0001-28",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4a80cf17-bd47-4145-90c2-0cac92f5e90f"
+      },
+      "distributors": [
+        {
+          "name": "INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 550000000.0,
+      "maximum_volume": 550000000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": "2027-04-21",
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4a80cf17-bd47-4145-90c2-0cac92f5e90f",
+      "identified_at": "2026-10-21",
+      "updated_at": "2026-10-21",
+      "documents": [
+        {
+          "id": "CVM-SRE|165452",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-10-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4a80cf17-bd47-4145-90c2-0cac92f5e90f",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2027-04-21"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|165451",
+          "type": "Prospecto Definitivo",
+          "date": "2026-10-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/43b7e2bd-3743-455c-94ed-196e1c8bcae1",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|165453",
+          "type": "Lâmina",
+          "date": "2026-10-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1492fff8-5265-467f-8fec-ccf4cfc153ed",
           "availability": "Disponível na CVM",
           "confidence": "Publicação oficial; conteúdo não validado",
           "page": null,
@@ -10763,6 +10858,81 @@
       }
     },
     {
+      "id": "CVM160|28353",
+      "fund": "ONDA INVEST RETORNO TOTAL FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "69.445.142/0001-69",
+      "ticker": "",
+      "registration": "SRE/3375/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "manager": {
+        "name": "BANUX INVESTIMENTOS LTDA",
+        "cnpj": "48.880.654/0001-83",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/93509168-95a9-4687-bc2d-864d8cb88deb"
+      },
+      "distributors": [
+        {
+          "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 120000000.0,
+      "maximum_volume": 120000000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": "2027-03-31",
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/93509168-95a9-4687-bc2d-864d8cb88deb",
+      "identified_at": "2026-10-21",
+      "updated_at": "2026-10-21",
+      "documents": [
+        {
+          "id": "CVM-SRE|165426",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/93509168-95a9-4687-bc2d-864d8cb88deb",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2027-03-31"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
       "id": "CVM160|25879",
       "fund": "OPPORTUNITY FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
       "cnpj": "01.235.622/0001-61",
@@ -15138,6 +15308,112 @@
           "type": "Anúncio de Início da Distribuição",
           "date": "2026-08-21",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/af18d7ee-0262-4c2a-bbbe-a916dd3576a4",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|27625",
+      "fund": "V2 PRIME PROPERTIES FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII - RESPONSABILIDADE LIMITADA",
+      "cnpj": "30.654.849/0001-40",
+      "ticker": "",
+      "registration": "SRE/2696/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "GROW REAL ASSETS CAPITAL LTDA",
+      "manager": {
+        "name": "V2 INVESTIMENTOS LTDA",
+        "cnpj": "13.601.663/0001-03",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a10950a6-8a7c-4eca-bd01-cfb3b1085d76"
+      },
+      "distributors": [
+        {
+          "name": "GROW REAL ASSETS CAPITAL LTDA",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 185905867.44,
+      "maximum_volume": 185905867.44,
+      "captured_volume": 172929332.49,
+      "captured_base_volume": 172929332.49,
+      "additional_lot_volume": 0.0,
+      "capture_rate": 0.930198357218671,
+      "timeline": {
+        "start_planned": "2026-09-15",
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": "2027-02-20",
+        "closing_actual": "2026-10-16",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4de52a1a-f988-4d2e-a340-d08ac307cf53",
+      "identified_at": "2026-10-21",
+      "updated_at": "2026-10-21",
+      "documents": [
+        {
+          "id": "CVM-SRE|155670",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-08-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4de52a1a-f988-4d2e-a340-d08ac307cf53",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 3,
+          "events": [
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2027-02-20"
+            },
+            {
+              "name": "Início da subscrição / distribuição",
+              "kind": "Previsto",
+              "date": "2026-09-15"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|165428",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a10950a6-8a7c-4eca-bd01-cfb3b1085d76",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-16"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|165430",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/645ec924-4d09-4f01-b43e-3b4e107bbaec",
           "availability": "Disponível na CVM",
           "confidence": "Publicação oficial; conteúdo não validado",
           "page": null,
