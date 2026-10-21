@@ -282,25 +282,40 @@ function profileBreakdown(offers, dimension = 'sector', metric = 'offers') {
     entries: [...entries.values()].sort((a, b) => Number(a.unknown) - Number(b.unknown) || b.value - a.value || a.label.localeCompare(b.label, 'pt-BR')) };
 }
 
+function profileChartView(result) {
+  const entries = result.entries.filter(item => !item.unknown);
+  const classified = entries.reduce((sum, item) => sum + item.value, 0);
+  const unknown = result.entries.filter(item => item.unknown).reduce((sum, item) => sum + item.value, 0);
+  return { entries, classified, unknown, maximum: Math.max(...entries.map(item => item.value), 1) };
+}
+
 let profileDimension = 'sector';
+let profileMetric = 'maximum';
 function renderFundProfileChart() {
-  const metric = $('#profileMetric').value;
+  const metric = profileMetric;
   const offers = offersForSelectedMonths();
   const result = profileBreakdown(offers, profileDimension, metric);
+  const view = profileChartView(result);
   const dimension = profileDimension === 'strategy' ? 'estratégia' : 'setor';
-  const title = `${metric === 'offers' ? 'Ofertas' : metric === 'maximum' ? 'Volume máximo' : 'Captação confirmada'} por ${dimension}`;
+  const title = `${metric === 'offers' ? 'Ofertas' : metric === 'maximum' ? 'Volume total' : 'Volume captado'} por ${dimension}`;
   $('#fund-profile-title').textContent = title;
+  $('#profileDescription').textContent = metric === 'offers' ? 'Quantidade de ofertas por classificação do fundo.' : metric === 'maximum' ? 'Volume máximo anunciado das ofertas do período.' : 'Volume confirmado nas ofertas do período, incluindo lote adicional.';
   $('#profileChart').setAttribute('aria-label', title);
   $('#profileCoverage').textContent = `${profileDimension === 'strategy' ? 'Estratégia confirmada' : 'Setor confirmado'} em ${result.confirmed} de ${result.offers} ofertas · ${result.funds} fundos classificados`;
   $('#profileScope').textContent = $('#overviewMonthFilterSummary').textContent;
-  const maximum = Math.max(...result.entries.map(item => item.value), 1);
-  $('#profileChart').replaceChildren(...result.entries.map(item => {
+  const formatValue = value => metric === 'offers' ? String(value) : result.eligible ? money.format(value) : 'n.a.';
+  $('#profileTotalLabel').textContent = metric === 'offers' ? 'Total de ofertas' : metric === 'maximum' ? 'Volume total anunciado' : 'Volume captado confirmado';
+  $('#profileTotal').textContent = formatValue(result.total);
+  $('#profileClassifiedTotal').textContent = formatValue(view.classified);
+  $('#profileUnknownTotal').textContent = formatValue(view.unknown);
+  $('#profileUnknownShare').textContent = result.total > 0 ? `${percent.format(view.unknown / result.total)} do total` : '';
+  $('#profileChart').replaceChildren(...view.entries.map(item => {
     const row = element('div', `profile-row${item.unknown ? ' profile-unknown' : ''}`);
     row.setAttribute('role', 'listitem');
     const rail = element('div', 'profile-rail');
     rail.setAttribute('aria-hidden', 'true');
     const fill = element('div', 'profile-fill');
-    fill.style.width = `${Math.max(0, item.value / maximum * 100)}%`;
+    fill.style.width = `${Math.max(0, item.value / view.maximum * 100)}%`;
     rail.append(fill);
     const amount = metric === 'offers' ? String(item.value) : money.format(item.value);
     const share = result.total > 0 ? percent.format(item.value / result.total) : 'n.a.';
@@ -310,7 +325,7 @@ function renderFundProfileChart() {
     row.append(element('span', 'profile-name', item.label), rail, value);
     return row;
   }));
-  if (!result.entries.length) $('#profileChart').append(element('p', 'panel-description', 'Nenhum dado disponível para esta seleção.'));
+  if (!view.entries.length) $('#profileChart').append(element('p', 'panel-description', 'Sem classificação confirmada nesta seleção. O total do período permanece acima.'));
   $('#profileMetricNote').textContent = metric === 'offers'
     ? 'Contagem por oferta, não por fundo. Percentuais incluem n.a.'
     : `${result.eligible} ofertas com valor ${metric === 'captured' ? 'confirmado' : 'máximo informado'} · ${result.missingValue} sem valor para esta métrica. Percentuais incluem n.a.${metric === 'captured' ? ' Inclui lote adicional confirmado; não corresponde ao mês do recebimento.' : ' Potencial das emissões, não captação.'}`;
@@ -356,7 +371,7 @@ function renderCoordinatorChart() {
 }
 
 // Pure aggregation: once per offer, explicit identities only, unknowns reconciled.
-function managerRanking(offers) {
+function managerRanking(offers, metric = 'captured') {
   const groups = new Map();
   const seen = new Set();
   let total = 0, unknown = 0, unknownOffers = 0;
@@ -379,34 +394,70 @@ function managerRanking(offers) {
     group.funds.add(offer.cnpj || offer.fund);
     groups.set(key, group);
   });
-  const entries = [...groups.values()].sort((a, b) => b.amount - a.amount || a.name.localeCompare(b.name, 'pt-BR'));
+  const announced = new Map();
+  const announcedSeen = new Set();
+  offers.forEach(offer => {
+    if (announcedSeen.has(offer.id)) return;
+    announcedSeen.add(offer.id);
+    const manager = offer.manager;
+    if (!manager?.name || !manager.official_url) return;
+    const key = manager.cnpj?.replace(/\D/g, '') || manager.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
+    const group = announced.get(key) || { name: manager.name, amount: 0, known: 0, offers: 0, funds: new Set() };
+    group.offers += 1;
+    group.funds.add(offer.cnpj || offer.fund);
+    const amount = numberValue(offer.maximum_volume);
+    if (amount != null && Number.isFinite(amount) && amount >= 0) { group.amount += amount; group.known += 1; }
+    announced.set(key, group);
+  });
+  if (metric === 'announced') announced.forEach((group, key) => {
+    if (!groups.has(key)) groups.set(key, { name: group.name, amount: null, offers: 0, funds: group.funds });
+  });
+  groups.forEach((group, key) => {
+    const volume = announced.get(key);
+    group.announced = volume?.known ? volume.amount : null;
+    group.announcedOffers = volume?.known || 0;
+    group.totalOffers = volume?.offers || group.offers;
+  });
+  const entries = [...groups.values()].sort((a, b) =>
+    ((metric === 'announced' ? b.announced : b.amount) ?? -Infinity) - ((metric === 'announced' ? a.announced : a.amount) ?? -Infinity)
+    || a.name.localeCompare(b.name, 'pt-BR'));
   return { entries, total, unknown, unknownOffers };
 }
 
 let managersExpanded = false;
+let managerMetric = 'captured';
 function renderManagerChart() {
-  const ranking = managerRanking(offersForSelectedMonths());
+  const ranking = managerRanking(offersForSelectedMonths(), managerMetric);
   const visible = managersExpanded ? ranking.entries : ranking.entries.slice(0, 8);
-  const maximum = Math.max(...ranking.entries.map(item => item.amount), 1);
+  const announcedView = managerMetric === 'announced';
+  const maximum = Math.max(...ranking.entries.map(item => (announcedView ? item.announced : item.amount) || 0), 1);
+  $('#manager-title').textContent = announcedView ? 'Volume anunciado por gestora' : 'Captação confirmada por gestora';
+  $('#managerChart').setAttribute('aria-label', announcedView ? 'Ranking de volume anunciado por gestora' : 'Ranking de captação confirmada por gestora');
   $('#managerCount').textContent = `${visible.length} de ${ranking.entries.length} gestoras / grupos`;
   $('#managerChart').replaceChildren(...visible.map((item, index) => {
     const row = element('div', 'coordinator-row manager-row');
     row.setAttribute('role', 'listitem');
-    row.title = `${item.name}: ${moneyFull.format(item.amount)}`;
+    row.title = `${item.name}: anunciado ${item.announced == null ? 'n.a.' : moneyFull.format(item.announced)} em ${item.announcedOffers} de ${item.totalOffers} ofertas; captado ${item.amount == null ? 'n.a.' : moneyFull.format(item.amount)} em ${item.offers} ofertas`;
     const label = element('div', 'distributor-label');
-    const share = ranking.total > 0 ? percent.format(item.amount / ranking.total) : 'n.a.';
+    const share = item.amount != null && ranking.total > 0 ? percent.format(item.amount / ranking.total) : 'n.a.';
     label.append(element('span', 'coordinator-name', `${index + 1}. ${item.name}`),
-      element('small', '', `${item.offers} ${item.offers === 1 ? 'oferta' : 'ofertas'} · ${item.funds.size} ${item.funds.size === 1 ? 'fundo' : 'fundos'} · ${share} da captação`));
+      element('small', '', `${item.totalOffers} ${item.totalOffers === 1 ? 'oferta' : 'ofertas'} · ${item.offers} com captação${item.amount != null ? ` · ${share} da captação total` : ''}`));
     const rail = element('div', 'coordinator-rail');
     const fill = element('div', 'coordinator-fill manager-fill');
-    fill.style.width = `${item.amount / maximum * 100}%`;
+    fill.style.width = `${((announcedView ? item.announced : item.amount) || 0) / maximum * 100}%`;
+    fill.classList.toggle('manager-announced-fill', announcedView);
     rail.append(fill);
-    row.append(label, rail, element('strong', 'coordinator-value', money.format(item.amount)));
+    const announcedValue = element('div', 'manager-financial announced');
+    announcedValue.append(element('span', 'manager-financial-label', 'Anunciado'), element('strong', '', item.announced == null ? 'n.a.' : money.format(item.announced)));
+    if (item.announcedOffers < item.totalOffers) announcedValue.append(element('small', '', `${item.announcedOffers}/${item.totalOffers} com valor`));
+    const capturedValue = element('div', 'manager-financial captured');
+    capturedValue.append(element('span', 'manager-financial-label', 'Captado'), element('strong', '', item.amount == null ? 'n.a.' : money.format(item.amount)));
+    row.append(label, rail, announcedValue, capturedValue);
     return row;
   }));
-  if (!visible.length) $('#managerChart').append(element('div', 'empty', 'Nenhuma captação com gestora confirmada neste período.'));
+  if (!visible.length) $('#managerChart').append(element('div', 'empty', announcedView ? 'Nenhuma oferta com gestora confirmada neste período.' : 'Nenhuma captação com gestora confirmada neste período.'));
   const covered = ranking.total - ranking.unknown;
-  $('#managerCoverage').textContent = `Identificado: ${money.format(covered)}${ranking.total > 0 ? ` (${percent.format(covered / ranking.total)})` : ''}${ranking.unknownOffers ? ` · Gestora n.a.: ${money.format(ranking.unknown)} em ${ranking.unknownOffers} oferta(s)` : ''}`;
+  $('#managerCoverage').textContent = `Captação identificada: ${money.format(covered)}${ranking.total > 0 ? ` (${percent.format(covered / ranking.total)})` : ''}${ranking.unknownOffers ? ` · Gestora n.a.: ${money.format(ranking.unknown)} em ${ranking.unknownOffers} oferta(s)` : ''}`;
   $('#managerShowMore').hidden = ranking.entries.length <= 8;
   $('#managerShowMore').textContent = managersExpanded ? 'Recolher ranking' : `Ver ranking completo (${ranking.entries.length})`;
   $('#managerShowMore').setAttribute('aria-expanded', String(managersExpanded));
@@ -1110,7 +1161,16 @@ $$('[data-distributor-metric]').forEach(button => button.addEventListener('click
   renderDistributorChart();
 }));
 $('#retry').addEventListener('click', load);
-$('#profileMetric').addEventListener('change', renderFundProfileChart);
+$$('[data-profile-metric]').forEach(button => button.addEventListener('click', () => {
+  profileMetric = button.dataset.profileMetric;
+  $$('[data-profile-metric]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+  renderFundProfileChart();
+}));
+$$('[data-manager-metric]').forEach(button => button.addEventListener('click', () => {
+  managerMetric = button.dataset.managerMetric;
+  $$('[data-manager-metric]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+  renderManagerChart();
+}));
 $$('[data-profile-dimension]').forEach(button => button.addEventListener('click', () => {
   profileDimension = button.dataset.profileDimension;
   $$('[data-profile-dimension]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
