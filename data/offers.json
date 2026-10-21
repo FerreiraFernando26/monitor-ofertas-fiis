@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-21T15:01:39-03:00",
+  "generated_at": "2026-10-21T15:16:30-03:00",
   "reference_date": "2026-10-21",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -238,6 +238,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -329,6 +336,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -440,6 +454,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -525,6 +546,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -594,6 +622,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -669,6 +704,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -740,6 +782,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -794,6 +843,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -881,6 +937,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -966,6 +1029,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -1198,6 +1268,28 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": "Lajes corporativas",
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-22",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2e32c60f-447a-4a9b-8374-8d338c4134d5"
+          },
+          {
+            "dimension": "sector",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-22",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2e32c60f-447a-4a9b-8374-8d338c4134d5"
+          }
+        ]
       }
     },
     {
@@ -1309,6 +1401,28 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Desenvolvimento",
+        "sector": "Residencial",
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-08-06",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5c412fe2-3b2c-4a0a-b815-05c4577ee1f4"
+          },
+          {
+            "dimension": "sector",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-08-06",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5c412fe2-3b2c-4a0a-b815-05c4577ee1f4"
+          }
+        ]
       }
     },
     {
@@ -1456,6 +1570,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -1582,6 +1703,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -1688,6 +1816,28 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": "Logística",
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-08-24",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4c1d827c-acbc-4a13-9260-e71076bb7bb8"
+          },
+          {
+            "dimension": "sector",
+            "document": "Prospecto Definitivo",
+            "date": "2026-08-24",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4c1d827c-acbc-4a13-9260-e71076bb7bb8"
+          }
+        ]
       }
     },
     {
@@ -1794,6 +1944,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -1920,6 +2077,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -2000,6 +2164,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -2112,6 +2283,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -2203,6 +2381,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -2298,6 +2483,21 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Crédito imobiliário",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-10-01",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ed3da387-ce75-4669-9296-325052b08ed2"
+          }
+        ]
       }
     },
     {
@@ -2433,6 +2633,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -2583,6 +2790,21 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-09-24",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/56aff5f0-a492-4008-b72c-f1f0af977b44"
+          }
+        ]
       }
     },
     {
@@ -2658,6 +2880,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -2744,6 +2973,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -2831,6 +3067,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -2950,6 +3193,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -3098,6 +3348,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -3193,6 +3450,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -3269,6 +3533,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -3355,6 +3626,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -3436,6 +3714,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -3765,6 +4050,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -3845,6 +4137,28 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": "Shopping centers",
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-10-20",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e4571415-b8d7-4bba-a21b-da581277ef27"
+          },
+          {
+            "dimension": "sector",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-10-20",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e4571415-b8d7-4bba-a21b-da581277ef27"
+          }
+        ]
       }
     },
     {
@@ -3932,6 +4246,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -4003,6 +4324,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -4093,6 +4421,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -4329,6 +4664,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -4418,6 +4760,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -4598,6 +4947,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -4678,6 +5034,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -4749,6 +5112,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -4829,6 +5199,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -4920,6 +5297,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -5015,6 +5399,28 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": "Logística",
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-10-16",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/43b7e2bd-3743-455c-94ed-196e1c8bcae1"
+          },
+          {
+            "dimension": "sector",
+            "document": "Prospecto Definitivo",
+            "date": "2026-10-16",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/43b7e2bd-3743-455c-94ed-196e1c8bcae1"
+          }
+        ]
       }
     },
     {
@@ -5121,6 +5527,28 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": "Shopping centers",
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-04-15",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0318f3e4-a9e2-4c88-828c-2a1168130410"
+          },
+          {
+            "dimension": "sector",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-04-15",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0318f3e4-a9e2-4c88-828c-2a1168130410"
+          }
+        ]
       }
     },
     {
@@ -5222,6 +5650,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -5317,6 +5752,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -5404,6 +5846,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -5495,6 +5944,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -5835,6 +6291,21 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": "Crédito imobiliário",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-06-24",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1fe76573-f9da-4dc4-b175-b2ab3bd898f5"
+          }
+        ]
       }
     },
     {
@@ -5915,6 +6386,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -6000,6 +6478,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -6498,6 +6983,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -6811,6 +7303,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -6952,6 +7451,21 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Desenvolvimento",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-08-06",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5aa7bf5f-8ed7-431d-8d28-a969f8794d78"
+          }
+        ]
       }
     },
     {
@@ -7112,6 +7626,21 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": "Desenvolvimento",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-07-29",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/80134587-4ad8-45d7-b914-af8ab6aee782"
+          }
+        ]
       }
     },
     {
@@ -7234,6 +7763,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -7360,6 +7896,21 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Crédito imobiliário",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-07-13",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b1a7a4dc-a108-442a-84ad-4efa3bf3bb8f"
+          }
+        ]
       }
     },
     {
@@ -7686,6 +8237,21 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": "Crédito imobiliário",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-07-13",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b1a7a4dc-a108-442a-84ad-4efa3bf3bb8f"
+          }
+        ]
       }
     },
     {
@@ -7802,6 +8368,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -7955,6 +8528,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -8086,6 +8666,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -8161,6 +8748,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -8287,6 +8881,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -8383,6 +8984,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -8545,6 +9153,28 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Crédito imobiliário",
+        "sector": "Residencial",
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-06-19",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/492f424d-6d92-4f96-8a82-3f291c1d5266"
+          },
+          {
+            "dimension": "sector",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-06-19",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/492f424d-6d92-4f96-8a82-3f291c1d5266"
+          }
+        ]
       }
     },
     {
@@ -8636,6 +9266,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -8802,6 +9439,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -8966,6 +9610,21 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": "Crédito imobiliário",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-03",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/75bbf898-5df9-43c7-8a2c-5c698132ed4f"
+          }
+        ]
       }
     },
     {
@@ -9062,6 +9721,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -9508,6 +10174,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -9619,6 +10292,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -9764,6 +10444,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -9849,6 +10536,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -10000,6 +10694,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -10075,6 +10776,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -10377,6 +11085,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -10553,6 +11268,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -10618,6 +11340,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -10699,6 +11428,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -10780,6 +11516,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -10855,6 +11598,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -10930,6 +11680,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11021,6 +11778,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11122,6 +11886,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11242,6 +12013,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11296,6 +12074,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11361,6 +12146,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11513,6 +12305,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11619,6 +12418,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11725,6 +12531,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11815,6 +12628,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11905,6 +12725,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -11997,6 +12824,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -12092,6 +12926,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -12249,6 +13090,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -12330,6 +13178,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -12416,6 +13271,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -12522,6 +13384,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -12633,6 +13502,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -12750,6 +13626,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -12856,6 +13739,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -12980,6 +13870,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -13683,6 +14580,21 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": "Crédito imobiliário",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-05-25",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d3bede01-34c6-43b6-9861-c32c547295d8"
+          }
+        ]
       }
     },
     {
@@ -13794,6 +14706,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -13874,6 +14793,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -13959,6 +14885,28 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": "Logística",
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-03-24",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/02626553-6c8a-491e-ac37-51e58b88b640"
+          },
+          {
+            "dimension": "sector",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-03-24",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/02626553-6c8a-491e-ac37-51e58b88b640"
+          }
+        ]
       }
     },
     {
@@ -14044,6 +14992,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -14204,6 +15159,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -14415,6 +15377,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -14490,6 +15459,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -14621,6 +15597,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -14675,6 +15658,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -14729,6 +15719,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -14794,6 +15791,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -14884,6 +15888,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -15029,6 +16040,13 @@
             }
           }
         ]
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -15083,6 +16101,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -15239,6 +16264,21 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-08-05",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fc5950ce-83e0-4a72-9769-d7adb79fb54c"
+          }
+        ]
       }
     },
     {
@@ -15324,6 +16364,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -15430,6 +16477,28 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": "Lajes corporativas",
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-08-24",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4de52a1a-f988-4d2e-a340-d08ac307cf53"
+          },
+          {
+            "dimension": "sector",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-08-24",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4de52a1a-f988-4d2e-a340-d08ac307cf53"
+          }
+        ]
       }
     },
     {
@@ -15550,6 +16619,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -15716,6 +16792,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -15831,6 +16914,21 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Crédito imobiliário",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-30",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e3f45c56-d39e-48f9-b6c8-f51c08d8d686"
+          }
+        ]
       }
     },
     {
@@ -16058,6 +17156,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -16174,6 +17279,13 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": []
       }
     },
     {
@@ -16295,6 +17407,21 @@
           "official_url": ""
         },
         "items": []
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-09-14",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e802bc94-1ad5-4adb-8c2a-dfbfff61bc55"
+          }
+        ]
       }
     },
     {
@@ -16511,6 +17638,28 @@
               "page": 7,
               "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27241"
             }
+          }
+        ]
+      },
+      "fund_profile": {
+        "strategy": "Renda com locação",
+        "sector": "Lajes corporativas",
+        "structure": null,
+        "as_of": "2026-10-21",
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-07-31",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1472872e-8ba0-4b8c-a489-0b62a66c9f18"
+          },
+          {
+            "dimension": "sector",
+            "document": "Prospecto Definitivo",
+            "date": "2026-07-31",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1472872e-8ba0-4b8c-a489-0b62a66c9f18"
           }
         ]
       }

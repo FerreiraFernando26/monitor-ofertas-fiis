@@ -253,6 +253,85 @@ function renderChart() {
   if (!entries.length) $('#volumeChart').append(element('div', 'empty', 'Nenhum valor confirmado para esta métrica.'));
 }
 
+function profileBreakdown(offers, dimension = 'sector', metric = 'offers') {
+  dimension = dimension === 'strategy' ? 'strategy' : 'sector';
+  metric = ['maximum', 'captured'].includes(metric) ? metric : 'offers';
+  const unique = [...new Map(offers.filter(offer => offer.id).map(offer => [offer.id, offer])).values()];
+  const entries = new Map();
+  let eligible = 0, confirmed = 0, total = 0;
+  const funds = new Set();
+  unique.forEach(offer => {
+    const value = offer.fund_profile?.[dimension];
+    const label = typeof value === 'string' && value.trim() && value !== 'n.a.' ? value : null;
+    if (label) {
+      confirmed += 1;
+      funds.add(String(offer.cnpj || offer.id).replace(/\D/g, '') || offer.id);
+    }
+    const amount = metric === 'offers' ? 1 : numberValue(offer[metric === 'maximum' ? 'maximum_volume' : 'captured_volume']);
+    if (amount == null || !Number.isFinite(amount)) return;
+    eligible += 1;
+    total += amount;
+    const key = label || 'n.a.';
+    const group = entries.get(key) || { label: key, value: 0, offers: 0, unknown: !label };
+    group.value += amount;
+    group.offers += 1;
+    entries.set(key, group);
+  });
+  return { total, eligible, offers: unique.length, confirmed, funds: funds.size,
+    missingValue: unique.length - eligible,
+    entries: [...entries.values()].sort((a, b) => Number(a.unknown) - Number(b.unknown) || b.value - a.value || a.label.localeCompare(b.label, 'pt-BR')) };
+}
+
+let profileDimension = 'sector';
+function renderFundProfileChart() {
+  const metric = $('#profileMetric').value;
+  const offers = offersForSelectedMonths();
+  const result = profileBreakdown(offers, profileDimension, metric);
+  const dimension = profileDimension === 'strategy' ? 'estratégia' : 'setor';
+  const title = `${metric === 'offers' ? 'Ofertas' : metric === 'maximum' ? 'Volume máximo' : 'Captação confirmada'} por ${dimension}`;
+  $('#fund-profile-title').textContent = title;
+  $('#profileChart').setAttribute('aria-label', title);
+  $('#profileCoverage').textContent = `${profileDimension === 'strategy' ? 'Estratégia confirmada' : 'Setor confirmado'} em ${result.confirmed} de ${result.offers} ofertas · ${result.funds} fundos classificados`;
+  $('#profileScope').textContent = $('#overviewMonthFilterSummary').textContent;
+  const maximum = Math.max(...result.entries.map(item => item.value), 1);
+  $('#profileChart').replaceChildren(...result.entries.map(item => {
+    const row = element('div', `profile-row${item.unknown ? ' profile-unknown' : ''}`);
+    row.setAttribute('role', 'listitem');
+    const rail = element('div', 'profile-rail');
+    rail.setAttribute('aria-hidden', 'true');
+    const fill = element('div', 'profile-fill');
+    fill.style.width = `${Math.max(0, item.value / maximum * 100)}%`;
+    rail.append(fill);
+    const amount = metric === 'offers' ? String(item.value) : money.format(item.value);
+    const share = result.total > 0 ? percent.format(item.value / result.total) : 'n.a.';
+    const value = element('div', 'profile-value', amount);
+    value.append(element('small', '', share));
+    row.title = `${item.label}: ${metric === 'offers' ? `${item.offers} ofertas` : moneyFull.format(item.value)} · ${share} do total${item.unknown ? ' · Classificação ainda não confirmada' : ''}`;
+    row.append(element('span', 'profile-name', item.label), rail, value);
+    return row;
+  }));
+  if (!result.entries.length) $('#profileChart').append(element('p', 'panel-description', 'Nenhum dado disponível para esta seleção.'));
+  $('#profileMetricNote').textContent = metric === 'offers'
+    ? 'Contagem por oferta, não por fundo. Percentuais incluem n.a.'
+    : `${result.eligible} ofertas com valor ${metric === 'captured' ? 'confirmado' : 'máximo informado'} · ${result.missingValue} sem valor para esta métrica. Percentuais incluem n.a.${metric === 'captured' ? ' Inclui lote adicional confirmado; não corresponde ao mês do recebimento.' : ' Potencial das emissões, não captação.'}`;
+  const sources = new Map();
+  offers.forEach(offer => {
+    if (!offer.fund_profile?.[profileDimension]) return;
+    (offer.fund_profile.sources || []).filter(source => [profileDimension, 'master_link'].includes(source.dimension)).forEach(source => {
+      const key = `${offer.cnpj}|${source.official_url}|${source.page}`;
+      if (!sources.has(key)) sources.set(key, { offer, source });
+    });
+  });
+  $('#profileSources').replaceChildren(...[...sources.values()].sort((a, b) => a.offer.fund.localeCompare(b.offer.fund, 'pt-BR')).map(({ offer, source }) => {
+    const row = element('div', 'profile-source');
+    row.append(element('span', '', `${offer.fund} · ${offer.fund_profile[profileDimension]} · ${source.document}${source.page ? `, p. ${source.page}` : ''} · ${dateText(source.date)}`));
+    const link = element('a', '', 'Fonte oficial');
+    link.href = source.official_url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+    row.append(link);
+    return row;
+  }));
+}
+
 function renderCoordinatorChart() {
   const groups = new Map();
   offersForSelectedMonths().forEach(offer => {
@@ -864,6 +943,7 @@ function renderAll() {
   renderKpis();
   renderStatus();
   renderChart();
+  renderFundProfileChart();
   renderCoordinatorChart();
   renderManagerChart();
   renderDistributorChart();
@@ -929,6 +1009,7 @@ function renderMonthScope() {
   renderKpis();
   renderStatus();
   renderChart();
+  renderFundProfileChart();
   renderCoordinatorChart();
   renderManagerChart();
   renderDistributorChart();
@@ -1029,6 +1110,12 @@ $$('[data-distributor-metric]').forEach(button => button.addEventListener('click
   renderDistributorChart();
 }));
 $('#retry').addEventListener('click', load);
+$('#profileMetric').addEventListener('change', renderFundProfileChart);
+$$('[data-profile-dimension]').forEach(button => button.addEventListener('click', () => {
+  profileDimension = button.dataset.profileDimension;
+  $$('[data-profile-dimension]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+  renderFundProfileChart();
+}));
 window.addEventListener('hashchange', syncNavigation);
 
 syncNavigation();

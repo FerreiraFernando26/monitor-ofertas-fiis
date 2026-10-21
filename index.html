@@ -6,7 +6,7 @@
   <meta name="description" content="Painel público de ofertas e emissões de fundos imobiliários acompanhadas a partir de fontes oficiais.">
   <title>Radar FII — Monitor de ofertas</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307121d'/%3E%3Cpath d='M14 44V25l18-11 18 11v19' fill='none' stroke='%233f8cff' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M22 44V31h20v13M10 49h44' fill='none' stroke='%237ee0c3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20261002-distribuidores">
+  <link rel="stylesheet" href="./styles.css?v=20261021-perfil-fundos">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -53,6 +53,20 @@
           <div class="status-wrap"><div id="statusDonut" class="donut"><strong id="statusDonutTotal">—</strong><span>ofertas</span></div><div id="statusLegend" class="legend"></div></div>
           <div class="mix"><div><span>IPO / 1ª emissão</span><strong id="mixIpo">—</strong></div><div><span>Novas emissões</span><strong id="mixFollowOn">—</strong></div></div>
         </article>
+      </section>
+
+      <section id="perfil-dos-fundos" class="card panel fund-profile-panel" aria-labelledby="fund-profile-title">
+        <div class="panel-head profile-head">
+          <div><p class="overline">Perfil dos fundos · prévia</p><h2 id="fund-profile-title">Ofertas por setor</h2><p class="panel-description">Classificação do fundo, não do pipeline de alocação.</p></div>
+          <div class="profile-controls">
+            <div class="segmented" role="group" aria-label="Classificar ofertas por"><button type="button" data-profile-dimension="sector" aria-pressed="true">Setor</button><button type="button" data-profile-dimension="strategy" aria-pressed="false">Estratégia</button></div>
+            <label><span class="sr-only">Métrica do perfil dos fundos</span><select id="profileMetric" class="control" aria-label="Métrica do perfil dos fundos"><option value="offers">Quantidade de ofertas</option><option value="maximum">Volume máximo</option><option value="captured">Captação confirmada</option></select></label>
+          </div>
+        </div>
+        <div class="profile-coverage-line"><p id="profileCoverage" class="panel-description" aria-live="polite">Carregando classificação…</p><span id="profileScope" class="count">Todos os meses</span></div>
+        <div id="profileChart" class="profile-chart" role="list" aria-label="Ofertas por setor"></div>
+        <p id="profileMetricNote" class="panel-description profile-metric-note"></p>
+        <details class="manager-method profile-method"><summary>Critério e fontes</summary><p class="panel-description">Perfil do fundo confirmado em documentos oficiais disponíveis na data da base; não representa necessariamente a classificação histórica em cada emissão. Feeder é estrutura: a estratégia segue o master somente quando documentada. Cada oferta entra uma vez, mesmo quando o fundo tem várias emissões. “n.a.” permanece na comparação; percentuais usam todo o universo com dado para a métrica escolhida. O período segue início efetivo, depois início previsto e, na ausência dos dois, identificação da oferta.</p><div id="profileSources" class="profile-sources"></div></details>
       </section>
 
       <section class="card panel coordinator-panel" aria-labelledby="coordinator-title">
@@ -179,6 +193,6 @@
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20261021-materiais" defer></script>
+  <script src="./app.js?v=20261021-perfil-fundos" defer></script>
 </body>
 </html>
