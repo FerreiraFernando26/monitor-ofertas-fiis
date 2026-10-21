@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-21T11:01:45-03:00",
+  "generated_at": "2026-10-21T11:20:42-03:00",
   "reference_date": "2026-10-21",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -8685,6 +8685,16 @@
           "confidence": "Publicação oficial; conteúdo não validado",
           "page": null,
           "events": []
+        },
+        {
+          "id": "KINEA|KNSC11|6|MP|202607",
+          "type": "Material publicitário / Roadshow (avulso, 6ª emissão)",
+          "date": null,
+          "official_url": "https://www.kinea.com.br/wp-content/uploads/2026/07/Material-Publicitario-6a-Emissao-Kinea-Securities.pdf",
+          "availability": "Material avulso — consulta complementar",
+          "confidence": "Fundo, emissão e fonte conferidos; não alimenta indicadores",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -15015,6 +15025,36 @@
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/92e82650-ac46-4baf-9024-5de6fc175ffb",
           "availability": "Disponível na CVM",
           "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "FNET|1298709",
+          "type": "Material publicitário / Roadshow — bloco técnico (avulso, 13ª emissão)",
+          "date": "2026-08-20",
+          "official_url": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?cvm=true&id=1298709",
+          "availability": "Material avulso — consulta complementar",
+          "confidence": "Fundo, emissão e fonte conferidos; não alimenta indicadores",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "FNET|1298710",
+          "type": "Material publicitário — nota técnica (avulso, 13ª emissão, agosto/2026)",
+          "date": null,
+          "official_url": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?cvm=true&id=1298710",
+          "availability": "Material avulso — consulta complementar",
+          "confidence": "Fundo, emissão e fonte conferidos; não alimenta indicadores",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "FNET|1336556",
+          "type": "Apresentação de encerramento (avulso, 13ª emissão, setembro/2026)",
+          "date": null,
+          "official_url": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?cvm=true&id=1336556",
+          "availability": "Material avulso — consulta complementar",
+          "confidence": "Fundo, emissão e fonte conferidos; não alimenta indicadores",
           "page": null,
           "events": []
         }

@@ -535,15 +535,23 @@ function renderSchedule() {
 function allDocuments() {
   return state.offers.flatMap(offer => (offer.documents || []).map(document => ({ ...document, fund: offer.fund, offerId: offer.id })));
 }
+function matchesDocumentType(document, selectedType) {
+  const type = document.type || 'Documento oficial';
+  const normalized = type.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  if (selectedType === 'Materiais e apresentações (todos)') return /material publicitario|material (de )?apoio|road\s*show|apresentac(ao|oes)|teaser|pitch\s*book/.test(normalized);
+  if (selectedType === 'Anexos de prospectos (todos)') return /anexo/.test(normalized);
+  return !selectedType || type === selectedType;
+}
 function renderDocuments() {
   const documents = allDocuments().sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
   setOptions('#documentFundFilter', documents.map(document => document.fund));
-  setOptions('#documentTypeFilter', documents.map(document => document.type || 'Documento oficial'));
+  const groups = ['Materiais e apresentações (todos)', 'Anexos de prospectos (todos)'].filter(group => documents.some(document => matchesDocumentType(document, group)));
+  setOptions('#documentTypeFilter', [...groups, ...documents.map(document => document.type || 'Documento oficial')]);
   const selectedFund = $('#documentFundFilter').value;
   const selectedType = $('#documentTypeFilter').value;
   const filtered = documents.filter(document => {
     if (selectedFund && document.fund !== selectedFund) return false;
-    return !selectedType || (document.type || 'Documento oficial') === selectedType;
+    return matchesDocumentType(document, selectedType);
   });
   const visible = state.documentsExpanded ? filtered : filtered.slice(0, 9);
   $('#documentCount').textContent = filtered.length === documents.length
