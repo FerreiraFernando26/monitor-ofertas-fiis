@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-21T10:57:34-03:00",
-  "reference_date": "2026-10-20",
+  "generated_at": "2026-10-21T11:01:45-03:00",
+  "reference_date": "2026-10-21",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
     {
@@ -3765,6 +3765,86 @@
             }
           }
         ]
+      }
+    },
+    {
+      "id": "CVM160|28403",
+      "fund": "D98 FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.903.696/0001-37",
+      "ticker": "",
+      "registration": "SRE/3413/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO BRADESCO BBI S.A.",
+      "manager": {
+        "name": "TIVIO CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A",
+        "cnpj": "03.384.738/0001-98",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e4571415-b8d7-4bba-a21b-da581277ef27"
+      },
+      "distributors": [
+        {
+          "name": "BANCO BRADESCO BBI S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 580000000.0,
+      "maximum_volume": 580000000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": "2026-10-20",
+        "reservation_end_planned": null,
+        "closing_planned": "2027-04-16",
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e4571415-b8d7-4bba-a21b-da581277ef27",
+      "identified_at": "2026-10-21",
+      "updated_at": "2026-10-21",
+      "documents": [
+        {
+          "id": "CVM-SRE|165670",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-10-20",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e4571415-b8d7-4bba-a21b-da581277ef27",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-10-20"
+            },
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2027-04-16"
+            }
+          ]
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
       }
     },
     {
@@ -9480,7 +9560,7 @@
       "review_required": true,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6c199362-a9ca-4865-a91e-17eb285478c4",
       "identified_at": "2026-10-20",
-      "updated_at": "2026-10-20",
+      "updated_at": "2026-10-21",
       "documents": [
         {
           "id": "CVM160|26009|4d265d4c0b1f33e83a50dc9ddd7c89beba021c110922afd5480f54492ed33b7b",
@@ -9861,7 +9941,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/95f1c682-bf0e-48cc-817f-97e549b09dea",
       "identified_at": "2026-10-20",
-      "updated_at": "2026-10-20",
+      "updated_at": "2026-10-21",
       "documents": [
         {
           "id": "CVM-SRE|165545",
@@ -11511,7 +11591,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8d4e59f9-d76e-42b2-b25a-e0ec0e9b1191",
       "identified_at": "2026-10-20",
-      "updated_at": "2026-10-20",
+      "updated_at": "2026-10-21",
       "documents": [
         {
           "id": "CVM160|26027|740f0d43d15d638a777fecb4a2823e552c099f0f9f7efac89dbd92b92dbda540",
@@ -11601,7 +11681,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/26ecb492-ec0d-4d92-8150-98d57219be1f",
       "identified_at": "2026-10-20",
-      "updated_at": "2026-10-20",
+      "updated_at": "2026-10-21",
       "documents": [
         {
           "id": "CVM160|26029|b712ae8d59eb39dd349eb5ad10ae983e0a3d5e8a28e66d92823c0a532aa789e5",
@@ -14201,7 +14281,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d800fe07-ff83-46a9-a444-949e80dde340",
       "identified_at": "2026-10-20",
-      "updated_at": "2026-10-20",
+      "updated_at": "2026-10-21",
       "documents": [
         {
           "id": "CVM-SRE|165546",
@@ -14404,6 +14484,60 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      }
+    },
+    {
+      "id": "CVM160|28396",
+      "fund": "TERRAS PAULISTAS FUNDO DE INVESTIMENTO IMOBILIÁRIO DE PERMUTAS RESPONSABILIDADE LIMITADA",
+      "cnpj": "63.320.393/0001-30",
+      "ticker": "",
+      "registration": "SRE/3406/2026",
+      "issue": "2",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "PATAGÔNIA CAPITAL GESTORA DE RECURSOS LTDA.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "PATAGÔNIA CAPITAL GESTORA DE RECURSOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 3000000.0,
+      "maximum_volume": 3000000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-10-21",
+      "updated_at": "2026-10-21",
       "documents": [],
       "allocation_pipeline": {
         "updated_at": null,
