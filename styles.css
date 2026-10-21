@@ -138,9 +138,11 @@ h3 { margin-bottom: 14px; font-size: .92rem; }
   .profile-controls { width: 100%; }
   .profile-control-group { width: 100%; }
   .profile-controls .segmented button { flex: 1; padding: 9px 12px; }
-  .profile-totals { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .profile-totals { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .profile-totals > div:first-child { grid-column: 1 / -1; }
   .profile-totals > div { padding: 12px; }
+  .profile-totals strong { font-size: 1.15rem; }
+  .profile-totals > div:first-child strong { font-size: 1.65rem; }
   .profile-row { grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; }
   .profile-name { grid-column: 1; }
   .profile-value { grid-column: 2; }
