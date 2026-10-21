@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20T15:10:44-03:00",
+  "generated_at": "2026-10-21T10:57:34-03:00",
   "reference_date": "2026-10-20",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -206,6 +206,26 @@
               "date": "2026-09-16"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|147488",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-06-08",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1bcf98eb-e92b-44d5-9f3c-2610329b0411",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|145129",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-05-15",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/37bad4ff-672d-4b08-8455-057337d4b2a1",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -398,6 +418,16 @@
               "date": "2026-09-28"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|163166",
+          "type": "Anúncio de Encerramento da Distribuição",
+          "date": "2026-09-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/be2c3718-e989-4ce9-96b5-997e8fe5a81a",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -542,7 +572,18 @@
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3506bf03-1f93-4ce0-9dc7-3ab7c6076f2d",
       "identified_at": "2026-10-14",
       "updated_at": "2026-10-15",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|164591",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-10-13",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3506bf03-1f93-4ce0-9dc7-3ab7c6076f2d",
+          "availability": "Revisão necessária",
+          "confidence": "Conteúdo com pendência de validação",
+          "page": 2,
+          "events": []
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "classification": {
@@ -903,6 +944,16 @@
               "date": "2026-09-09"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|150156",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-06-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bf6eaebe-34a5-49fd-bac9-db17b1935f8e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -1028,6 +1079,76 @@
               "date": "2027-03-20"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|162836",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6ea030e8-a485-4fca-8873-455b5f4e8330",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|158719",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2e32c60f-447a-4a9b-8374-8d338c4134d5",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|158718",
+          "type": "Lâmina",
+          "date": "2026-09-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cfcbd964-290f-46b9-af7f-a421f8522bd1",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|158717",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8325eeda-e662-44cd-9e4f-2d47a6140823",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|158582",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/df52bbd2-8396-4475-bb0b-5791c0d60711",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|158580",
+          "type": "Lâmina",
+          "date": "2026-09-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/82f47e3d-85d5-4b47-a3e1-d24489f9f517",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|158583",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5a110938-6751-4600-81ad-779677edfc96",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -1166,6 +1287,16 @@
               "date": "2026-09-02"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|155274",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e27437f7-7c1f-4676-9e22-21fa0930314f",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -1273,6 +1404,46 @@
               "date": "2026-09-29"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|163320",
+          "type": "Anúncio de Encerramento da Distribuição",
+          "date": "2026-09-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4c17431b-ebab-43ef-91ba-bf87cb5993b9",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163312",
+          "type": "Anúncio de Encerramento da Distribuição",
+          "date": "2026-09-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/48ff2c6a-869a-4418-a342-fda6c13d14f9",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|155774",
+          "type": "Prospecto Definitivo",
+          "date": "2026-08-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9e8440ac-1eae-4080-ba39-0b65b7234d15",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|155777",
+          "type": "Lâmina",
+          "date": "2026-08-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b036f9ea-3f2c-46a0-8e13-d1a2c8bc73df",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -1379,6 +1550,26 @@
               "date": "2026-09-17"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156788",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-04",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/373eef44-4996-4229-8e49-58d033c7e9c6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156786",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-04",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/eee4e837-8823-4d44-bde9-e3aeb1c2d674",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -1475,6 +1666,16 @@
               "date": "2026-10-05"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|155718",
+          "type": "Prospecto Definitivo",
+          "date": "2026-08-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4c1d827c-acbc-4a13-9260-e71076bb7bb8",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -1571,6 +1772,16 @@
               "date": "2026-09-22"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|158196",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/732cacf6-4896-42e8-96da-8b15a654b72f",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -1677,6 +1888,26 @@
               "date": "2026-10-14"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|155710",
+          "type": "Prospecto Definitivo",
+          "date": "2026-08-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/24d4d452-0ab6-4e76-a06f-acf20e7cb692",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|155708",
+          "type": "Lâmina",
+          "date": "2026-08-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/867588e7-0865-4f75-b7f2-3cf6f6e17d26",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -1849,6 +2080,26 @@
               "date": "2026-09-29"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|157185",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-10",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/51037bc1-a791-4565-b582-bdcd11d202f8",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156421",
+          "type": "Aviso ao Mercado",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1d78431c-28f0-4711-98c9-fa028e1ec630",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -1930,6 +2181,16 @@
               "date": "2026-09-08"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156201",
+          "type": "Aviso ao Mercado",
+          "date": "2026-08-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cdc925e0-40e3-4170-ab31-7dfcd1b502a5",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -2015,6 +2276,16 @@
               "date": "2027-03-29"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|163586",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ef144b94-8e2d-4dff-9431-7050aabcd738",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -2130,6 +2401,26 @@
               "date": "2027-03-23"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|165438",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/dd33beb2-46fc-4e15-94e7-17460a65414c",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|162281",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d4c1846b-d2bc-41d8-ae67-f084417c8eac",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -2240,6 +2531,46 @@
               "date": "2027-03-22"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|165229",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-15",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a3a538ac-c541-409c-87fe-761ce91006ff",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|162263",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/56aff5f0-a492-4008-b72c-f1f0af977b44",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|162246",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/f9f82600-5266-4f26-8cdb-25545ad7b4c0",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|161990",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/f30e834d-6ef7-49c3-a7b4-e82abfea6617",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -2391,6 +2722,16 @@
               "date": null
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|158565",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7fe556e1-e14d-444b-aa10-4bb722cb4c8e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -2558,6 +2899,26 @@
               "date": "2026-10-08"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156749",
+          "type": "Lâmina",
+          "date": "2026-09-04",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a8a5ca62-4420-4345-b5e8-a0244e212206",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156747",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-04",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/65d5c29d-4d7d-4fba-a38a-3a7534cd7934",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -2705,6 +3066,26 @@
               "date": null
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|139680",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-03-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4b903010-43aa-426c-b3a9-191b28319381",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|139679",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-03-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ba41003c-3981-483e-be76-eb12e19604a9",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -2780,6 +3161,26 @@
               "date": "2026-09-15"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|157188",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-10",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0c868d4e-9e5a-4ec1-8536-9ab255b7c4d8",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|157057",
+          "type": "Aviso ao Mercado",
+          "date": "2026-09-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/abd1dc06-ef8a-415a-a3ec-19272242040e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -2932,6 +3333,16 @@
               "date": "2027-03-15"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|157967",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4d242b64-1722-432a-ab0c-06017b0ad58b",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -3003,6 +3414,16 @@
               "date": "2026-09-18"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|140242",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-03-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4943d507-a180-408b-8c3d-66c61fbfa4a5",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -3093,6 +3514,46 @@
               "date": "2026-09-29"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|163416",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4dc0ae76-0ff7-4409-9f90-907360e01768",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|162850",
+          "type": "Prospecto Preliminar",
+          "date": "2026-09-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ba1a2eea-1c9e-4c27-a031-6a8db4d1e363",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|162852",
+          "type": "Lâmina",
+          "date": "2026-09-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/102b1c2a-4e42-483e-9cce-6d32ebc68165",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|162851",
+          "type": "Aviso ao Mercado",
+          "date": "2026-09-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4b847199-b408-49ee-9303-49254d3c31a6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -3697,6 +4158,66 @@
               "date": "2026-09-24"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156531",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d99dbdd2-a4bf-4c34-bfd8-a7c84c548609",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156534",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3c5a9e1a-166a-44e4-948b-054b58c345e0",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156533",
+          "type": "Lâmina",
+          "date": "2026-09-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/25af85ed-0fcf-4168-a971-194539696e4f",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|155956",
+          "type": "Prospecto Preliminar",
+          "date": "2026-08-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2b08a4ef-bd19-4c1c-a82c-9356dc1fe2d5",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|155958",
+          "type": "Lâmina",
+          "date": "2026-08-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/eab1b636-ce25-46a7-96e4-1fb4cfad3909",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|155957",
+          "type": "Aviso ao Mercado",
+          "date": "2026-08-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/56c36373-2b6e-44bd-ae8e-2bc7982c11f6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -3775,7 +4296,38 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-10-13",
       "updated_at": "2026-10-13",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|164530",
+          "type": "Prospecto Definitivo",
+          "date": "2026-10-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1c702860-df0b-422e-a358-390fc02ffda5",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|164531",
+          "type": "Lâmina",
+          "date": "2026-10-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0784d29f-e424-4d65-8c85-1f8a5b54d16c",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|164529",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-10-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bccee7fc-6e7a-402a-8abc-4100611f29c9",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "classification": {
@@ -3875,6 +4427,66 @@
               "date": "2026-09-08"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|152828",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/04c292bf-36bc-417d-b6fd-f7696cc040bd",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152825",
+          "type": "Lâmina",
+          "date": "2026-07-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/09785e4b-c573-4646-8a84-bbac4cd603af",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152826",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d56ee1e6-debb-4c05-a721-847acfcacbf6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|147551",
+          "type": "Lâmina",
+          "date": "2026-06-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9b588997-6a1b-43fa-8996-38689a25f541",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|147085",
+          "type": "Prospecto Definitivo",
+          "date": "2026-06-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/92e7dbfc-aacf-44dc-826f-a82e7b5b8b88",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|147084",
+          "type": "Lâmina",
+          "date": "2026-06-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1cef2d3d-c08f-449d-ad52-d95f3a429319",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -4206,6 +4818,16 @@
               "date": "2027-03-22"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|162202",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c60ddc09-216e-429a-ab23-95b144661ba3",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -4302,6 +4924,16 @@
               "date": "2026-10-08"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|143864",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-05-05",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9e4edc00-ff6a-459c-886a-83f3100eff40",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -4393,6 +5025,16 @@
               "date": "2026-09-29"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156408",
+          "type": "Anúncio de Encerramento da Distribuição",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/dde1455d-5cdd-4a7e-9e97-e4d2ea353da8",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -4478,6 +5120,16 @@
               "date": "2027-03-23"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|162225",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/25be9ad5-6673-49a6-8f29-2ba5e0940928",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -4646,6 +5298,16 @@
               "date": null
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|158707",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9ad6365a-ab94-4b72-80a8-9a45e2e44eea",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -4757,6 +5419,36 @@
               "date": "2026-09-03"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|149776",
+          "type": "Prospecto Definitivo",
+          "date": "2026-06-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1fe76573-f9da-4dc4-b175-b2ab3bd898f5",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|149777",
+          "type": "Lâmina",
+          "date": "2026-06-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4308ebee-b439-4677-981c-0339208b743f",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|149778",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-06-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/85413302-42de-45f3-b3fa-194a1844a991",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -5238,6 +5930,116 @@
               "date": "2026-09-01"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|155923",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-26",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6b15a986-1a23-4999-84d2-823ac70cbcdc",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153377",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b5b749af-b58a-4935-9be8-d349b8b0d3bb",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153378",
+          "type": "Lâmina",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d6bcf51e-23ba-4768-9e39-2c6029b055fd",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153379",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d01ebd29-9def-43c6-bf17-ea98927cc245",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153372",
+          "type": "Lâmina",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/13680664-edc2-4c39-9348-df3df9c9a1df",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153374",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/23949a64-3661-439b-8e47-9223a6b72adb",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150625",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/28e52d47-a2ec-48df-b5c2-be95c9444f02",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150627",
+          "type": "Lâmina",
+          "date": "2026-07-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/dfdb2594-29c1-4466-af1b-1bd8228c2c1e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150070",
+          "type": "Prospecto Preliminar",
+          "date": "2026-06-26",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2edc5bbb-9625-44e5-a85d-570f93b41790",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150069",
+          "type": "Lâmina",
+          "date": "2026-06-26",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/694b1c93-e513-4cb0-a61d-11f800a61a0d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150068",
+          "type": "Aviso ao Mercado",
+          "date": "2026-06-26",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e9ffe764-20bc-4219-afbe-6b9cc9fd18dc",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -5642,6 +6444,186 @@
               "date": "2026-10-08"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|163873",
+          "type": "Lâmina",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/468d189f-14f4-41f5-828d-0ec481903ae7",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163872",
+          "type": "Prospecto Definitivo",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fd2f3037-7edb-4e3f-ae20-4baa4939e500",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163736",
+          "type": "Prospecto Definitivo",
+          "date": "2026-10-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/767ff438-7a9c-4f0e-bdb4-0bf04f476584",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163735",
+          "type": "Lâmina",
+          "date": "2026-10-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d1922ab7-a5cb-43f6-9000-36bbc09a7d36",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|158527",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6f22f078-7f2c-4104-b95a-122cdf851b2a",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|158524",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a54cba81-decb-4e67-a75f-42697c635577",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|158523",
+          "type": "Lâmina",
+          "date": "2026-09-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8546e64c-108c-4da2-811c-17e83abfa71a",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|154039",
+          "type": "Prospecto Definitivo",
+          "date": "2026-08-10",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7d96b8d6-c09d-4a45-8ff0-d6570fc0e413",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|154040",
+          "type": "Lâmina",
+          "date": "2026-08-10",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/974bcbff-9f40-42ce-bf9f-13389406249e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|154041",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-10",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d7599fd1-be1d-42d7-9e29-ba55bb5f0fed",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|151977",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-15",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/85afb898-82ad-421b-bf70-b6de472550f2",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|151978",
+          "type": "Lâmina",
+          "date": "2026-07-15",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c2b8c7d4-26d3-4a4c-81de-e84472f733b2",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|151979",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-15",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/39803367-7437-42c0-879d-cb0a90bfc61e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150271",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-06-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e9ffa5c5-4f81-4627-82af-92cbe1bc1a30",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150270",
+          "type": "Prospecto Preliminar",
+          "date": "2026-06-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4e770805-b6ea-4724-b878-12e2544d6e57",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150065",
+          "type": "Prospecto Preliminar",
+          "date": "2026-06-26",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2fea3961-fa99-4d53-b31f-70824b758928",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150066",
+          "type": "Lâmina",
+          "date": "2026-06-26",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/57d12e2e-8a56-4548-9f14-3857b5469bc1",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150067",
+          "type": "Aviso ao Mercado",
+          "date": "2026-06-26",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/71be5ae7-3112-4d47-a056-9b8477bdf8e6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -5733,6 +6715,56 @@
               "date": "2026-09-30"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156324",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c3630809-7da8-41a9-b9fa-812f369b61f6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156323",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9e466c11-4137-45bd-b459-2ecdd7e28345",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|155997",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/53d3413f-3d1f-400e-be91-1dfcdce8bf66",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|155965",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7d34d092-1b84-4cff-8227-0967e1d5913e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153836",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-08-06",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5aa7bf5f-8ed7-431d-8d28-a969f8794d78",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -5824,6 +6856,56 @@
               "date": "2026-09-15"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|153035",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-07-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/80134587-4ad8-45d7-b914-af8ab6aee782",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153034",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2503fab8-4fc6-41e0-81f8-8364d691fbd4",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152982",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4325cfef-a7af-481b-9f4e-9f2241f4a651",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152983",
+          "type": "Lâmina",
+          "date": "2026-07-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5a47dfdf-1fd2-4373-8b61-8eb51c2d482a",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152984",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-07-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a51832d7-8d1d-41e2-9b6a-36663af0e239",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -5955,6 +7037,16 @@
               "date": "2026-09-29"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|155372",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-08-19",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e06c9e5b-9bad-4cea-b30b-4207941b0e51",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -6051,6 +7143,36 @@
               "date": "2026-09-02"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156194",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7e8b6fd0-4944-402f-a1f4-2404ca5e5977",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156044",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a0fca335-a74c-4f0f-a918-ac6b2f9a9cc1",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153595",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-04",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8458091e-3761-4244-9459-09bf1b676e67",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -6126,6 +7248,76 @@
               "date": "2026-09-11"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|164351",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-08",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fabf4db9-7c81-4b79-bdb4-9b09da457aa4",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|164026",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-05",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7eece890-150d-409e-aeef-fb07446972bd",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|157425",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-11",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3e68d9a4-6a4b-4e95-9036-e0f59b794e09",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|157427",
+          "type": "Lâmina",
+          "date": "2026-09-11",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/63dd313b-3551-4b33-afa8-af9f218f5417",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156692",
+          "type": "Prospecto Preliminar",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/acaec6e7-ca27-4e97-9958-dc40f0498dc6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156693",
+          "type": "Lâmina",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/75026f4f-249a-4539-ad05-7062c6268090",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156694",
+          "type": "Aviso ao Mercado",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bdb60277-fcde-402c-b1ef-e40c914bc3c4",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -6403,6 +7595,26 @@
               "date": "2026-09-01"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|153364",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9c6cad0d-4028-4b8a-b6f6-a861bd1514f0",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152821",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-07-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4ecc9b92-2549-4f88-91aa-262d08d5c7f6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -6499,6 +7711,26 @@
               "date": "2026-12-16"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|158280",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8c6970bb-291c-4f69-86ae-46c5a370ac25",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|158281",
+          "type": "Lâmina",
+          "date": "2026-09-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/293c6989-1535-4d38-9fb1-9e3b0ce0fcdf",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -6657,6 +7889,16 @@
               "date": "2027-03-21"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|158648",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1f8b4b81-8621-41fa-9dba-a15f8d2dd9f9",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -6828,6 +8070,36 @@
               "date": "2026-09-02"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|150486",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9006dad6-7b10-441e-8d51-ed5be66d9b8c",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|149445",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-06-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/80a71ef1-08e7-4fa4-8412-e7b8c9147da5",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|149423",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-06-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c6f861ee-24fa-4868-b091-2a2028cabd55",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -7026,6 +8298,66 @@
               "date": "2026-09-11"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|146172",
+          "type": "Prospecto Preliminar",
+          "date": "2026-05-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ea1b53c5-c0bd-430d-8c82-bcd8064318c7",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|146173",
+          "type": "Lâmina",
+          "date": "2026-05-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/87e775ec-60fc-463a-be48-fecc9d2dce01",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|146174",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-05-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/48ccd063-5e52-44ca-93af-3ff2807493b0",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|145623",
+          "type": "Prospecto Preliminar",
+          "date": "2026-05-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d6382cdb-f336-4e33-8ee4-fffe76b45266",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|145624",
+          "type": "Lâmina",
+          "date": "2026-05-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bc159c29-fa34-4eca-a6d3-68729c98d4ed",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|145625",
+          "type": "Aviso ao Mercado",
+          "date": "2026-05-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3ed6f149-f4e7-43a3-af90-81a0a50b1882",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -7097,6 +8429,26 @@
               "date": "2026-09-28"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|163255",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e352df4b-e2e4-4d31-9b3a-b0f4e8e1e9f6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163256",
+          "type": "Lâmina",
+          "date": "2026-09-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fa0757d2-8eb8-4d12-8cba-2ed3f606cffc",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -7193,6 +8545,66 @@
               "date": "2026-10-08"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156185",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/48cf96c3-37b8-40a7-9de9-83efc25e614d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|154839",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-14",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2907ab0b-f3d2-4f76-9916-84a6866e1e30",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152883",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6c660caf-feb0-4efb-a042-bc454d84ce1e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152882",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bc48a860-48cf-486d-b42a-15ffcb37811e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152731",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c3a4be8a-b7e6-4d11-9e77-dba8d963ef52",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152732",
+          "type": "Lâmina",
+          "date": "2026-07-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/398dd32b-2f51-42f8-a158-5240769db192",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -7268,6 +8680,76 @@
               "date": "2026-09-01"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|162847",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/eca95114-a10f-424d-aa69-4b51bdc47ac7",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|159190",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-23",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/52f531c6-6adc-41ec-bd46-19c8de1ed417",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156904",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-08",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ba3a2f76-dce5-401c-8c29-5f64afce0b0d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156660",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/75bbf898-5df9-43c7-8a2c-5c698132ed4f",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156625",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/69c97a3f-67c8-429c-9e74-a969e19071e6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156460",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e4d990aa-78f4-41c1-9cbd-1c63e4169cbd",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156461",
+          "type": "Lâmina",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/92f94bfd-57c6-4631-ae02-03e6572d07a2",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -7500,6 +8982,46 @@
               "date": "2026-09-01"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|152791",
+          "type": "Lâmina",
+          "date": "2026-07-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4ddb9f53-db30-4ddc-a831-a8bce4482ba3",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|151355",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-13",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e653319a-09bb-43dd-b08d-b6cbada07bb9",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|151356",
+          "type": "Lâmina",
+          "date": "2026-07-13",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/06eba9e2-93b8-48ff-bc0b-a16ad0057f97",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|151358",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-13",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/eb8008ad-f3bc-48e5-b63e-e60b285e20ee",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -7890,6 +9412,16 @@
               "date": "2026-10-09"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|158626",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/aa7df546-3a2a-4218-9951-8e500f9a6ddb",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -8015,6 +9547,26 @@
               "date": "2026-07-17"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|165550",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-19",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/49acf74d-b29e-471f-9e3f-816dcb851e8c",
+          "availability": "Revisão necessária",
+          "confidence": "Conteúdo com pendência de validação",
+          "page": 2,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|142761",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-04-20",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a807dfdc-38bd-4f1b-83a5-c748cd32c33d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -8090,6 +9642,16 @@
               "date": "2026-09-02"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156512",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/204ed9eb-97de-4260-ab56-31cccf168afc",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -8191,6 +9753,56 @@
               "date": "2026-10-02"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|163917",
+          "type": "Anúncio de Encerramento da Distribuição",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5cbe5911-425c-45c6-9e01-e2abd39ebc09",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163915",
+          "type": "Anúncio de Encerramento da Distribuição",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a874f752-96dc-4c17-8db1-f83f21576216",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163874",
+          "type": "Anúncio de Encerramento da Distribuição",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/f7a7d4a0-5de7-480b-a40b-39744a1f0b5f",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163224",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8e194bab-3207-49b4-b0d1-1125c721445d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|159341",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-23",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/623a9a94-4986-454f-b405-07ceff1c9ef4",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -8367,6 +9979,26 @@
               "date": "2027-02-27"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156451",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a1cbb8fb-12c0-4472-9085-ac0bbd3eb2af",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156452",
+          "type": "Lâmina",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6ae81362-5539-405a-845c-e6b19365bf75",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -8684,6 +10316,46 @@
               "date": null
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156555",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c3f8b2ce-06d5-4f76-be80-e2da8490d793",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156228",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fcd0b80e-287d-42a8-a75d-fcce718aa428",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156115",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-08-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/854ed3b1-2252-46e1-b8c4-9f3ec472a035",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156025",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/93a994d9-c864-4f05-9a1b-1ea54245590f",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -8739,7 +10411,18 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-10-09",
       "updated_at": "2026-10-10",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|164366",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-08",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a11a13f4-cb8f-4ba0-b921-9427948feb6e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "classification": {
@@ -9157,6 +10840,16 @@
               "date": "2026-09-16"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|154308",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-12",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/33fc4238-6e1d-4999-ac61-b390a2cf8814",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -9267,6 +10960,16 @@
               "date": "2027-04-30"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|158635",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/12e60dff-713b-4425-bbbc-16533ebc5dcb",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -9376,7 +11079,18 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|157828",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-15",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a88498dd-f842-4157-a08d-80e2d48898d2",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "classification": {
@@ -9517,6 +11231,16 @@
               "date": "2026-09-21"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|144623",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-05-12",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3de93253-85f1-4e08-abc1-d0b3d2e87267",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -9613,6 +11337,16 @@
               "date": "2026-09-11"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156602",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0c7d0b3e-d6d4-401d-8d9b-e1f6b2945621",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -9709,6 +11443,16 @@
               "date": "2026-09-11"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156601",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d4cf31ce-4d39-4bf5-921d-bb5a04dd54ee",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -9789,6 +11533,16 @@
               "date": "2026-04-22"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|165485",
+          "type": "Anúncio de Encerramento da Distribuição",
+          "date": "2026-10-19",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5cf3124b-8710-4686-ae5b-ed0b412f1366",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -9869,6 +11623,16 @@
               "date": "2026-04-22"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|165486",
+          "type": "Anúncio de Encerramento da Distribuição",
+          "date": "2026-10-19",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0c1cb3b5-8ebe-4b7a-9682-9b85051691f0",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -10036,6 +11800,26 @@
               "date": "2026-09-03"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|155425",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-20",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8e0debf4-e50a-4b90-be70-3c450108c202",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153136",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-07-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cc0db395-7831-4d9f-92cb-b26d5b44546d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -10183,6 +11967,16 @@
               "date": "2026-09-23"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|152833",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-07-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/73db0bf9-fe2b-434a-b2f7-5c53f83071b1",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -10254,6 +12048,16 @@
               "date": "2026-09-15"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|139222",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-03-19",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/182e91ab-2bf1-4153-935c-21b5e656b6ae",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -10330,6 +12134,16 @@
               "date": null
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|158574",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/36e468a0-5f38-46f1-b958-caf0901cd3ca",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -10537,6 +12351,16 @@
               "date": "2027-03-01"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|157355",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-11",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/932ec6e4-5078-4615-9088-6e8bdfd268f4",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -10644,6 +12468,16 @@
               "date": "2026-10-14"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|141377",
+          "type": "Aviso ao Mercado",
+          "date": "2026-04-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bb2f8031-7a5a-43f7-a97d-e219e213eee8",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -10740,6 +12574,16 @@
               "date": "2026-10-14"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|141375",
+          "type": "Aviso ao Mercado",
+          "date": "2026-04-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e1ee6a03-3aa5-4424-8524-350dc6bd9f00",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -10825,6 +12669,26 @@
               "date": "2027-03-10"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|157195",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-10",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c6023007-25c5-45ca-8773-e0adf14f531b",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|157203",
+          "type": "Lâmina",
+          "date": "2026-09-10",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b7f0e01e-e7bf-4eaf-b899-51c1d2e4031d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -10950,6 +12814,26 @@
               "date": "2026-09-18"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|146074",
+          "type": "Prospecto Definitivo",
+          "date": "2026-05-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d3bede01-34c6-43b6-9861-c32c547295d8",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|146072",
+          "type": "Lâmina",
+          "date": "2026-05-25",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/91a98bb4-4b12-4400-812b-143b821e3899",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -11618,6 +13502,26 @@
               "date": "2026-10-07"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|138516",
+          "type": "Prospecto Definitivo",
+          "date": "2026-03-13",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7017e8f6-c36b-4de2-b0cb-d4984e34ae5e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|138517",
+          "type": "Lâmina",
+          "date": "2026-03-13",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/76f9f4a5-2cf3-4553-9dab-7f893498e237",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -11773,6 +13677,16 @@
               "date": "2026-09-14"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|139692",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-03-24",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/02626553-6c8a-491e-ac37-51e58b88b640",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -11848,6 +13762,16 @@
               "date": "2026-09-03"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|138079",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-03-12",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2c62494e-c042-4b51-8139-27e32612cc7d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -11928,6 +13852,86 @@
               "date": "2026-10-28"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|165535",
+          "type": "Prospecto Definitivo",
+          "date": "2026-10-19",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4f16918e-5b24-407e-9826-3594b69efa54",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|165534",
+          "type": "Lâmina",
+          "date": "2026-10-19",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8c706c35-37f5-4378-b0ad-5bed88a7a396",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|164534",
+          "type": "Prospecto Definitivo",
+          "date": "2026-10-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8d551101-221e-4332-bf1e-11f26b3acaaa",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|164533",
+          "type": "Lâmina",
+          "date": "2026-10-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fa636e30-762f-4610-afe9-c3ec4938c9b6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|164532",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c281017a-1b44-40f4-918d-a4b2927871d9",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163620",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d376b25e-2a15-41ce-b693-e5cca4f372f4",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163619",
+          "type": "Lâmina",
+          "date": "2026-09-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4efd280f-96c3-40b6-bd11-726068a7ec12",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163617",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4e2f0c9c-b2a8-440a-b5c6-7fa4508c70a5",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -12040,6 +14044,86 @@
               "date": "2026-09-04"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|150981",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-09",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ef520671-5926-4122-a121-7c56d7a4bfe2",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|149349",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-06-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/f15b49bb-f687-4139-b22f-7de590a3d34d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|149348",
+          "type": "Prospecto Definitivo",
+          "date": "2026-06-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/97755679-0f5c-455b-9eb3-2c684d5ff896",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|149038",
+          "type": "Prospecto Definitivo",
+          "date": "2026-06-17",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a77819e3-9651-4f08-9263-6ce981750aae",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|149037",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-06-17",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a5212c98-d8b2-4bd5-87b1-0c2031083354",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|148881",
+          "type": "Prospecto Definitivo",
+          "date": "2026-06-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/96d36c77-2bf2-4931-8d16-0c6779377933",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|148882",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-06-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ba64bc00-d795-4806-9a95-99b26aa33922",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|148880",
+          "type": "Lâmina",
+          "date": "2026-06-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a853f6ce-419a-41d9-b827-726fe8a924c7",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -12225,6 +14309,46 @@
               "date": "2026-09-01"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156405",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4bf4f98d-2410-48ae-bb21-4ef51f9e219d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|144082",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-05-06",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7dab0c90-f924-4584-822d-91d2e63ba888",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|140754",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-04-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ec2ff00d-8948-4b63-ac79-a353fcbcc8aa",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|137207",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-03-05",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/97ef71cc-0101-47c5-b0f3-d337b840424a",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -12334,7 +14458,18 @@
       "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
-      "documents": [],
+      "documents": [
+        {
+          "id": "CVM-SRE|156407",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-01",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cee691eb-8a1e-40f7-aeaa-6de93f458ac5",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        }
+      ],
       "allocation_pipeline": {
         "updated_at": null,
         "classification": {
@@ -12413,6 +14548,16 @@
               "date": "2027-03-01"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|158699",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/78596606-6b70-43f6-8308-46624b53ae50",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -12509,6 +14654,36 @@
               "date": "2026-09-09"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|135691",
+          "type": "Prospecto Definitivo",
+          "date": "2026-02-14",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2ed2fc2f-e175-40f4-a5e1-cf942e890f9e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|135692",
+          "type": "Lâmina",
+          "date": "2026-02-14",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b1b0173a-1736-4324-bc76-1bc83fb1c13d",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|135181",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-02-13",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/66c18f38-2d99-46e4-b540-0f76c61a6f9f",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -12688,6 +14863,26 @@
               "date": "2026-09-30"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|157231",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-09-10",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1ee4bb89-aab5-496b-843b-696ec102b628",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156087",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-27",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/92e82650-ac46-4baf-9024-5de6fc175ffb",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -12763,6 +14958,16 @@
               "date": "2026-10-01"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|155578",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-08-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/af18d7ee-0262-4c2a-bbbe-a916dd3576a4",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -12873,6 +15078,16 @@
               "date": "2027-03-19"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|158526",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-21",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/468ec9e8-81d1-4930-9257-d15a04a16512",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -12969,6 +15184,76 @@
               "date": "2026-09-30"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|156225",
+          "type": "Lâmina",
+          "date": "2026-08-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e0d8234e-6ab5-4eba-be1d-10259babc72b",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156223",
+          "type": "Prospecto Definitivo",
+          "date": "2026-08-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c5c81161-eacc-4ac7-8b2f-362c481ff3e6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|155289",
+          "type": "Prospecto Definitivo",
+          "date": "2026-08-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0724029d-9755-42dd-b8de-81a4d89d31bc",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|155288",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-18",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6631b9ad-5d58-4a43-9acb-3d0484c6ef8e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153542",
+          "type": "Lâmina",
+          "date": "2026-08-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9a0d21c6-a0be-42d8-8100-4d24e58b08a0",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153540",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-08-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1745b63a-863a-4afc-a019-abf0d506d8c7",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153541",
+          "type": "Prospecto Definitivo",
+          "date": "2026-08-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b5214ba7-6f66-4513-83d3-9058fb23379e",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -13054,6 +15339,36 @@
               "date": "2026-09-30"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|163621",
+          "type": "Prospecto Definitivo",
+          "date": "2026-09-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e3f45c56-d39e-48f9-b6c8-f51c08d8d686",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163618",
+          "type": "Lâmina",
+          "date": "2026-09-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7d146f16-856d-4e97-a8f4-01043dc67ae7",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163616",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-30",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2d6b557c-09b2-4b57-8062-016b23c36a68",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -13171,6 +15486,116 @@
               "date": "2026-10-14"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|163906",
+          "type": "Prospecto Definitivo",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8e54bd45-fa8b-48a2-b159-fa5b9c91686c",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163905",
+          "type": "Lâmina",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/76a542a7-4726-408c-b392-b7afa9fafb25",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156334",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e4f56b9a-080e-4029-a1d9-4a694b43b864",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|156335",
+          "type": "Prospecto Definitivo",
+          "date": "2026-08-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/33a06d65-bb40-439d-9d50-98f98a12fd7b",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152204",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/621a8460-87a5-4601-aaab-25c47d7af668",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152203",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/26378e33-3abf-427e-ae32-dc2a1d6ca6dc",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150643",
+          "type": "Prospecto Preliminar",
+          "date": "2026-07-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1def3f91-62b9-47de-93b8-68a4e4ddd3b6",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150644",
+          "type": "Lâmina",
+          "date": "2026-07-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d78b6b65-a379-4387-b285-1a546c1b6bb9",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|150645",
+          "type": "Aviso ao Mercado",
+          "date": "2026-07-03",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/2e6db0c0-9d28-472f-99df-94c7a57566ae",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152203|annex-iii",
+          "type": "Estudo de viabilidade com material publicitário (anexo — julho/2026, histórico)",
+          "date": "2026-07-16",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/26378e33-3abf-427e-ae32-dc2a1d6ca6dc#page=141",
+          "availability": "Anexo do prospecto — não é arquivo avulso",
+          "confidence": "Identificação e páginas conferidas",
+          "page": 141,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|163906|annex-iii",
+          "type": "Estudo de viabilidade (anexo — agosto/2026, prospecto de 02/10/2026)",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8e54bd45-fa8b-48a2-b159-fa5b9c91686c#page=141",
+          "availability": "Anexo do prospecto — não é arquivo avulso",
+          "confidence": "Identificação e páginas conferidas",
+          "page": 141,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -13277,6 +15702,16 @@
               "date": "2026-10-02"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|163910",
+          "type": "Anúncio de Encerramento da Distribuição",
+          "date": "2026-10-02",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/aefc501b-366b-4666-b086-3d5f37fc29f7",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -13378,6 +15813,26 @@
               "date": "2026-09-21"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|164124",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-06",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/44287d81-d37b-4f29-93d4-eb71e620ad66",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|157591",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-09-14",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e802bc94-1ad5-4adb-8c2a-dfbfff61bc55",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -13479,6 +15934,86 @@
               "date": "2026-09-03"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|153938",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-07",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a5bf9b54-f412-4d3c-afe1-cf760b1f9d33",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153362",
+          "type": "Prospecto Definitivo",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1472872e-8ba0-4b8c-a489-0b62a66c9f18",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153363",
+          "type": "Lâmina",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a6b1dac3-3590-4eb3-8f1d-e3f5bffbc16a",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153008",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-07-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7f71b6df-d0e4-431c-9260-6ca86cf4811b",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153007",
+          "type": "Prospecto Preliminar",
+          "date": "2026-07-28",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0df6d443-32fa-42dc-bdf5-e98bc551dcd2",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152592",
+          "type": "Lâmina",
+          "date": "2026-07-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9c54c32c-fb64-49af-858a-afd467bf2b2f",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152593",
+          "type": "Aviso ao Mercado",
+          "date": "2026-07-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/1fa4e643-8809-45b8-8d94-a08d2abc7753",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|152591",
+          "type": "Prospecto Preliminar",
+          "date": "2026-07-22",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/af0a33b0-79ad-43f8-93dc-bc60b8ec4283",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         }
       ],
       "allocation_pipeline": {
