@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-22T11:07:49-03:00",
+  "generated_at": "2026-10-22T15:11:40-03:00",
   "reference_date": "2026-10-22",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -11,6 +11,15 @@
       "field": "Encerramento efetivo",
       "previous_date": null,
       "current_date": "2026-10-21",
+      "detected_at": "2026-10-22"
+    },
+    {
+      "id": "12e5f0828d4cd2581be405e1",
+      "offer_id": "CVM160|27481",
+      "fund": "TERRA MINAS FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+      "field": "Início efetivo",
+      "previous_date": null,
+      "current_date": "2026-08-12",
       "detected_at": "2026-10-22"
     },
     {
@@ -975,12 +984,12 @@
         "start_planned": "2026-10-22",
         "start_actual": null,
         "reservation_end_planned": null,
-        "closing_planned": "2026-04-19",
+        "closing_planned": null,
         "closing_actual": null,
         "settlement_planned": null,
         "settlement_actual": null
       },
-      "review_required": false,
+      "review_required": true,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fcec1565-0d45-42fb-b9cd-538d5ffcb173",
       "identified_at": "2026-10-22",
       "updated_at": "2026-10-22",
@@ -990,21 +999,10 @@
           "type": "Anúncio de Início da Distribuição",
           "date": "2026-10-21",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fcec1565-0d45-42fb-b9cd-538d5ffcb173",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
+          "availability": "Revisão necessária",
+          "confidence": "Conteúdo com pendência de validação",
           "page": 2,
-          "events": [
-            {
-              "name": "Início da subscrição / distribuição",
-              "kind": "Previsto",
-              "date": "2026-10-22"
-            },
-            {
-              "name": "Prazo máximo de encerramento",
-              "kind": "Previsto",
-              "date": "2026-04-19"
-            }
-          ]
+          "events": []
         }
       ],
       "allocation_pipeline": {
@@ -2498,12 +2496,12 @@
         "start_planned": null,
         "start_actual": "2026-09-08",
         "reservation_end_planned": "2026-09-09",
-        "closing_planned": "2026-02-26",
+        "closing_planned": null,
         "closing_actual": null,
         "settlement_planned": null,
         "settlement_actual": null
       },
-      "review_required": false,
+      "review_required": true,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0ee5fd99-0ac4-4b83-943a-442ce8172ba7",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
@@ -2513,26 +2511,10 @@
           "type": "Anúncio de Início da Distribuição",
           "date": "2026-09-08",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/0ee5fd99-0ac4-4b83-943a-442ce8172ba7",
-          "availability": "Baixado e validado",
-          "confidence": "Alta",
+          "availability": "Revisão necessária",
+          "confidence": "Conteúdo com pendência de validação",
           "page": 2,
-          "events": [
-            {
-              "name": "Fim da reserva / subscrição",
-              "kind": "Previsto",
-              "date": "2026-09-09"
-            },
-            {
-              "name": "Prazo máximo de encerramento",
-              "kind": "Previsto",
-              "date": "2026-02-26"
-            },
-            {
-              "name": "Início efetivo da oferta",
-              "kind": "Efetivo",
-              "date": "2026-09-08"
-            }
-          ]
+          "events": []
         },
         {
           "id": "CVM-SRE|156201",
@@ -16179,7 +16161,7 @@
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
-        "start_actual": null,
+        "start_actual": "2026-08-12",
         "reservation_end_planned": null,
         "closing_planned": null,
         "closing_actual": "2026-10-14",
@@ -16187,19 +16169,30 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6a3e33cd-b649-4e08-bd72-0be582d3fb10",
       "identified_at": "2026-10-22",
       "updated_at": "2026-10-22",
       "documents": [
         {
-          "id": "CVM-SRE|165707",
-          "type": "Anúncio de Encerramento da Distribuição",
-          "date": "2026-10-21",
+          "id": "CVM160|27481|d7501cd662779ec4126cd6e6e9903c098e5a7d29c72dfcd41034c4ab7accb665",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-14",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6a3e33cd-b649-4e08-bd72-0be582d3fb10",
-          "availability": "Disponível na CVM",
-          "confidence": "Publicação oficial; conteúdo não validado",
-          "page": null,
-          "events": []
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-08-12"
+            },
+            {
+              "name": "Encerramento efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-10-14"
+            }
+          ]
         },
         {
           "id": "CVM-SRE|154232",
