@@ -100,47 +100,6 @@ h3 { margin-bottom: 14px; font-size: .92rem; }
 .mix strong { font-size: 1.15rem; }
 
 .coordinator-panel, .distributor-panel, .manager-panel { margin-bottom: 16px; }
-.fund-profile-panel { margin-bottom: 16px; scroll-margin-top: 20px; }
-.profile-head { flex-wrap: wrap; }
-.profile-controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 18px; }
-.profile-control-group { display: grid; gap: 6px; }
-.profile-control-group > span { color: var(--muted); font-size: .7rem; }
-.profile-controls .segmented { padding: 4px; border: 1px solid var(--line); border-radius: 10px; }
-.profile-controls .segmented button { min-height: 38px; padding: 9px 16px; font-size: .79rem; font-weight: 600; }
-.profile-controls .segmented button[aria-pressed="true"] { background: #244c69; color: var(--text); box-shadow: inset 0 0 0 1px #386b90; }
-.profile-controls .segmented button:hover { color: var(--text); background-color: var(--surface-2); }
-.profile-summary { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; margin: 4px 0 18px; }
-.profile-summary p { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 14px; margin: 0; }
-.profile-summary p > span { color: var(--muted); font-size: .8rem; }
-.profile-summary strong { font-size: 1.35rem; letter-spacing: -.025em; }
-.profile-distribution { display: flex; height: 18px; overflow: hidden; border-radius: 5px; background: #071620; margin-bottom: 22px; }
-.profile-segment { height: 100%; flex-shrink: 0; box-shadow: inset -1px 0 rgba(5,16,25,.55); }
-.profile-chart { display: grid; }
-.profile-row, .profile-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(110px, auto) 76px; gap: 18px; align-items: center; }
-.profile-columns { padding-bottom: 10px; color: var(--muted); font-size: .7rem; }
-.profile-columns > span:not(:first-child) { text-align: right; }
-.profile-row { padding: 13px 0; border-top: 1px solid var(--line-soft); }
-.profile-name { display: flex; align-items: center; gap: 10px; color: var(--text); font-size: .83rem; }
-.profile-dot { width: 9px; height: 9px; flex: 0 0 9px; border-radius: 50%; }
-.profile-row.profile-unknown .profile-name { color: var(--muted); }
-.profile-value { text-align: right; font-size: 1.02rem; font-variant-numeric: tabular-nums; }
-.profile-share { text-align: right; font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
-.profile-coverage { margin-top: 18px; }
-.profile-metric-note { margin-top: 6px; }
-.profile-sources { display: grid; gap: 8px; margin-top: 12px; max-height: 220px; overflow: auto; }
-.profile-source { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; padding: 8px 0; border-top: 1px solid var(--line-soft); color: var(--muted); font-size: .72rem; }
-.profile-source span { overflow-wrap: anywhere; }
-.profile-source a { color: var(--cyan); align-self: center; }
-@media (max-width: 640px) {
-  .profile-controls { width: 100%; }
-  .profile-control-group { width: 100%; }
-  .profile-controls .segmented button { flex: 1; padding: 9px 12px; }
-  .profile-row, .profile-columns { grid-template-columns: minmax(0, 1fr) 100px 48px; gap: 8px; }
-  .profile-name { font-size: .76rem; gap: 7px; }
-  .profile-value { font-size: .88rem; }
-  .profile-share { font-size: .7rem; }
-  .profile-summary strong { font-size: 1.2rem; }
-}
 .coordinator-chart { display: grid; gap: 12px; }
 .coordinator-row { display: grid; grid-template-columns: minmax(190px, 1.15fr) minmax(180px, 2fr) auto; gap: 14px; align-items: center; }
 .coordinator-name { overflow: hidden; color: var(--muted); font-size: .74rem; text-overflow: ellipsis; white-space: nowrap; }
@@ -152,32 +111,15 @@ h3 { margin-bottom: 14px; font-size: .92rem; }
 .coordinator-value { min-width: 86px; font-size: .74rem; font-weight: 700; text-align: right; }
 .distributor-fill { background: linear-gradient(90deg, var(--blue), var(--cyan)); }
 .distributor-controls { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; flex-shrink: 0; }
-.distributor-panel .panel-head { flex-wrap: wrap; }
-.distributor-panel .panel-head > div:first-child { flex: 1 1 290px; }
+.coordinator-panel .panel-head, .distributor-panel .panel-head { flex-wrap: wrap; }
+.coordinator-panel .panel-head > div:first-child, .distributor-panel .panel-head > div:first-child { flex: 1 1 290px; }
 .manager-fill { background: linear-gradient(90deg, #258b85, #69dbbc); }
-.manager-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 18px; }
+.manager-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 12px; margin-top: 18px; }
 .manager-method { margin-top: 12px; color: var(--muted); font-size: .72rem; }
 .manager-method summary { cursor: pointer; }
 .manager-source { color: var(--cyan); font-size: .75rem; align-self: center; }
 .manager-panel .panel-head { flex-wrap: wrap; align-items: flex-start; }
 .manager-panel .panel-head > div:first-child { flex: 1 1 300px; }
-.manager-panel .manager-row, .manager-columns { display: grid; grid-template-columns: minmax(180px, 1.3fr) minmax(70px, 1fr) minmax(105px, .65fr) minmax(105px, .65fr); gap: 16px; align-items: center; }
-.manager-columns { margin-bottom: 14px; color: var(--muted); font-size: .73rem; }
-.manager-columns > span:nth-last-child(-n+2), .manager-financial { text-align: right; }
-.manager-financial { font-size: .81rem; }
-.manager-financial.announced strong { color: var(--cyan); }
-.manager-financial.captured strong { color: var(--green); }
-.manager-financial small { display: block; margin-top: 4px; color: var(--muted); font-size: .66rem; }
-.manager-financial-label { display: none; color: var(--muted); font-size: .69rem; margin-bottom: 4px; }
-.manager-announced-fill { background: linear-gradient(90deg, var(--blue), var(--cyan)); }
-@media (max-width: 900px) {
-  .manager-columns { display: none; }
-  .manager-panel .manager-row { grid-template-columns: 1fr 1fr; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid var(--line-soft); }
-  .manager-row .distributor-label { grid-column: 1 / -1; }
-  .manager-row .coordinator-rail { grid-column: 1 / -1; }
-  .manager-financial { text-align: left; }
-  .manager-financial-label { display: block; }
-}
 .detail-distributors { display: grid; gap: 9px; }
 .detail-distributor { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 12px; border: 1px solid var(--line-soft); border-radius: 10px; background: rgba(5,16,25,.3); }
 .detail-distributor strong, .detail-distributor span { display: block; }

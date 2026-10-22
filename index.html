@@ -6,7 +6,7 @@
   <meta name="description" content="Painel público de ofertas e emissões de fundos imobiliários acompanhadas a partir de fontes oficiais.">
   <title>Radar FII — Monitor de ofertas</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307121d'/%3E%3Cpath d='M14 44V25l18-11 18 11v19' fill='none' stroke='%233f8cff' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M22 44V31h20v13M10 49h44' fill='none' stroke='%237ee0c3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20261022-perfil-unificado">
+  <link rel="stylesheet" href="./styles.css?v=20261022-instituicoes">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -55,34 +55,17 @@
         </article>
       </section>
 
-      <section id="perfil-dos-fundos" class="card panel fund-profile-panel" aria-labelledby="fund-profile-title">
-        <div class="panel-head profile-head">
-          <div><p class="overline">Perfil dos fundos · classificação em andamento</p><h2 id="fund-profile-title">Volume total por estratégia</h2><p id="profileDescription" class="panel-description">Volume máximo anunciado das ofertas do período.</p></div>
-          <div class="profile-controls">
-            <div class="profile-control-group"><span>Agrupar por</span><div class="segmented" role="group" aria-label="Classificar ofertas por"><button type="button" data-profile-dimension="strategy" aria-pressed="true">Estratégia</button><button type="button" data-profile-dimension="sector" aria-pressed="false">Setor</button></div></div>
-            <div class="profile-control-group"><span>Exibir</span><div id="profileMetric" class="segmented" role="group" aria-label="Métrica do perfil dos fundos"><button type="button" data-profile-metric="maximum" aria-pressed="true">Anunciado</button><button type="button" data-profile-metric="captured" aria-pressed="false">Captado</button><button type="button" data-profile-metric="offers" aria-pressed="false">Quantidade</button></div></div>
-          </div>
-        </div>
-        <div class="profile-summary"><p><span id="profileTotalLabel">Volume total anunciado</span><strong id="profileTotal">—</strong></p><span id="profileScope" class="count">Todos os meses</span></div>
-        <div id="profileDistribution" class="profile-distribution" role="img" aria-label="Participação no volume total"></div>
-        <div class="profile-columns" aria-hidden="true"><span id="profileDimensionLabel">Estratégia</span><span id="profileValueLabel">Anunciado</span><span>Do total</span></div>
-        <div id="profileChart" class="profile-chart" role="list" aria-label="Ofertas por estratégia"></div>
-        <p id="profileCoverage" class="panel-description profile-coverage" aria-live="polite">Carregando classificação…</p>
-        <p id="profileMetricNote" class="panel-description profile-metric-note"></p>
-        <details class="manager-method profile-method"><summary>Critério e fontes</summary><p class="panel-description">Perfil do fundo confirmado em documentos oficiais disponíveis na data da base; não representa necessariamente a classificação histórica em cada emissão. Feeder é estrutura: a estratégia segue o master somente quando documentada. Cada oferta entra uma vez, mesmo quando o fundo tem várias emissões. “n.a.” permanece na comparação; percentuais usam todo o universo com dado para a métrica escolhida. O período segue início efetivo, depois início previsto e, na ausência dos dois, identificação da oferta.</p><div id="profileSources" class="profile-sources"></div></details>
-      </section>
 
       <section class="card panel coordinator-panel" aria-labelledby="coordinator-title">
-          <div class="panel-head"><div><p class="overline">Distribuição confirmada</p><h2 id="coordinator-title">Volume confirmado por coordenador líder</h2></div><span id="coordinatorCount" class="count">—</span></div>
+        <div class="panel-head"><div><p class="overline">Distribuição</p><h2 id="coordinator-title">Volume confirmado por coordenador líder</h2></div><div class="distributor-controls"><div class="segmented" role="group" aria-label="Métrica por coordenador"><button type="button" data-coordinator-metric="announced" aria-pressed="false">Volume anunciado</button><button type="button" data-coordinator-metric="captured" aria-pressed="true">Volume confirmado</button></div><span id="coordinatorCount" class="count">—</span></div></div>
         <div id="coordinatorChart" class="coordinator-chart" role="img" aria-label="Volume confirmado por coordenador líder"></div>
       </section>
 
       <section class="card panel manager-panel" aria-labelledby="manager-title">
-        <div class="panel-head"><div><p class="overline">Ranking de gestoras</p><h2 id="manager-title">Captação confirmada por gestora</h2><p class="panel-description">Anunciado: volume máximo de todas as ofertas da gestora no período. Captado: somente o confirmado, incluindo lote adicional.</p></div><div class="distributor-controls"><div class="segmented" role="group" aria-label="Métrica por gestora"><button type="button" data-manager-metric="announced" aria-pressed="false">Volume anunciado</button><button type="button" data-manager-metric="captured" aria-pressed="true">Captação confirmada</button></div><span id="managerCount" class="count">—</span></div></div>
-        <div class="manager-columns" aria-hidden="true"><span>Gestora</span><span></span><span>Anunciado</span><span>Captado</span></div>
+        <div class="panel-head"><div><p class="overline">Ranking de gestoras</p><h2 id="manager-title">Captação confirmada por gestora</h2></div><div class="distributor-controls"><div class="segmented" role="group" aria-label="Métrica por gestora"><button type="button" data-manager-metric="announced" aria-pressed="false">Volume anunciado</button><button type="button" data-manager-metric="captured" aria-pressed="true">Captação confirmada</button></div><span id="managerCount" class="count">—</span></div></div>
         <div id="managerChart" class="coordinator-chart distributor-chart" role="list" aria-label="Ranking de captação confirmada por gestora"></div>
-        <div class="manager-footer"><p id="managerCoverage" class="panel-description" aria-live="polite">—</p><button id="managerShowMore" class="button" type="button" aria-expanded="false" aria-controls="managerChart" hidden>Ver ranking completo</button></div>
-        <details class="manager-method"><summary>Critério do ranking</summary><p class="panel-description">Gestora identificada nos documentos oficiais de cada oferta; entidades consolidadas pelo CNPJ, não pela marca. Cada emissão entra uma única vez. Percentuais usam toda a captação confirmada do período, inclusive valores sem gestora identificada. O período segue o mês de referência das ofertas da Visão geral, não o mês de liquidação. Não representa patrimônio sob gestão nem captação líquida de aplicações entre fundos.</p></details>
+        <div class="manager-footer"><button id="managerShowMore" class="button" type="button" aria-expanded="false" aria-controls="managerChart" hidden>Ver ranking completo</button></div>
+        <details class="manager-method"><summary>Critério do ranking</summary><p class="panel-description">Anunciado: volume máximo de todas as ofertas da gestora no período. Captado: somente o confirmado, incluindo lote adicional. Gestora identificada nos documentos oficiais de cada oferta; entidades consolidadas pelo CNPJ, não pela marca. Cada emissão entra uma única vez. Percentuais usam toda a captação confirmada do período, inclusive valores sem gestora identificada. O período segue o mês de referência das ofertas da Visão geral, não o mês de liquidação. Não representa patrimônio sob gestão nem captação líquida de aplicações entre fundos.</p><p id="managerCoverage" class="panel-description" aria-live="polite">—</p></details>
       </section>
 
       <section class="card panel distributor-panel" aria-labelledby="distributor-title">
@@ -197,6 +180,6 @@
       <section class="detail-section"><h3>Documentos oficiais</h3><div id="detailDocuments" class="detail-documents"></div></section>
     </div>
   </dialog>
-  <script src="./app.js?v=20261022-perfil-unificado" defer></script>
+  <script src="./app.js?v=20261022-instituicoes" defer></script>
 </body>
 </html>
