@@ -3195,11 +3195,26 @@
         ]
       },
       "fund_profile": {
-        "strategy": null,
-        "sector": null,
+        "strategy": "Desenvolvimento",
+        "sector": "Logística",
         "structure": null,
         "as_of": "2026-10-21",
-        "sources": []
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-04",
+            "page": 15,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/65d5c29d-4d7d-4fba-a38a-3a7534cd7934"
+          },
+          {
+            "dimension": "sector",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-04",
+            "page": 15,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/65d5c29d-4d7d-4fba-a38a-3a7534cd7934"
+          }
+        ]
       }
     },
     {
@@ -8530,11 +8545,26 @@
         ]
       },
       "fund_profile": {
-        "strategy": null,
-        "sector": null,
+        "strategy": "Multiestratégia",
+        "sector": "Logística",
         "structure": null,
         "as_of": "2026-10-21",
-        "sources": []
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-18",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8c6970bb-291c-4f69-86ae-46c5a370ac25"
+          },
+          {
+            "dimension": "sector",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-18",
+            "page": 15,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/8c6970bb-291c-4f69-86ae-46c5a370ac25"
+          }
+        ]
       }
     },
     {
@@ -9268,11 +9298,19 @@
         "items": []
       },
       "fund_profile": {
-        "strategy": null,
+        "strategy": "Crédito imobiliário",
         "sector": null,
         "structure": null,
         "as_of": "2026-10-21",
-        "sources": []
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-28",
+            "page": 99,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e352df4b-e2e4-4d31-9b3a-b0f4e8e1e9f6"
+          }
+        ]
       }
     },
     {
@@ -11087,11 +11125,19 @@
         ]
       },
       "fund_profile": {
-        "strategy": null,
+        "strategy": "Multiestratégia",
         "sector": null,
         "structure": null,
         "as_of": "2026-10-21",
-        "sources": []
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-01",
+            "page": 15,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/a1cbb8fb-12c0-4472-9085-ac0bbd3eb2af"
+          }
+        ]
       }
     },
     {
@@ -12307,11 +12353,26 @@
         "items": []
       },
       "fund_profile": {
-        "strategy": null,
-        "sector": null,
+        "strategy": "Renda com locação",
+        "sector": "Shopping centers",
         "structure": null,
         "as_of": "2026-10-21",
-        "sources": []
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-05-12",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3de93253-85f1-4e08-abc1-d0b3d2e87267"
+          },
+          {
+            "dimension": "sector",
+            "document": "Anúncio de Início da Distribuição",
+            "date": "2026-05-12",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/3de93253-85f1-4e08-abc1-d0b3d2e87267"
+          }
+        ]
       }
     },
     {
@@ -13872,11 +13933,19 @@
         ]
       },
       "fund_profile": {
-        "strategy": null,
+        "strategy": "Compra e venda de imóveis",
         "sector": null,
         "structure": null,
         "as_of": "2026-10-21",
-        "sources": []
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-09-10",
+            "page": 14,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c6023007-25c5-45ca-8773-e0adf14f531b"
+          }
+        ]
       }
     },
     {
@@ -14708,11 +14777,26 @@
         "items": []
       },
       "fund_profile": {
-        "strategy": null,
-        "sector": null,
+        "strategy": "Multiestratégia",
+        "sector": "Diversificado",
         "structure": null,
         "as_of": "2026-10-21",
-        "sources": []
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-03-13",
+            "page": 11,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7017e8f6-c36b-4de2-b0cb-d4984e34ae5e"
+          },
+          {
+            "dimension": "sector",
+            "document": "Prospecto Definitivo",
+            "date": "2026-03-13",
+            "page": 11,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7017e8f6-c36b-4de2-b0cb-d4984e34ae5e"
+          }
+        ]
       }
     },
     {
@@ -15161,11 +15245,19 @@
         "items": []
       },
       "fund_profile": {
-        "strategy": null,
+        "strategy": "Multiestratégia",
         "sector": null,
         "structure": null,
         "as_of": "2026-10-21",
-        "sources": []
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-10-19",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4f16918e-5b24-407e-9826-3594b69efa54"
+          }
+        ]
       }
     },
     {
@@ -15379,11 +15471,26 @@
         ]
       },
       "fund_profile": {
-        "strategy": null,
-        "sector": null,
+        "strategy": "Multiestratégia",
+        "sector": "Energia",
         "structure": null,
         "as_of": "2026-10-21",
-        "sources": []
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-06-19",
+            "page": 1,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/97755679-0f5c-455b-9eb3-2c684d5ff896"
+          },
+          {
+            "dimension": "sector",
+            "document": "Prospecto Definitivo",
+            "date": "2026-06-19",
+            "page": 10,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/97755679-0f5c-455b-9eb3-2c684d5ff896"
+          }
+        ]
       }
     },
     {
@@ -16794,11 +16901,26 @@
         "items": []
       },
       "fund_profile": {
-        "strategy": null,
-        "sector": null,
+        "strategy": "Multiestratégia",
+        "sector": "Diversificado",
         "structure": null,
         "as_of": "2026-10-21",
-        "sources": []
+        "sources": [
+          {
+            "dimension": "strategy",
+            "document": "Prospecto Definitivo",
+            "date": "2026-08-28",
+            "page": 13,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c5c81161-eacc-4ac7-8b2f-362c481ff3e6"
+          },
+          {
+            "dimension": "sector",
+            "document": "Prospecto Definitivo",
+            "date": "2026-08-28",
+            "page": 13,
+            "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/c5c81161-eacc-4ac7-8b2f-362c481ff3e6"
+          }
+        ]
       }
     },
     {

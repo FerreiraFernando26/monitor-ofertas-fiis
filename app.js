@@ -283,13 +283,13 @@ function profileBreakdown(offers, dimension = 'sector', metric = 'offers') {
 }
 
 function profileChartView(result) {
-  const entries = result.entries.filter(item => !item.unknown);
-  const classified = entries.reduce((sum, item) => sum + item.value, 0);
-  const unknown = result.entries.filter(item => item.unknown).reduce((sum, item) => sum + item.value, 0);
-  return { entries, classified, unknown, maximum: Math.max(...entries.map(item => item.value), 1) };
+  const entries = result.entries.map(item => ({ ...item, share: result.total > 0 ? item.value / result.total : 0 }));
+  const classified = entries.filter(item => !item.unknown).reduce((sum, item) => sum + item.value, 0);
+  const unknown = entries.filter(item => item.unknown).reduce((sum, item) => sum + item.value, 0);
+  return { entries, classified, unknown };
 }
 
-let profileDimension = 'sector';
+let profileDimension = 'strategy';
 let profileMetric = 'maximum';
 function renderFundProfileChart() {
   const metric = profileMetric;
@@ -301,31 +301,40 @@ function renderFundProfileChart() {
   $('#fund-profile-title').textContent = title;
   $('#profileDescription').textContent = metric === 'offers' ? 'Quantidade de ofertas por classificação do fundo.' : metric === 'maximum' ? 'Volume máximo anunciado das ofertas do período.' : 'Volume confirmado nas ofertas do período, incluindo lote adicional.';
   $('#profileChart').setAttribute('aria-label', title);
-  $('#profileCoverage').textContent = `${profileDimension === 'strategy' ? 'Estratégia confirmada' : 'Setor confirmado'} em ${result.confirmed} de ${result.offers} ofertas · ${result.funds} fundos classificados`;
+  $('#profileCoverage').textContent = `${profileDimension === 'strategy' ? 'Estratégia confirmada' : 'Setor confirmado'} em ${result.confirmed} de ${result.offers} ofertas${metric !== 'offers' && result.total > 0 ? ` · ${percent.format(view.classified / result.total)} do volume ${metric === 'captured' ? 'captado' : 'anunciado'} classificado` : ''}`;
   $('#profileScope').textContent = $('#overviewMonthFilterSummary').textContent;
   const formatValue = value => metric === 'offers' ? String(value) : result.eligible ? money.format(value) : 'n.a.';
   $('#profileTotalLabel').textContent = metric === 'offers' ? 'Total de ofertas' : metric === 'maximum' ? 'Volume total anunciado' : 'Volume captado confirmado';
   $('#profileTotal').textContent = formatValue(result.total);
-  $('#profileClassifiedTotal').textContent = formatValue(view.classified);
-  $('#profileUnknownTotal').textContent = formatValue(view.unknown);
-  $('#profileUnknownShare').textContent = result.total > 0 ? `${percent.format(view.unknown / result.total)} do total` : '';
-  $('#profileChart').replaceChildren(...view.entries.map(item => {
+  $('#profileDimensionLabel').textContent = profileDimension === 'strategy' ? 'Estratégia' : 'Setor';
+  $('#profileValueLabel').textContent = metric === 'offers' ? 'Ofertas' : metric === 'maximum' ? 'Anunciado' : 'Captado';
+  const colors = ['#55baff', '#6cdbbd', '#b79af3', '#efc279', '#e598b9', '#8bbce0', '#b5d68a'];
+  const colorFor = (item, index) => item.unknown ? '#60788a' : colors[index % colors.length];
+  $('#profileDistribution').hidden = result.total <= 0;
+  $('#profileDistribution').setAttribute('aria-label', view.entries.map(item => `${item.label}: ${percent.format(item.share)}`).join('; '));
+  $('#profileDistribution').replaceChildren(...view.entries.map((item, index) => {
+    const segment = element('span', 'profile-segment');
+    segment.style.width = `${Math.max(0, item.share * 100)}%`;
+    segment.style.backgroundColor = colorFor(item, index);
+    segment.title = `${item.label}: ${formatValue(item.value)} · ${percent.format(item.share)} do total`;
+    return segment;
+  }));
+  $('#profileChart').replaceChildren(...view.entries.map((item, index) => {
     const row = element('div', `profile-row${item.unknown ? ' profile-unknown' : ''}`);
     row.setAttribute('role', 'listitem');
-    const rail = element('div', 'profile-rail');
-    rail.setAttribute('aria-hidden', 'true');
-    const fill = element('div', 'profile-fill');
-    fill.style.width = `${Math.max(0, item.value / view.maximum * 100)}%`;
-    rail.append(fill);
+    const label = element('span', 'profile-name');
+    const dot = element('i', 'profile-dot');
+    dot.setAttribute('aria-hidden', 'true');
+    dot.style.backgroundColor = colorFor(item, index);
+    label.append(dot, element('span', '', item.label));
     const amount = metric === 'offers' ? String(item.value) : money.format(item.value);
-    const share = result.total > 0 ? percent.format(item.value / result.total) : 'n.a.';
-    const value = element('div', 'profile-value', amount);
-    value.append(element('small', '', share));
+    const share = result.total > 0 ? percent.format(item.share) : 'n.a.';
+    const value = element('strong', 'profile-value', amount);
     row.title = `${item.label}: ${metric === 'offers' ? `${item.offers} ofertas` : moneyFull.format(item.value)} · ${share} do total${item.unknown ? ' · Classificação ainda não confirmada' : ''}`;
-    row.append(element('span', 'profile-name', item.label), rail, value);
+    row.append(label, value, element('span', 'profile-share', share));
     return row;
   }));
-  if (!view.entries.length) $('#profileChart').append(element('p', 'panel-description', 'Sem classificação confirmada nesta seleção. O total do período permanece acima.'));
+  if (!view.entries.length) $('#profileChart').append(element('p', 'panel-description', 'Sem valor disponível para esta seleção.'));
   $('#profileMetricNote').textContent = metric === 'offers'
     ? 'Contagem por oferta, não por fundo. Percentuais incluem n.a.'
     : `${result.eligible} ofertas com valor ${metric === 'captured' ? 'confirmado' : 'máximo informado'} · ${result.missingValue} sem valor para esta métrica. Percentuais incluem n.a.${metric === 'captured' ? ' Inclui lote adicional confirmado; não corresponde ao mês do recebimento.' : ' Potencial das emissões, não captação.'}`;
