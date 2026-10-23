@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-23T11:01:51-03:00",
+  "generated_at": "2026-10-23T11:42:35-03:00",
   "reference_date": "2026-10-23",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -2521,9 +2521,9 @@
           "type": "Aviso ao Mercado",
           "date": "2026-08-28",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/cdc925e0-40e3-4170-ab31-7dfcd1b502a5",
-          "availability": "Disponível na CVM",
-          "confidence": "Publicação oficial; conteúdo não validado",
-          "page": null,
+          "availability": "Revisão necessária",
+          "confidence": "Conteúdo com pendência de validação",
+          "page": 2,
           "events": []
         }
       ],
@@ -9526,7 +9526,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
-      "manager": null,
+      "manager": {
+        "name": "KINEA INVESTIMENTOS LTDA.",
+        "cnpj": "08.604.187/0001-44",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/771b5b3c-5e6b-4711-8e1d-5ff6c6cc0c1a"
+      },
       "distributors": [
         {
           "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
