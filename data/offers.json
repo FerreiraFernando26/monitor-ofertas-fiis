@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-26T11:27:10-03:00",
+  "generated_at": "2026-10-26T11:41:37-03:00",
   "reference_date": "2026-10-26",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -14,12 +14,39 @@
       "detected_at": "2026-10-26"
     },
     {
+      "id": "673b90203697d25bc8270834",
+      "offer_id": "CVM160|28356",
+      "fund": "GATTI LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "field": "Início previsto",
+      "previous_date": null,
+      "current_date": "2026-11-30",
+      "detected_at": "2026-10-26"
+    },
+    {
+      "id": "600afe587f2f6582c30be45c",
+      "offer_id": "CVM160|28356",
+      "fund": "GATTI LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "field": "Início efetivo",
+      "previous_date": null,
+      "current_date": "2026-10-16",
+      "detected_at": "2026-10-26"
+    },
+    {
       "id": "35588d86aa9df95f25b19e65",
       "offer_id": "CVM160|27843",
       "fund": "TRX LOGISTICO FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
       "field": "Encerramento efetivo",
       "previous_date": null,
       "current_date": "2026-10-23",
+      "detected_at": "2026-10-26"
+    },
+    {
+      "id": "27396ab28b1c64ba400ad283",
+      "offer_id": "CVM160|28356",
+      "fund": "GATTI LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "field": "Fim da reserva previsto",
+      "previous_date": null,
+      "current_date": "2026-12-11",
       "detected_at": "2026-10-26"
     },
     {
@@ -5596,9 +5623,9 @@
       "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
-        "start_planned": null,
-        "start_actual": null,
-        "reservation_end_planned": null,
+        "start_planned": "2026-11-30",
+        "start_actual": "2026-10-16",
+        "reservation_end_planned": "2026-12-11",
         "closing_planned": "2027-04-21",
         "closing_actual": null,
         "settlement_planned": null,
@@ -5610,7 +5637,7 @@
       "updated_at": "2026-10-21",
       "documents": [
         {
-          "id": "CVM-SRE|165452",
+          "id": "CVM160|28356|83e6faffe85a742bd7303ab279202bbb307e25b5201577c9b9ffffd77daea62c",
           "type": "Anúncio de Início da Distribuição",
           "date": "2026-10-16",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/4a80cf17-bd47-4145-90c2-0cac92f5e90f",
@@ -5619,7 +5646,22 @@
           "page": 2,
           "events": [
             {
-              "name": "Prazo máximo de encerramento",
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-10-16"
+            },
+            {
+              "name": "Início previsto da subscrição",
+              "kind": "Previsto",
+              "date": "2026-11-30"
+            },
+            {
+              "name": "Fim previsto da subscrição",
+              "kind": "Previsto",
+              "date": "2026-12-11"
+            },
+            {
+              "name": "Prazo máximo para divulgação do anúncio de encerramento",
               "kind": "Previsto",
               "date": "2027-04-21"
             }
