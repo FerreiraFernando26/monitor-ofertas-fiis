@@ -1,9 +1,36 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-28T11:02:09-03:00",
+  "generated_at": "2026-10-28T11:40:07-03:00",
   "reference_date": "2026-10-28",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
+    {
+      "id": "c1077c7cb7871a5f2d04ec55",
+      "offer_id": "CVM160|28484",
+      "fund": "CTA V FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "field": "Início efetivo",
+      "previous_date": null,
+      "current_date": "2026-10-27",
+      "detected_at": "2026-10-28"
+    },
+    {
+      "id": "a64fed9747a4c3e23b2bcf81",
+      "offer_id": "CVM160|27898",
+      "fund": "FUNDO DE INVESTIMENTO IMOBILIÁRIO TERRENO QUINTAS GLOBAIS - RESPONSABILIDADE LIMITADA",
+      "field": "Início efetivo",
+      "previous_date": null,
+      "current_date": "2026-09-16",
+      "detected_at": "2026-10-28"
+    },
+    {
+      "id": "4a21b348b7c3e3eead0d489c",
+      "offer_id": "CVM160|26115",
+      "fund": "VALORA CRI PRÉ I FEEDER II FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "field": "Início efetivo",
+      "previous_date": null,
+      "current_date": "2026-04-30",
+      "detected_at": "2026-10-28"
+    },
     {
       "id": "b2d4c7b34252344f79067a48",
       "offer_id": "CVM160|28272",
@@ -3917,7 +3944,7 @@
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
-        "start_actual": null,
+        "start_actual": "2026-10-27",
         "reservation_end_planned": null,
         "closing_planned": null,
         "closing_actual": null,
@@ -3925,19 +3952,30 @@
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d7762237-9cc4-462c-bbd9-e5fe9e55adc2",
       "identified_at": "2026-10-28",
       "updated_at": "2026-10-28",
       "documents": [
         {
-          "id": "CVM-SRE|166091",
+          "id": "CVM160|28484|3b9b68e53a92606e6f3e8d5adff38a260159a3f941d8a0d09f5f91564cac0cd1",
           "type": "Anúncio de Início da Distribuição",
           "date": "2026-10-27",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d7762237-9cc4-462c-bbd9-e5fe9e55adc2",
-          "availability": "Disponível na CVM",
-          "confidence": "Publicação oficial; conteúdo não validado",
-          "page": null,
-          "events": []
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-10-27"
+            },
+            {
+              "name": "Data do anúncio de início",
+              "kind": "Efetivo",
+              "date": "2026-10-27"
+            }
+          ]
         }
       ],
       "allocation_pipeline": {
@@ -5547,7 +5585,7 @@
       "capture_rate": null,
       "timeline": {
         "start_planned": null,
-        "start_actual": null,
+        "start_actual": "2026-09-16",
         "reservation_end_planned": "2027-03-10",
         "closing_planned": "2027-03-12",
         "closing_actual": null,
@@ -5577,6 +5615,11 @@
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
               "date": "2027-03-12"
+            },
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-09-16"
             }
           ]
         }
@@ -18525,7 +18568,7 @@
       "capture_rate": 0.3394682054555853,
       "timeline": {
         "start_planned": null,
-        "start_actual": null,
+        "start_actual": "2026-04-30",
         "reservation_end_planned": "2026-10-23",
         "closing_planned": "2026-10-27",
         "closing_actual": "2026-10-27",
@@ -18555,6 +18598,11 @@
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
               "date": "2026-10-27"
+            },
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-04-30"
             }
           ]
         },
