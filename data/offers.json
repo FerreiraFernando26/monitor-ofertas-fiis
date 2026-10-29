@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-29T11:15:15-03:00",
+  "generated_at": "2026-10-29T11:47:59-03:00",
   "reference_date": "2026-10-29",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -11,6 +11,33 @@
       "field": "Encerramento efetivo",
       "previous_date": null,
       "current_date": "2026-10-28",
+      "detected_at": "2026-10-29"
+    },
+    {
+      "id": "78a7f26d2e4caa5f8c5ef920",
+      "offer_id": "CVM160|28521",
+      "fund": "RIZA ARGOS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "field": "Início efetivo",
+      "previous_date": null,
+      "current_date": "2026-10-28",
+      "detected_at": "2026-10-29"
+    },
+    {
+      "id": "47e80e02a04bad47aaf46e6e",
+      "offer_id": "CVM160|28521",
+      "fund": "RIZA ARGOS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "field": "Início previsto",
+      "previous_date": null,
+      "current_date": "2026-11-05",
+      "detected_at": "2026-10-29"
+    },
+    {
+      "id": "1b1c8af03380c4967c6df7dc",
+      "offer_id": "CVM160|28521",
+      "fund": "RIZA ARGOS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "field": "Fim da reserva previsto",
+      "previous_date": null,
+      "current_date": "2027-04-14",
       "detected_at": "2026-10-29"
     },
     {
@@ -6327,7 +6354,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
-      "manager": null,
+      "manager": {
+        "name": "HEDGE INVESTMENTS REAL ESTATE GESTÃO DE RECURSOS LTDA.",
+        "cnpj": "26.843.225/0001-01",
+        "official_url": "https://www.hedgeinvest.com.br/arquivos/HRCO/Documentos_Legais/2026_09_16_HRCO_Regulamento.pdf"
+      },
       "distributors": [
         {
           "name": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
@@ -9683,13 +9714,13 @@
         "start_planned": null,
         "start_actual": "2026-10-22",
         "reservation_end_planned": null,
-        "closing_planned": "2027-04-17",
+        "closing_planned": null,
         "closing_actual": null,
         "settlement_planned": null,
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/771b5b3c-5e6b-4711-8e1d-5ff6c6cc0c1a",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/40813417-fb28-4072-82fe-ddf7e7985a7d",
       "identified_at": "2026-10-23",
       "updated_at": "2026-10-23",
       "documents": [
@@ -9717,12 +9748,18 @@
         {
           "id": "CVM-SRE|166315",
           "type": "Comunicado ao Mercado",
-          "date": "2026-10-29",
+          "date": "2026-10-28",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/40813417-fb28-4072-82fe-ddf7e7985a7d",
-          "availability": "Disponível na CVM",
-          "confidence": "Publicação oficial; conteúdo não validado",
-          "page": null,
-          "events": []
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Prazos do cronograma suspensos",
+              "kind": "Comunicado",
+              "date": "2026-10-28"
+            }
+          ]
         },
         {
           "id": "CVM-SRE|166283",
@@ -9991,7 +10028,11 @@
       "trading_environment": "Bolsa B3",
       "rite": "Automático",
       "lead_coordinator": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
-      "manager": null,
+      "manager": {
+        "name": "KINEA INVESTIMENTOS LTDA.",
+        "cnpj": "08.604.187/0001-44",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/db3d7420-ab87-494f-b54e-0c5a095149d8"
+      },
       "distributors": [
         {
           "name": "ITAU BBA ASSESSORIA FINANCEIRA S.A",
@@ -11954,7 +11995,11 @@
       "trading_environment": "n.a.",
       "rite": "Automático",
       "lead_coordinator": "XP INVESTIMENTOS CCTVM S.A.",
-      "manager": null,
+      "manager": {
+        "name": "MAUÁ CAPITAL INVESTIMENTOS ALTERNATIVOS LTDA.",
+        "cnpj": "09.561.568/0001-56",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/abbea60c-f176-4603-a790-e0abbd02524c"
+      },
       "distributors": [
         {
           "name": "XP INVESTIMENTOS CCTVM S.A.",
@@ -16084,9 +16129,9 @@
       "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
-        "start_planned": null,
-        "start_actual": null,
-        "reservation_end_planned": null,
+        "start_planned": "2026-11-05",
+        "start_actual": "2026-10-28",
+        "reservation_end_planned": "2027-04-14",
         "closing_planned": "2027-04-23",
         "closing_actual": null,
         "settlement_planned": null,
@@ -16098,7 +16143,7 @@
       "updated_at": "2026-10-29",
       "documents": [
         {
-          "id": "CVM-SRE|166270",
+          "id": "CVM160|28521|ef07759bdaeef0703883d9f0d57cd8618dfab07160b512664db71ea964d9060f",
           "type": "Anúncio de Início da Distribuição",
           "date": "2026-10-28",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/628b95a5-4c48-4ff1-bd1f-f03e18fb49a4",
@@ -16107,7 +16152,27 @@
           "page": 2,
           "events": [
             {
-              "name": "Prazo máximo de encerramento",
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-10-28"
+            },
+            {
+              "name": "Data própria do anúncio de início",
+              "kind": "Efetivo",
+              "date": "2026-10-28"
+            },
+            {
+              "name": "Início da coleta de intenções de investimento",
+              "kind": "Previsto",
+              "date": "2026-11-05"
+            },
+            {
+              "name": "Fim da coleta de intenções de investimento",
+              "kind": "Previsto",
+              "date": "2027-04-14"
+            },
+            {
+              "name": "Prazo máximo do anúncio de encerramento",
               "kind": "Previsto",
               "date": "2027-04-23"
             }
