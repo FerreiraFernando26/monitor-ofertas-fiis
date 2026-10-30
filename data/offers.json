@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-30T11:03:23-03:00",
+  "generated_at": "2026-10-30T11:41:55-03:00",
   "reference_date": "2026-10-30",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
@@ -11,6 +11,33 @@
       "field": "Encerramento efetivo",
       "previous_date": null,
       "current_date": "2026-10-29",
+      "detected_at": "2026-10-30"
+    },
+    {
+      "id": "b09ac6799772a6af3ab8b7ac",
+      "offer_id": "CVM160|27998",
+      "fund": "BGR CIDADE JARDIM FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "field": "Início previsto",
+      "previous_date": "2026-09-30",
+      "current_date": "2026-09-28",
+      "detected_at": "2026-10-30"
+    },
+    {
+      "id": "4c9b18f53e4bb415ad64876e",
+      "offer_id": "CVM160|27998",
+      "fund": "BGR CIDADE JARDIM FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "field": "Fim da reserva previsto",
+      "previous_date": "2026-10-30",
+      "current_date": "2026-11-23",
+      "detected_at": "2026-10-30"
+    },
+    {
+      "id": "3f0663c64fe90765edc72812",
+      "offer_id": "CVM160|27998",
+      "fund": "BGR CIDADE JARDIM FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA",
+      "field": "Liquidação prevista",
+      "previous_date": "2026-11-04",
+      "current_date": "2026-11-25",
       "detected_at": "2026-10-30"
     },
     {
@@ -1396,16 +1423,16 @@
       "additional_lot_volume": null,
       "capture_rate": null,
       "timeline": {
-        "start_planned": "2026-09-30",
+        "start_planned": "2026-09-28",
         "start_actual": "2026-09-21",
-        "reservation_end_planned": "2026-10-30",
+        "reservation_end_planned": "2026-11-23",
         "closing_planned": "2027-03-20",
         "closing_actual": null,
-        "settlement_planned": "2026-11-04",
+        "settlement_planned": "2026-11-25",
         "settlement_actual": null
       },
       "review_required": false,
-      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/#/oferta-publica/27998",
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fa948f59-a229-4130-942f-ec8504aaf8fa",
       "identified_at": "2026-09-28",
       "updated_at": "2026-09-28",
       "documents": [
@@ -1424,54 +1451,50 @@
               "date": "2026-09-21"
             },
             {
-              "name": "Roadshow e início do direito de preferência",
-              "kind": "Prevista",
-              "date": "2026-09-22"
-            },
-            {
-              "name": "Fim da negociação do direito de preferência",
-              "kind": "Prevista",
-              "date": "2026-09-23"
-            },
-            {
-              "name": "Fim do exercício do direito de preferência",
-              "kind": "Prevista",
-              "date": "2026-09-24"
-            },
-            {
-              "name": "Liquidação do direito de preferência e início das sobras",
-              "kind": "Prevista",
-              "date": "2026-09-25"
-            },
-            {
-              "name": "Fim da subscrição de sobras",
-              "kind": "Prevista",
-              "date": "2026-09-29"
-            },
-            {
-              "name": "Início do período de subscrição",
-              "kind": "Prevista",
-              "date": "2026-09-30"
-            },
-            {
-              "name": "Fim do período de subscrição",
-              "kind": "Prevista",
-              "date": "2026-10-30"
-            },
-            {
-              "name": "Procedimento de alocação",
-              "kind": "Prevista",
-              "date": "2026-11-03"
-            },
-            {
-              "name": "Liquidação da oferta",
-              "kind": "Prevista",
-              "date": "2026-11-04"
-            },
-            {
               "name": "Prazo máximo do anúncio de encerramento",
               "kind": "Prazo calculado (180 dias)",
               "date": "2027-03-20"
+            }
+          ]
+        },
+        {
+          "id": "CVM160|27998|cf45aaf54a69aac1fd1ef0c6c95505a36493f620066c77b7c69e3f497a3fbd96",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fa948f59-a229-4130-942f-ec8504aaf8fa",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Início do período de subscrição",
+              "kind": "Previsto",
+              "date": "2026-09-28"
+            },
+            {
+              "name": "Fim do período de subscrição",
+              "kind": "Previsto",
+              "date": "2026-11-23"
+            },
+            {
+              "name": "Procedimento de alocação",
+              "kind": "Previsto",
+              "date": "2026-11-24"
+            },
+            {
+              "name": "Liquidação prevista da oferta",
+              "kind": "Previsto",
+              "date": "2026-11-25"
+            },
+            {
+              "name": "Início do período de desistência",
+              "kind": "Previsto",
+              "date": "2026-10-30"
+            },
+            {
+              "name": "Fim do período de desistência",
+              "kind": "Previsto",
+              "date": "2026-11-09"
             }
           ]
         },
@@ -1480,16 +1503,6 @@
           "type": "Lâmina",
           "date": "2026-10-29",
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bc1cb004-8e98-41b0-9bbc-bfed2bc04c7f",
-          "availability": "Disponível na CVM",
-          "confidence": "Publicação oficial; conteúdo não validado",
-          "page": null,
-          "events": []
-        },
-        {
-          "id": "CVM-SRE|166407",
-          "type": "Comunicado ao Mercado",
-          "date": "2026-10-29",
-          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fa948f59-a229-4130-942f-ec8504aaf8fa",
           "availability": "Disponível na CVM",
           "confidence": "Publicação oficial; conteúdo não validado",
           "page": null,
@@ -17701,6 +17714,11 @@
           "name": "BANCO BRADESCO BBI S.A.",
           "role": "Coordenador líder",
           "allocated_volume": null
+        },
+        {
+          "name": "ÁGORA CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+          "role": "Participante da distribuição",
+          "allocated_volume": null
         }
       ],
       "status": "Oferta Encerrada",
@@ -17839,6 +17857,26 @@
           "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e9818864-6b4a-4548-abcd-e1d7110e67d0",
           "availability": "Disponível na CVM",
           "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "TIVIO|27372|67928df6-286f-8860-dcd1-f9899ded5f03",
+          "type": "Material publicitário (avulso, 1ª emissão)",
+          "date": null,
+          "official_url": "https://api.mziq.com/mzfilemanager/v2/d/07b14769-15bd-4203-a458-5ce2e7bfcd68/67928df6-286f-8860-dcd1-f9899ded5f03?origin=2",
+          "availability": "Material avulso — consulta complementar",
+          "confidence": "Fundo, emissão e fonte conferidos; não alimenta indicadores",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "TIVIO|27372|926cedd3-c1e3-ff0a-691b-e05530f28142",
+          "type": "Material publicitário — resumo da oferta (avulso, 1ª emissão)",
+          "date": null,
+          "official_url": "https://api.mziq.com/mzfilemanager/v2/d/07b14769-15bd-4203-a458-5ce2e7bfcd68/926cedd3-c1e3-ff0a-691b-e05530f28142?origin=2",
+          "availability": "Material avulso — consulta complementar",
+          "confidence": "Fundo, emissão e fonte conferidos; não alimenta indicadores",
           "page": null,
           "events": []
         }
