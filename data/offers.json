@@ -1,9 +1,18 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-29T11:47:59-03:00",
-  "reference_date": "2026-10-29",
+  "generated_at": "2026-10-30T11:03:23-03:00",
+  "reference_date": "2026-10-30",
   "source": "Dados Abertos CVM — Ofertas de Distribuição",
   "schedule_changes": [
+    {
+      "id": "f7700b6d3be3ff471ff9337c",
+      "offer_id": "CVM160|28423",
+      "fund": "TIVIO OPPORTUNITIES II MALLS IPCA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "field": "Encerramento efetivo",
+      "previous_date": null,
+      "current_date": "2026-10-29",
+      "detected_at": "2026-10-30"
+    },
     {
       "id": "d0fd38db5eb881a666955ceb",
       "offer_id": "CVM160|28020",
@@ -405,7 +414,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -487,7 +496,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -585,7 +594,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -703,7 +712,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -795,7 +804,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -871,7 +880,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -953,7 +962,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -1031,7 +1040,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -1092,7 +1101,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -1164,7 +1173,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -1258,7 +1267,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -1350,7 +1359,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -1370,7 +1379,7 @@
       "manager": {
         "name": "BGR ASSET MANAGEMENT LTDA",
         "cnpj": "48.730.767/0001-00",
-        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/6ea030e8-a485-4fca-8873-455b5f4e8330"
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b1d69a90-7cba-436a-975c-a499c4ca82ed"
       },
       "distributors": [
         {
@@ -1465,6 +1474,36 @@
               "date": "2027-03-20"
             }
           ]
+        },
+        {
+          "id": "CVM-SRE|166408",
+          "type": "Lâmina",
+          "date": "2026-10-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bc1cb004-8e98-41b0-9bbc-bfed2bc04c7f",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|166407",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-10-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/fa948f59-a229-4130-942f-ec8504aaf8fa",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|166409",
+          "type": "Prospecto Definitivo",
+          "date": "2026-10-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/b1d69a90-7cba-436a-975c-a499c4ca82ed",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
         },
         {
           "id": "CVM-SRE|162836",
@@ -1589,7 +1628,7 @@
         "strategy": "Renda com locação",
         "sector": "Lajes corporativas",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -1722,7 +1761,7 @@
         "strategy": "Desenvolvimento",
         "sector": "Residencial",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -1891,7 +1930,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -2024,7 +2063,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -2137,7 +2176,7 @@
         "strategy": "Renda com locação",
         "sector": "Logística",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -2265,7 +2304,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -2398,7 +2437,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -2485,7 +2524,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -2604,7 +2643,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -2686,7 +2725,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -2788,7 +2827,7 @@
         "strategy": "Crédito imobiliário",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -2938,7 +2977,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -3095,7 +3134,7 @@
         "strategy": "Renda com locação",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -3185,7 +3224,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -3278,7 +3317,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -3372,7 +3411,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -3498,7 +3537,7 @@
         "strategy": "Desenvolvimento",
         "sector": "Logística",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -3668,7 +3707,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -3770,7 +3809,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -3853,7 +3892,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -3946,7 +3985,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -4029,7 +4068,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -4101,7 +4140,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -4189,7 +4228,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -4525,7 +4564,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -4619,7 +4658,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -4697,7 +4736,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -4794,7 +4833,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -5037,7 +5076,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -5133,7 +5172,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -5215,7 +5254,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -5402,7 +5441,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -5489,7 +5528,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -5583,7 +5622,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -5675,7 +5714,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -5773,7 +5812,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -5890,7 +5929,7 @@
         "strategy": "Renda com locação",
         "sector": "Logística",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -6018,7 +6057,7 @@
         "strategy": "Renda com locação",
         "sector": "Shopping centers",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -6141,7 +6180,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -6243,7 +6282,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -6337,7 +6376,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -6385,7 +6424,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/aa7a8c99-997d-4fe1-b42d-875f9509d198",
       "identified_at": "2026-09-28",
-      "updated_at": "2026-10-29",
+      "updated_at": "2026-10-30",
       "documents": [
         {
           "id": "CVM160|28020|c4c1298635f140412f02ff692bee698057aae491836177df586755c413abc488",
@@ -6455,7 +6494,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -6802,7 +6841,7 @@
         "strategy": "Crédito imobiliário",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -6897,7 +6936,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -6989,7 +7028,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -7494,7 +7533,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -7658,7 +7697,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -7978,7 +8017,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -8126,7 +8165,7 @@
         "strategy": "Desenvolvimento",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -8301,7 +8340,7 @@
         "strategy": "Desenvolvimento",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -8438,7 +8477,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -8571,7 +8610,7 @@
         "strategy": "Crédito imobiliário",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -8912,7 +8951,7 @@
         "strategy": "Crédito imobiliário",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -9043,7 +9082,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -9203,7 +9242,7 @@
         "strategy": "Multiestratégia",
         "sector": "Logística",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -9356,7 +9395,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -9438,7 +9477,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -9571,7 +9610,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -9674,7 +9713,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -9827,7 +9866,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -9996,7 +10035,7 @@
         "strategy": "Crédito imobiliário",
         "sector": "Residencial",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -10143,7 +10182,7 @@
         "strategy": "Crédito imobiliário",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -10324,7 +10363,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -10495,7 +10534,7 @@
         "strategy": "Crédito imobiliário",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -10606,7 +10645,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -11059,7 +11098,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -11177,7 +11216,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -11329,7 +11368,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -11421,7 +11460,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -11579,7 +11618,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -11661,7 +11700,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -11970,7 +12009,7 @@
         "strategy": "Multiestratégia",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -12026,7 +12065,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/abbea60c-f176-4603-a790-e0abbd02524c",
       "identified_at": "2026-10-29",
-      "updated_at": "2026-10-29",
+      "updated_at": "2026-10-30",
       "documents": [
         {
           "id": "CVM-SRE|166308",
@@ -12085,7 +12124,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -12268,7 +12307,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -12376,7 +12415,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -12474,7 +12513,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -12556,7 +12595,68 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
+        "sources": []
+      }
+    },
+    {
+      "id": "CVM160|28529",
+      "fund": "MINAS GERAIS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA",
+      "cnpj": "65.275.189/0001-70",
+      "ticker": "",
+      "registration": "SRE/3534/2026",
+      "issue": "3",
+      "series": "",
+      "type": "Nova emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "ID CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "ID CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 370000000.0,
+      "maximum_volume": 370000000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-10-30",
+      "updated_at": "2026-10-30",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -12644,7 +12744,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -12732,7 +12832,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -12854,7 +12954,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -12946,7 +13046,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -13044,7 +13144,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -13152,7 +13252,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -13279,7 +13379,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -13340,7 +13440,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -13412,7 +13512,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -13571,7 +13671,7 @@
         "strategy": "Renda com locação",
         "sector": "Shopping centers",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -13699,7 +13799,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -13812,7 +13912,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -13909,7 +14009,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -14006,7 +14106,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -14105,7 +14205,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -14207,7 +14307,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -14289,7 +14389,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -14453,7 +14553,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -14541,7 +14641,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -14634,7 +14734,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -14747,7 +14847,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -14865,7 +14965,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -14989,7 +15089,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -15102,7 +15202,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -15233,7 +15333,7 @@
         "strategy": "Compra e venda de imóveis",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -15951,7 +16051,7 @@
         "strategy": "Crédito imobiliário",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -16077,7 +16177,7 @@
         "strategy": "Multiestratégia",
         "sector": "Diversificado",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -16140,7 +16240,7 @@
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/628b95a5-4c48-4ff1-bd1f-f03e18fb49a4",
       "identified_at": "2026-10-29",
-      "updated_at": "2026-10-29",
+      "updated_at": "2026-10-30",
       "documents": [
         {
           "id": "CVM160|28521|ef07759bdaeef0703883d9f0d57cd8618dfab07160b512664db71ea964d9060f",
@@ -16214,7 +16314,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -16301,7 +16401,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -16393,7 +16493,7 @@
         "strategy": "Renda com locação",
         "sector": "Logística",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -16506,7 +16606,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -16598,7 +16698,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -16765,7 +16865,7 @@
         "strategy": "Multiestratégia",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -16991,7 +17091,7 @@
         "strategy": "Multiestratégia",
         "sector": "Energia",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -17088,7 +17188,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -17226,7 +17326,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -17319,7 +17419,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -17380,7 +17480,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -17441,7 +17541,68 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
+        "sources": []
+      }
+    },
+    {
+      "id": "CVM160|28532",
+      "fund": "TERRAS PAULISTAS FUNDO DE INVESTIMENTO IMOBILIÁRIO DE PERMUTAS RESPONSABILIDADE LIMITADA",
+      "cnpj": "63.320.393/0001-30",
+      "ticker": "",
+      "registration": "SRE/3537/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "n.a.",
+      "rite": "Automático",
+      "lead_coordinator": "PATAGÔNIA CAPITAL GESTORA DE RECURSOS LTDA.",
+      "manager": null,
+      "distributors": [
+        {
+          "name": "PATAGÔNIA CAPITAL GESTORA DE RECURSOS LTDA.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Registro Concedido",
+      "initial_volume": 15500000.0,
+      "maximum_volume": 15500000.0,
+      "captured_volume": null,
+      "captured_base_volume": null,
+      "additional_lot_volume": null,
+      "capture_rate": null,
+      "timeline": {
+        "start_planned": null,
+        "start_actual": null,
+        "reservation_end_planned": null,
+        "closing_planned": null,
+        "closing_actual": null,
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://dados.cvm.gov.br/dataset/oferta-distrib",
+      "identified_at": "2026-10-30",
+      "updated_at": "2026-10-30",
+      "documents": [],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -17513,7 +17674,191 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
+        "sources": []
+      }
+    },
+    {
+      "id": "CVM160|27372",
+      "fund": "TIVIO MALLS OPPORTUNITIES II FUNDO DE INVESTIMENTO IMOBILIARIO - RESPONSABILIDADE LIMITADA",
+      "cnpj": "67.903.762/0001-79",
+      "ticker": "",
+      "registration": "SRE/2463/2026",
+      "issue": "1",
+      "series": "",
+      "type": "IPO / 1ª emissão",
+      "distribution_nature": "",
+      "trading_environment": "Bolsa B3",
+      "rite": "Automático",
+      "lead_coordinator": "BANCO BRADESCO BBI S.A.",
+      "manager": {
+        "name": "TIVIO CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A",
+        "cnpj": "03.384.738/0001-98",
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7779a26d-b9b1-46d7-b455-58085d681b34"
+      },
+      "distributors": [
+        {
+          "name": "BANCO BRADESCO BBI S.A.",
+          "role": "Coordenador líder",
+          "allocated_volume": null
+        }
+      ],
+      "status": "Oferta Encerrada",
+      "initial_volume": 402368800.0,
+      "maximum_volume": 402368800.0,
+      "captured_volume": 402368800.0,
+      "captured_base_volume": 402368800.0,
+      "additional_lot_volume": 0.0,
+      "capture_rate": 1.0,
+      "timeline": {
+        "start_planned": "2026-08-07",
+        "start_actual": "2026-08-04",
+        "reservation_end_planned": "2026-08-26",
+        "closing_planned": "2027-01-29",
+        "closing_actual": "2026-10-29",
+        "settlement_planned": null,
+        "settlement_actual": null
+      },
+      "review_required": false,
+      "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5cffbb91-0574-4e65-9a5d-15b517cffef9",
+      "identified_at": "2026-10-30",
+      "updated_at": "2026-10-30",
+      "documents": [
+        {
+          "id": "CVM-SRE|153651",
+          "type": "Anúncio de Início da Distribuição",
+          "date": "2026-08-04",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/5cffbb91-0574-4e65-9a5d-15b517cffef9",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Início efetivo da oferta",
+              "kind": "Efetivo",
+              "date": "2026-08-04"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|154206",
+          "type": "Comunicado ao Mercado",
+          "date": "2026-08-11",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ba06158e-e4d1-482b-b85f-2211904b8436",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 2,
+          "events": [
+            {
+              "name": "Início da subscrição / distribuição",
+              "kind": "Previsto",
+              "date": "2026-08-07"
+            },
+            {
+              "name": "Fim da reserva / subscrição",
+              "kind": "Previsto",
+              "date": "2026-08-26"
+            },
+            {
+              "name": "Prazo máximo de encerramento",
+              "kind": "Previsto",
+              "date": "2027-01-29"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|166404",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/7779a26d-b9b1-46d7-b455-58085d681b34",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-29"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|154204",
+          "type": "Prospecto Definitivo",
+          "date": "2026-08-11",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/9eb4a855-3525-4c75-a94f-ab8de6ef8632",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|154205",
+          "type": "Lâmina",
+          "date": "2026-08-11",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/d0988e23-d3f4-4eca-89c8-a890dc3c2b55",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153650",
+          "type": "Prospecto Definitivo",
+          "date": "2026-08-04",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bc3f7430-9725-4a31-a8a2-363a85b0f304",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153341",
+          "type": "Prospecto Preliminar",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/bcb96e62-4866-4371-9182-7c18802fc1f3",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153342",
+          "type": "Lâmina",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/68b8acfc-a44f-47cd-910b-ce297b9bea46",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        },
+        {
+          "id": "CVM-SRE|153343",
+          "type": "Aviso ao Mercado",
+          "date": "2026-07-31",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/e9818864-6b4a-4548-abcd-e1d7110e67d0",
+          "availability": "Disponível na CVM",
+          "confidence": "Publicação oficial; conteúdo não validado",
+          "page": null,
+          "events": []
+        }
+      ],
+      "allocation_pipeline": {
+        "updated_at": null,
+        "classification": {
+          "category": "n.a.",
+          "structure": "",
+          "basis": "",
+          "page": null,
+          "official_url": ""
+        },
+        "items": []
+      },
+      "fund_profile": {
+        "strategy": null,
+        "sector": null,
+        "structure": null,
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -17533,7 +17878,7 @@
       "manager": {
         "name": "TIVIO CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A",
         "cnpj": "03.384.738/0001-98",
-        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ccc7c205-666c-47f8-8bb4-a3cc25c2037a"
+        "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/52663a90-1aeb-4ce7-a074-f79212565f0e"
       },
       "distributors": [
         {
@@ -17542,26 +17887,26 @@
           "allocated_volume": null
         }
       ],
-      "status": "Registro Concedido",
-      "initial_volume": 580000000.0,
-      "maximum_volume": 580000000.0,
-      "captured_volume": null,
+      "status": "Oferta Encerrada",
+      "initial_volume": 502961000.0,
+      "maximum_volume": 502961000.0,
+      "captured_volume": 502961000.0,
       "captured_base_volume": null,
       "additional_lot_volume": null,
-      "capture_rate": null,
+      "capture_rate": 1.0,
       "timeline": {
         "start_planned": null,
         "start_actual": "2026-10-20",
         "reservation_end_planned": null,
         "closing_planned": "2027-04-16",
-        "closing_actual": null,
+        "closing_actual": "2026-10-29",
         "settlement_planned": null,
         "settlement_actual": null
       },
       "review_required": false,
       "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/ccc7c205-666c-47f8-8bb4-a3cc25c2037a",
       "identified_at": "2026-10-22",
-      "updated_at": "2026-10-23",
+      "updated_at": "2026-10-30",
       "documents": [
         {
           "id": "CVM-SRE|165772",
@@ -17581,6 +17926,22 @@
               "name": "Prazo máximo de encerramento",
               "kind": "Previsto",
               "date": "2027-04-16"
+            }
+          ]
+        },
+        {
+          "id": "CVM-SRE|166400",
+          "type": "Anúncio de Encerramento",
+          "date": "2026-10-29",
+          "official_url": "https://web.cvm.gov.br/sre-publico-cvm/rest/download/52663a90-1aeb-4ce7-a074-f79212565f0e",
+          "availability": "Baixado e validado",
+          "confidence": "Alta",
+          "page": 1,
+          "events": [
+            {
+              "name": "Anúncio de encerramento",
+              "kind": "Efetivo",
+              "date": "2026-10-29"
             }
           ]
         },
@@ -17620,7 +17981,7 @@
         "strategy": "Renda com locação",
         "sector": "Shopping centers",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -17732,7 +18093,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -17884,7 +18245,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -17945,7 +18306,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -18043,7 +18404,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -18206,7 +18567,7 @@
         "strategy": "Renda com locação",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -18306,7 +18667,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -18419,7 +18780,7 @@
         "strategy": "Renda com locação",
         "sector": "Lajes corporativas",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -18561,7 +18922,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -18734,7 +19095,7 @@
         "strategy": "Multiestratégia",
         "sector": "Diversificado",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -18871,7 +19232,7 @@
         "strategy": "Crédito imobiliário",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -18983,7 +19344,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -19217,7 +19578,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -19340,7 +19701,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     },
@@ -19484,7 +19845,7 @@
         "strategy": "Renda com locação",
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -19717,7 +20078,7 @@
         "strategy": "Renda com locação",
         "sector": "Lajes corporativas",
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": [
           {
             "dimension": "strategy",
@@ -19793,7 +20154,7 @@
         "strategy": null,
         "sector": null,
         "structure": null,
-        "as_of": "2026-10-29",
+        "as_of": "2026-10-30",
         "sources": []
       }
     }
